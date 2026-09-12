@@ -36,8 +36,9 @@ jobs:
       - name: Build with Next.js
         run: npm run build
         env:
-          # Setting this will trigger `output: 'export'` in next.config.ts
-          GITHUB_ACTIONS: true
+          # Setting this will trigger `output: 'export'` in next.config.ts and set subpath base path
+          GITHUB_ACTIONS: "true"
+          NEXT_PUBLIC_BASE_PATH: "/flags"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

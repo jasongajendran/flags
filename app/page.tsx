@@ -24,6 +24,7 @@ import { useAudioGuide } from '@/hooks/use-audio-guide';
 import { HighlightText } from '@/components/highlight-text';
 import { ScrollToTop } from '@/components/scroll-to-top';
 import { VisualCountryMap } from '@/components/visual-country-map';
+import { WorldMapView } from '@/components/world-map';
 
 export default function KidsApp() {
   const [activeContinent, setActiveContinent] = useState<Continent>(continentsData[0]);
@@ -31,6 +32,7 @@ export default function KidsApp() {
   const [activeTab, setActiveTab] = useState<'memory' | 'flag' | 'location'>('memory');
   const [videoMode, setVideoMode] = useState(false);
   const [showSubtitles, setShowSubtitles] = useState(true);
+  const [mainViewMode, setMainViewMode] = useState<'world' | 'continent'>('world');
   
   const { play, stop, isPlaying, charIndex } = useAudioGuide();
   const countryDataRef = useRef(continentsData[0].countries);
@@ -38,6 +40,14 @@ export default function KidsApp() {
 
   const scrollToMainMap = () => {
     mainMapRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+
+  const handleSelectFromWorldMap = (country: Country, continent: Continent) => {
+    setVideoMode(false);
+    setActiveContinent(continent);
+    setSelectedCountry(country);
+    countryDataRef.current = continent.countries;
+    play(getAudioText(country));
   };
 
   const getAudioText = (country: Country) => 
@@ -180,139 +190,179 @@ export default function KidsApp() {
         
         {/* Left Column: Interactive Map Board */}
         <div ref={mainMapRef} className="lg:col-span-6 flex flex-col gap-4">
-          <div className="bg-white rounded-[2.5rem] p-5 shadow-lg border-4 border-slate-100 flex flex-col gap-3">
-            <div className="flex items-center justify-between px-2">
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">{activeContinent.emoji}</span>
-                <h2 className="text-xl font-extrabold text-slate-900">
-                  {activeContinent.name} Map
-                </h2>
-              </div>
-              <span className="text-xs font-bold bg-sky-100 text-sky-800 px-3 py-1 rounded-full flex items-center gap-1">
-                <MapPin size={14} /> Tap a flag to explore
-              </span>
+          {/* Main Map Mode Switcher Header */}
+          <div className="bg-white rounded-2xl p-2 border-2 border-indigo-100 shadow-sm flex items-center justify-between gap-2">
+            <span className="text-xs font-black text-slate-700 px-3 flex items-center gap-1.5">
+              <Globe size={16} className="text-indigo-600" />
+              Map View Mode:
+            </span>
+            <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl">
+              <button
+                onClick={() => setMainViewMode('world')}
+                className={`px-3 py-1.5 rounded-lg text-xs font-extrabold transition-all flex items-center gap-1.5 ${
+                  mainViewMode === 'world'
+                    ? 'bg-indigo-600 text-white shadow-sm'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                <Globe size={14} />
+                Actual World Map 🌍
+              </button>
+              <button
+                onClick={() => setMainViewMode('continent')}
+                className={`px-3 py-1.5 rounded-lg text-xs font-extrabold transition-all flex items-center gap-1.5 ${
+                  mainViewMode === 'continent'
+                    ? 'bg-indigo-600 text-white shadow-sm'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                <Compass size={14} />
+                {activeContinent.name} Board
+              </button>
             </div>
-
-            {/* Map Canvas */}
-            <div className={`rounded-[2rem] p-4 relative aspect-[4/3] border-4 transition-colors duration-500 overflow-hidden shadow-inner ${activeContinent.mapBg}`}>
-              {/* Subtle map pattern backdrop */}
-              <div className="absolute inset-0 opacity-25 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px]"></div>
-              
-              {/* Ocean & Sea Water Visual Labels */}
-              {activeContinent.id === 'europe' && (
-                <>
-                  <div className="absolute top-2 left-3 bg-blue-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Atlantic Ocean
-                  </div>
-                  <div className="absolute top-3 right-3 bg-cyan-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 North Sea
-                  </div>
-                  <div className="absolute bottom-2 left-1/3 bg-indigo-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Mediterranean Sea
-                  </div>
-                </>
-              )}
-              {activeContinent.id === 'asia' && (
-                <>
-                  <div className="absolute top-3 right-3 bg-blue-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Pacific Ocean
-                  </div>
-                  <div className="absolute bottom-3 left-4 bg-teal-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Indian Ocean
-                  </div>
-                </>
-              )}
-              {activeContinent.id === 'africa' && (
-                <>
-                  <div className="absolute top-2 left-4 bg-sky-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Mediterranean Sea
-                  </div>
-                  <div className="absolute top-1/2 left-2 bg-blue-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Atlantic Ocean
-                  </div>
-                  <div className="absolute bottom-6 right-3 bg-amber-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Indian Ocean
-                  </div>
-                </>
-              )}
-              {activeContinent.id === 'northamerica' && (
-                <>
-                  <div className="absolute top-2 left-1/3 bg-cyan-700/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Arctic Ocean
-                  </div>
-                  <div className="absolute top-1/3 left-2 bg-indigo-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Pacific Ocean
-                  </div>
-                  <div className="absolute top-1/3 right-2 bg-blue-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Atlantic Ocean
-                  </div>
-                </>
-              )}
-              {activeContinent.id === 'southamerica' && (
-                <>
-                  <div className="absolute top-1/3 left-2 bg-indigo-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Pacific Ocean
-                  </div>
-                  <div className="absolute top-1/3 right-2 bg-blue-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Atlantic Ocean
-                  </div>
-                </>
-              )}
-              {activeContinent.id === 'oceania' && (
-                <>
-                  <div className="absolute top-1/3 left-2 bg-blue-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Indian Ocean
-                  </div>
-                  <div className="absolute top-1/3 right-2 bg-cyan-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                    🌊 Pacific Ocean
-                  </div>
-                </>
-              )}
-              {activeContinent.id === 'antarctica' && (
-                <div className="absolute top-2 left-1/3 bg-indigo-800/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
-                  🌊 Southern Icy Ocean
-                </div>
-              )}
-
-              {activeContinent.countries.map((country) => {
-                const isSelected = selectedCountry.id === country.id;
-                return (
-                  <motion.button
-                    key={country.id}
-                    onClick={() => handleCountryClick(country)}
-                    className={`absolute ${country.position} w-20 h-20 sm:w-28 sm:h-28 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] transition-transform z-10 ${
-                      country.color
-                    } ${
-                      isSelected ? 'ring-8 ring-yellow-300 scale-110 z-20 shadow-2xl' : 'hover:scale-110 shadow-md hover:z-20 opacity-90 hover:opacity-100'
-                    }`}
-                    animate={isSelected ? {
-                      rotate: [0, 4, -4, 0],
-                      scale: [1.1, 1.13, 1.1],
-                      transition: { duration: 1.2, repeat: Infinity, repeatType: "reverse" }
-                    } : { rotate: 0 }}
-                    aria-label={`Select ${country.name}`}
-                  >
-                    <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none p-1">
-                      {/* Flag Image */}
-                      <img 
-                        src={country.flagUrl} 
-                        alt={`Flag of ${country.name}`} 
-                        referrerPolicy="no-referrer"
-                        className="w-9 h-9 sm:w-11 sm:h-11 object-cover rounded-full border-2 border-white shadow-md mb-1" 
-                      />
-                      <span className="bg-white/95 text-slate-900 font-extrabold px-1.5 py-0.5 rounded-full text-[10px] sm:text-xs shadow-sm backdrop-blur-sm text-center line-clamp-1 max-w-full">
-                        {country.name}
-                      </span>
-                    </div>
-                  </motion.button>
-                );
-              })}
-            </div>
-
-            <p className="text-xs text-slate-500 text-center font-medium italic">
-              {activeContinent.description}
-            </p>
           </div>
+
+          {mainViewMode === 'world' ? (
+            <WorldMapView 
+              selectedCountry={selectedCountry}
+              activeContinent={activeContinent}
+              onSelectCountry={handleSelectFromWorldMap}
+            />
+          ) : (
+            <div className="bg-white rounded-[2.5rem] p-5 shadow-lg border-4 border-slate-100 flex flex-col gap-3">
+              <div className="flex items-center justify-between px-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl">{activeContinent.emoji}</span>
+                  <h2 className="text-xl font-extrabold text-slate-900">
+                    {activeContinent.name} Map Board
+                  </h2>
+                </div>
+                <span className="text-xs font-bold bg-sky-100 text-sky-800 px-3 py-1 rounded-full flex items-center gap-1">
+                  <MapPin size={14} /> Tap a flag to explore
+                </span>
+              </div>
+
+              {/* Map Canvas */}
+              <div className={`rounded-[2rem] p-4 relative aspect-[4/3] border-4 transition-colors duration-500 overflow-hidden shadow-inner ${activeContinent.mapBg}`}>
+                {/* Subtle map pattern backdrop */}
+                <div className="absolute inset-0 opacity-25 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                
+                {/* Ocean & Sea Water Visual Labels */}
+                {activeContinent.id === 'europe' && (
+                  <>
+                    <div className="absolute top-2 left-3 bg-blue-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Atlantic Ocean
+                    </div>
+                    <div className="absolute top-3 right-3 bg-cyan-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 North Sea
+                    </div>
+                    <div className="absolute bottom-2 left-1/3 bg-indigo-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Mediterranean Sea
+                    </div>
+                  </>
+                )}
+                {activeContinent.id === 'asia' && (
+                  <>
+                    <div className="absolute top-3 right-3 bg-blue-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Pacific Ocean
+                    </div>
+                    <div className="absolute bottom-3 left-4 bg-teal-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Indian Ocean
+                    </div>
+                  </>
+                )}
+                {activeContinent.id === 'africa' && (
+                  <>
+                    <div className="absolute top-2 left-4 bg-sky-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Mediterranean Sea
+                    </div>
+                    <div className="absolute top-1/2 left-2 bg-blue-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Atlantic Ocean
+                    </div>
+                    <div className="absolute bottom-6 right-3 bg-amber-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Indian Ocean
+                    </div>
+                  </>
+                )}
+                {activeContinent.id === 'northamerica' && (
+                  <>
+                    <div className="absolute top-2 left-1/3 bg-cyan-700/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Arctic Ocean
+                    </div>
+                    <div className="absolute top-1/3 left-2 bg-indigo-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Pacific Ocean
+                    </div>
+                    <div className="absolute top-1/3 right-2 bg-blue-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Atlantic Ocean
+                    </div>
+                  </>
+                )}
+                {activeContinent.id === 'southamerica' && (
+                  <>
+                    <div className="absolute top-1/3 left-2 bg-indigo-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Pacific Ocean
+                    </div>
+                    <div className="absolute top-1/3 right-2 bg-blue-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Atlantic Ocean
+                    </div>
+                  </>
+                )}
+                {activeContinent.id === 'oceania' && (
+                  <>
+                    <div className="absolute top-1/3 left-2 bg-blue-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Indian Ocean
+                    </div>
+                    <div className="absolute top-1/3 right-2 bg-cyan-600/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                      🌊 Pacific Ocean
+                    </div>
+                  </>
+                )}
+                {activeContinent.id === 'antarctica' && (
+                  <div className="absolute top-2 left-1/3 bg-indigo-800/80 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-xs border border-white/40 pointer-events-none">
+                    🌊 Southern Icy Ocean
+                  </div>
+                )}
+
+                {activeContinent.countries.map((country) => {
+                  const isSelected = selectedCountry.id === country.id;
+                  return (
+                    <motion.button
+                      key={country.id}
+                      onClick={() => handleCountryClick(country)}
+                      className={`absolute ${country.position} w-20 h-20 sm:w-28 sm:h-28 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] transition-transform z-10 ${
+                        country.color
+                      } ${
+                        isSelected ? 'ring-8 ring-yellow-300 scale-110 z-20 shadow-2xl' : 'hover:scale-110 shadow-md hover:z-20 opacity-90 hover:opacity-100'
+                      }`}
+                      animate={isSelected ? {
+                        rotate: [0, 4, -4, 0],
+                        scale: [1.1, 1.13, 1.1],
+                        transition: { duration: 1.2, repeat: Infinity, repeatType: "reverse" }
+                      } : { rotate: 0 }}
+                      aria-label={`Select ${country.name}`}
+                    >
+                      <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none p-1">
+                        {/* Flag Image */}
+                        <img 
+                          src={country.flagUrl} 
+                          alt={`Flag of ${country.name}`} 
+                          referrerPolicy="no-referrer"
+                          className="w-9 h-9 sm:w-11 sm:h-11 object-cover rounded-full border-2 border-white shadow-md mb-1" 
+                        />
+                        <span className="bg-white/95 text-slate-900 font-extrabold px-1.5 py-0.5 rounded-full text-[10px] sm:text-xs shadow-sm backdrop-blur-sm text-center line-clamp-1 max-w-full">
+                          {country.name}
+                        </span>
+                      </div>
+                    </motion.button>
+                  );
+                })}
+              </div>
+
+              <p className="text-xs text-slate-500 text-center font-medium italic">
+                {activeContinent.description}
+              </p>
+            </div>
+          )}
 
           {/* Quick Continent Country Grid */}
           <div className="bg-white rounded-3xl p-5 shadow-sm border-2 border-slate-100">
