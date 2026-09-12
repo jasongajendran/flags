@@ -1,0 +1,6 @@
+{
+  "name": "Kids World Flags Explorer",
+  "description": "An interactive, colorful, and fully accessible web app for kids to learn about different countries and their flags, featuring synchronized audio and auto-play modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
