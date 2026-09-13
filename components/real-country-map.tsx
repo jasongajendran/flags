@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
+import L from 'leaflet';
 import { 
   Compass, 
   MapPin, 
@@ -92,9 +93,8 @@ export function RealCountryMap({
   useEffect(() => {
     let isMounted = true;
 
-    async function initLeaflet() {
+    function initLeaflet() {
       if (typeof window === 'undefined' || !mapContainerRef.current) return;
-      const L = (await import('leaflet')).default;
 
       if (!mapInstanceRef.current && mapContainerRef.current) {
         const map = L.map(mapContainerRef.current, {

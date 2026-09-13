@@ -1,5 +1,6 @@
 "use client";
 
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -45,8 +46,19 @@ import { WORLD_ALL_FLAGS, WorldFlagItem } from '@/app/data/world-flags-catalog';
 import { useAudioGuide } from '@/hooks/use-audio-guide';
 import { useFullscreenWakelock } from '@/hooks/use-fullscreen-wakelock';
 import { ScrollToTop } from '@/components/scroll-to-top';
-import { RealCountryMap } from '@/components/real-country-map';
 import { WorldContinentsMap } from '@/components/world-continents-map';
+
+const RealCountryMap = dynamic(
+  () => import('@/components/real-country-map').then((mod) => mod.RealCountryMap),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="w-full h-80 sm:h-96 rounded-3xl bg-slate-100 animate-pulse border-4 border-slate-200 flex items-center justify-center text-slate-400 font-bold text-sm">
+        🗺️ Loading Map...
+      </div>
+    ),
+  }
+);
 
 type AudioSection = 'intro' | 'flag' | 'geography' | 'facts' | null;
 
