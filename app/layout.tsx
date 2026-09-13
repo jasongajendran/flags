@@ -1,25 +1,27 @@
-import type {Metadata} from 'next';
-import './globals.css'; // Global styles
+import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Kids World Flags Explorer 🌍',
-  description: 'An interactive map for kids to learn about countries, flags, and fun facts with guided audio!',
+  title: 'World Flags & Country Explorer 🌍',
+  description: 'A comprehensive interactive directory of 195 sovereign nations with geographical maps and audio profiles.',
   openGraph: {
-    title: 'Kids World Flags Explorer 🌍',
-    description: 'An interactive map for kids to learn about countries, flags, and fun facts with guided audio!',
+    title: 'World Flags & Country Explorer 🌍',
+    description: 'A comprehensive interactive directory of 195 sovereign nations with geographical maps and audio profiles.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kids World Flags Explorer 🌍',
-    description: 'An interactive map for kids to learn about countries, flags, and fun facts with guided audio!',
+    title: 'World Flags & Country Explorer 🌍',
+    description: 'A comprehensive interactive directory of 195 sovereign nations with geographical maps and audio profiles.',
   },
 };
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body suppressHydrationWarning>{children}</body>
+    <html lang="en" className="dark">
+      <body suppressHydrationWarning className="bg-slate-900 text-slate-100 antialiased min-h-screen">
+        {children}
+      </body>
     </html>
   );
 }

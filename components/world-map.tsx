@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
@@ -276,12 +277,15 @@ export function WorldMapView({ selectedCountry, activeContinent, onSelectCountry
             exit={{ opacity: 0, scale: 0.8 }}
             className="absolute top-2 left-1/2 -translate-x-1/2 z-30 bg-slate-950/90 text-white backdrop-blur-md px-4 py-2 rounded-2xl border-2 border-yellow-400 shadow-xl flex items-center gap-3"
           >
-            <img 
-              src={selectedCountry.flagUrl} 
-              alt="" 
-              referrerPolicy="no-referrer"
-              className="w-8 h-6 object-cover rounded shadow-md border border-white" 
-            />
+            <div className="relative w-8 h-6 rounded overflow-hidden shadow-md border border-white">
+              <Image 
+                src={selectedCountry.flagUrl} 
+                alt={selectedCountry.name} 
+                fill
+                className="object-cover"
+                referrerPolicy="no-referrer"
+              />
+            </div>
             <div>
               <div className="flex items-center gap-1.5">
                 <span className="text-yellow-400 font-extrabold text-xs sm:text-sm">
@@ -343,12 +347,15 @@ export function WorldMapView({ selectedCountry, activeContinent, onSelectCountry
                       ? 'bg-yellow-400 border-white ring-4 ring-yellow-300/60 scale-110' 
                       : 'bg-white/90 border-slate-300 hover:bg-white'
                   }`}>
-                    <img 
-                      src={country.flagUrl} 
-                      alt="" 
-                      referrerPolicy="no-referrer"
-                      className="w-6 h-4.5 sm:w-8 sm:h-5.5 object-cover rounded shadow-xs" 
-                    />
+                    <div className="relative w-6 h-4.5 sm:w-8 sm:h-5.5 rounded overflow-hidden shadow-xs">
+                      <Image 
+                        src={country.flagUrl} 
+                        alt={country.name} 
+                        fill
+                        className="object-cover"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
                     {isSelected && (
                       <span className="text-[10px] sm:text-xs font-black text-slate-950 px-1 pr-1.5 whitespace-nowrap">
                         {country.name}
