@@ -32,17 +32,17 @@ export function enrichCountry(c: Country): Country {
       {
         title: `Iconic Landmark of ${c.name}`,
         caption: `Famous historical and cultural landmark recognized across ${c.name}.`,
-        url: c.factImageUrl || `https://picsum.photos/seed/${iso}-1/800/600`
+        url: c.factImageUrl || `https://images.unsplash.com/seed/${iso}-1/800/600`
       },
       {
         title: `Scenic Landscape of ${c.name}`,
         caption: `Natural geography and scenic landscapes of ${c.name}.`,
-        url: `https://picsum.photos/seed/${iso}-2/800/600`
+        url: `https://images.unsplash.com/seed/${iso}-2/800/600`
       },
       {
         title: `Heritage Site in ${c.name}`,
         caption: `Architectural treasures and cultural heritage in ${c.capital || c.name}.`,
-        url: `https://picsum.photos/seed/${iso}-3/800/600`
+        url: `https://images.unsplash.com/seed/${iso}-3/800/600`
       }
     ];
   }
@@ -230,7 +230,7 @@ export function getCountryOrGenerate(item: WorldFlagItem): Country {
     uniqueness: item.funFact || "A sovereign nation celebrated for its heritage.",
     interestingFacts: distinctFacts,
     flagUrl: item.flagUrl,
-    factImageUrl: "https://picsum.photos/seed/" + item.iso2 + "/800/600",
+    factImageUrl: "https://images.unsplash.com/seed/" + item.iso2 + "/800/600",
     factImageCaption: "Landscape of " + item.name,
     flagMeaning: FLAG_MEANINGS_DATASET[item.iso2.toLowerCase()] || {
       story: `The flag of ${item.name} represents its sovereign people and heritage.`,

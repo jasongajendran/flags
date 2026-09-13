@@ -16,18 +16,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Gjirokast\u00ebr Historic Stone City",
         "caption": "UNESCO-listed Ottoman-era fortified stone city famed for its hillside fortress and kule tower houses.",
-        "url": "https://picsum.photos/seed/al-gjirokaster/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "The Blue Eye (Syri i Kalt\u00ebr)",
         "caption": "Hypnotic natural freshwater spring with deep turquoise waters bubbling from an unexplored karst cavern.",
-        "url": "https://picsum.photos/seed/al-blueeye/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Farbverlauf_Augenfarben.jpg/3840px-Farbverlauf_Augenfarben.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Berat Citadel & Mangalem Quarter",
         "caption": "The 'Town of a Thousand Windows', showcasing white Ottoman residences cascading below the fortress.",
-        "url": "https://picsum.photos/seed/al-berat/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Albania has over 173,000 concrete military dome bunkers built during the Cold War scattered across mountains and beaches.",
@@ -40,18 +44,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Madriu-Perafita-Claror Valley",
         "caption": "UNESCO World Heritage glacial valley preserving pastoral Pyrenean huts and traditional stone trails.",
-        "url": "https://picsum.photos/seed/ad-madriu/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Refuge_perafita_andorra.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Casa de la Vall",
         "caption": "Historic 16th-century fortified manor house in Andorra la Vella that served as parliament for centuries.",
-        "url": "https://picsum.photos/seed/ad-casadelavall/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Casa_de_la_Vall_2015-10.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Grandvalira Ski Resort",
         "caption": "The largest ski resort domain in the Pyrenees with over 210 kilometers of snow-covered alpine slopes.",
-        "url": "https://picsum.photos/seed/ad-grandvalira/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Andorra la Vella is the highest capital city in Europe, sitting at an elevation of 1,023 meters in the Pyrenees.",
@@ -64,18 +72,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Sch\u00f6nbrunn Palace",
         "caption": "The opulent 1,441-room Baroque summer residence of the Habsburg monarchs in Vienna.",
-        "url": "https://picsum.photos/seed/at-schonbrunn/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Hallstatt Alpine Village",
         "caption": "Picturesque 16th-century lakeside village nestled between the Hallst\u00e4tter See and Dachstein mountains.",
-        "url": "https://picsum.photos/seed/at-hallstatt/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Hohensalzburg Fortress",
         "caption": "One of the largest medieval castles in Europe, crowning the Festungsberg hill above Salzburg.",
-        "url": "https://picsum.photos/seed/at-hohensalzburg/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Salzburg_-_Festung_Hohensalzburg.JPG/3840px-Salzburg_-_Festung_Hohensalzburg.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Vienna has been home to legendary composers like Wolfgang Amadeus Mozart, Ludwig van Beethoven, and Franz Schubert.",
@@ -88,18 +100,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mir Castle Complex",
         "caption": "Magnificent 16th-century UNESCO World Heritage castle blending Gothic, Baroque, and Renaissance styles.",
-        "url": "https://picsum.photos/seed/by-mircastle/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%9C%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%BC%D0%BA%D0%B0.JPG/3840px-%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%9C%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%BC%D0%BA%D0%B0.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Belovezhskaya Pushcha National Park",
         "caption": "Ancient primeval forest sanctuary home to the continent's largest herd of wild European bison (wisent).",
-        "url": "https://picsum.photos/seed/by-bison/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/BelarusBNP09.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Nesvizh Radziwi\u0142\u0142 Castle",
         "caption": "Opulent residential palace surrounded by picturesque lakes and landscaped English gardens.",
-        "url": "https://picsum.photos/seed/by-nesvizh/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Known as the 'Lungs of Europe' because over 40% of its landmass is covered by dense, pristine primeval forests.",
@@ -112,18 +128,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Grand Place of Brussels",
         "caption": "The central square of Brussels, globally revered for its ornate guildhalls and Gothic Town Hall.",
-        "url": "https://picsum.photos/seed/be-grandplace/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Grand-Place%2C_Brussels_-_panorama%2C_June_2018.jpg/3840px-Grand-Place%2C_Brussels_-_panorama%2C_June_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Bruges Medieval Canals",
         "caption": "The 'Venice of the North', with cobblestone lanes, swan-filled canals, and Flemish brick architecture.",
-        "url": "https://picsum.photos/seed/be-bruges/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "The Atomium",
         "caption": "Iconic 102-meter-tall modernist landmark built for the 1958 World's Fair depicting an iron crystal cell.",
-        "url": "https://picsum.photos/seed/be-atomium/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/en/4/4b/The-atomic-cafe-movie-Poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Belgium produces over 220,000 tons of gourmet chocolate each year, with Brussels Airport being the world's largest chocolate sales point.",
@@ -136,18 +156,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Stari Most (Old Bridge) in Mostar",
         "caption": "The iconic 16th-century Ottoman stone arch bridge soaring over the turquoise waters of the Neretva River.",
-        "url": "https://picsum.photos/seed/ba-starimost/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Mostar_Old_Town_Panorama_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Ba\u0161\u010dar\u0161ija Bazaar in Sarajevo",
         "caption": "Historic Ottoman-era bazaar featuring artisan coppersmiths and the Sebilj wooden fountain.",
-        "url": "https://picsum.photos/seed/ba-bascarsija/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Kravica Waterfalls",
         "caption": "A spectacular natural amphitheater of tumbling cascading waterfalls on the Trebi\u017eat River.",
-        "url": "https://picsum.photos/seed/ba-kravica/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Waterfalls_Kravica_5%2C_Bosnia_and_Herzegovina.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Sarajevo was the first city in Europe and the second in the world to have a full-time operational electric tram network in 1885.",
@@ -160,18 +184,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Rila Monastery",
         "caption": "Bulgaria's largest and most famed Eastern Orthodox monastery, founded in the 10th century high in the Rila mountains.",
-        "url": "https://picsum.photos/seed/bg-rila/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Rila_Monastery%2C_August_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Alexander Nevsky Cathedral",
         "caption": "Monumental Neo-Byzantine cathedral in Sofia featuring glistening gold-plated domes.",
-        "url": "https://picsum.photos/seed/bg-nevsky/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Catedral_de_Alejandro_Nevsky%2C_Tallin%2C_Estonia%2C_2012-08-11%2C_DD_46.JPG/3840px-Catedral_de_Alejandro_Nevsky%2C_Tallin%2C_Estonia%2C_2012-08-11%2C_DD_46.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Belogradchik Rocks & Fortress",
         "caption": "Fascinating sandstone and conglomerate rock formations integrated with a Roman and Ottoman fortress.",
-        "url": "https://picsum.photos/seed/bg-belogradchik/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/%D0%9E%D0%B1%D0%BB%D0%B0%D1%81%D1%82_%D0%92%D0%B8%D0%B4%D0%B8%D0%BD_-_%D0%91%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%87%D0%B8%D0%BA_-_%D0%91%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%87%D0%B8%D1%88%D0%BA%D0%B8_%D1%81%D0%BA%D0%B0%D0%BB%D0%B8_-_%2812%29.jpg/3840px-%D0%9E%D0%B1%D0%BB%D0%B0%D1%81%D1%82_%D0%92%D0%B8%D0%B4%D0%B8%D0%BD_-_%D0%91%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%87%D0%B8%D0%BA_-_%D0%91%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%87%D0%B8%D1%88%D0%BA%D0%B8_%D1%81%D0%BA%D0%B0%D0%BB%D0%B8_-_%2812%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Bulgaria is the only nation in Europe that has kept the same name since its founding in 681 AD.",
@@ -184,18 +212,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Dubrovnik Old City Walls",
         "caption": "Imposing medieval stone walls encircling the historic Adriatic port city known as the 'Pearl of the Adriatic'.",
-        "url": "https://picsum.photos/seed/hr-dubrovnik/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Plitvice Lakes National Park",
         "caption": "A chain of 16 terraced crystal-clear lakes linked by cascading waterfalls across karst canyon limestone.",
-        "url": "https://picsum.photos/seed/hr-plitvice/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/View_in_Plitvice_Lakes_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Diocletian's Palace in Split",
         "caption": "An expansive 4th-century Roman retirement fortress palace forming the bustling living heart of modern Split.",
-        "url": "https://picsum.photos/seed/hr-split/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Croatia-01239_-_The_Peristil_%289551533404%29.jpg/3840px-Croatia-01239_-_The_Peristil_%289551533404%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Dalmatian dog breed traces its historic origin to the coastal Dalmatia region of Croatia.",
@@ -208,18 +240,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Aphrodite's Rock (Petra tou Romiou)",
         "caption": "The legendary Mediterranean sea stack near Paphos where Aphrodite, Greek goddess of love, emerged from sea foam.",
-        "url": "https://picsum.photos/seed/cy-aphrodite/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Kourion Ancient Amphitheatre",
         "caption": "Magnificent Greco-Roman cliffside theatre overlooking Episkopi Bay with panoramic coastal views.",
-        "url": "https://picsum.photos/seed/cy-kourion/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Troodos Mountain Painted Churches",
         "caption": "UNESCO-listed Byzantine mountain monasteries with remarkably preserved centuries-old frescoes.",
-        "url": "https://picsum.photos/seed/cy-troodos/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Cyprus is the legendary birthplace of Aphrodite, the ancient goddess of love and beauty.",
@@ -232,18 +268,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Charles Bridge & Prague Castle",
         "caption": "Historic 14th-century stone gothic bridge adorned with 30 statues of saints spanning the Vltava River.",
-        "url": "https://picsum.photos/seed/cz-charlesbridge/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Prague Astronomical Clock",
         "caption": "The world's oldest astronomical clock still operating, installed in 1410 on the Old Town City Hall.",
-        "url": "https://picsum.photos/seed/cz-astronomicalclock/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "\u010cesk\u00fd Krumlov Castle",
         "caption": "Fairy-tale South Bohemian Renaissance castle overlooking a dramatic horseshoe loop of the Vltava River.",
-        "url": "https://picsum.photos/seed/cz-krumlov/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Prague Castle is recognized by the Guinness Book of Records as the largest ancient coherent castle complex in the world.",
@@ -256,18 +296,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Nyhavn Waterfront",
         "caption": "Copenhagen's colorful 17th-century canal district lined with vibrant townhouses, wooden ships, and cafes.",
-        "url": "https://picsum.photos/seed/dk-nyhavn/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Kronborg Castle (Elsinore)",
         "caption": "Majestic Renaissance stronghold immortalized as Elsinore in William Shakespeare's Hamlet.",
-        "url": "https://picsum.photos/seed/dk-kronborg/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Kronborg_002.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "The Little Mermaid Statue",
         "caption": "Beloved bronze sculpture at Langelinie promenade inspired by Hans Christian Andersen's timeless fairy tale.",
-        "url": "https://picsum.photos/seed/dk-mermaid/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/en/7/7a/Copenhagen_-_the_little_mermaid_statue_-_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Denmark's Dannebrog is the world's oldest continuously used national flag, having flown continuously since 1219.",
@@ -280,18 +324,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Tallinn Medieval Old Town",
         "caption": "One of the best-preserved medieval fortified Hanseatic trading cities in Northern Europe.",
-        "url": "https://picsum.photos/seed/ee-tallinn/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Soomaa National Park Bogs",
         "caption": "Pristine wetland wilderness famed for its 'fifth season' spring floods navigated by traditional dugout canoes.",
-        "url": "https://picsum.photos/seed/ee-soomaa/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Alexander Nevsky Cathedral",
         "caption": "Grand Russian Revival onion-domed cathedral standing proudly atop Toompea Hill in Tallinn.",
-        "url": "https://picsum.photos/seed/ee-nevsky/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Catedral_de_Alejandro_Nevsky%2C_Tallin%2C_Estonia%2C_2012-08-11%2C_DD_46.JPG/3840px-Catedral_de_Alejandro_Nevsky%2C_Tallin%2C_Estonia%2C_2012-08-11%2C_DD_46.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Estonia is recognized as one of the world's most digitally advanced societies; 99% of public services are accessible online 24/7.",
@@ -304,18 +352,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Santa Claus Village (Rovaniemi)",
         "caption": "The official hometown of Santa Claus in Finnish Lapland right on the magical Arctic Circle boundary.",
-        "url": "https://picsum.photos/seed/fi-rovaniemi/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Santa_Claus_Village.jpg/3840px-Santa_Claus_Village.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Suomenlinna Sea Fortress",
         "caption": "An expansive 18th-century maritime fortress spanning six interconnected islands in Helsinki harbor.",
-        "url": "https://picsum.photos/seed/fi-suomenlinna/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lake Saimaa Labyrinth",
         "caption": "Vast maze of blue water, forested isles, and quiet shores home to the rare endangered Saimaa ringed seal.",
-        "url": "https://picsum.photos/seed/fi-saimaa/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Finland has consistently been ranked the happiest country in the world by the United Nations World Happiness Report.",
@@ -328,18 +380,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Eiffel Tower in Paris",
         "caption": "The iconic wrought-iron lattice tower soaring 330 meters above Paris, designed for the 1889 World's Fair.",
-        "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Eiffel_Tower_from_the_Seine%2C_17_July_2007.jpg"
       },
       {
         "title": "Louvre Museum & Glass Pyramid",
         "caption": "The world's largest art museum and historic royal palace, housing the Mona Lisa and Winged Victory.",
-        "url": "https://picsum.photos/seed/fr-louvre/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/1280px-Louvre_Museum_Wikimedia_Commons.jpg"
       },
       {
         "title": "Mont-Saint-Michel",
         "caption": "The gravity-defying medieval Benedictine abbey perched on a rocky tidal island off Normandy.",
-        "url": "https://picsum.photos/seed/fr-montsaintmichel/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/1280px-Mont-Saint-Michel_vu_du_ciel.jpg"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "France is the world's most visited country, welcoming over 100 million international tourists each year.",
@@ -352,18 +408,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Neuschwanstein Castle",
         "caption": "The fairytale 19th-century Romanesque Revival palace built by King Ludwig II in the Bavarian Alps.",
-        "url": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Schloss_Neuschwanstein_2013.jpg/3840px-Schloss_Neuschwanstein_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Brandenburg Gate in Berlin",
         "caption": "Berlin's monumental 18th-century neoclassical triumphal arch and national symbol of German unity.",
-        "url": "https://picsum.photos/seed/de-brandenburggate/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Brandenburger_Tor_abends.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Cologne Cathedral (K\u00f6lner Dom)",
         "caption": "Gargantuan twin-spired Gothic cathedral towering over the Rhine river, taking over 600 years to build.",
-        "url": "https://picsum.photos/seed/de-colognecathedral/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/K%C3%B6lner_Dom_-_Westfassade_2022_ohne_Ger%C3%BCst-0968_b.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Neuschwanstein Castle in Bavaria directly inspired Walt Disney's iconic Cinderella and Sleeping Beauty castle.",
@@ -376,18 +436,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Acropolis & Parthenon",
         "caption": "Ancient citadel crowned by the Parthenon temple, immortal monument to the golden age of classical Athens.",
-        "url": "https://picsum.photos/seed/gr-acropolis/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/The_Acropolis_of_Athens_on_June_1%2C_2021.jpg/3840px-The_Acropolis_of_Athens_on_June_1%2C_2021.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Santorini Caldera & Oia Village",
         "caption": "Dazzling whitewashed cliffside villages with blue-domed churches perched high above volcanic Aegean waters.",
-        "url": "https://picsum.photos/seed/gr-santorini/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Santorini_Caldera_ASTER.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Meteora Monasteries",
         "caption": "Incredible Eastern Orthodox monasteries perched atop towering sheer sandstone rock pillars in Thessaly.",
-        "url": "https://picsum.photos/seed/gr-meteora/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Meteora%27s_monastery_2.jpg/3840px-Meteora%27s_monastery_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Greece is universally hailed as the birthplace of Western democracy, theater, philosophy, literature, and the Olympic Games.",
@@ -400,18 +464,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Saint Peter's Basilica",
         "caption": "The monumental papal enclave church designed by Michelangelo and Bernini, center of the Catholic world.",
-        "url": "https://picsum.photos/seed/va-stpeter/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/3840px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "The Sistine Chapel",
         "caption": "Renowned chapel famous for Michelangelo's ceiling frescoes, including The Creation of Adam and The Last Judgment.",
-        "url": "https://picsum.photos/seed/va-sistine/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Sistina-interno.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Saint Peter's Square",
         "caption": "Colossal elliptical piazza framed by Bernini's four-row colonnade and ancient Egyptian obelisk.",
-        "url": "https://picsum.photos/seed/va-square/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg/3840px-St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Vatican City is the smallest independent sovereign state in the world, covering an area of just 0.49 square kilometers (121 acres).",
@@ -424,18 +492,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Hungarian Parliament Building",
         "caption": "Gothic Revival masterpiece situated majestically on the banks of the Danube River in Budapest.",
-        "url": "https://picsum.photos/seed/hu-parliament/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Hungarian_Parliament_Building_from_across_the_Danube%2C_2025-01-11.jpg/3840px-Hungarian_Parliament_Building_from_across_the_Danube%2C_2025-01-11.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Buda Castle & Fisherman's Bastion",
         "caption": "Fairytale neo-Romanesque rampart towers offering sweeping panoramic views across the Danube and Pest.",
-        "url": "https://picsum.photos/seed/hu-bastion/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Budav%C3%A1ri_Palota%2C_ABCDEF_%C3%A9p%C3%BClet.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Sz\u00e9chenyi Thermal Baths",
         "caption": "One of Europe's largest natural geothermal spa complexes, renowned for steaming outdoor mineral pools.",
-        "url": "https://picsum.photos/seed/hu-szechenyi/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Rubik's Cube was invented in 1974 by Hungarian architect and professor Ern\u0151 Rubik in Budapest.",
@@ -448,18 +520,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Blue Lagoon",
         "caption": "World-famous geothermal spa fed by warm, mineral-rich milky-cyan volcanic waters in a lava field.",
-        "url": "https://picsum.photos/seed/is-bluelagoon/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/0/00/Blue_Lagoon_Main_Building.JPG/3840px-Blue_Lagoon_Main_Building.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Gullfoss Waterfall & Geysir",
         "caption": "Dramatic golden tiered waterfall plunging into a rugged canyon along Iceland's Golden Circle route.",
-        "url": "https://picsum.photos/seed/is-gullfoss/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "J\u00f6kuls\u00e1rl\u00f3n Glacier Lagoon",
         "caption": "Deep glacial lagoon dotted with luminous blue icebergs drifting out towards the black volcanic Diamond Beach.",
-        "url": "https://picsum.photos/seed/is-jokulsarlon/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Iceland runs on nearly 100% renewable energy, utilizing natural geothermal steam and hydroelectric power.",
@@ -472,18 +548,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Cliffs of Moher",
         "caption": "Dramatic Atlantic coastal sea cliffs soaring over 214 meters straight out of the ocean in County Clare.",
-        "url": "https://picsum.photos/seed/ie-cliffsofmoher/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Cliffs-Of-Moher-OBriens-From-South.JPG/3840px-Cliffs-Of-Moher-OBriens-From-South.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Trinity College Long Room Library",
         "caption": "Magnificent 65-meter oak-vaulted library in Dublin housing the ancient illuminated manuscript Book of Kells.",
-        "url": "https://picsum.photos/seed/ie-trinity/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Rock of Cashel",
         "caption": "Historic ecclesiastical fortress and seat of ancient Munster kings set upon a limestone outcrop.",
-        "url": "https://picsum.photos/seed/ie-cashel/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rock_of_Cashel_%2849163525453%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The harp is the official national symbol of Ireland, making it the only country in the world with a musical instrument as its national emblem.",
@@ -496,18 +576,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Colosseum of Rome",
         "caption": "The largest ancient amphitheater ever constructed, hosting gladiatorial contests in imperial Rome.",
-        "url": "https://picsum.photos/seed/it-colosseum/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/3840px-Colosseo_2020.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Venice Grand Canal & Rialto Bridge",
         "caption": "The bustling main water thoroughfare of Venice, plied by gondolas past centuries-old Venetian palazzi.",
-        "url": "https://picsum.photos/seed/it-venice/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/View_of_the_Grand_Canal_from_Rialto_to_Ca%27Foscari.jpg/3840px-View_of_the_Grand_Canal_from_Rialto_to_Ca%27Foscari.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Leaning Tower of Pisa",
         "caption": "The world-famous free-standing Romanesque bell tower celebrated for its unintended 4-degree tilt.",
-        "url": "https://picsum.photos/seed/it-pisa/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Italy_-_Pisa_-_Leaning_Tower.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Italy boasts 60 UNESCO World Heritage Sites, tying for the highest number of any country on Earth.",
@@ -520,18 +604,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Riga Art Nouveau Historic Quarter",
         "caption": "Over 800 elaborate Art Nouveau building facades with gargoyles and statues across Riga's city center.",
-        "url": "https://picsum.photos/seed/lv-riga/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Gauja National Park & Turaida Castle",
         "caption": "The 'Livonian Switzerland', featuring red sandstone cliffs and medieval brick castles.",
-        "url": "https://picsum.photos/seed/lv-gauja/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ergeljuklintis424aug037qg.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Rund\u0101le Palace",
         "caption": "Baroque and Rococo palace designed by Bartolomeo Rastrelli, featuring stunning French formal rose gardens.",
-        "url": "https://picsum.photos/seed/lv-rundale/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Latvia is home to Ventas Rumba in Kuld\u012bga, the widest natural waterfall in Europe at up to 270 meters across.",
@@ -544,18 +632,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Vaduz Castle",
         "caption": "The official residence of the Reigning Prince of Liechtenstein, overlooking the Rhine valley from an alpine ridge.",
-        "url": "https://picsum.photos/seed/li-vaduz/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Liechtenstein_asv2022-10_img22_Vaduz_Schloss.jpg/3840px-Liechtenstein_asv2022-10_img22_Vaduz_Schloss.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Gutenberg Castle in Balzers",
         "caption": "Magnificent preserved high-medieval castle perched atop a 70-meter freestanding rocky hill.",
-        "url": "https://picsum.photos/seed/li-gutenberg/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Liechtenstein_asv2022-10_img25_Balzers_Burg_Gutenberg.jpg/3840px-Liechtenstein_asv2022-10_img25_Balzers_Burg_Gutenberg.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Malbun Alpine Valley",
         "caption": "Idyllic alpine ski and hiking resort nestled high in an amphitheater of mountain summits.",
-        "url": "https://picsum.photos/seed/li-malbun/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Liechtenstein is one of only two 'doubly landlocked' countries in the world (surrounded exclusively by landlocked neighbors).",
@@ -568,18 +660,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Hill of Crosses",
         "caption": "Sacred Catholic pilgrimage site near \u0160iauliai featuring over 100,000 crosses planted by faithful pilgrims.",
-        "url": "https://picsum.photos/seed/lt-crosses/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Kry%C5%BEi%C5%B3_kalnas_%28G%C3%B3ra_Krzy%C5%BCy%29.JPG/3840px-Kry%C5%BEi%C5%B3_kalnas_%28G%C3%B3ra_Krzy%C5%BCy%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Trakai Island Castle",
         "caption": "14th-century red-brick Gothic fortress perched on an island in Lake Galv\u0117.",
-        "url": "https://picsum.photos/seed/lt-trakai/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Trakai_castle_2016.jpg/3840px-Trakai_castle_2016.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Curonian Spit Sand Dunes",
         "caption": "Vast coastal sand dune peninsula separating the Curonian Lagoon from the Baltic Sea.",
-        "url": "https://picsum.photos/seed/lt-curonian/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "In the 14th century, the Grand Duchy of Lithuania was the largest country in Europe, stretching from the Baltic Sea to the Black Sea.",
@@ -592,18 +688,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Bock Casemates",
         "caption": "Subterranean defense network of tunnels and cannon galleries hewn directly into the fortress rock.",
-        "url": "https://picsum.photos/seed/lu-bock/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Vianden Castle",
         "caption": "One of the largest and most dramatic feudal residences of the Romanesque and Gothic periods in Europe.",
-        "url": "https://picsum.photos/seed/lu-vianden/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Burg_Vianden%2C_Luxemburg.jpg/3840px-Burg_Vianden%2C_Luxemburg.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Grand Ducal Palace",
         "caption": "The official residence of the Grand Duke of Luxembourg in the historic town center with Flemish Renaissance facade.",
-        "url": "https://picsum.photos/seed/lu-palace/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Luxemburg_BW_2016-09-15_11-46-49_stitch.jpg/3840px-Luxemburg_BW_2016-09-15_11-46-49_stitch.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Luxembourg is the only remaining sovereign Grand Duchy in the world, headed by a constitutional Grand Duke.",
@@ -616,18 +716,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "St. John's Co-Cathedral in Valletta",
         "caption": "Baroque masterpiece featuring an intricately carved gilded interior and Caravaggio's masterpiece painting.",
-        "url": "https://picsum.photos/seed/mt-valletta/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/St_John%27s_Co-Cathedral%2C_Valletta_001.jpg/3840px-St_John%27s_Co-Cathedral%2C_Valletta_001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Blue Grotto Caves",
         "caption": "A complex of sea caves on the southern coast famous for brilliant turquoise and cyan underwater reflections.",
-        "url": "https://picsum.photos/seed/mt-bluegrotto/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mdina 'The Silent City'",
         "caption": "Ancient fortified walled hilltop capital featuring narrow shaded stone alleyways and noble palaces.",
-        "url": "https://picsum.photos/seed/mt-mdina/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Malta's megalithic temples, such as \u0120gantija and \u0126a\u0121ar Qim, date to 3600 BC and are older than Stonehenge and the Egyptian Pyramids.",
@@ -640,18 +744,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mile\u0219tii Mici Underground Cellars",
         "caption": "Guinness World Record largest wine cellar, spanning over 200 km of subterranean limestone galleries.",
-        "url": "https://picsum.photos/seed/md-milestii/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Orheiul Vechi Cave Monastery",
         "caption": "Ancient archaeological complex featuring cave monasteries carved into limestone cliffs above the R\u0103ut River.",
-        "url": "https://picsum.photos/seed/md-orheiul/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Soroca Fortress",
         "caption": "Historic circular stone fortress built by Prince Stephen the Great on the banks of the Dniester River.",
-        "url": "https://picsum.photos/seed/md-soroca/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/%D0%A1%D0%BE%D1%80%D0%BE%D0%BA%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D1%8C_Cetatea_Soroca_Soroca_Fortress_%2842928890910%29.jpg/3840px-%D0%A1%D0%BE%D1%80%D0%BE%D0%BA%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D1%8C_Cetatea_Soroca_Soroca_Fortress_%2842928890910%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Mile\u0219tii Mici holds the Guinness World Record for the largest wine collection in the world, storing nearly 2 million bottles.",
@@ -664,18 +772,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Monte Carlo Casino & Square",
         "caption": "The world-famous Belle \u00c9poque gambling and entertainment complex overlooking the French Riviera.",
-        "url": "https://picsum.photos/seed/mc-casino/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Prince's Palace of Monaco",
         "caption": "Fortified cliffside palace of the Grimaldi family atop 'The Rock' with daily changing of the guard.",
-        "url": "https://picsum.photos/seed/mc-palace/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/%D0%9C%D0%9E%D0%9D%D0%90%D0%9A%D0%9E_-_panoramio_%284%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Oceanographic Museum",
         "caption": "Monumental neoclassical museum built into the sheer cliff above the Mediterranean, founded by Prince Albert I.",
-        "url": "https://picsum.photos/seed/mc-oceanographic/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Monaco_BW_2011-06-07_17-50-43.jpg/3840px-Monaco_BW_2011-06-07_17-50-43.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Monaco is the second-smallest independent sovereign state in the world after Vatican City, spanning just 2.08 square kilometers.",
@@ -688,18 +800,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Bay of Kotor & Perast",
         "caption": "Dramatic fjord-like Adriatic inlet surrounded by sheer limestone cliffs and medieval stone villages.",
-        "url": "https://picsum.photos/seed/me-kotor/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Kotor_aerial_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Sveti Stefan Island Resort",
         "caption": "Iconic fortified 15th-century island village connected to the pink sandy mainland by a narrow isthmus.",
-        "url": "https://picsum.photos/seed/me-svetistefan/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Durmitor National Park & Tara River",
         "caption": "Rugged glacial peaks and the deepest river canyon in Europe, acclaimed for whitewater rafting.",
-        "url": "https://picsum.photos/seed/me-durmitor/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Durmitor.jpg/3840px-Durmitor.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Tara River Canyon in Montenegro is the deepest river canyon in Europe and the second-deepest in the world after the Grand Canyon.",
@@ -712,18 +828,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Keukenhof Tulip Gardens",
         "caption": "The 'Garden of Europe', blooming with over 7 million vibrant tulips, hyacinths, and daffodils every spring.",
-        "url": "https://picsum.photos/seed/nl-keukenhof/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Amsterdam Canals & Bridges",
         "caption": "UNESCO-listed 17th-century concentric canal network traversed by historic bicycles and canal cruisers.",
-        "url": "https://picsum.photos/seed/nl-amsterdam/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Kinderdijk Historic Windmills",
         "caption": "Iconic collection of 19 monumental 18th-century drainage windmills engineered to manage water levels.",
-        "url": "https://picsum.photos/seed/nl-kinderdijk/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Around 26% of the Netherlands lies below sea level, and 50% sits less than one meter above it, protected by an ingenious dike system.",
@@ -736,18 +856,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Lake Ohrid & St. John at Kaneo",
         "caption": "Ancient deep tectonic lake and cliffside Byzantine church with panoramic sparkling blue views.",
-        "url": "https://picsum.photos/seed/mk-ohrid/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Skopje Stone Bridge & Old Bazaar",
         "caption": "15th-century Ottoman bridge connecting modern Macedonia Square to the Ottoman trading quarter.",
-        "url": "https://picsum.photos/seed/mk-skopje/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Matka Canyon",
         "caption": "Dramatic limestone gorge home to medieval monasteries and submerged underwater caves like Vrelo.",
-        "url": "https://picsum.photos/seed/mk-matka/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Lake Ohrid is one of Europe's deepest (288 m) and oldest lakes, estimated to have formed between 4 and 10 million years ago.",
@@ -760,18 +884,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Geirangerfjord",
         "caption": "Majestic UNESCO World Heritage fjord with deep blue waters, snow-capped peaks, and the Seven Sisters waterfall.",
-        "url": "https://picsum.photos/seed/no-geirangerfjord/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Preikestolen (Pulpit Rock)",
         "caption": "Massive flat-topped cliff rising 604 meters vertically above the shimmering waters of the Lysefjord.",
-        "url": "https://picsum.photos/seed/no-pulpitrock/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lofoten Islands Fishing Villages",
         "caption": "Dramatic Arctic archipelago featuring jagged peaks rising from the sea and red fishermen's rorbuer cabins.",
-        "url": "https://picsum.photos/seed/no-lofoten/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Norway has the second-longest coastline in the world (over 100,000 km including fjords and 50,000+ coastal islands).",
@@ -784,18 +912,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Wieliczka Salt Mine",
         "caption": "Underground world of labyrinthine chambers, saline lakes, and the Chapel of St. Kinga carved entirely from rock salt.",
-        "url": "https://picsum.photos/seed/pl-wieliczka/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Wawel Royal Castle in Krak\u00f3w",
         "caption": "Historic fortified complex overlooking the Vistula River that served as the royal seat of Polish monarchs for centuries.",
-        "url": "https://picsum.photos/seed/pl-wawel/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Bia\u0142owie\u017ca Primeval Forest",
         "caption": "One of the last and largest remaining parts of the immense primeval forest that once stretched across the European plain.",
-        "url": "https://picsum.photos/seed/pl-bialowieza/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Poland's Constitution of May 3, 1791 was the first modern written democratic constitution in Europe and the second in the world after the US.",
@@ -808,18 +940,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Bel\u00e9m Tower & Jer\u00f3nimos Monastery",
         "caption": "Manueline maritime architectural masterpieces in Lisbon celebrating the Age of Discoveries.",
-        "url": "https://picsum.photos/seed/pt-belem/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Pena Palace in Sintra",
         "caption": "Vibrantly colored Romanticist fairytale palace crowning the misty forested peaks of the Sintra mountains.",
-        "url": "https://picsum.photos/seed/pt-pena/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Dom Lu\u00eds I Bridge in Porto",
         "caption": "Double-deck metal arch bridge spanning the Douro River, engineered by a student of Gustave Eiffel.",
-        "url": "https://picsum.photos/seed/pt-porto/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Portugal and England share the Treaty of Windsor (1386), the oldest active diplomatic alliance in recorded world history.",
@@ -832,18 +968,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Bran Castle (Dracula's Castle)",
         "caption": "Dramatic medieval fortress perched on a 200-foot rock in Transylvania, linked in folklore to Bram Stoker's Dracula.",
-        "url": "https://picsum.photos/seed/ro-brancastle/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Transf\u0103g\u0103r\u0103\u0219an Highway",
         "caption": "Spectacular serpentine alpine mountain road winding through the Fagaras Mountains of the Southern Carpathians.",
-        "url": "https://picsum.photos/seed/ro-transfagarasan/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Palace of the Parliament in Bucharest",
         "caption": "The world's heaviest building and second-largest administrative building, containing over 1,100 rooms.",
-        "url": "https://picsum.photos/seed/ro-parliament/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Palace of the Parliament in Bucharest weighs an astonishing 4.1 million tonnes, recognized as the heaviest building on Earth.",
@@ -856,18 +996,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Saint Basil's Cathedral & Red Square",
         "caption": "Iconic multi-colored flame-shaped onion domes commissioned by Ivan the Terrible in the heart of Moscow.",
-        "url": "https://picsum.photos/seed/ru-redsquare/800/600"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "The State Hermitage Museum",
         "caption": "Former Winter Palace of the Russian Tsars in Saint Petersburg housing over 3 million treasures and works of art.",
-        "url": "https://picsum.photos/seed/ru-hermitage/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lake Baikal",
         "caption": "The world's deepest (1,642 m) and oldest freshwater lake, containing over 20% of Earth's unfrozen surface fresh water.",
-        "url": "https://picsum.photos/seed/ru-baikal/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Russia is the largest country in the world by land area, spanning 11 time zones and encompassing one-tenth of Earth's total land.",
@@ -880,18 +1024,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Three Towers of San Marino (Guaita Fortress)",
         "caption": "Iconic 11th-century cliffside castle perched atop the three peaks of Mount Titano overlooking the Adriatic coast.",
-        "url": "https://picsum.photos/seed/sm-guaita/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mount Titano Panorama",
         "caption": "Limestone mountain ridge hosting the historic microstate with sweeping views reaching from the Apennines to the sea.",
-        "url": "https://picsum.photos/seed/sm-titano/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Palazzo Pubblico & Piazza della Libert\u00e0",
         "caption": "The neo-Gothic town hall and seat of government of the world's oldest surviving republic.",
-        "url": "https://picsum.photos/seed/sm-palazzo/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "San Marino is recognized as the world's oldest surviving constitutional republic, founded in 301 AD by Saint Marinus.",
@@ -904,18 +1052,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Belgrade Fortress (Kalemegdan)",
         "caption": "Historic citadel perched at the scenic confluence of the Danube and Sava rivers, contested in over 115 battles.",
-        "url": "https://picsum.photos/seed/rs-kalemegdan/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Church of Saint Sava",
         "caption": "One of the largest Eastern Orthodox churches in the world, dominating the Belgrade skyline with its marble and gold interior.",
-        "url": "https://picsum.photos/seed/rs-saintsava/800/600"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Tara National Park & Drina River House",
         "caption": "Pristine mountain forests and the famous tiny wooden cabin balanced atop a solitary rock in the middle of the Drina River.",
-        "url": "https://picsum.photos/seed/rs-tara/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Nikola Tesla, the pioneering electrical engineer who invented alternating current (AC) power, was of Serbian heritage.",
@@ -928,18 +1080,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Spi\u0161 Castle",
         "caption": "One of the largest castle sites in Central Europe, spreading across 4 hectares above the village of \u017dehra.",
-        "url": "https://picsum.photos/seed/sk-spis/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "High Tatras Alpine Range",
         "caption": "The jagged granite alpine peaks forming the natural border between Slovakia and Poland, featuring Lake \u0160trbsk\u00e9 Pleso.",
-        "url": "https://picsum.photos/seed/sk-tatras/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Bojnice Castle",
         "caption": "Romantic fairy-tale castle with pastel turquoise turrets and a travertine cave located right underneath the castle moat.",
-        "url": "https://picsum.photos/seed/sk-bojnice/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Slovakia has the world's highest number of castles and ch\u00e2teaux per capita, with over 180 castles and 425 manor houses.",
@@ -952,18 +1108,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Lake Bled & Island Church",
         "caption": "Glacial lake with a tear-shaped island and pilgrimage church surrounded by Julian Alps and a cliffside medieval castle.",
-        "url": "https://picsum.photos/seed/si-lakebled/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Postojna Cave System",
         "caption": "Enchanting 24-kilometer karst cave system navigated by an electric subterranean train to see stalactites and olm salamanders.",
-        "url": "https://picsum.photos/seed/si-postojna/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Predjama Castle",
         "caption": "Impregnable medieval Renaissance castle built directly into the mouth of a vertical 123-meter-high cliff cave.",
-        "url": "https://picsum.photos/seed/si-predjama/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Over 60% of Slovenia is covered by pristine forests, ranking it as the third most forested nation in the European Union.",
@@ -976,18 +1136,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Sagrada Fam\u00edlia in Barcelona",
         "caption": "Antoni Gaud\u00ed's visionary basilica with organic forest-like stone pillars and stained glass light.",
-        "url": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=800&q=80"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "The Alhambra of Granada",
         "caption": "Magnificent Moorish palace fortress featuring intricate Islamic geometric stuccowork and gardens.",
-        "url": "https://picsum.photos/seed/es-alhambra/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Plaza de Espa\u00f1a in Seville",
         "caption": "Stunning semicircular palace complex built for the 1929 Ibero-American Expo with tiled alcoves and bridges.",
-        "url": "https://picsum.photos/seed/es-sevilla/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Spain is the world's leading producer of olive oil, accounting for more than 40% of the entire global supply.",
@@ -1000,18 +1164,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Vasa Ship Museum",
         "caption": "The world's only intact 17th-century warship, salvaged from the Stockholm seabed after 333 years underwater.",
-        "url": "https://picsum.photos/seed/se-vasa/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Gamla Stan (Stockholm Old Town)",
         "caption": "Historic cobblestone island quarter featuring colorful 17th-century merchant houses and the Royal Palace.",
-        "url": "https://picsum.photos/seed/se-gamlastan/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Icehotel in Jukkasj\u00e4rvi",
         "caption": "The world's original hotel sculpted entirely from natural river ice and snow in Swedish Lapland every winter.",
-        "url": "https://picsum.photos/seed/se-icehotel/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Sweden has the most islands of any country on Earth, with an estimated 267,570 islands along its coasts and lakes.",
@@ -1024,18 +1192,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Matterhorn Peak in Zermatt",
         "caption": "Iconic 4,478-meter pyramid-shaped mountain summit, recognized globally as the symbol of the Swiss Alps.",
-        "url": "https://picsum.photos/seed/ch-matterhorn/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Chillon Castle on Lake Geneva",
         "caption": "Medieval island fortress situated on a rocky islet near Montreux, immortalized by Lord Byron.",
-        "url": "https://picsum.photos/seed/ch-chillon/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Jungfraujoch 'Top of Europe'",
         "caption": "High-altitude saddle reachable by cogwheel train tunnel with views across the Aletsch Glacier.",
-        "url": "https://picsum.photos/seed/ch-jungfrau/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Switzerland has four official national languages: German, French, Italian, and Romansh.",
@@ -1048,18 +1220,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Saint Sophia's Cathedral in Kyiv",
         "caption": "11th-century UNESCO World Heritage cathedral famed for its shimmering gold domes and ancient mosaics.",
-        "url": "https://picsum.photos/seed/ua-stsophia/800/600"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Kyiv Pechersk Lavra",
         "caption": "Historic Orthodox monastery complex situated on the high hills of the Dnieper River with underground catacombs.",
-        "url": "https://picsum.photos/seed/ua-lavra/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lviv Historic Center & Market Square",
         "caption": "Charming Central European medieval and Renaissance old town celebrated for coffee culture and cobblestone lanes.",
-        "url": "https://picsum.photos/seed/ua-lviv/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Ukraine is the second-largest country by land area entirely within Europe after Russia.",
@@ -1072,18 +1248,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Big Ben & Palace of Westminster",
         "caption": "The iconic neo-Gothic clock tower and British Parliament buildings along the River Thames in London.",
-        "url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Stonehenge",
         "caption": "Prehistoric monument of colossal standing sarsen and bluestones aligned with the summer solstice in Wiltshire.",
-        "url": "https://picsum.photos/seed/gb-stonehenge/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Stonehenge2007_07_30.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Edinburgh Castle",
         "caption": "Historic fortress perched dramatically on the volcanic plug of Castle Rock, dominating Scotland's capital.",
-        "url": "https://picsum.photos/seed/gb-edinburgh/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The United Kingdom is the birthplace of modern parliamentary democracy, the Industrial Revolution, football, cricket, and rugby.",
@@ -1096,18 +1276,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Band-e-Amir National Park",
         "caption": "A chain of six intensely deep sapphire-blue natural travertine lakes in the Hindu Kush mountains.",
-        "url": "https://picsum.photos/seed/af-bandeamir/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Blue Mosque of Mazar-i-Sharif",
         "caption": "Magnificent tiled Islamic shrine glowing with intricate turquoise and cobalt mosaic calligraphy.",
-        "url": "https://picsum.photos/seed/af-bluemosque/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Minaret of Jam",
         "caption": "Solitary 65-meter 12th-century brick minaret rising dramatically from a remote river canyon.",
-        "url": "https://picsum.photos/seed/af-minaretjam/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Poetry has been a central pillar of Afghan culture for millennia, with Thursday poetry nights held in ancient cities like Herat.",
@@ -1120,18 +1304,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Khor Virap & Mount Ararat",
         "caption": "Ancient monastery framed dramatically against the snow-capped volcanic twin peaks of Mount Ararat.",
-        "url": "https://picsum.photos/seed/am-khorvirap/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Geghard Cave Monastery",
         "caption": "Medieval UNESCO monastic complex carved directly into the sheer vertical cliffs of the Azat Valley.",
-        "url": "https://picsum.photos/seed/am-geghard/800/600"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lake Sevan",
         "caption": "One of the world's largest high-altitude freshwater alpine lakes, crowned by the Sevanavank monastery.",
-        "url": "https://picsum.photos/seed/am-sevan/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "In 301 AD, Armenia became the very first nation in the world to officially adopt Christianity as its state religion.",
@@ -1144,18 +1332,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Flame Towers in Baku",
         "caption": "Trio of illuminated flame-shaped glass skyscrapers dominating the Caspian Sea shoreline of Baku.",
-        "url": "https://picsum.photos/seed/az-flametowers/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Gobustan Mud Volcanoes & Petroglyphs",
         "caption": "Rare geological desert landscape home to nearly half the world's bubbling mud volcanoes and prehistoric rock art.",
-        "url": "https://picsum.photos/seed/az-gobustan/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Sheki Khan's Palace",
         "caption": "Exquisite 18th-century royal summer residence famous for stained-glass shebeke windows assembled without nails.",
-        "url": "https://picsum.photos/seed/az-sheki/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Known as the 'Land of Fire' due to natural subterranean petroleum gas fires like Yanar Dag burning eternally from the earth.",
@@ -1168,18 +1360,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Qal'at al-Bahrain (Bahrain Fort)",
         "caption": "UNESCO-listed ancient Portuguese and Dilmun coastal fortress guarding the Arabian Gulf shore.",
-        "url": "https://picsum.photos/seed/bh-bahrainfort/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Al Fateh Grand Mosque",
         "caption": "Monumental modern mosque featuring the world's largest fiberglass dome and Italian marble floors.",
-        "url": "https://picsum.photos/seed/bh-alfateh/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "The Tree of Life (Shajarat al-Hayah)",
         "caption": "A 400-year-old solitary mesquite tree flourishing in the barren desert sands with no visible water source.",
-        "url": "https://picsum.photos/seed/bh-treeoflife/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Bahrain was the first country in the Arabian Gulf to discover commercial oil in 1932.",
@@ -1192,18 +1388,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Sundarbans Mangrove Forest",
         "caption": "The largest contiguous mangrove wetland forest on Earth, sanctuary to the endangered Royal Bengal tiger.",
-        "url": "https://picsum.photos/seed/bd-sundarbans/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lalbagh Fort in Dhaka",
         "caption": "Incomplete 17th-century Mughal fortress palace with terraced gardens and the Tomb of Pari Bibi.",
-        "url": "https://picsum.photos/seed/bd-lalbagh/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Cox's Bazar Beach",
         "caption": "The world's longest unbroken natural sea sand beach, stretching over 120 kilometers along the Bay of Bengal.",
-        "url": "https://picsum.photos/seed/bd-coxsbazar/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Cox's Bazar in Bangladesh is the longest uninterrupted natural sea beach in the world at 120 km.",
@@ -1216,18 +1416,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Tiger's Nest Monastery (Paro Taktsang)",
         "caption": "Sacred cliffside Himalayan monastery clinging to a sheer rock face 900 meters above the Paro Valley.",
-        "url": "https://picsum.photos/seed/bt-tigersnest/800/600"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Punakha Dzong",
         "caption": "Majestic 17th-century administrative and monastic fortress situated at the confluence of two rushing rivers.",
-        "url": "https://picsum.photos/seed/bt-punakha/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Dochula Pass & 108 Chortens",
         "caption": "Scenic mountain pass offering breathtaking panoramic views of snow-covered eastern Himalayan peaks.",
-        "url": "https://picsum.photos/seed/bt-dochula/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Bhutan is the world's only carbon-negative country, absorbing more greenhouse gases than its economy emits.",
@@ -1240,18 +1444,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Sultan Omar Ali Saifuddien Mosque",
         "caption": "Spectacular golden-domed Islamic landmark surrounded by an artificial lagoon and ceremonial stone royal barge.",
-        "url": "https://picsum.photos/seed/bn-mosque/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Kampong Ayer Water Village",
         "caption": "The 'Venice of the East', a traditional settlement of wooden houses on stilts over the Brunei River.",
-        "url": "https://picsum.photos/seed/bn-kampongayer/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Ulu Temburong National Park",
         "caption": "Pristine virgin Bornean rainforest accessible only by longboat, celebrated for its 60-meter canopy walkway.",
-        "url": "https://picsum.photos/seed/bn-temburong/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Over 70% of Brunei is covered by primary tropical rainforests, thanks to strict national conservation policies.",
@@ -1264,18 +1472,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Angkor Wat Temple",
         "caption": "The largest religious monument in the world, built by the Khmer Empire in the 12th century with lotus-bud towers.",
-        "url": "https://picsum.photos/seed/kh-angkorwat/800/600"
+        "url": "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Bayon Temple & Stone Faces",
         "caption": "Fascinating Khmer temple in Angkor Thom featuring 216 colossal smiling stone faces of Avalokiteshvara.",
-        "url": "https://picsum.photos/seed/kh-bayon/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Tonl\u00e9 Sap Floating Villages",
         "caption": "Southeast Asia's largest freshwater lake with seasonal reverse flow and vibrant floating fishing communities.",
-        "url": "https://picsum.photos/seed/kh-tonlesap/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Angkor Wat is the only national monument depicted directly on a sovereign nation's flag in the entire world.",
@@ -1288,18 +1500,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Great Wall of China",
         "caption": "Ancient series of fortifications stretching thousands of miles across northern mountain ridges.",
-        "url": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=80"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/3840px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "The Forbidden City in Beijing",
         "caption": "Vast imperial palace complex of the Ming and Qing dynasties housing 980 surviving buildings.",
-        "url": "https://picsum.photos/seed/cn-forbiddencity/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Terracotta Army of Xi'an",
         "caption": "Thousands of life-sized terracotta soldiers and war chariots buried with China's first emperor Qin Shi Huang.",
-        "url": "https://picsum.photos/seed/cn-terracotta/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "China is the birthplace of the Four Great Inventions of antiquity: papermaking, the magnetic compass, gunpowder, and printing.",
@@ -1312,18 +1528,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Gergeti Trinity Church & Kazbek",
         "caption": "14th-century mountain church perched at 2,170 meters against the backdrop of Mount Kazbek.",
-        "url": "https://picsum.photos/seed/ge-gergeti/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Narikala Fortress in Tbilisi",
         "caption": "Ancient coastal fortress overlooking Tbilisi and the Mtkvari River, accessed by scenic aerial cable car.",
-        "url": "https://picsum.photos/seed/ge-narikala/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Vardzia Cave City",
         "caption": "Magnificent 12th-century subterranean monastery and fortress carved into the Erusheti Mountain.",
-        "url": "https://picsum.photos/seed/ge-vardzia/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Archaeological discoveries confirm Georgia as the birthplace of winemaking, with continuous production dating back 8,000 years in clay Qvevri vessels.",
@@ -1336,18 +1556,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Taj Mahal in Agra",
         "caption": "The ivory-white marble mausoleum commissioned in 1631 by Mughal Emperor Shah Jahan for Mumtaz Mahal.",
-        "url": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Amber Fort in Jaipur",
         "caption": "Opulent hilltop sandstone fortress blending Hindu and Mughal styles overlooking Maota Lake.",
-        "url": "https://picsum.photos/seed/in-amberfort/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg/3840px-20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Varanasi Ghats along the Ganges",
         "caption": "Sacred riverside steps in one of the world's oldest continuously inhabited cities where pilgrims perform sacred rituals.",
-        "url": "https://picsum.photos/seed/in-varanasi/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "India is the world's largest democracy and the most populous nation on Earth.",
@@ -1360,18 +1584,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Borobudur Temple",
         "caption": "The largest Buddhist temple in the world, an 8th-century stone stupa pyramid adorned with 504 Buddha statues.",
-        "url": "https://picsum.photos/seed/id-borobudur/800/600"
+        "url": "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Raja Ampat Islands",
         "caption": "Pristine archipelago in West Papua renowned as the global epicenter of marine biodiversity and coral reef life.",
-        "url": "https://picsum.photos/seed/id-rajaampat/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mount Bromo Volcano",
         "caption": "Active volcanic caldera rising dramatically from the Sea of Sand desert on Java, revered for sunrise panoramas.",
-        "url": "https://picsum.photos/seed/id-bromo/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Indonesia is the largest island nation on Earth, comprising over 17,500 islands stretching across 5,000 kilometers.",
@@ -1384,18 +1612,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Persepolis Ancient Ruins",
         "caption": "The monumental ceremonial capital of the Achaemenid Persian Empire founded by Darius the Great in 518 BC.",
-        "url": "https://picsum.photos/seed/ir-persepolis/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Naqsh-e Jahan Square in Isfahan",
         "caption": "One of the largest city squares in the world, framed by the Shah Mosque, Sheikh Lotfollah Mosque, and Ali Qapu.",
-        "url": "https://picsum.photos/seed/ir-isfahan/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Nasir al-Mulk (Pink Mosque)",
         "caption": "Stunning Qajar-era mosque in Shiraz famous for intricate kaleidoscopic stained-glass morning light reflections.",
-        "url": "https://picsum.photos/seed/ir-pinkmosque/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Persian civilization is one of the world's oldest continuous civilizations, with urban settlements dating back to 4000 BC.",
@@ -1408,18 +1640,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Citadel of Erbil",
         "caption": "Ancient fortified tell settlement continuously inhabited for over 6,000 years, rising high above modern Erbil.",
-        "url": "https://picsum.photos/seed/iq-erbil/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Ruins of Ancient Babylon & Ishtar Gate",
         "caption": "Legendary capital of Mesopotamia along the Euphrates River, home to Hammurabi's Code and King Nebuchadnezzar.",
-        "url": "https://picsum.photos/seed/iq-babylon/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Great Mosque of Samarra & Spiral Minaret",
         "caption": "9th-century Abbasid mosque featuring the iconic 52-meter freestanding spiral conical minaret.",
-        "url": "https://picsum.photos/seed/iq-samarra/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Mesopotamia ('the land between the rivers' Tigris and Euphrates) is widely recognized as the Cradle of Civilization.",
@@ -1432,18 +1668,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Old City of Jerusalem & Western Wall",
         "caption": "Sacred limestone rampart and holy quarter revered by Judaism, Christianity, and Islam.",
-        "url": "https://picsum.photos/seed/il-westernwall/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Masada Desert Fortress",
         "caption": "Ancient mountain plateau fortress overlooking the Dead Sea, built by King Herod with panoramic desert vistas.",
-        "url": "https://picsum.photos/seed/il-masada/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Bah\u00e1'\u00ed Terraced Gardens in Haifa",
         "caption": "Nineteen cascading floral garden terraces climbing Mount Carmel to the golden Shrine of the B\u00e1b.",
-        "url": "https://picsum.photos/seed/il-haifa/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Dead Sea, bordered by Israel and Jordan, is the lowest elevation of land on the surface of the Earth at 430 meters below sea level.",
@@ -1456,18 +1696,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mount Fuji",
         "caption": "Japan's highest and most sacred mountain (3,776 m), an iconic snow-capped symmetrical active volcano.",
-        "url": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/3840px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Fushimi Inari Taisha in Kyoto",
         "caption": "Historic Shinto shrine famous for thousands of vermilion torii gates winding through sacred woodlands.",
-        "url": "https://picsum.photos/seed/jp-fushimi/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Himeji Castle (White Heron Castle)",
         "caption": "Widely regarded as Japan's most spectacular and pristine surviving feudal samurai fortress.",
-        "url": "https://picsum.photos/seed/jp-himeji/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Tokyo is the world's most populous metropolitan area, with over 37 million residents across its greater urban region.",
@@ -1480,18 +1724,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Treasury (Al-Khazneh) at Petra",
         "caption": "Spectacular Hellenistic facade carved directly out of the rose-red sandstone cliff face by the ancient Nabataeans.",
-        "url": "https://picsum.photos/seed/jo-petra/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Wadi Rum Desert",
         "caption": "The 'Valley of the Moon', an immense wilderness of sandstone monoliths and Martian-red sand dunes.",
-        "url": "https://picsum.photos/seed/jo-wadirum/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Jerash Greco-Roman City",
         "caption": "One of the best-preserved Roman provincial cities in the world, complete with colonnaded streets and plazas.",
-        "url": "https://picsum.photos/seed/jo-jerash/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Petra was carved into rose-colored sandstone cliffs over 2,000 years ago by Nabataean engineers who pioneered advanced water cisterns.",
@@ -1504,18 +1752,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Charyn Canyon",
         "caption": "The 'Valley of Castles', a 150-meter-deep sandstone canyon featuring sculpted rock towers and dramatic cliffs.",
-        "url": "https://picsum.photos/seed/kz-charyn/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Hazrat Sultan Mosque in Astana",
         "caption": "Monumental white marble mosque in the capital city, featuring the largest dome in Kazakhstan.",
-        "url": "https://picsum.photos/seed/kz-hazratsultan/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lake Kaindy Sunken Forest",
         "caption": "Scenic alpine lake formed by an earthquake in the Tian Shan mountains where submerged spruce trees still rise from the water.",
-        "url": "https://picsum.photos/seed/kz-kaindy/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Kazakhstan is the ninth-largest country in the world by land area and the largest landlocked nation on Earth.",
@@ -1528,18 +1780,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Kuwait Towers",
         "caption": "Trio of slender reinforced-concrete towers clad in shimmering turquoise enameled steel discs.",
-        "url": "https://picsum.photos/seed/kw-towers/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "The Grand Mosque of Kuwait",
         "caption": "Expansive mosque in Kuwait City with Andalusian tilework, stained glass, and a 43-meter central dome.",
-        "url": "https://picsum.photos/seed/kw-grandmosque/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Souq Al-Mubarakiya",
         "caption": "Historic 200-year-old traditional market featuring spices, Persian carpets, dates, and fragrant incense.",
-        "url": "https://picsum.photos/seed/kw-mubarakiya/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Kuwaiti Dinar (KWD) is the highest-valued currency unit in the world by nominal exchange rate.",
@@ -1552,18 +1808,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Issyk-Kul Alpine Lake",
         "caption": "The world's second-largest high-altitude saline lake, framed by snow-capped Tian Shan mountain ranges.",
-        "url": "https://picsum.photos/seed/kg-issykkul/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Ala-Archa National Park",
         "caption": "Breathtaking alpine gorge and glacier valley popular for mountaineering and hiking just south of Bishkek.",
-        "url": "https://picsum.photos/seed/kg-alaarcha/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Song-Kul Lake & Yurts",
         "caption": "Remote high mountain lake where Kyrgyz semi-nomadic shepherds graze their livestock in summer yurts.",
-        "url": "https://picsum.photos/seed/kg-songkul/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Over 90% of Kyrgyzstan's terrain is mountainous, dominated by the majestic peaks of the Tian Shan and Pamir ranges.",
@@ -1576,18 +1836,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Kuang Si Waterfalls",
         "caption": "Three-tiered cascades plunging into brilliant turquoise swimming pools surrounded by tropical jungle.",
-        "url": "https://picsum.photos/seed/la-kuangsi/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Luang Prabang Historic Town",
         "caption": "UNESCO-listed royal capital blending traditional gilded Lao wooden architecture with French colonial mansions.",
-        "url": "https://picsum.photos/seed/la-luangprabang/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Plain of Jars",
         "caption": "Mysterious archaeological megalithic stone jars dating to the Iron Age scattered across the Xieng Khouang plateau.",
-        "url": "https://picsum.photos/seed/la-plainofjars/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Laos is the only landlocked country in Southeast Asia, surrounded by China, Vietnam, Cambodia, Thailand, and Myanmar.",
@@ -1600,18 +1864,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Baalbek Roman Temple Complex",
         "caption": "Colossal Roman archaeological sanctuary featuring the monumental Temple of Bacchus and Jupiter's columns.",
-        "url": "https://picsum.photos/seed/lb-baalbek/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Jeita Grotto",
         "caption": "Breathtaking interconnected karstic limestone caves featuring the world's longest known stalactite (8.2 m).",
-        "url": "https://picsum.photos/seed/lb-jeita/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Byblos Ancient Harbor",
         "caption": "One of the oldest continuously inhabited cities on Earth, where the Phoenician phonetic alphabet was born.",
-        "url": "https://picsum.photos/seed/lb-byblos/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Byblos in Lebanon is one of the oldest continuously inhabited cities in the world, with settlements dating back over 7,000 years.",
@@ -1624,18 +1892,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Petronas Twin Towers in Kuala Lumpur",
         "caption": "88-story twin skyscrapers joined by a double-deck skybridge, former tallest buildings in the world.",
-        "url": "https://picsum.photos/seed/my-petronas/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Batu Caves & Murugan Statue",
         "caption": "Massive limestone hill featuring Hindu cave temples guarded by a 42-meter gold-coated statue of Lord Murugan.",
-        "url": "https://picsum.photos/seed/my-batucaves/800/600"
+        "url": "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mount Kinabalu in Borneo",
         "caption": "The highest peak in Borneo (4,095 m), renowned for dramatic granite peaks and carnivorous pitcher plants.",
-        "url": "https://picsum.photos/seed/my-kinabalu/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Malaysia is home to Taman Negara, one of the oldest deciduous tropical rainforests on Earth, estimated at 130 million years old.",
@@ -1648,18 +1920,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mal\u00e9 Atoll & Grand Friday Mosque",
         "caption": "White marble mosque with a golden dome and minaret standing at the bustling center of the island capital.",
-        "url": "https://picsum.photos/seed/mv-male/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Hanifaru Bay Biosphere",
         "caption": "Protected marine bay in Baa Atoll famous for mass feeding aggregations of graceful manta rays and whale sharks.",
-        "url": "https://picsum.photos/seed/mv-hanifaru/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Overwater Villas of Ari Atoll",
         "caption": "Iconic wooden bungalows standing on stilts directly above crystal-clear turquoise lagoons and coral reefs.",
-        "url": "https://picsum.photos/seed/mv-overwater/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Maldives is the flattest and lowest-lying country on Earth, with an average natural ground elevation of just 1.5 meters above sea level.",
@@ -1672,18 +1948,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Gobi Desert & Flaming Cliffs",
         "caption": "Vast desert where royally paleontologist Roy Chapman Andrews discovered the world's first fossilized dinosaur eggs.",
-        "url": "https://picsum.photos/seed/mn-gobi/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Genghis Khan Equestrian Statue",
         "caption": "Colossal 40-meter stainless steel equestrian statue of Genghis Khan rising above the steppes at Tsonjin Boldog.",
-        "url": "https://picsum.photos/seed/mn-genghis/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Erdene Zuu Monastery",
         "caption": "Probably the earliest surviving Buddhist monastery in Mongolia, enclosed by a wall of 108 stupas in Kharkhorin.",
-        "url": "https://picsum.photos/seed/mn-erdenezuu/800/600"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Mongolia is the most sparsely populated sovereign country on Earth, with just over 3.4 million people in a land twice the size of France.",
@@ -1696,18 +1976,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Bagan Temple Plains",
         "caption": "Over 2,200 ancient Buddhist temples and pagodas rising above the green plains along the Ayeyarwady River.",
-        "url": "https://picsum.photos/seed/mm-bagan/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Shwedagon Pagoda in Yangon",
         "caption": "Glistening 99-meter golden stupa adorned with thousands of genuine diamonds and rubies, the holiest pagoda in Myanmar.",
-        "url": "https://picsum.photos/seed/mm-shwedagon/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Inle Lake & Leg-Rowers",
         "caption": "Scenic freshwater lake famous for floating vegetable gardens and fishermen who steer long wooden boats using one leg.",
-        "url": "https://picsum.photos/seed/mm-inlelake/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Bagan was the capital of the Pagan Kingdom, where over 10,000 Buddhist temples and stupas were built between the 11th and 13th centuries.",
@@ -1720,18 +2004,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mount Everest & Himalayas",
         "caption": "Sagarmatha, the highest mountain on planet Earth (8,848.86 m), towering above the Khumbu Icefall.",
-        "url": "https://picsum.photos/seed/np-everest/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Mt._Everest_from_Gokyo_Ri_November_5%2C_2012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Swayambhunath (Monkey Temple)",
         "caption": "Ancient stupa perched atop a hill in the Kathmandu Valley painted with the all-seeing eyes of the Buddha.",
-        "url": "https://picsum.photos/seed/np-swayambhunath/800/600"
+        "url": "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Pokhara & Phewa Lake",
         "caption": "Idyllic alpine city with reflections of the sacred fishtail peak Machapuchare mirrored in the lake waters.",
-        "url": "https://picsum.photos/seed/np-pokhara/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Nepal's national flag is the only national flag in the world that is non-quadrilateral (formed of two stacked pennants).",
@@ -1744,18 +2032,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Juche Tower in Pyongyang",
         "caption": "Monumental 170-meter stone tower topped by a glowing 20-meter torch overlooking the Taedong River.",
-        "url": "https://picsum.photos/seed/kp-juche/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mount Paektu & Heaven Lake",
         "caption": "Sacred volcanic mountain on the Chinese border featuring a deep caldera lake filled with turquoise water.",
-        "url": "https://picsum.photos/seed/kp-paektu/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Kumsusan Palace of the Sun",
         "caption": "Monumental granite mausoleum situated in Pyongyang, surrounded by extensive landscaped moat gardens.",
-        "url": "https://picsum.photos/seed/kp-kumsusan/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Mount Paektu, the highest peak on the Korean Peninsula, is an active volcano considered the mythical spiritual birthplace of the Korean people.",
@@ -1768,18 +2060,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Sultan Qaboos Grand Mosque",
         "caption": "Monumental white marble mosque in Muscat housing a gargantuan Persian hand-woven prayer carpet.",
-        "url": "https://picsum.photos/seed/om-grandmosque/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Nizwa Fort & Heritage Souq",
         "caption": "Massive 17th-century circular defense tower fortress guarding oasis date palms and artisan silver markets.",
-        "url": "https://picsum.photos/seed/om-nizwa/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Wahiba Sands (Sharqiya)",
         "caption": "Immense golden and copper sand dunes rising over 100 meters high, traditional territory of Bedouin communities.",
-        "url": "https://picsum.photos/seed/om-wahiba/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Oman is the oldest continuously independent state in the Arab world, with ancient maritime trading networks reaching East Africa.",
@@ -1792,18 +2088,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Badshahi Mosque in Lahore",
         "caption": "Monumental red sandstone Mughal mosque built by Emperor Aurangzeb with carved marble inlays.",
-        "url": "https://picsum.photos/seed/pk-badshahi/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "K2 Peak & Karakoram Range",
         "caption": "The world's second-highest mountain (8,611 m), known as the 'Savage Mountain' in the Gilgit-Baltistan region.",
-        "url": "https://picsum.photos/seed/pk-k2/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Hunza Valley & Baltit Fort",
         "caption": "High-mountain paradise framed by Rakaposhi and Ultar Sar peaks with ancient terraced apricot orchards.",
-        "url": "https://picsum.photos/seed/pk-hunza/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Pakistan is home to five of the world's 14 peaks above 8,000 meters, including K2 and Nanga Parbat.",
@@ -1816,18 +2116,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Church of the Nativity in Bethlehem",
         "caption": "One of the oldest continuously operating Christian churches, built over the grotto venerated as Jesus's birthplace.",
-        "url": "https://picsum.photos/seed/ps-nativity/800/600"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Hisham's Palace in Jericho",
         "caption": "Umayyad desert palace famous for its magnificent 'Tree of Life' floor mosaic, one of the largest in antiquity.",
-        "url": "https://picsum.photos/seed/ps-hishams/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Old City of Hebron",
         "caption": "Ancient stone quarters centering the Cave of the Patriarchs (Ibrahimi Mosque), sacred to both Judaism and Islam.",
-        "url": "https://picsum.photos/seed/ps-hebron/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Jericho is widely considered one of the oldest continuously inhabited cities on Earth, with archaeological evidence spanning over 11,000 years.",
@@ -1840,18 +2144,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Chocolate Hills of Bohol",
         "caption": "Over 1,700 conical grass-covered limestone mounds that turn cocoa-brown during the dry season.",
-        "url": "https://picsum.photos/seed/ph-chocolatehills/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Banaue Rice Terraces",
         "caption": "2,000-year-old mountain terraces carved into the Cordillera mountains by the ancestors of the indigenous Ifugao people.",
-        "url": "https://picsum.photos/seed/ph-banaue/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "El Nido Lagoons in Palawan",
         "caption": "Towering limestone karst cliffs enclosing secret turquoise lagoons and crystal-clear tropical snorkeling reefs.",
-        "url": "https://picsum.photos/seed/ph-elnido/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Philippines is an archipelago of over 7,640 islands in Southeast Asia, with roughly 2,000 islands inhabited.",
@@ -1864,18 +2172,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Museum of Islamic Art in Doha",
         "caption": "I.M. Pei's geometric limestone masterpiece standing on an artificial peninsula along the Doha Corniche.",
-        "url": "https://picsum.photos/seed/qa-mia/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Souq Waqif",
         "caption": "Vibrant traditional marketplace in Doha famous for spices, falconry shops, Arabian horses, and woven textiles.",
-        "url": "https://picsum.photos/seed/qa-souqwaqif/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Inland Sea (Khor Al Adaid)",
         "caption": "UNESCO-recognized natural marvel where the sea reaches deep into the heart of towering desert dunes.",
-        "url": "https://picsum.photos/seed/qa-inlandsea/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Qatar hosted the 2022 FIFA World Cup, becoming the very first Arab nation to host the prestigious international football tournament.",
@@ -1888,18 +2200,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Al-Ula & Hegra (Madain Salih)",
         "caption": "Saudi Arabia's first UNESCO World Heritage Site, featuring monumental rock-cut tombs carved by the Nabataeans.",
-        "url": "https://picsum.photos/seed/sa-hegra/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Kingdom Centre Tower in Riyadh",
         "caption": "Iconic 302-meter skyscraper featuring an inverted parabolic arch spanned by an illuminated skybridge.",
-        "url": "https://picsum.photos/seed/sa-kingdomcentre/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "The Edge of the World (Jebel Fihrayn)",
         "caption": "Dramatic 300-meter sheer cliff drop along the Tuwaiq Escarpment offering uninterrupted horizon views.",
-        "url": "https://picsum.photos/seed/sa-edgeoftheworld/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Saudi Arabia is home to the Rub' al Khali (Empty Quarter), the largest continuous sand desert in the world, covering 650,000 sq km.",
@@ -1912,18 +2228,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Marina Bay Sands & SkyPark",
         "caption": "Three 55-story hotel towers topped by a cantilevered ship-shaped sky terrace and 150-meter infinity pool.",
-        "url": "https://picsum.photos/seed/sg-marinabaysands/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Gardens by the Bay & Supertrees",
         "caption": "Futuristic horticultural sanctuary featuring 18 vertical vertical plant-covered Supertrees and climate biomes.",
-        "url": "https://picsum.photos/seed/sg-gardensbythebay/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Supertree_Grove%2C_Gardens_by_the_Bay%2C_Singapore_-_20120712-02.jpg/3840px-Supertree_Grove%2C_Gardens_by_the_Bay%2C_Singapore_-_20120712-02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Jewel Changi HSBC Rain Vortex",
         "caption": "The world's tallest indoor waterfall, cascading seven stories (40 m) down through a lush forest canopy dome.",
-        "url": "https://picsum.photos/seed/sg-jewelchangi/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Singapore is one of only three surviving sovereign city-states in the world, alongside Monaco and Vatican City.",
@@ -1936,18 +2256,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Gyeongbokgung Palace in Seoul",
         "caption": "The primary royal palace of the Joseon Dynasty, featuring the Gwanghwamun Gate and scenic royal pavilion gardens.",
-        "url": "https://picsum.photos/seed/kr-gyeongbokgung/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Bukchon Hanok Village",
         "caption": "Traditional residential quarter in Seoul featuring hundreds of preserved wooden Joseon hanok houses.",
-        "url": "https://picsum.photos/seed/kr-bukchon/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Jeju Island & Hallasan Volcano",
         "caption": "Subtropical volcanic island home to South Korea's highest peak (1,947 m) and natural lava tubes.",
-        "url": "https://picsum.photos/seed/kr-jeju/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "South Korea has the world's fastest average internet speeds and was the first country to commercially roll out 5G mobile networks nationwide.",
@@ -1960,18 +2284,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Sigiriya Lion Rock Fortress",
         "caption": "Ancient 5th-century palace citadel perched on top of a 180-meter vertical granite column with celestial frescoes.",
-        "url": "https://picsum.photos/seed/lk-sigiriya/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Temple of the Sacred Tooth Relic",
         "caption": "Venerated Buddhist temple in Kandy housing the sacred tooth relic of the Buddha in golden caskets.",
-        "url": "https://picsum.photos/seed/lk-toothrelic/800/600"
+        "url": "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Nine Arches Bridge in Ella",
         "caption": "Colonial-era railway viaduct built entirely of solid stone, brick, and cement without steel reinforcement.",
-        "url": "https://picsum.photos/seed/lk-ninearch/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Sri Lanka is one of the world's top producers of high-quality black tea, globally celebrated as Ceylon tea.",
@@ -1984,18 +2312,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Ancient Ruins of Palmyra",
         "caption": "Spectacular Greco-Roman desert oasis city famed for the monumental colonnaded avenue and Arch of Triumph.",
-        "url": "https://picsum.photos/seed/sy-palmyra/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Krak des Chevaliers Fortress",
         "caption": "One of the most significant and best-preserved medieval Crusader castles in the world.",
-        "url": "https://picsum.photos/seed/sy-krak/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Umayyad Mosque of Damascus",
         "caption": "One of the oldest and largest mosques in the world, located in the heart of Damascus's walled ancient city.",
-        "url": "https://picsum.photos/seed/sy-umayyad/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Damascus, the capital of Syria, is widely cited as one of the oldest continuously inhabited cities in recorded world history.",
@@ -2008,18 +2340,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Taipei 101 Skyscraper",
         "caption": "Iconic bamboo-stalk inspired 508-meter tower featuring a massive tuned mass damper ball resisting typhoons.",
-        "url": "https://picsum.photos/seed/tw-taipei101/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Taroko Marble Gorge",
         "caption": "Spectacular 19-kilometer-long canyon carved through towering marble cliffs by the Liwu River.",
-        "url": "https://picsum.photos/seed/tw-taroko/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Sun Moon Lake",
         "caption": "Tranquil alpine lake surrounded by emerald mountains, named because its east side resembles the sun and west the moon.",
-        "url": "https://picsum.photos/seed/tw-sunmoonlake/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Taiwan is the global capital of semiconductor manufacturing, producing over 60% of the world's advanced computer microchips.",
@@ -2032,18 +2368,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Pamir Highway (M41)",
         "caption": "The world's second-highest international road, traversing the dramatic high-altitude 'Roof of the World'.",
-        "url": "https://picsum.photos/seed/tj-pamir/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Iskanderkul Alpine Lake",
         "caption": "Mesmerizing turquoise glacial lake named after Alexander the Great, situated at 2,195 m in the Fann Mountains.",
-        "url": "https://picsum.photos/seed/tj-iskanderkul/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "National Library & Flagpole in Dushanbe",
         "caption": "Monumental public buildings centering the Dushanbe skyline, formerly site of the world's tallest flagpole.",
-        "url": "https://picsum.photos/seed/tj-dushanbe/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Over 93% of Tajikistan's total territory is covered by towering mountains, with more than half sitting above 3,000 meters elevation.",
@@ -2056,18 +2396,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Grand Palace & Wat Phra Kaew",
         "caption": "Opulent royal ceremonial palace in Bangkok enshrining the sacred 14th-century Emerald Buddha.",
-        "url": "https://picsum.photos/seed/th-grandpalace/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Wat Arun (Temple of Dawn)",
         "caption": "Riverside temple on the Chao Phraya River with an 82-meter central spire encrusted with colorful porcelain.",
-        "url": "https://picsum.photos/seed/th-watarun/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Phi Phi Islands & Maya Bay",
         "caption": "Dramatic vertical limestone karsts plunging into emerald tropical waters in the Andaman Sea.",
-        "url": "https://picsum.photos/seed/th-phiphi/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Thailand is the only Southeast Asian nation that was never colonized by European imperial powers.",
@@ -2080,18 +2424,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Cristo Rei of Dili",
         "caption": "27-meter bronze statue of Jesus Christ crowning the Fatucama Peninsula overlooking Dili Bay.",
-        "url": "https://picsum.photos/seed/tl-cristorei/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Atauro Island Reefs",
         "caption": "Pristine island across from Dili scientifically documented as having the most biodiverse reef fish waters on Earth.",
-        "url": "https://picsum.photos/seed/tl-atauro/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mount Ramelau (Tatamailau)",
         "caption": "Timor's highest peak (2,986 m), sacred to indigenous culture and crowned by a statue of the Virgin Mary.",
-        "url": "https://picsum.photos/seed/tl-ramelau/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Scientists discovered that the waters surrounding Atauro Island have the highest average reef fish biodiversity in the world.",
@@ -2104,18 +2452,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Hagia Sophia Grand Mosque",
         "caption": "6th-century Byzantine architectural wonder in Istanbul with a soaring dome that revolutionized world architecture.",
-        "url": "https://picsum.photos/seed/tr-hagiasophia/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Cappadocia Fairy Chimneys & Hot Air Balloons",
         "caption": "Surreal volcanic landscape of cone-shaped tuff towers, underground cities, and sunrise hot air balloon flights.",
-        "url": "https://picsum.photos/seed/tr-cappadocia/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Pamukkale Travertine Terraces",
         "caption": "The 'Cotton Castle', cascading terraces of gleaming white mineral carbonate travertine filled with warm thermal water.",
-        "url": "https://picsum.photos/seed/tr-pamukkale/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Istanbul is the only transcontinental metropolis in the world situated across two continents: Europe and Asia.",
@@ -2128,18 +2480,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Darvaza Gas Crater ('Door to Hell')",
         "caption": "A 70-meter-wide fiery natural gas crater in the Karakum Desert that has been burning continuously since 1971.",
-        "url": "https://picsum.photos/seed/tm-darvaza/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "White Marble City of Ashgabat",
         "caption": "Guinness World Record capital holding the highest density of white marble-clad buildings in the world.",
-        "url": "https://picsum.photos/seed/tm-ashgabat/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Ancient Merv Silk Road Ruins",
         "caption": "UNESCO-listed ancient Silk Road oasis metropolis that was once one of the largest cities on Earth.",
-        "url": "https://picsum.photos/seed/tm-merv/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Ashgabat holds the Guinness World Record for the highest concentration of white marble buildings, with over 540 marble facades.",
@@ -2152,18 +2508,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Burj Khalifa in Dubai",
         "caption": "The tallest building and freestanding structure in human history, soaring 828 meters above the Dubai skyline.",
-        "url": "https://picsum.photos/seed/ae-burjkhalifa/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Sheikh Zayed Grand Mosque in Abu Dhabi",
         "caption": "Monumental white Macedonian marble mosque with 82 domes and the world's largest hand-knotted carpet.",
-        "url": "https://picsum.photos/seed/ae-grandmosque/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Louvre Abu Dhabi",
         "caption": "Universal art museum crowned by Jean Nouvel's massive floating dome creating a shimmering 'rain of light'.",
-        "url": "https://picsum.photos/seed/ae-louvre/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Burj Khalifa in Dubai is the world's tallest building at 828 meters, visible from up to 95 kilometers away.",
@@ -2176,18 +2536,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Registan Square in Samarkand",
         "caption": "Majestic ensemble of three monumental 15th- and 17th-century Islamic madrasahs covered in dazzling azure tilework.",
-        "url": "https://picsum.photos/seed/uz-registan/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Itchan Kala in Khiva",
         "caption": "Pristine walled medieval inner town with mudbrick ramparts, turquoise minarets, and oriental palaces.",
-        "url": "https://picsum.photos/seed/uz-khiva/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Ark of Bukhara",
         "caption": "Massive 5th-century fortified citadel that served as the palace residence for the Emirs of Bukhara.",
-        "url": "https://picsum.photos/seed/uz-bukhara/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Uzbekistan is one of only two 'doubly landlocked' nations on Earth (alongside Liechtenstein).",
@@ -2200,18 +2564,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Ha Long Bay",
         "caption": "UNESCO World Heritage seascape of nearly 2,000 emerald-topped limestone pillars rising out of the Gulf of Tonkin.",
-        "url": "https://picsum.photos/seed/vn-halongbay/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "H\u1ed9i An Ancient Lantern Town",
         "caption": "Well-preserved 15th- to 19th-century international trading port glowing with colorful silk lanterns at night.",
-        "url": "https://picsum.photos/seed/vn-hoian/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Golden Bridge (C\u1ea7u V\u00e0ng) at Ba Na Hills",
         "caption": "150-meter pedestrian walkway held high in the clouds above Da Nang by two giant sculpted stone hands.",
-        "url": "https://picsum.photos/seed/vn-goldenbridge/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Vietnam is the world's second-largest producer and exporter of coffee, renowned for its strong Robusta beans and condensed milk coffee (c\u00e0 ph\u00ea s\u1eefa \u0111\u00e1).",
@@ -2224,18 +2592,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Old Walled City of Shibam",
         "caption": "The 'Manhattan of the Desert', ancient mudbrick high-rises soaring up to 11 stories built in the 16th century.",
-        "url": "https://picsum.photos/seed/ye-shibam/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Old City of Sana'a",
         "caption": "Enchanting 2,500-year-old city of multistory rammed-earth houses decorated with geometric gypsum friezes.",
-        "url": "https://picsum.photos/seed/ye-sanaa/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Dragon's Blood Trees of Socotra",
         "caption": "Otherworldly umbrella-shaped dragon blood trees producing dark red resin on the isolated island of Socotra.",
-        "url": "https://picsum.photos/seed/ye-socotra/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Shibam in Yemen features the oldest skyscrapers in the world, built from sun-dried mudbrick over 500 years ago.",
@@ -2248,18 +2620,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Dj\u00e9mila Roman Ruins",
         "caption": "UNESCO-listed ancient Roman mountain colony known for its forum, basilicas, and triumphal arch.",
-        "url": "https://picsum.photos/seed/dz-djemila/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Casbah of Algiers",
         "caption": "Historic whitewashed medina and Ottoman-era citadel overlooking the Bay of Algiers.",
-        "url": "https://picsum.photos/seed/dz-casbah/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Tassili n'Ajjer National Park",
         "caption": "Vast sandstone plateau in the Sahara Desert preserving thousands of prehistoric cave paintings.",
-        "url": "https://picsum.photos/seed/dz-tassili/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Algeria is the largest country in Africa and the Arab world by land area, with over 80% covered by the Sahara Desert.",
@@ -2272,18 +2648,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Kalandula Falls",
         "caption": "One of the largest waterfalls by volume in Africa, cascading 105 meters on the Lucala River.",
-        "url": "https://picsum.photos/seed/ao-kalandula/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Miradouro da Lua (Moon Viewpoint)",
         "caption": "Spectacular moon-like coastal karst landscape of eroded multicolored clay cliffs overlooking the Atlantic.",
-        "url": "https://picsum.photos/seed/ao-miradouro/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Serra da Leba Pass",
         "caption": "Iconic winding hairpin mountain road descending over 1,800 meters from the Hu\u00edla Plateau.",
-        "url": "https://picsum.photos/seed/ao-serradaleba/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Angola is the native home of the rare giant sable antelope (palanca negra gigante), a national symbol thought extinct until rediscovered.",
@@ -2296,18 +2676,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Royal Palaces of Abomey",
         "caption": "Historic earthen palaces of the twelve kings of Dahomey who ruled between 1625 and 1900.",
-        "url": "https://picsum.photos/seed/bj-abomey/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Ganvi\u00e9 Stilt Village",
         "caption": "The 'Venice of Africa', a lagoon city of over 20,000 residents living in wooden houses built on stilts in Lake Nokou\u00e9.",
-        "url": "https://picsum.photos/seed/bj-ganvie/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Door of No Return in Ouidah",
         "caption": "Memorial arch on the Atlantic beach commemorating the victims of the transatlantic slave trade.",
-        "url": "https://picsum.photos/seed/bj-ouidah/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Benin is the historic birthplace of Vodun (Voodoo), an official recognized religion practiced alongside Christianity and Islam.",
@@ -2320,18 +2704,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Okavango Delta",
         "caption": "The world's largest inland delta, transforming the Kalahari Desert into an emerald labyrinth of wildlife lagoons.",
-        "url": "https://picsum.photos/seed/bw-okavango/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Chobe National Park",
         "caption": "Renowned sanctuary along the Chobe River hosting Africa's largest concentrated population of wild elephants.",
-        "url": "https://picsum.photos/seed/bw-chobe/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Makgadikgadi Salt Pans",
         "caption": "Immense stark white shimmering salt flats, the prehistoric remnants of the ancient Lake Makgadikgadi.",
-        "url": "https://picsum.photos/seed/bw-makgadikgadi/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Botswana is home to roughly one-third of Africa's remaining wild elephant population, with over 130,000 elephants.",
@@ -2344,18 +2732,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Sindou Peaks",
         "caption": "Dramatic weathered sandstone rock towers and needle spires sculpted by wind and rain in the Cascades region.",
-        "url": "https://picsum.photos/seed/bf-sindou/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Grand Mosque of Bobo-Dioulasso",
         "caption": "Magnificent Sudano-Sahelian mudbrick mosque featuring protruding timber struts and conical minarets.",
-        "url": "https://picsum.photos/seed/bf-bobod/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Karfigu\u00e9la Cascades (Banfora Falls)",
         "caption": "Picturesque waterfalls cascading down sandstone ledges into cool freshwater pools surrounded by sugarcane fields.",
-        "url": "https://picsum.photos/seed/bf-banfora/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The country's name, Burkina Faso, translates poetically to 'Land of Incorruptible People' in the Moore and Dioula languages.",
@@ -2368,18 +2760,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Lake Tanganyika Shoreline",
         "caption": "The world's second-deepest and second-largest freshwater lake by volume, fringed by palm beaches in Bujumbura.",
-        "url": "https://picsum.photos/seed/bi-tanganyika/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Rusizi National Park",
         "caption": "River delta reserve where the Rusizi River enters Lake Tanganyika, home to hippos, sitatungas, and crocodiles.",
-        "url": "https://picsum.photos/seed/bi-rusizi/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Gishora Drum Sanctuary",
         "caption": "Historic royal site where master drummers perform the sacred ritual royal dance of the Karienda drums.",
-        "url": "https://picsum.photos/seed/bi-gishora/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The ritual dance of the royal drum (Karyenda) is recognized by UNESCO as an Intangible Cultural Heritage of Humanity.",
@@ -2392,18 +2788,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Pico do Fogo Volcano",
         "caption": "Active volcanic peak (2,829 m) rising dramatically from the caldera floor on Fogo Island, known for volcanic wine.",
-        "url": "https://picsum.photos/seed/cv-fogo/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Cidade Velha Historic Center",
         "caption": "The first European colonial settlement in the tropics, established by the Portuguese on Santiago Island in 1462.",
-        "url": "https://picsum.photos/seed/cv-cidadevelha/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Santa Maria Beach on Sal Island",
         "caption": "Vibrant golden sand beach with turquoise Atlantic waters, world-famous for kitesurfing and sea turtle nesting.",
-        "url": "https://picsum.photos/seed/cv-sal/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Cape Verde was completely uninhabited until Portuguese explorers discovered the Atlantic archipelago in the 15th century.",
@@ -2416,18 +2816,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mount Cameroon (Fako)",
         "caption": "An active volcano and the highest peak in West and Central Africa (4,040 m), known as the 'Chariot of the Gods'.",
-        "url": "https://picsum.photos/seed/cm-mtcameroon/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Waza National Park",
         "caption": "Expansive Sahelian savanna reserve teeming with lions, giraffes, African elephants, and migratory waterbirds.",
-        "url": "https://picsum.photos/seed/cm-waza/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Chutes de la Lob\u00e9 (Lob\u00e9 Waterfalls)",
         "caption": "One of the rare waterfalls in the world that cascades directly into the Atlantic Ocean over granite cliffs.",
-        "url": "https://picsum.photos/seed/cm-lobe/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Cameroon is nicknamed 'Africa in Miniature' because it features all of the continent's major climates: desert, savanna, rainforest, and mountains.",
@@ -2440,18 +2844,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Dzanga-Sangha National Park",
         "caption": "Pristine Congo Basin tropical rainforest sanctuary famous for the Dzanga Bai forest clearing filled with forest elephants.",
-        "url": "https://picsum.photos/seed/cf-dzangasangha/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Boali Waterfalls",
         "caption": "Impressive 50-meter-high and 250-meter-wide waterfalls cascading over stepped granite ledges on the Mbali River.",
-        "url": "https://picsum.photos/seed/cf-boali/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Manovo-Gounda St. Floris",
         "caption": "Vast UNESCO-listed national park spanning savannas and floodplains in the northern reaches of the country.",
-        "url": "https://picsum.photos/seed/cf-manovo/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Dzanga Bai, known as the 'Village of Elephants', attracts up to 100 forest elephants daily to lick mineral-rich saline mud.",
@@ -2464,18 +2872,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Ennedi Natural & Cultural Reserve",
         "caption": "Breathtaking desert sandstone plateau featuring towering arches, natural canyons, and hidden guelta waterholes.",
-        "url": "https://picsum.photos/seed/td-ennedi/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lakes of Ounianga",
         "caption": "Eighteen interconnected hyper-saline and freshwater blue lakes surrounded by golden Saharan sand dunes.",
-        "url": "https://picsum.photos/seed/td-ounianga/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Zakouma National Park",
         "caption": "A celebrated conservation success story in Central Africa, home to recovered herds of savanna elephants and buffalos.",
-        "url": "https://picsum.photos/seed/td-zakouma/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Lakes of Ounianga in the heart of the hyper-arid Sahara are supplied by ancient subterranean fossil water aquifers.",
@@ -2488,18 +2900,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mount Karthala Volcano",
         "caption": "Active shield volcano on Grand Comore with one of the largest active volcanic calderas in the world (3x4 km).",
-        "url": "https://picsum.photos/seed/km-karthala/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Old Friday Mosque in Moroni",
         "caption": "Iconic seaside stone mosque built with coral rag overlooking the turquoise harbor of Moroni.",
-        "url": "https://picsum.photos/seed/km-moroni/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Moh\u00e9li Marine National Park",
         "caption": "Protected coral reef sanctuary where green sea turtles nest year-round and humpback whales calve in winter.",
-        "url": "https://picsum.photos/seed/km-moheli/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Comoros is nicknamed the 'Perfume Islands' because it is the world's leading producer of ylang-ylang essential oil.",
@@ -2512,18 +2928,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Odzala-Kokoua National Park",
         "caption": "Ancient Congo Basin rainforest sanctuary home to Western lowland gorillas and forest buffalo.",
-        "url": "https://picsum.photos/seed/cg-odzala/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Loufoulakari Falls",
         "caption": "Spectacular rapids and waterfalls at the confluence of the Loufoulakari and Congo rivers near Brazzaville.",
-        "url": "https://picsum.photos/seed/cg-loufoulakari/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Gorges of Diosso",
         "caption": "Dramatic red sandstone rock cliffs and lush tropical gorges carved into the coastline near Pointe-Noire.",
-        "url": "https://picsum.photos/seed/cg-diosso/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Brazzaville, the capital of Republic of the Congo, sits directly across the Congo River from Kinshasa (DR Congo)\u2014the world's closest pair of capital cities.",
@@ -2536,18 +2956,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Virunga National Park",
         "caption": "Africa's oldest national park, sanctuary to critically endangered mountain gorillas and active volcanic peaks.",
-        "url": "https://picsum.photos/seed/cd-virunga/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mount Nyiragongo Volcano",
         "caption": "Active stratovolcano in the Albertine Rift famous for hosting one of the world's most active and largest boiling lava lakes.",
-        "url": "https://picsum.photos/seed/cd-nyiragongo/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Kahuzi-Bi\u00e9ga National Park",
         "caption": "Protected volcanic rainforest highland sheltering the last remaining wild populations of eastern lowland gorillas.",
-        "url": "https://picsum.photos/seed/cd-kahuzi/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "DR Congo contains roughly 60% of the Congo Basin rainforest, the second-largest tropical rainforest system on Earth after the Amazon.",
@@ -2560,18 +2984,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Basilica of Our Lady of Peace",
         "caption": "The largest church in the world by surface area, constructed of Italian marble in Yamoussoukro.",
-        "url": "https://picsum.photos/seed/ci-basilica/800/600"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mount Nimba Strict Nature Reserve",
         "caption": "UNESCO-listed mountain crest home to viviparous toads and chimpanzees that use stone tools.",
-        "url": "https://picsum.photos/seed/ci-nimba/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Grand-Bassam Historic Town",
         "caption": "Historic French colonial capital with colonial villas, artisan craft centers, and Atlantic sandy beaches.",
-        "url": "https://picsum.photos/seed/ci-grandbassam/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Ivory Coast is the world's largest producer and exporter of cocoa beans, supplying over 40% of the world's chocolate raw material.",
@@ -2584,18 +3012,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Lake Assal",
         "caption": "A hypersaline crater lake sitting 155 meters below sea level, the lowest land point in Africa and third-lowest on Earth.",
-        "url": "https://picsum.photos/seed/dj-lakeassal/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lake Abbe Chimneys",
         "caption": "Surreal otherworldly landscape of steaming limestone travertine steam chimneys rising above the Danakil desert.",
-        "url": "https://picsum.photos/seed/dj-lakeabbe/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Day Forest National Park",
         "caption": "Ancient relict East African juniper forest sanctuary in the Goda Mountains offering cool respite from desert heat.",
-        "url": "https://picsum.photos/seed/dj-dayforest/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Lake Assal is the lowest point in Africa (-155 m) and the most saline body of water on Earth outside Antarctica (nearly 10x saltier than the ocean).",
@@ -2608,18 +3040,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Great Pyramids of Giza & Sphinx",
         "caption": "The sole surviving wonder of the ancient world, erected over 4,500 years ago on the Giza plateau.",
-        "url": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=800&q=80"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pyramids_of_the_Giza_Necropolis.jpg/1280px-Pyramids_of_the_Giza_Necropolis.jpg"
       },
       {
         "title": "Valley of the Kings & Karnak",
         "caption": "Colossal temple pylons and hypostyle halls in Luxor, ancient Thebes, leading to subterranean pharaonic tombs.",
-        "url": "https://picsum.photos/seed/eg-luxor/800/600"
+        "url": "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Abu Simbel Temples",
         "caption": "Colossal twin rock temples carved out of the sandstone mountain for Pharaoh Ramesses II overlooking Lake Nasser.",
-        "url": "https://picsum.photos/seed/eg-abusimbel/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Ancient Egyptian civilization lasted for over 3,000 years, producing the monumental pyramids, hieroglyphic writing, and papyrus paper.",
@@ -2632,18 +3068,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Malabo Cathedral & Santa Isabel",
         "caption": "Neo-Gothic cathedral designed by architect Luis Segarra Llairad\u00f3 on Bioko Island overlooking the harbor.",
-        "url": "https://picsum.photos/seed/gq-malabo/800/600"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Pico Basil\u00e9 Peak",
         "caption": "Extinct volcanic peak (3,011 m) dominating Bioko Island, providing panoramic views across the Gulf of Guinea.",
-        "url": "https://picsum.photos/seed/gq-basile/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Monte Al\u00e9n National Park",
         "caption": "Dense tropical rainforest reserve in mainland R\u00edo Muni sheltering gorillas, chimpanzees, and forest elephants.",
-        "url": "https://picsum.photos/seed/gq-montealen/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Equatorial Guinea is the only independent sovereign country in mainland Africa where Spanish is an official language.",
@@ -2656,18 +3096,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Asmara Art Deco Architecture",
         "caption": "UNESCO World Heritage capital city celebrated as 'Little Rome' for hundreds of modernist Italian Futurism buildings.",
-        "url": "https://picsum.photos/seed/er-asmara/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Dahlak Archipelago Reefs",
         "caption": "Pristine Red Sea coral island marine park famed for historic pearl diving, sea turtles, and dugongs.",
-        "url": "https://picsum.photos/seed/er-dahlak/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Qohaito Archaeological Ruins",
         "caption": "Ancient pre-Aksumite trading metropolis dating back to the 1st millennium BC perched atop a scenic plateau.",
-        "url": "https://picsum.photos/seed/er-qohaito/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Asmara was designated a UNESCO World Heritage site in 2017 for its extraordinarily preserved 1930s Italian modernist and Art Deco architecture.",
@@ -2680,18 +3124,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mlilwane Wildlife Sanctuary",
         "caption": "Pioneering conservation reserve in the scenic Ezulwini Valley where visitors walk or cycle alongside zebras.",
-        "url": "https://picsum.photos/seed/sz-mlilwane/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Sibebe Rock Monolith",
         "caption": "The world's second-largest exposed granite monolith (after Uluru in Australia), estimated at 3 billion years old.",
-        "url": "https://picsum.photos/seed/sz-sibebe/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mantenga Cultural Village & Falls",
         "caption": "Traditional 19th-century Swazi beehive hut village beneath the roaring waters of the Mantenga Falls.",
-        "url": "https://picsum.photos/seed/sz-mantenga/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "In 2018, King Mswati III officially changed the country's English name from Swaziland to the Kingdom of Eswatini.",
@@ -2704,18 +3152,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Rock-Hewn Churches of Lalibela",
         "caption": "Eleven monolithic medieval cave churches chiseled straight down out of solid red volcanic rock in the 12th century.",
-        "url": "https://picsum.photos/seed/et-lalibela/800/600"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Simien Mountains National Park",
         "caption": "Spectacular jagged volcanic peaks and deep precipices, home to the endemic Gelada baboon and Walia ibex.",
-        "url": "https://picsum.photos/seed/et-simien/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Danakil Depression & Erta Ale",
         "caption": "One of the hottest and lowest places on Earth, featuring bubbling neon-yellow sulfur springs and lava lakes.",
-        "url": "https://picsum.photos/seed/et-danakil/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Ethiopia is the only African nation that was never colonized by European powers, successfully defending its sovereignty at the 1896 Battle of Adwa.",
@@ -2728,18 +3180,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Loango National Park",
         "caption": "The 'Africa's Last Eden', famous for surfing hippos, forest elephants, and red river hogs on uninhabited Atlantic beaches.",
-        "url": "https://picsum.photos/seed/ga-loango/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lop\u00e9 National Park",
         "caption": "UNESCO-listed mosaic of ancient tropical rainforest and relic savanna preserving 400,000 years of human habitation.",
-        "url": "https://picsum.photos/seed/ga-lope/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Ivindo National Park & Kongou Falls",
         "caption": "Magnificent wild blackwater waterfalls plunging through pristine virgin rainforest in north-eastern Gabon.",
-        "url": "https://picsum.photos/seed/ga-ivindo/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "More than 85% of Gabon is covered by lush equatorial rainforest, making it the second-most forested country on Earth after Suriname.",
@@ -2752,18 +3208,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Kunta Kinteh Island (James Island)",
         "caption": "Historic UNESCO-listed fortified river island in the Gambia River, memorial of the transatlantic slave trade.",
-        "url": "https://picsum.photos/seed/gm-kunte/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Wassu Stone Circles",
         "caption": "Ancient megalithic laterite stone circles dating between the 3rd century BC and 16th century AD.",
-        "url": "https://picsum.photos/seed/gm-wassu/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Abuko Nature Reserve",
         "caption": "Biodiverse gallery forest reserve protecting green vervet monkeys, Nile crocodiles, and over 270 bird species.",
-        "url": "https://picsum.photos/seed/gm-abuko/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Gambia is the smallest sovereign country in mainland Africa, tracing a narrow strip of land along both banks of the Gambia River.",
@@ -2776,18 +3236,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Cape Coast Castle",
         "caption": "Monumental coastal stone fortress and UNESCO World Heritage memorial of the historic transatlantic trade.",
-        "url": "https://picsum.photos/seed/gh-capecoast/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Kakum National Park Canopy Walkway",
         "caption": "Thrilling 350-meter suspended canopy rope walkway strung 40 meters high across tropical rainforest treetops.",
-        "url": "https://picsum.photos/seed/gh-kakum/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lake Volta",
         "caption": "The largest artificial reservoir in the world by surface area (8,502 sq km), formed by the Akosombo Dam.",
-        "url": "https://picsum.photos/seed/gh-lakevolta/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "In 1957, Ghana became the very first sub-Saharan African nation to gain independence from colonial rule.",
@@ -2800,18 +3264,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Fouta Djallon Highlands",
         "caption": "Scenic highland plateau known as the 'Water Tower of West Africa', source of the Niger, Senegal, and Gambia rivers.",
-        "url": "https://picsum.photos/seed/gn-fouta/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Dame de Mali (Lady of Mali)",
         "caption": "Monumental natural rock formation resembling the profile of a woman carved into Mount Loura.",
-        "url": "https://picsum.photos/seed/gn-mali/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mount Nimba Biosphere",
         "caption": "High mountain crest in the south-east preserving unique montane grasslands and tool-using wild chimpanzees.",
-        "url": "https://picsum.photos/seed/gn-nimba/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Fouta Djallon highlands are known as the 'Water Tower of West Africa' as they form the headwaters of the Niger, Gambia, and Senegal rivers.",
@@ -2824,18 +3292,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Bijag\u00f3s Archipelago Biosphere",
         "caption": "Untouched Atlantic archipelago of 88 islands home to saltwater hippopotamuses, sea turtles, and mangrove labyrinths.",
-        "url": "https://picsum.photos/seed/gw-bijagos/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Orango National Park",
         "caption": "Protected coastal island park famous for rare saltwater-adapted marine hippos that swim in ocean surf.",
-        "url": "https://picsum.photos/seed/gw-orango/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Historic Bissau Velho",
         "caption": "Charming colonial old quarter in Bissau with pastel Portuguese architecture and bustling fish markets.",
-        "url": "https://picsum.photos/seed/gw-bissau/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Bijag\u00f3s Archipelago in Guinea-Bissau is home to one of the world's only known populations of saltwater-swimming hippopotamuses.",
@@ -2848,18 +3320,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Maasai Mara National Reserve",
         "caption": "World-famous savanna plains hosting the annual Great Migration of over 1.5 million wildebeest and zebras.",
-        "url": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Masai_Mara_at_Sunset.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Mount Kenya",
         "caption": "The second-highest mountain in Africa (5,199 m), an extinct volcano featuring equatorial glaciers and tarns.",
-        "url": "https://picsum.photos/seed/ke-mtkenya/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/MtKenya.jpg/3840px-MtKenya.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Amboseli National Park & Kilimanjaro View",
         "caption": "Classic East African savanna where large elephant herds graze against the backdrop of Mount Kilimanjaro.",
-        "url": "https://picsum.photos/seed/ke-amboseli/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The annual Great Migration across the Mara River is hailed as the 'Eighth Wonder of the Natural World'.",
@@ -2872,18 +3348,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Maletsunyane Falls in Semonkong",
         "caption": "Spectacular 192-meter unbroken waterfall plunging into a deep gorge, site of the world's highest commercial abseil.",
-        "url": "https://picsum.photos/seed/ls-maletsunyane/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Thaba Bosiu National Monument",
         "caption": "Historic sandstone mountain plateau fortress established by King Moshoeshoe I as the cradle of the Basotho nation.",
-        "url": "https://picsum.photos/seed/ls-thababosiu/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Sani Pass & Drakensberg Escarpment",
         "caption": "Dramatic 4x4 mountain pass climbing into the alpine roof of southern Africa, home to Africa's highest pub.",
-        "url": "https://picsum.photos/seed/ls-sanipass/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Lesotho is known as the 'Kingdom in the Sky'\u2014it is the only independent country on Earth situated entirely above 1,000 meters elevation.",
@@ -2896,18 +3376,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Sapo National Park",
         "caption": "Liberia's largest protected area and one of West Africa's last primary rainforests, home to the rare pygmy hippopotamus.",
-        "url": "https://picsum.photos/seed/lr-sapo/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Providence Island in Monrovia",
         "caption": "Historic landing point on the Mesurado River where freed African-American settlers landed in 1822.",
-        "url": "https://picsum.photos/seed/lr-providence/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Robertsport Surf Point",
         "caption": "World-class Atlantic point break beloved by international surfers, framed by coastal rainforest hills.",
-        "url": "https://picsum.photos/seed/lr-robertsport/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Founded in 1847 by freed African Americans, Liberia is the oldest independent modern democratic republic in Africa.",
@@ -2920,18 +3404,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Leptis Magna Roman Metropolis",
         "caption": "One of the most extensive and best-preserved Roman ruins in the Mediterranean, birthplace of Emperor Septimius Severus.",
-        "url": "https://picsum.photos/seed/ly-leptismagna/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Old Town of Ghadames",
         "caption": "The 'Pearl of the Desert', a unique mudbrick oasis town designed with covered streets to protect from extreme Sahara heat.",
-        "url": "https://picsum.photos/seed/ly-ghadames/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Acacus Mountains Rock Art",
         "caption": "Surreal desert massif containing rock shelters and petroglyphs chronicling thousands of years of Saharan culture.",
-        "url": "https://picsum.photos/seed/ly-acacus/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Leptis Magna contains monumental Roman architecture including the Arch of Septimius Severus, marble baths, and a seaside amphitheater.",
@@ -2944,18 +3432,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Avenue of the Baobabs",
         "caption": "Iconic dirt track lined with monumental 800-year-old Grandidier's baobab trees rising 30 meters into the sky.",
-        "url": "https://picsum.photos/seed/mg-baobabs/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Tsingy de Bemaraha",
         "caption": "Surreal labyrinth of needle-sharp karst limestone pinnacles traversed by suspension footbridges.",
-        "url": "https://picsum.photos/seed/mg-tsingy/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Andasibe-Mantadia National Park",
         "caption": "Misty rainforest sanctuary famous as the home of the Indri, the largest living lemur, known for eerie whale-like calls.",
-        "url": "https://picsum.photos/seed/mg-andasibe/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Madagascar separated from the Indian subcontinent roughly 88 million years ago; over 90% of its wildlife is found nowhere else on Earth.",
@@ -2968,18 +3460,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Lake Malawi National Park",
         "caption": "UNESCO World Heritage freshwater marine park renowned for hundreds of brightly colored endemic cichlid fish.",
-        "url": "https://picsum.photos/seed/mw-lakemalawi/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mount Mulanje (Sapitwa Peak)",
         "caption": "Colossal granite inselberg soaring 3,002 meters high, crowned by the endemic Mulanje cedar and tea estates.",
-        "url": "https://picsum.photos/seed/mw-mulanje/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Liwonde National Park",
         "caption": "Thriving conservation sanctuary on the Shire River teeming with hippos, African elephants, and black rhinos.",
-        "url": "https://picsum.photos/seed/mw-liwonde/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Lake Malawi contains more species of freshwater fish than any other lake in the world, with over 1,000 distinct species of cichlids.",
@@ -2992,18 +3488,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Great Mosque of Djenn\u00e9",
         "caption": "The largest mudbrick building in the world, a monument of Sudano-Sahelian architecture replastered annually by the town.",
-        "url": "https://picsum.photos/seed/ml-djenne/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Timbuktu & Sankor\u00e9 Mosque",
         "caption": "Legendary medieval desert university and trading hub that housed hundreds of thousands of ancient illuminated manuscripts.",
-        "url": "https://picsum.photos/seed/ml-timbuktu/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Bandiagara Escarpment (Dogon Country)",
         "caption": "Dramatic 150-kilometer sandstone cliff dotted with ancient cliffside Dogon villages and granaries.",
-        "url": "https://picsum.photos/seed/ml-bandiagara/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Mansa Musa, ruler of the Mali Empire in the 14th century, is widely regarded as the wealthiest individual in human history.",
@@ -3016,18 +3516,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Richat Structure ('Eye of the Sahara')",
         "caption": "Prominent 40-kilometer circular geological dome in the Sahara clearly visible from space orbits.",
-        "url": "https://picsum.photos/seed/mr-richat/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Banc d'Arguin National Park",
         "caption": "UNESCO coastal mudflat and mangrove haven hosting over two million wintering migratory shorebirds.",
-        "url": "https://picsum.photos/seed/mr-bancdarguin/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Historic Ksour of Chinguetti",
         "caption": "Ancient 13th-century desert trade crossroads celebrated for stone desert libraries preserving Islamic manuscripts.",
-        "url": "https://picsum.photos/seed/mr-chinguetti/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Mauritania Iron Ore Train is one of the longest and heaviest trains in the world, stretching up to 3 kilometers across the Sahara.",
@@ -3040,18 +3544,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Le Morne Brabant Mountain",
         "caption": "Dramatic UNESCO basaltic mountain rising from the turquoise lagoon, historic sanctuary of runaway slaves.",
-        "url": "https://picsum.photos/seed/mu-lemorne/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Chamarel Seven Coloured Earths",
         "caption": "Geological phenomenon of rolling sand dunes composed of volcanic mineral sands settling into seven distinct colors.",
-        "url": "https://picsum.photos/seed/mu-chamarel/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Sir Seewoosagur Ramgoolam Botanical Garden",
         "caption": "Historic 18th-century tropical botanical garden famous for giant Victoria amazonica water lilies.",
-        "url": "https://picsum.photos/seed/mu-botanic/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Mauritius was the sole habitat of the extinct flightless Dodo bird before Dutch sailors arrived in the 16th century.",
@@ -3064,18 +3572,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Koutoubia Mosque & Jemaa el-Fnaa",
         "caption": "Vibrant main square of Marrakesh filled with storytellers, musicians, and spice stalls beneath the Almohad minaret.",
-        "url": "https://picsum.photos/seed/ma-marrakesh/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Chefchaouen (The Blue Pearl)",
         "caption": "Enchanting mountain medina painted in soothing shades of cobalt, sky blue, and indigo.",
-        "url": "https://picsum.photos/seed/ma-chefchaouen/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Chefchaouen-the-blue-city-of-morocco-with-palm-trees-and-the-mountain-view-in-the-backrgound.jpg/3840px-Chefchaouen-the-blue-city-of-morocco-with-palm-trees-and-the-mountain-view-in-the-backrgound.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "A\u00eft Benhaddou Ksar",
         "caption": "Earthen clay fortified ksar along the ancient caravan route between the Sahara and Marrakesh.",
-        "url": "https://picsum.photos/seed/ma-aitbenhaddou/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The University of al-Qarawiyyin in Fez, founded in 859 AD by Fatima al-Fihri, is recognized by UNESCO as the oldest continuously operating university in the world.",
@@ -3088,18 +3600,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Bazaruto Archipelago Marine Park",
         "caption": "Group of six idyllic sandy barrier islands famous for towering sand dunes, coral reefs, and rare dugongs.",
-        "url": "https://picsum.photos/seed/mz-bazaruto/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Island of Mozambique (Ilha de Mo\u00e7ambique)",
         "caption": "UNESCO-listed coral island with fortified Portuguese colonial architecture and the Chapel of Nossa Senhora de Baluarte.",
-        "url": "https://picsum.photos/seed/mz-ilha/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Gorongosa National Park",
         "caption": "Celebrated wildlife conservation reserve at the southern end of the Great East African Rift Valley.",
-        "url": "https://picsum.photos/seed/mz-gorongosa/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Mozambique's national flag is the only national flag in the world to feature a modern rifle (an AK-47) alongside a hoe and book.",
@@ -3112,18 +3628,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Sossusvlei & Dune 45",
         "caption": "Massive rust-red sand dunes in the Namib Desert, the oldest desert on Earth, rising over 300 meters high.",
-        "url": "https://picsum.photos/seed/na-sossusvlei/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Deadvlei Clay Pan",
         "caption": "Stark white clay pan dotted with 900-year-old dead camel thorn tree skeletons against burnt-orange dunes.",
-        "url": "https://picsum.photos/seed/na-deadvlei/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Etosha National Park Salt Pan",
         "caption": "Immense white mineral pan so large it can be seen from space, drawing thousands of flamingos, rhinos, and lions.",
-        "url": "https://picsum.photos/seed/na-etosha/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Namib Desert in Namibia is considered the oldest desert in the world, having endured arid conditions for at least 55 million years.",
@@ -3136,18 +3656,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Agadez Grand Mosque",
         "caption": "Imposing 27-meter-tall mudbrick minaret reinforced with protruding wooden beams in the historic caravan city of Agadez.",
-        "url": "https://picsum.photos/seed/ne-agadez/800/600"
+        "url": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "A\u00efr and T\u00e9n\u00e9r\u00e9 Natural Reserves",
         "caption": "Vast desert mountain range rising out of the sand seas of the Sahara, protecting rare Saharan wildlife.",
-        "url": "https://picsum.photos/seed/ne-air/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "W National Park of Niger",
         "caption": "Transboundary protected savanna along the W-shaped loop of the Niger River, home to West African lions.",
-        "url": "https://picsum.photos/seed/ne-wnationalpark/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Grand Mosque of Agadez is the tallest mudbrick structure in the world, built in 1515 and restored in 1844.",
@@ -3160,18 +3684,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Zuma Rock in Niger State",
         "caption": "Monumental 725-meter natural monolith rising dramatically from the surrounding plains north of Abuja.",
-        "url": "https://picsum.photos/seed/ng-zumarock/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Osun-Osogbo Sacred Grove",
         "caption": "Dense primary rainforest sanctuary along the Osun River containing ancient shrines and sculptures to the Yoruba goddess Osun.",
-        "url": "https://picsum.photos/seed/ng-osun/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lekki Conservation Centre",
         "caption": "Wetland nature reserve in Lagos featuring Africa's longest canopy suspension walkway (401 m).",
-        "url": "https://picsum.photos/seed/ng-lekki/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Nigeria is the most populous country in Africa and the sixth-most populous in the world, with over 220 million people.",
@@ -3184,18 +3712,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Volcanoes National Park",
         "caption": "Misty rainforest slopes of the Virunga volcanoes, famous as the sanctuary of wild mountain gorillas studied by Dian Fossey.",
-        "url": "https://picsum.photos/seed/rw-volcanoes/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Nyungwe Forest National Park",
         "caption": "Vast montane rainforest reserve featuring an exhilarating 70-meter-high canopy suspension bridge.",
-        "url": "https://picsum.photos/seed/rw-nyungwe/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lake Kivu Shoreline & Gisenyi",
         "caption": "One of Africa's Great Lakes, surrounded by rolling green emerald hills and sandy beaches.",
-        "url": "https://picsum.photos/seed/rw-lakekivu/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Rwanda has the highest percentage of women in parliament of any country in the world, with women holding over 60% of parliamentary seats.",
@@ -3208,18 +3740,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Pico C\u00e3o Grande (Great Dog Peak)",
         "caption": "Dramatic 370-meter volcanic plug needle soaring vertically out of the primary rainforest mist on S\u00e3o Tom\u00e9.",
-        "url": "https://picsum.photos/seed/st-caogrande/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Obo National Park",
         "caption": "Virgin tropical cloud forest reserve rich in endemic flora, exotic orchids, and rare bird species.",
-        "url": "https://picsum.photos/seed/st-obo/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Boca do Inferno & Praia Piscina",
         "caption": "Dramatic volcanic blowhole and golden palm-fringed tropical beach on the southern Atlantic coast.",
-        "url": "https://picsum.photos/seed/st-bocadoinferno/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "In the early 20th century, S\u00e3o Tom\u00e9 and Pr\u00edncipe was the world's largest producer of cocoa, earning the moniker 'The Chocolate Islands'.",
@@ -3232,18 +3768,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Gor\u00e9e Island & House of Slaves",
         "caption": "UNESCO-listed historical island off Dakar with colonial pastel houses and the poignant 'Door of No Return'.",
-        "url": "https://picsum.photos/seed/sn-goree/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lake Retba (Pink Lake)",
         "caption": "Vibrant strawberry-pink saline lake colored by Dunaliella salina microalgae, historically the finish of the Paris-Dakar Rally.",
-        "url": "https://picsum.photos/seed/sn-lakeretba/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "African Renaissance Monument",
         "caption": "Colossal 52-meter bronze statue in Dakar, the tallest statue on the African continent, overlooking the Atlantic Ocean.",
-        "url": "https://picsum.photos/seed/sn-renaissance/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Dakar, the capital of Senegal, sits on the Cap-Vert Peninsula, making it the westernmost city on the mainland of the African continent.",
@@ -3256,18 +3796,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Anse Source d'Argent on La Digue",
         "caption": "Globally renowned tropical beach framed by enormous sculpted granite boulders and crystal-clear turquoise waters.",
-        "url": "https://picsum.photos/seed/sc-ansesource/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Vall\u00e9e de Mai on Praslin",
         "caption": "Prehistoric palm forest sanctuary home to the endemic Coco de Mer palm bearing the world's largest and heaviest seed.",
-        "url": "https://picsum.photos/seed/sc-valleedemai/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Aldabra Atoll",
         "caption": "The world's second-largest coral atoll, home to over 150,000 giant Aldabra tortoises.",
-        "url": "https://picsum.photos/seed/sc-aldabra/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Seychelles is the least populous sovereign country in Africa, with roughly 100,000 residents across 115 islands.",
@@ -3280,18 +3824,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Tacugama Chimpanzee Sanctuary",
         "caption": "Renowned forest conservation refuge in the Western Area Peninsula hills rehabilitating rescued wild chimpanzees.",
-        "url": "https://picsum.photos/seed/sl-tacugama/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Tacugama.jpg"
       },
       {
         "title": "Bunce Island Historic Fortress",
         "caption": "Historic 18th-century British slave castle in the Sierra Leone River, crucial site for Afro-American Gullah heritage.",
-        "url": "https://picsum.photos/seed/sl-bunce/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Bunce_Island_slave_castle_in_Sierra_Leone.jpg"
       },
       {
         "title": "River Number Two Beach",
         "caption": "Pristine white sand beach where a freshwater mountain river empties directly into the warm Atlantic surf.",
-        "url": "https://picsum.photos/seed/sl-riverno2/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/River_Number_Two_Beach_Sierra_Leone.jpg"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The monumental Cotton Tree in central Freetown stood for hundreds of years as a national symbol of freedom until felled by a storm in 2023.",
@@ -3304,18 +3852,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Laas Geel Cave Paintings",
         "caption": "Spectacular Neolithic rock art caves featuring remarkably vivid 5,000-year-old paintings of decorated cattle and people.",
-        "url": "https://picsum.photos/seed/so-laasgeel/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mogadishu Lighthouse & Old Harbor",
         "caption": "Historic Italian colonial-era lighthouse watching over the ancient stone alleys of the Hamar Weyne historic quarter.",
-        "url": "https://picsum.photos/seed/so-mogadishu/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Cal Madow Mountain Escarpment",
         "caption": "High mountain range in the north featuring cool waterfalls, misty juniper forests, and frankincense trees.",
-        "url": "https://picsum.photos/seed/so-calmadow/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Somalia has the longest coastline in mainland Africa, extending over 3,333 kilometers along the Indian Ocean and Gulf of Aden.",
@@ -3328,18 +3880,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Table Mountain in Cape Town",
         "caption": "Iconic flat-topped sandstone mountain rising over 1,000 meters above Table Bay, flanked by Lion's Head and Devil's Peak.",
-        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Table_Mountain_DanieVDM.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Kruger National Park",
         "caption": "One of Africa's largest game reserves, famous for high densities of lions, leopards, rhinos, elephants, and buffalos.",
-        "url": "https://picsum.photos/seed/za-kruger/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Blyde River Canyon",
         "caption": "One of the largest green river canyons in the world, featuring the iconic Three Rondavels sandstone summits.",
-        "url": "https://picsum.photos/seed/za-blyde/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "South Africa has three distinct official capital cities: Pretoria (Executive), Cape Town (Legislative), and Bloemfontein (Judicial).",
@@ -3352,18 +3908,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Sudd Wetland",
         "caption": "One of the largest freshwater wetland floodplains in the world, fed by the White Nile and spanning over 30,000 sq km.",
-        "url": "https://picsum.photos/seed/ss-sudd/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Boma National Park",
         "caption": "Vast grassland wilderness hosting the massive seasonal migration of millions of white-eared kob and tiang antelopes.",
-        "url": "https://picsum.photos/seed/ss-boma/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Kinyeti Mountain Peak",
         "caption": "The highest peak in South Sudan (3,187 m) located in the Imatong Mountains near the Ugandan border.",
-        "url": "https://picsum.photos/seed/ss-kinyeti/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "South Sudan is the newest globally recognized sovereign nation in the world, gaining independence on July 9, 2011.",
@@ -3376,18 +3936,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mero\u00eb Pyramids",
         "caption": "Nearly 200 steep-angled sandstone pyramids rising from desert dunes, royal tombs of the ancient Kingdom of Kush.",
-        "url": "https://picsum.photos/seed/sd-meroe/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Jebel Barkal & Napata",
         "caption": "Sacred sandstone mountain in Nubia revered by pharaohs and Kushite kings as the southern home of the god Amun.",
-        "url": "https://picsum.photos/seed/sd-jebelbarkal/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Confluence of Blue & White Nile",
         "caption": "Historic water junction at Khartoum where the silt-rich Blue Nile from Ethiopia joins the White Nile from Lake Victoria.",
-        "url": "https://picsum.photos/seed/sd-khartoum/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Sudan has more pyramids than Egypt\u2014over 250 ancient Nubian pyramids stand across sites like Mero\u00eb, El Kurru, and Nuri.",
@@ -3400,18 +3964,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mount Kilimanjaro",
         "caption": "The highest mountain in Africa and world's highest freestanding mountain (5,895 m), capped by equatorial glaciers.",
-        "url": "https://picsum.photos/seed/tz-kilimanjaro/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Serengeti National Park",
         "caption": "Vast endless plains world-famous for the Great Migration and predator-prey wildlife spectacles.",
-        "url": "https://picsum.photos/seed/tz-serengeti/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Ngorongoro Crater",
         "caption": "The world's largest unbroken, unflooded volcanic caldera, forming an Eden-like natural sanctuary for 25,000 large animals.",
-        "url": "https://picsum.photos/seed/tz-ngorongoro/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Over 30% of Tanzania's land area is allocated to national parks, wildlife reserves, and protected nature sanctuaries.",
@@ -3424,18 +3992,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Koutammakou Landscape",
         "caption": "UNESCO World Heritage cultural landscape famous for Batammariba two-story mud tower houses (Takienta).",
-        "url": "https://picsum.photos/seed/tg-koutammakou/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lake Togo & Togoville",
         "caption": "Historic lakeside village across Lake Togo where traditional voodoo shrines and the historic 1884 German protectorate treaty stand.",
-        "url": "https://picsum.photos/seed/tg-laketogo/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Akrowa Cascades in Badou",
         "caption": "Spectacular 100-meter waterfall plunging through lush rainforest foliage in the lush coffee-growing hills.",
-        "url": "https://picsum.photos/seed/tg-akrowa/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The traditional Takienta mud tower houses of the Batammariba people in northern Togo are considered masterpieces of sustainable African architecture.",
@@ -3448,18 +4020,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "El Jem Roman Amphitheatre",
         "caption": "Colossal 3rd-century Roman amphitheater in the desert, one of the best-preserved in the world, seating 35,000 spectators.",
-        "url": "https://picsum.photos/seed/tn-eljem/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Ruins of Ancient Carthage",
         "caption": "Ancient Phoenician and Roman maritime metropolis overlooking the Gulf of Tunis, home of general Hannibal Barca.",
-        "url": "https://picsum.photos/seed/tn-carthage/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Sidi Bou Said Coastal Village",
         "caption": "Charming cliffside Mediterranean village with distinctive whitewashed walls, cobalt-blue doors, and bougainvillea.",
-        "url": "https://picsum.photos/seed/tn-sidibousaid/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Ancient Carthage in Tunisia was the formidable maritime rival to the Roman Republic, led by military genius Hannibal.",
@@ -3472,18 +4048,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Bwindi Impenetrable National Park",
         "caption": "Misty montane rainforest harboring almost half of the world's remaining population of endangered mountain gorillas.",
-        "url": "https://picsum.photos/seed/ug-bwindi/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Murchison Falls",
         "caption": "Dramatic natural gorge where the Victoria Nile violently forces itself through a 7-meter rock gap into a roaring cascade.",
-        "url": "https://picsum.photos/seed/ug-murchison/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Rwenzori Mountains ('Mountains of the Moon')",
         "caption": "Legendary snow-capped equatorial mountain range featuring Margherita Peak (5,109 m) and giant lobelias.",
-        "url": "https://picsum.photos/seed/ug-rwenzori/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Winston Churchill dubbed Uganda the 'Pearl of Africa' in 1908 because of its magnificent landscapes, wildlife, and vibrant peoples.",
@@ -3496,18 +4076,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Victoria Falls (Mosi-oa-Tunya)",
         "caption": "The 'Smoke that Thunders', the world's largest sheet of falling water spanning 1,708 meters across the Zambezi gorge.",
-        "url": "https://picsum.photos/seed/zm-victoriafalls/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_04.jpg/3840px-Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "South Luangwa National Park",
         "caption": "World-renowned wildlife sanctuary along the Luangwa River, celebrated as the birthplace of walking safaris.",
-        "url": "https://picsum.photos/seed/zm-southluangwa/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Devil's Pool & Livingstone Island",
         "caption": "Exhilarating natural rock pool perched right on the lip of Victoria Falls where daring swimmers peer over the abyss.",
-        "url": "https://picsum.photos/seed/zm-devilspool/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Victoria Falls forms the largest curtain of falling water on Earth, plunging roughly 108 meters into the Batoka Gorge.",
@@ -3520,18 +4104,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Great Zimbabwe Monument",
         "caption": "Monumental medieval stone city with dry-stone granite walls built without mortar between the 11th and 15th centuries.",
-        "url": "https://picsum.photos/seed/zw-greatzimbabwe/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Victoria Falls (Zimbabwe Side)",
         "caption": "Spectacular viewing points overlooking the Main Falls, Devil's Cataract, and continuous rainforest mist.",
-        "url": "https://picsum.photos/seed/zw-vicfalls/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_04.jpg/3840px-Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Hwange National Park",
         "caption": "Zimbabwe's largest natural reserve, home to one of Africa's largest elephant populations and wild dog packs.",
-        "url": "https://picsum.photos/seed/zw-hwange/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The name 'Zimbabwe' originates from the Shona phrase 'Dzimba-dza-mabwe', meaning 'large houses of stone', referring to Great Zimbabwe.",
@@ -3544,18 +4132,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Grand Canyon",
         "caption": "Colossal 446-kilometer-long gorge carved over millions of years by the Colorado River in Arizona.",
-        "url": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=800&q=80"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Canyon_River_Tree_%28165872763%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Statue of Liberty in New York",
         "caption": "Colossal neoclassical copper sculpture on Liberty Island, a gift from France symbolizing freedom and democracy.",
-        "url": "https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?auto=format&fit=crop&w=800&q=80"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Yellowstone National Park",
         "caption": "The world's first national park, famous for Old Faithful geyser, prismatic hot springs, and roaming bison herds.",
-        "url": "https://picsum.photos/seed/us-yellowstone/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The United States established the world's first national park in 1872 when President Ulysses S. Grant signed Yellowstone into law.",
@@ -3568,18 +4160,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Banff National Park & Lake Louise",
         "caption": "Glacial turquoise lake framed by Mount Victoria and the majestic Canadian Rocky Mountains.",
-        "url": "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=800&q=80"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Niagara Falls (Horseshoe Falls)",
         "caption": "Massive curved waterfall plunging millions of gallons of water over a 51-meter cliff every minute.",
-        "url": "https://picsum.photos/seed/ca-niagara/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/3Falls_Niagara.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "CN Tower in Toronto",
         "caption": "Iconic 553-meter communications tower dominating the Lake Ontario skyline, featuring a glass observation floor.",
-        "url": "https://picsum.photos/seed/ca-cntower/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Canada has the longest coastline of any nation on Earth, measuring 202,080 kilometers across three oceans.",
@@ -3592,18 +4188,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Chichen Itza & El Castillo",
         "caption": "Monumental Maya step-pyramid engineered to cast a shadow resembling a slithering serpent during equinoxes.",
-        "url": "https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=800&q=80"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Pyramids of Teotihuacan",
         "caption": "Colossal ancient Mesoamerican city featuring the monumental Pyramid of the Sun along the Avenue of the Dead.",
-        "url": "https://picsum.photos/seed/mx-teotihuacan/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Copper Canyon (Barrancas del Cobre)",
         "caption": "Massive network of six distinct ravines in the Sierra Madre Occidental, larger and deeper than the Grand Canyon.",
-        "url": "https://picsum.photos/seed/mx-coppercanyon/800/600"
+        "url": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Mexico City was founded in 1325 as Tenochtitlan on an island in Lake Texcoco by the Aztecs, becoming the capital of New Spain.",
@@ -3616,18 +4216,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Old Havana (Habana Vieja)",
         "caption": "Historic colonial core featuring neoclassical architecture, cobblestone plazas, and 1950s classic American cars.",
-        "url": "https://picsum.photos/seed/cu-havana/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Vi\u00f1ales Valley & Mogotes",
         "caption": "UNESCO-listed karst limestone landscape dotted with sheer dome-shaped hills and traditional tobacco farms.",
-        "url": "https://picsum.photos/seed/cu-vinales/800/600"
+        "url": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "El Malecon Coastal Esplanade",
         "caption": "Broad 8-kilometer sea wall promenade along Havana's coast, a beloved social hub for poets, musicians, and sunset strolls.",
-        "url": "https://picsum.photos/seed/cu-malecon/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Cuba has one of the highest doctor-to-patient ratios in the world and sends thousands of medical professionals on humanitarian missions abroad.",
@@ -3640,18 +4244,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Dunn's River Falls in Ocho Rios",
         "caption": "Famous terraced cascading waterfall that visitors can climb hand-in-hand directly up to the white sandy beach.",
-        "url": "https://picsum.photos/seed/jm-dunnsriver/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Blue Mountains Peak",
         "caption": "Jamaica's highest mountain range (2,256 m), renowned for misty cloud forests and world-famous Blue Mountain coffee.",
-        "url": "https://picsum.photos/seed/jm-bluemountains/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Bob Marley Museum in Kingston",
         "caption": "The legendary reggae icon's former residence and recording studio preserved with personal musical artifacts.",
-        "url": "https://picsum.photos/seed/jm-marleymuseum/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Jamaica is the birthplace of Reggae music, ska, rocksteady, dub, and legendary musical visionary Bob Marley.",
@@ -3664,18 +4272,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Citadelle Laferri\u00e8re",
         "caption": "Monumental early 19th-century mountain fortress perched atop Bonnet \u00e0 l'\u00c9v\u00eaque, the largest fortress in the Americas.",
-        "url": "https://picsum.photos/seed/ht-citadelle/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Sans-Souci Palace",
         "caption": "The royal residence of King Henri I in Milot, renowned as the 'Versailles of the Caribbean'.",
-        "url": "https://picsum.photos/seed/ht-sanssouci/800/600"
+        "url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Bassin Bleu Waterfalls",
         "caption": "Hidden natural turquoise pools and waterfalls secluded within lush limestone grottos near Jacmel.",
-        "url": "https://picsum.photos/seed/ht-bassinbleu/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Haiti was the first nation in Latin America and the Caribbean to achieve independence, and the first independent republic founded by former slaves (1804).",
@@ -3688,18 +4300,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Zona Colonial of Santo Domingo",
         "caption": "The oldest permanent European settlement in the Americas, featuring the first cathedral, hospital, and paved street.",
-        "url": "https://picsum.photos/seed/do-zonacolonial/800/600"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Punta Cana Beaches",
         "caption": "World-famous palm-lined white sand coast meeting the turquoise waters of the Atlantic and Caribbean.",
-        "url": "https://picsum.photos/seed/do-puntacana/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Pico Duarte",
         "caption": "The highest mountain peak in all the Caribbean islands (3,098 m), located in the Cordillera Central.",
-        "url": "https://picsum.photos/seed/do-picoduarte/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Santo Domingo's Cathedral of Santa Mar\u00eda la Menor, consecrated in 1541, is the oldest cathedral in the Americas.",
@@ -3712,18 +4328,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Exuma Cays & Pig Beach",
         "caption": "Idyllic uninhabited island famous for friendly feral pigs that swim out into crystal turquoise water to greet visitors.",
-        "url": "https://picsum.photos/seed/bs-exuma/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Dean's Blue Hole",
         "caption": "The world's second-deepest known saltwater blue hole (202 m), nestled in a sheltered bay on Long Island.",
-        "url": "https://picsum.photos/seed/bs-deansbluehole/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Queen's Staircase in Nassau",
         "caption": "Historic 66-step staircase hand-hewn out of solid limestone rock by 600 slaves in the late 18th century.",
-        "url": "https://picsum.photos/seed/bs-queensstaircase/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The name 'Bahamas' comes from the Spanish phrase 'baja mar', meaning 'shallow sea', reflecting its luminous turquoise waters.",
@@ -3736,18 +4356,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Pitch Lake in La Brea",
         "caption": "The largest natural commercial asphalt deposit in the world, covering 100 acres and holding 10 million tons of asphalt.",
-        "url": "https://picsum.photos/seed/tt-pitchlake/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Pigeon Point Beach in Tobago",
         "caption": "Iconic thatched-roof jetty extending into tranquil turquoise waters fringed by coconut palms.",
-        "url": "https://picsum.photos/seed/tt-pigeonpoint/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Caroni Bird Sanctuary",
         "caption": "Vast mangrove wetland where thousands of brilliant scarlet ibises fly in to roost at sunset.",
-        "url": "https://picsum.photos/seed/tt-caroni/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The steelpan (steel drum) was invented in Trinidad and Tobago in the 1930s, recognized as the only acoustic musical instrument invented in the 20th century.",
@@ -3760,18 +4384,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Harrison's Cave",
         "caption": "Spectacular subterranean crystallized limestone cavern featuring running streams, cascading waterfalls, and stalagmites.",
-        "url": "https://picsum.photos/seed/bb-harrisonscave/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Historic Bridgetown & Garrison",
         "caption": "UNESCO-listed British colonial port town featuring 17th-century fortifications and the historic Parliament Buildings.",
-        "url": "https://picsum.photos/seed/bb-bridgetown/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Bathsheba Beach & Soup Bowl",
         "caption": "Dramatic Atlantic surf beach dotted with giant mushroom-shaped limestone boulders carved by pounding waves.",
-        "url": "https://picsum.photos/seed/bb-bathsheba/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Mount Gay Rum, produced in Barbados continuously since 1703, is the oldest existing commercial rum brand in the world.",
@@ -3784,18 +4412,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Pitons (Gros Piton & Petit Piton)",
         "caption": "Dramatic pair of towering volcanic emerald spires rising over 750 meters straight out of the Caribbean Sea in Soufri\u00e8re.",
-        "url": "https://picsum.photos/seed/lc-pitons/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Sulphur Springs (Drive-In Volcano)",
         "caption": "The Caribbean's only drive-in volcano, featuring bubbling sulfur mud baths and geothermal steam vents.",
-        "url": "https://picsum.photos/seed/lc-sulphursprings/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Marigot Bay",
         "caption": "Idyllic natural hurricane haven sheltered by steep palm-covered forested hills and luxury yachts.",
-        "url": "https://picsum.photos/seed/lc-marigot/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Saint Lucia is the only sovereign country in the world named after a historical woman (Saint Lucy of Syracuse).",
@@ -3808,18 +4440,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "La Soufri\u00e8re Volcano",
         "caption": "Active stratovolcano (1,234 m) dominating the northern end of Saint Vincent, with hiking trails leading to the crater.",
-        "url": "https://picsum.photos/seed/vc-lasoufriere/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Tobago Cays Marine Park",
         "caption": "Pristine group of five uninhabited sand islets protected by horseshoe coral reefs teeming with green sea turtles.",
-        "url": "https://picsum.photos/seed/vc-tobagocays/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Bequia Island & Princess Margaret Beach",
         "caption": "Charming Grenadine island celebrated for traditional wooden boatbuilding and tranquil calm beaches.",
-        "url": "https://picsum.photos/seed/vc-bequia/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The country consists of the main island of Saint Vincent and the northern two-thirds of the 32 Grenadine islands.",
@@ -3832,18 +4468,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Grand Anse Beach",
         "caption": "World-famous 3-kilometer crescent of soft white sand sheltered from Atlantic swells near Saint George's.",
-        "url": "https://picsum.photos/seed/gd-grandanse/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Molinere Underwater Sculpture Park",
         "caption": "The world's first underwater sculpture garden, created by artist Jason deCaires Taylor to foster coral reef regeneration.",
-        "url": "https://picsum.photos/seed/gd-underwatersculpture/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Annandale & Concord Falls",
         "caption": "Picturesque tropical waterfalls tumbling into clear swimming basins surrounded by wild nutmeg and spice trees.",
-        "url": "https://picsum.photos/seed/gd-annandale/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Grenada is universally known as the 'Isle of Spice' because it is one of the world's largest producers of nutmeg, mace, and cinnamon.",
@@ -3856,18 +4496,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Nelson's Dockyard in English Harbour",
         "caption": "Fully restored 18th-century Georgian naval dockyard and UNESCO World Heritage site named after Admiral Horatio Nelson.",
-        "url": "https://picsum.photos/seed/ag-nelsonsdockyard/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Shirley Heights Lookout",
         "caption": "Historic military battery offering panoramic vistas over English and Falmouth Harbours, famous for Sunday sunset parties.",
-        "url": "https://picsum.photos/seed/ag-shirleyheights/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Barbuda Frigate Bird Sanctuary",
         "caption": "The largest nesting colony of magnificent frigatebirds in the Caribbean, home to over 5,000 birds in Codrington Lagoon.",
-        "url": "https://picsum.photos/seed/ag-frigatebird/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Antigua is famous for having 'a beach for every day of the year'\u2014boasting exactly 365 distinct sandy beaches.",
@@ -3880,18 +4524,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Brimstone Hill Fortress",
         "caption": "The 'Gibraltar of the Caribbean', a colossal 18th-century British stone fortress crowning an 800-foot volcanic hill.",
-        "url": "https://picsum.photos/seed/kn-brimstone/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "St. Kitts Scenic Railway",
         "caption": "The 'Last Railway in the West Indies', a historic double-decker train that circles the coast through sugarcane fields.",
-        "url": "https://picsum.photos/seed/kn-railway/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Nevis Peak Volcano",
         "caption": "Potentially active volcanic summit (985 m) dominating Nevis Island, frequently wrapped in cloud mist.",
-        "url": "https://picsum.photos/seed/kn-nevispeak/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Saint Kitts and Nevis is the smallest sovereign state in the Americas, both in geographic area and population.",
@@ -3904,18 +4552,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Boiling Lake in Morne Trois Pitons",
         "caption": "The world's second-largest hot spring (60 m wide), a flooded fumarole boiling with grayish-blue geothermal water.",
-        "url": "https://picsum.photos/seed/dm-boilinglake/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Trafalgar Falls (Father & Mother Falls)",
         "caption": "Twin cascading waterfalls plunging into natural volcanic sulfur hot pools amidst tropical mountain rainforest.",
-        "url": "https://picsum.photos/seed/dm-trafalgar/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Champagne Reef",
         "caption": "Subterranean geothermal vents bubbling thousands of warm bubbles up through colorful coral reefs like a glass of champagne.",
-        "url": "https://picsum.photos/seed/dm-champagne/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Dominica is known as the 'Nature Isle of the Caribbean' due to its untouched rainforests, 365 rivers, and volcanic peaks.",
@@ -3928,18 +4580,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Great Blue Hole",
         "caption": "Massive 300-meter-wide submarine sinkhole in Lighthouse Reef made famous by underwater explorer Jacques Cousteau.",
-        "url": "https://picsum.photos/seed/bz-bluehole/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Xunantunich Maya Ruins",
         "caption": "Ancient Maya archaeological site crowned by El Castillo, a 40-meter-tall pyramid decorated with carved friezes.",
-        "url": "https://picsum.photos/seed/bz-xunantunich/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Belize Barrier Reef",
         "caption": "The second-largest coral reef system in the world (after Australia's Great Barrier Reef), sheltering manatees and sharks.",
-        "url": "https://picsum.photos/seed/bz-barrierreef/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Satellite_image_of_Belize_in_March_31%2C_2002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Belize is the only country in Central America where English is the official language.",
@@ -3952,18 +4608,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Tikal Ancient Maya Metropolis",
         "caption": "Monumental Maya ruins deep in the Pet\u00e9n jungle featuring towering steep limestone temple pyramids rising above the canopy.",
-        "url": "https://picsum.photos/seed/gt-tikal/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lake Atitl\u00e1n & Volcanoes",
         "caption": "Magnificent volcanic caldera lake ringed by three volcanoes and traditional indigenous Maya highland villages.",
-        "url": "https://picsum.photos/seed/gt-atitlan/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Antigua Guatemala",
         "caption": "Historic colonial capital famous for preserved Spanish Baroque architecture, ruins, and cobblestone streets beneath Volc\u00e1n de Agua.",
-        "url": "https://picsum.photos/seed/gt-antigua/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Tikal was one of the greatest urban centers of the ancient Maya civilization, housing up to 100,000 residents at its peak.",
@@ -3976,18 +4636,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Santa Ana Volcano (Ilamatepec)",
         "caption": "El Salvador's highest volcano (2,381 m), featuring an intense turquoise emerald acidic crater lake.",
-        "url": "https://picsum.photos/seed/sv-santaana/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Joya de Cer\u00e9n ('Pompeii of the Americas')",
         "caption": "Pre-Columbian Maya farming community buried under volcanic ash from Laguna Caldera in 600 AD.",
-        "url": "https://picsum.photos/seed/sv-joyadeceren/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "El Tunco & Sunzal Surf Coast",
         "caption": "World-famous Pacific black sand surf haven renowned for consistent point break waves and stunning coastal sunsets.",
-        "url": "https://picsum.photos/seed/sv-eltunco/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "El Salvador is known as the 'Land of Volcanoes' because it has more than 20 volcanoes situated across a relatively compact territory.",
@@ -4000,18 +4664,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Cop\u00e1n Ruinas & Hieroglyphic Stairway",
         "caption": "Major Maya ceremonial center famous for elaborate high-relief stone stelae and the longest carved Maya text in the Americas.",
-        "url": "https://picsum.photos/seed/hn-copan/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Roat\u00e1n Island & West Bay Beach",
         "caption": "Idyllic Bay Island surrounded by pristine Mesoamerican barrier coral reefs, world-famous for scuba diving.",
-        "url": "https://picsum.photos/seed/hn-roatan/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "R\u00edo Pl\u00e1tano Biosphere Reserve",
         "caption": "One of the few remaining large tropical rainforests in Central America, home to jaguars, tapirs, and indigenous peoples.",
-        "url": "https://picsum.photos/seed/hn-rioplatano/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Hieroglyphic Stairway at Cop\u00e1n features over 2,000 individual carved glyphs, the longest known Maya hieroglyphic inscription in the world.",
@@ -4024,18 +4692,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Masaya Volcano Lava Lake",
         "caption": "Active volcano featuring the smoking Santiago crater where visitors can view glowing molten lava at night.",
-        "url": "https://picsum.photos/seed/ni-masaya/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Ometepe Island & Twin Volcanoes",
         "caption": "Enchanting hourglass-shaped island in Lake Nicaragua formed by two volcanoes: active Concepci\u00f3n and dormant Maderas.",
-        "url": "https://picsum.photos/seed/ni-ometepe/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Colonial Granada & Cathedral",
         "caption": "One of Central America's oldest European cities (founded 1524), celebrated for bright colonial facades and carriage rides.",
-        "url": "https://picsum.photos/seed/ni-granada/800/600"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Lake Nicaragua is the largest freshwater lake in Central America and the only freshwater lake in the world home to bull sharks.",
@@ -4048,18 +4720,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Arenal Volcano & La Fortuna",
         "caption": "Iconic symmetrical stratovolcano rising above tropical rainforests, natural hot springs, and Lake Arenal.",
-        "url": "https://picsum.photos/seed/cr-arenal/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Monteverde Cloud Forest Reserve",
         "caption": "High-altitude misty cloud forest sanctuary famed for hanging suspension bridges, orchids, and the Resplendent Quetzal.",
-        "url": "https://picsum.photos/seed/cr-monteverde/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Manuel Antonio National Park",
         "caption": "Pristine Pacific coastal park where white sand beaches meet tropical jungle home to three-toed sloths and capuchin monkeys.",
-        "url": "https://picsum.photos/seed/cr-manuelantonio/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Costa Rica constitutionally abolished its standing army in 1948, redirecting military budgets toward education and healthcare.",
@@ -4072,18 +4748,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "The Panama Canal & Miraflores Locks",
         "caption": "Engineering marvel connecting the Atlantic and Pacific oceans, lifting colossal container ships 26 meters via locks.",
-        "url": "https://picsum.photos/seed/pa-panamacanal/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Casco Viejo (Old Panama)",
         "caption": "Historic 17th-century colonial district in Panama City featuring brick streets, rooftop bars, and Spanish plazas.",
-        "url": "https://picsum.photos/seed/pa-cascoviejo/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "San Blas Islands (Guna Yala)",
         "caption": "Archipelago of 365 postcard-perfect coral islands governed autonomously by the indigenous Guna people.",
-        "url": "https://picsum.photos/seed/pa-sanblas/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Panama is the only place in the world where one can watch the sun rise over the Pacific Ocean and set over the Atlantic Ocean from the same spot.",
@@ -4096,18 +4776,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Perito Moreno Glacier in Patagonia",
         "caption": "Monumental 30-kilometer-long advancing glacier in Los Glaciares National Park, calving colossal ice blocks into Lake Argentino.",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Iguazu Falls (Devil's Throat)",
         "caption": "A roaring horseshoe amphitheater of 275 distinct waterfalls plunging over 80 meters along the Argentine-Brazilian border.",
-        "url": "https://picsum.photos/seed/ar-iguazu/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Aerial_Foz_de_Igua%C3%A7u_26_Nov_2005.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Teatro Col\u00f3n & La Boca in Buenos Aires",
         "caption": "One of the world's premier acoustical opera houses and the colorful historic Italian quarter where tango was born.",
-        "url": "https://picsum.photos/seed/ar-buenosaires/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Argentina is the birthplace of Tango, which originated in the immigrant working-class port neighborhoods of Buenos Aires in the late 19th century.",
@@ -4119,24 +4803,45 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
     "landmarks": [
       {
         "title": "Salar de Uyuni",
-        "caption": "The world's largest salt flat (10,582 sq km), transforming into a colossal mirror reflecting the sky when covered in water.",
-        "url": "https://picsum.photos/seed/bo-salardeuyuni/800/600"
+        "caption": "The world's largest salt flat (10,582 sq km), transforming into a colossal mirror reflecting the sky and clouds during the wet season.",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Salar_de_Uyuni%2C_Bolivia%2C_2016-02-04%2C_DD_16-18_HDR.JPG"
+      },
+      {
+        "title": "Laguna Colorada (Red Lagoon)",
+        "caption": "Shallow salt lake in the Eduardo Avaroa Reserve famed for its intense red-crimson water, white borax islands, and thousands of rare James's and Andean flamingos.",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Laguna_Colorada_MC.jpg"
+      },
+      {
+        "title": "Tiwanaku & Puerta del Sol (Gate of the Sun)",
+        "caption": "UNESCO World Heritage Site near Lake Titicaca featuring monumental pre-Columbian megalithic stone gateways and the ancient spiritual capital of the Tiwanaku Empire.",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/PUERTA_DEL_SOL_TIWANAKU.jpg/3840px-PUERTA_DEL_SOL_TIWANAKU.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Lake Titicaca & Isla del Sol",
-        "caption": "The world's highest navigable lake (3,812 m), sacred to Inca mythology as the birthplace of the Sun God.",
-        "url": "https://picsum.photos/seed/bo-laketiticaca/800/600"
+        "caption": "The highest navigable lake on Earth (3,812 m) and the sacred Isla del Sol, celebrated in Inca mythology as the birthplace of the Sun God Inti.",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Lake_Titicaca_ESA22522896.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
-        "title": "La Paz Mi Telef\u00e9rico Cable Car",
-        "caption": "The highest and longest urban cable car network in the world, connecting mountain ridges with panoramic Andean views.",
-        "url": "https://picsum.photos/seed/bo-lapaz/800/600"
+        "title": "La Paz & Mi Teleférico Urban Cable Cars",
+        "caption": "The world's highest and longest urban cable car transit network gliding high above La Paz with panoramic views of snow-crested Mount Illimani (6,438 m).",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/L%C3%ADnea_Roja_de_Mi_Telef%C3%A9rico_en_La_Paz%2C_Bolivia.jpg"
+      },
+      {
+        "title": "Cerro Rico & Historic Potosí",
+        "caption": "UNESCO World Heritage colonial mining city crowned by the legendary silver mountain Cerro Rico ('Rich Hill') and historic Casa de la Moneda.",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Cerro_ricco.jpg"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Salar de Uyuni holds an estimated 50% to 70% of the world's known lithium reserves beneath its white salt crust.",
       "Bolivia has two capital cities: Sucre is the official constitutional capital, while La Paz is the seat of government.",
-      "Bolivia's Constitution recognizes 37 official languages, including Spanish, Quechua, Aymara, and Guaran\u00ed."
+      "Bolivia's Constitution recognizes 37 official languages, including Spanish, Quechua, Aymara, and Guaraní.",
+      "La Paz sits at 3,640 meters altitude and is served by Mi Teleférico, the world's highest and largest urban cable car network.",
+      "Lake Titicaca, shared with Peru at 3,812 m elevation, is the world's highest body of water navigable by large commercial vessels."
     ]
   },
   "br": {
@@ -4144,18 +4849,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Christ the Redeemer in Rio de Janeiro",
         "caption": "Monumental 30-meter Art Deco statue crowning the 700-meter granite peak of Mount Corcovado overlooking Guanabara Bay.",
-        "url": "https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?auto=format&fit=crop&w=800&q=80"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Cristo_Redentor_-_Rio_de_Janeiro%2C_Brasil.jpg"
       },
       {
         "title": "The Amazon Rainforest & River",
         "caption": "The world's largest tropical rainforest and river basin, home to 10% of Earth's known species.",
-        "url": "https://picsum.photos/seed/br-amazon/800/600"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Amazon17_%285641020319%29.jpg/3840px-Amazon17_%285641020319%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Len\u00e7\u00f3is Maranhenses National Park",
         "caption": "Surreal landscape of rolling white sand dunes filled with crystal-clear freshwater rainwater lagoons during wet season.",
-        "url": "https://picsum.photos/seed/br-lencois/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Brazil is the fifth-largest country in the world by both area and population, bordering every South American nation except Chile and Ecuador.",
@@ -4168,18 +4877,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Torres del Paine National Park",
         "caption": "Dramatic granite mountain towers rising above turquoise glacial lakes and golden pampas in Chilean Patagonia.",
-        "url": "https://picsum.photos/seed/cl-torresdelpaine/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Easter Island (Rapa Nui) Moai Statues",
         "caption": "Mysterious colossal volcanic stone statues erected by Polynesian navigators across the Pacific island.",
-        "url": "https://picsum.photos/seed/cl-easterisland/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Atacama Desert (Valle de la Luna)",
         "caption": "The driest non-polar desert on Earth, home to lunar-like salt formations, geysers, and world-class astronomical observatories.",
-        "url": "https://picsum.photos/seed/cl-atacama/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Chile is the longest and narrowest country in the world, stretching over 4,300 kilometers north to south with an average width of just 175 km.",
@@ -4192,18 +4905,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Cocora Valley Wax Palms",
         "caption": "Misty Andean valley home to the Quind\u00edo wax palm, the world's tallest palm species, soaring up to 60 meters high.",
-        "url": "https://picsum.photos/seed/co-cocora/800/600"
+        "url": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Cartagena Old Walled City",
         "caption": "UNESCO-listed 16th-century Caribbean colonial fortress port town decorated with flowering balconies and plazas.",
-        "url": "https://picsum.photos/seed/co-cartagena/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Ca\u00f1o Cristales ('River of Five Colors')",
         "caption": "Spectacular river in the Serran\u00eda de la Macarena that glows vibrant red, magenta, and green from aquatic plants.",
-        "url": "https://picsum.photos/seed/co-canocristales/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Colombia is the second-most biodiverse country in the world, and number one in the world for bird, orchid, and butterfly species.",
@@ -4216,18 +4933,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Gal\u00e1pagos Islands Marine Reserve",
         "caption": "Volcanic archipelago famous for fearless endemic wildlife that inspired Charles Darwin's theory of evolution.",
-        "url": "https://picsum.photos/seed/ec-galapagos/800/600"
+        "url": "https://images.unsplash.com/photo-1540573137025-58721d013a8f?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Cotopaxi Volcano & National Park",
         "caption": "One of the world's highest active volcanoes (5,897 m), an iconic snow-capped symmetrical cone rising on the Avenue of the Volcanoes.",
-        "url": "https://picsum.photos/seed/ec-cotopaxi/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Historic Center of Quito",
         "caption": "The least-altered and best-preserved historic center in the Americas, the very first city declared a UNESCO World Heritage site in 1978.",
-        "url": "https://picsum.photos/seed/ec-quito/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Mount Chimborazo in Ecuador is the closest place on Earth to the sun; due to the Earth's equatorial bulge, its peak is the farthest point from the Earth's center.",
@@ -4240,18 +4961,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Kaieteur Falls",
         "caption": "The world's largest single-drop waterfall by volume, plunging 226 meters (four times taller than Niagara) into a pristine jungle canyon.",
-        "url": "https://picsum.photos/seed/gy-kaieteur/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mount Roraima Plateau",
         "caption": "Towering sheer flat-topped tepui mountain sharing borders with Venezuela and Brazil, inspiring Arthur Conan Doyle's The Lost World.",
-        "url": "https://picsum.photos/seed/gy-roraima/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "St. George's Cathedral in Georgetown",
         "caption": "One of the tallest freestanding wooden Gothic Revival church buildings in the world, soaring 43 meters high.",
-        "url": "https://picsum.photos/seed/gy-stgeorges/800/600"
+        "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Kaieteur Falls is about four times higher than Niagara Falls and twice as high as Victoria Falls for a single-drop waterfall.",
@@ -4264,18 +4989,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Itaipu Dam",
         "caption": "One of the largest operational hydroelectric power plants in the world on the Paran\u00e1 River, shared with Brazil.",
-        "url": "https://picsum.photos/seed/py-itaipu/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Jesuit Missions of La Sant\u00edsima Trinidad",
         "caption": "UNESCO-listed ruins of 17th-century autonomous religious communities established by the Jesuits for the Guaran\u00ed people.",
-        "url": "https://picsum.photos/seed/py-jesuitmissions/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "The Gran Chaco Wilderness",
         "caption": "Vast, sparsely populated dry forest plain home to jaguars, giant armadillos, and diverse Mennonite farming colonies.",
-        "url": "https://picsum.photos/seed/py-granchaco/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Paraguay is one of the only countries in the Americas where an indigenous language (Guaran\u00ed) is spoken by the non-indigenous majority.",
@@ -4288,18 +5017,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Machu Picchu & Huayna Picchu",
         "caption": "15th-century Inca citadel perched 2,430 meters high on an Andean mountain ridge above the Urubamba River valley.",
-        "url": "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=800&q=80"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/3840px-Machu_Picchu%2C_2023_%28012%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "title": "Vinicunca (Rainbow Mountain)",
         "caption": "High Andean mountain famed for natural mineral stripes of turquoise, lavender, magenta, and gold at 5,200 m elevation.",
-        "url": "https://picsum.photos/seed/pe-rainbowmountain/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Nazca Lines in the Coastal Desert",
         "caption": "Enigmatic geoglyphs etched into the desert floor depicting hummingbirds, monkeys, and geometric shapes.",
-        "url": "https://picsum.photos/seed/pe-nazcalines/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Machu Picchu was built without mortar; the Incas used a technique called ashlar, fitting giant stones so tightly that not even a knife blade can pass.",
@@ -4312,18 +5045,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Historic Inner City of Paramaribo",
         "caption": "UNESCO-listed Dutch colonial town featuring unique wooden colonial architecture blending European and indigenous styles.",
-        "url": "https://picsum.photos/seed/sr-paramaribo/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Central Suriname Nature Reserve",
         "caption": "Vast pristine rainforest reserve protecting 1.6 million hectares of primary Amazon forest and granite dome inselbergs.",
-        "url": "https://picsum.photos/seed/sr-nature/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Brownsberg Nature Park",
         "caption": "Mountain plateau overlooking the Brokopondo Reservoir, renowned for howler monkeys, toucans, and jungle waterfalls.",
-        "url": "https://picsum.photos/seed/sr-brownsberg/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Suriname is the most heavily forested country on Earth, with approximately 93% of its landmass covered by intact tropical forest.",
@@ -4336,18 +5073,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Casapueblo in Punta Ballena",
         "caption": "Whimsical Mediterranean-style cliffside sculpture-hotel created by Uruguayan artist Carlos P\u00e1ez Vilar\u00f3.",
-        "url": "https://picsum.photos/seed/uy-casapueblo/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Historic Quarter of Colonia del Sacramento",
         "caption": "Charming 17th-century cobblestone town founded by the Portuguese on the banks of the R\u00edo de la Plata.",
-        "url": "https://picsum.photos/seed/uy-colonia/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Punta del Este & The Hand (La Mano)",
         "caption": "Famous Atlantic beach resort featuring Mario Irarr\u00e1zabal's colossal sculpture of fingers emerging from the sand.",
-        "url": "https://picsum.photos/seed/uy-puntadeleste/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Uruguay hosted the very first FIFA World Cup in 1930 and won the tournament, defeating Argentina in the final at Estadio Centenario.",
@@ -4360,18 +5101,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Angel Falls (Salto \u00c1ngel)",
         "caption": "The world's highest uninterrupted waterfall, plunging 979 meters from the cliff of the Auy\u00e1n-tepui plateau in Canaima.",
-        "url": "https://picsum.photos/seed/ve-angelfalls/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mount Roraima Tepui",
         "caption": "Ancient tabletop sandstone mountain rising above the Gran Sabana with sheer 400-meter cliffs and unique carnivorous plants.",
-        "url": "https://picsum.photos/seed/ve-roraima/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Los Roques Archipelago",
         "caption": "Protected Caribbean national marine park consisting of 350 islands, cays, and pristine white sand coral reefs.",
-        "url": "https://picsum.photos/seed/ve-losroques/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Angel Falls (Kerepakupai Mer\u00fa) is the highest waterfall in the world at 979 meters, with an uninterrupted plunge of 807 meters.",
@@ -4384,18 +5129,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Sydney Opera House & Harbour Bridge",
         "caption": "J\u00f8rn Utzon's architectural masterpiece with shell-like sails dominating Sydney Harbour.",
-        "url": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Sydney_Australia._%2821339175489%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Uluru (Ayers Rock)",
         "caption": "Colossal ancient sandstone monolith in the Red Centre, sacred to the indigenous Anangu people, glowing red at sunrise.",
-        "url": "https://picsum.photos/seed/au-uluru/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/ULURU.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
       {
         "title": "Great Barrier Reef",
         "caption": "The world's largest coral reef ecosystem, spanning 2,300 km and visible from outer space.",
-        "url": "https://picsum.photos/seed/au-greatbarrierreef/800/600"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/ISS-45_StoryOfWater%2C_Great_Barrier_Reef%2C_Australia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Australia is the only continent covered entirely by a single nation and is home to unique marsupials like kangaroos, koalas, and wombats.",
@@ -4408,18 +5157,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mamanuca & Yasawa Islands",
         "caption": "Tropical volcanic islands with turquoise lagoons, white coral beaches, and world-class scuba dive walls.",
-        "url": "https://picsum.photos/seed/fj-mamanuca/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Bouma National Heritage Park in Taveuni",
         "caption": "Protected rainforest on the 'Garden Island' of Taveuni featuring the three cascading Tavoro Waterfalls.",
-        "url": "https://picsum.photos/seed/fj-bouma/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Sri Siva Subramaniya Temple in Nadi",
         "caption": "The largest Hindu temple complex in the Southern Hemisphere, celebrated for ornate Dravidian temple carvings.",
-        "url": "https://picsum.photos/seed/fj-nadi/800/600"
+        "url": "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The 180-degree meridian (International Date Line) passes right through Taveuni, Fiji, allowing visitors to stand with one foot in 'today' and one in 'yesterday'.",
@@ -4432,18 +5185,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "South Tarawa & Betio Causeway",
         "caption": "Slender coral atoll string serving as the vibrant capital, site of the historic World War II Battle of Tarawa.",
-        "url": "https://picsum.photos/seed/ki-tarawa/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Phoenix Islands Protected Area (PIPA)",
         "caption": "One of the largest marine protected reserves on Earth, conserving pristine deep ocean ecosystems and corals.",
-        "url": "https://picsum.photos/seed/ki-phoenix/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Kiritimati (Christmas Island)",
         "caption": "The largest coral atoll in the world by land area, renowned globally for flats bonefishing and seabird colonies.",
-        "url": "https://picsum.photos/seed/ki-kiritimati/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Kiribati is the only country in the world situated in all four hemispheres (Northern, Southern, Eastern, and Western).",
@@ -4456,18 +5213,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Majuro Atoll Lagoon",
         "caption": "Slender ribbon of coral islands enclosing a calm 295-sq-km emerald lagoon plied by traditional outrigger canoes.",
-        "url": "https://picsum.photos/seed/mh-majuro/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Bikini Atoll Lagoon & Shipwrecks",
         "caption": "UNESCO World Heritage underwater grave of historic warships sunken during Cold War nuclear testing operations.",
-        "url": "https://picsum.photos/seed/mh-bikini/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Arno Atoll Coral Reefs",
         "caption": "Tranquil outer atoll celebrated for traditional coconut copra production, shark sanctuaries, and marine life.",
-        "url": "https://picsum.photos/seed/mh-arno/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The Marshallese people were master navigators who created traditional 'stick charts' (rebbelib and mattang) to read ocean wave swells.",
@@ -4480,18 +5241,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Nan Madol Megalithic Ruins",
         "caption": "The 'Venice of the Pacific', an ancient stone city built atop 92 artificial islets linked by tidal canals off Pohnpei.",
-        "url": "https://picsum.photos/seed/fm-nanmadol/800/600"
+        "url": "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Chuuk (Truk) Lagoon Ghost Fleet",
         "caption": "The world's premier wreck diving destination, hosting dozens of Japanese WWII warships and aircraft on the lagoon floor.",
-        "url": "https://picsum.photos/seed/fm-chuuk/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Yap Island Rai Stone Money",
         "caption": "Historic limestone circular carved stones measuring up to 3.6 meters across, still used for ceremonial transactions.",
-        "url": "https://picsum.photos/seed/fm-yap/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Nan Madol on Pohnpei is the only ancient city ever constructed entirely on top of a coral reef, using basalt stone columns weighing tons.",
@@ -4504,18 +5269,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Anibare Bay & Harbour",
         "caption": "Pristine white sand beach framed by dramatic limestone pinnacle reefs on the eastern Pacific shore of Nauru.",
-        "url": "https://picsum.photos/seed/nr-anibare/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Command Ridge",
         "caption": "Nauru's highest point (65 m), featuring preserved WWII Japanese communication bunkers and artillery guns.",
-        "url": "https://picsum.photos/seed/nr-commandridge/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Buada Lagoon",
         "caption": "Tranquil freshwater lagoon surrounded by lush coconut palms and breadfruit trees in Nauru's interior plateau.",
-        "url": "https://picsum.photos/seed/nr-buada/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Nauru is the smallest independent sovereign republic in the world, covering a mere 21 square kilometers (8.1 sq miles).",
@@ -4528,18 +5297,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Milford Sound (Piopiotahi)",
         "caption": "Majestic fjord in Fiordland National Park carved by ancient glaciers, crowned by the sheer pyramid peak of Mitre Peak.",
-        "url": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=800&q=80"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Aoraki / Mount Cook",
         "caption": "The highest mountain in New Zealand (3,724 m), surrounded by Hooker Valley glacial lakes and dark sky reserves.",
-        "url": "https://picsum.photos/seed/nz-mtcook/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Rotorua Geothermal Wonders & Hobbiton",
         "caption": "Steaming geothermal mud pools and preserved lush rolling hills of the Shire movie set in the Waikato region.",
-        "url": "https://picsum.photos/seed/nz-rotorua/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "In 1893, New Zealand became the very first self-governing country in the world to grant women the right to vote in parliamentary elections.",
@@ -4552,18 +5325,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Rock Islands Southern Lagoon",
         "caption": "Mushroom-shaped emerald limestone islets surrounded by turquoise coral lagoons, a UNESCO World Heritage marvel.",
-        "url": "https://picsum.photos/seed/pw-rockislands/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Jellyfish Lake (Ongeim'l Tketau)",
         "caption": "Isolated marine lake populated by millions of golden jellyfish that lost their stinging ability over evolutionary time.",
-        "url": "https://picsum.photos/seed/pw-jellyfishlake/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Ngardmau Waterfalls",
         "caption": "The tallest waterfall in Micronesia, tumbling 30 meters over a wide rock face into a jungle freshwater pool on Babeldaob.",
-        "url": "https://picsum.photos/seed/pw-ngardmau/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Visitors to Palau must sign the 'Palau Pledge' stamped into their passports, swearing to tread lightly and preserve the island environment.",
@@ -4576,18 +5353,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mount Wilhelm Peak",
         "caption": "The highest mountain in Papua New Guinea (4,509 m), featuring glacial alpine valleys and equatorial tarns.",
-        "url": "https://picsum.photos/seed/pg-mtwilhelm/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Kokoda Track",
         "caption": "Historic 96-kilometer overland trail traversing the rugged Owen Stanley Range, famous for heroic World War II battles.",
-        "url": "https://picsum.photos/seed/pg-kokoda/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Rabaul Volcano & Tavurvur Caldera",
         "caption": "Active stratovolcano on New Britain Island that buried the colonial town of Rabaul in volcanic ash in 1994.",
-        "url": "https://picsum.photos/seed/pg-tavurvur/800/600"
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Papua New Guinea is the most linguistically diverse country on Earth, with over 840 living indigenous languages spoken.",
@@ -4600,18 +5381,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "To Sua Ocean Trench",
         "caption": "Stunning 30-meter-deep natural sinkhole filled with clear turquoise seawater, surrounded by lush jungle foliage on Upolu.",
-        "url": "https://picsum.photos/seed/ws-tosua/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Alofaaga Blowholes on Savai'i",
         "caption": "Spectacular natural volcanic blowholes that blast seawater and launched coconuts dozens of meters into the sky.",
-        "url": "https://picsum.photos/seed/ws-alofaaga/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Piula Cave Pool",
         "caption": "Natural freshwater swimming pool formed inside a volcanic lava tube right beside the Pacific ocean shore.",
-        "url": "https://picsum.photos/seed/ws-piula/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Fa'a Samoa (The Samoan Way) is the 3,000-year-old traditional socio-political cultural framework guiding community life.",
@@ -4624,18 +5409,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Marovo Lagoon",
         "caption": "The world's largest saltwater double-barrier lagoon, dotted with hundreds of forested coral islets in New Georgia.",
-        "url": "https://picsum.photos/seed/sb-marovo/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Iron Bottom Sound in Guadalcanal",
         "caption": "Historic sea strait containing dozens of sunken WWII naval warships and aircraft from the Battle of Guadalcanal.",
-        "url": "https://picsum.photos/seed/sb-guadalcanal/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mataniko Waterfalls",
         "caption": "Scenic dual cascade tumbling into a limestone cavern pool surrounded by dense tropical jungle near Honiara.",
-        "url": "https://picsum.photos/seed/sb-mataniko/800/600"
+        "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Marovo Lagoon in the Solomon Islands is the largest saltwater lagoon protected by a double barrier reef on Earth.",
@@ -4648,18 +5437,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Ha'amonga 'a Maui Trilithon",
         "caption": "Mysterious 13th-century stone archway made of three colossal coral limestone slabs weighing over 40 tons.",
-        "url": "https://picsum.photos/seed/to-trilithon/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Mapu 'a Vaea Blowholes",
         "caption": "Spectacular 5-kilometer stretch of coastline where Pacific waves force water jets up to 30 meters high through limestone fissures.",
-        "url": "https://picsum.photos/seed/to-blowholes/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Humpback Whale Nurseries of Vava'u",
         "caption": "Sheltered tropical island channels where migratory Antarctic humpback whales mate and nurse newborn calves.",
-        "url": "https://picsum.photos/seed/to-vavau/800/600"
+        "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Tonga is the only monarchy in the Pacific and the only Pacific island nation that never lost its indigenous sovereignty to foreign colonization.",
@@ -4672,18 +5465,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Funafuti Conservation Area",
         "caption": "Protected 33-sq-km marine park conserving pristine coral reefs, sea turtles, and islets on the western edge of Funafuti Atoll.",
-        "url": "https://picsum.photos/seed/tv-funafuti/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Tepuka Islet Lagoon",
         "caption": "Idyllic coral islet featuring powdery white sands, coconut palms, and remnants of World War II Pacific defense outposts.",
-        "url": "https://picsum.photos/seed/tv-tepuka/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Funafuti Airstrip & Community Green",
         "caption": "The central runway on Fongafale Island, which transforms into a bustling open-air community sports park every evening.",
-        "url": "https://picsum.photos/seed/tv-airstrip/800/600"
+        "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Tuvalu is one of the smallest and least-visited countries on Earth, welcoming fewer than 3,000 international visitors per year.",
@@ -4696,18 +5493,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mount Yasur Volcano on Tanna Island",
         "caption": "One of the world's most accessible continuously active volcanoes, erupting glowing magma strombolian fireworks daily.",
-        "url": "https://picsum.photos/seed/vu-yasur/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Millennium Cave on Espiritu Santo",
         "caption": "Colossal natural limestone cave chamber traversed by underground river trekking, bamboo bridges, and jungle canyons.",
-        "url": "https://picsum.photos/seed/vu-millenniumcave/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "SS President Coolidge Shipwreck",
         "caption": "The largest and most accessible intact luxury liner shipwreck in the world, resting in clear tropical waters off Santo.",
-        "url": "https://picsum.photos/seed/vu-coolidge/800/600"
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "The traditional Pentecost Island land diving (Naghol) ritual, where men dive from 30-meter wooden towers with vines tied to their ankles, inspired modern bungee jumping.",
@@ -4720,18 +5521,22 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       {
         "title": "Mount Erebus Active Volcano",
         "caption": "The southernmost active volcano on planet Earth, renowned for its persistent boiling anorthoclase phonolite lava lake.",
-        "url": "https://picsum.photos/seed/aq-erebus/800/600"
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Lemaire Channel & Icebergs",
         "caption": "Dramatic 11-kilometer strait flanked by sheer ice-covered cliffs, known as the 'Kodak Gap' for jaw-dropping scenic vistas.",
-        "url": "https://picsum.photos/seed/aq-lemaire/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "title": "Deception Island Volcanic Caldera",
         "caption": "Ring-shaped volcanic island with a flooded caldera harbor where geothermal waters warm the black volcanic ash beaches.",
-        "url": "https://picsum.photos/seed/aq-deception/800/600"
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       }
+    
+    
+    
+    
     ],
     "facts": [
       "Antarctica is the coldest, windiest, and driest continent on Earth, containing approximately 90% of all the ice and 70% of all freshwater on the planet.",

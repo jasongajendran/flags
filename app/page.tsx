@@ -696,8 +696,8 @@ export default function KidsApp() {
                             <ChevronRight size={12} />
                           </button>
                         </div>
-                        <div className="grid grid-cols-3 gap-2 sm:gap-3">
-                          {selectedCountry.landmarks.slice(0, 3).map((photo, pIdx) => (
+                        <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-3">
+                          {selectedCountry.landmarks.map((photo, pIdx) => (
                             <button
                               key={pIdx}
                               type="button"
@@ -743,8 +743,8 @@ export default function KidsApp() {
                     </span>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {selectedCountry.landmarks.slice(0, 3).map((photo, pIdx) => (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    {selectedCountry.landmarks.map((photo, pIdx) => (
                       <div 
                         key={pIdx}
                         onClick={() => setActivePhotoModal(photo)}
