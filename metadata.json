@@ -1,6 +1,6 @@
 {
   "name": "World Flags & Country Explorer",
-  "description": "A comprehensive interactive directory of 195 sovereign nations with geographical maps and audio profiles.",
+  "description": "A comprehensive interactive directory of 196 nations and territories across all 7 continents with geographical maps and audio profiles.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

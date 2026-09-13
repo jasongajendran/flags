@@ -27,6 +27,12 @@ export interface CountryLocation {
   adjacentCountries?: NeighborInfo[];
 }
 
+export interface LandmarkPhoto {
+  title: string;
+  caption: string;
+  url: string;
+}
+
 export interface Country {
   id: string;
   iso2: string; // 2-letter ISO code for flags (e.g. "gb", "us", "in")
@@ -43,6 +49,7 @@ export interface Country {
   interestingFacts: string[];
   factImageUrl: string;
   factImageCaption: string;
+  landmarks?: LandmarkPhoto[];
   flagMeaning: FlagMeaning;
   location: CountryLocation;
   color: string;

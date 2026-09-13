@@ -784,6 +784,49 @@ export const europeCountries: Country[] = [
     },
     color: "bg-sky-600",
     geo: { lat: 58.6, lng: 25.0, zoom: 7, capitalCoords: { lat: 59.4370, lng: 24.7535 } }
+  },
+  {
+    id: "al",
+    iso2: "al",
+    name: "Albania",
+    officialName: "Republic of Albania",
+    capital: "Tirana",
+    population: "2.8 Million",
+    languages: ["Albanian"],
+    currency: "Albanian Lek (ALL)",
+    flagUrl: "https://flagcdn.com/w320/al.png",
+    uniqueness: "Known as the Land of the Eagles, featuring over 173,000 historic concrete dome bunkers across its terrain.",
+    recordFact: "Features over 300 sunny days annually along the Albanian Riviera.",
+    description: "Albania is a Balkan nation on the Adriatic and Ionian seas, known for rugged mountain ranges, ancient Illyrian castles, and UNESCO-listed Ottoman heritage.",
+    interestingFacts: [
+      "Between the 1960s and 1980s, over 173,000 concrete dome bunkers were constructed across the country.",
+      "Mother Teresa, celebrated Nobel Peace Prize laureate, was ethnically Albanian.",
+      "Home to Butrint National Park, an ancient UNESCO World Heritage site with Greek, Roman, and Venetian ruins.",
+      "The historic towns of Berat and Gjirokastër are famous for their remarkably preserved Ottoman stone architecture."
+    ],
+    factImageUrl: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80",
+    factImageCaption: "The historic city of Berat, known as the City of a Thousand Windows",
+    flagMeaning: {
+      story: "Adopted in 1912 upon independence, the flag features a black double-headed eagle symbolizing the 15th-century national hero Skanderbeg on a field of red.",
+      elements: ["Black double-headed eagle", "Red field"],
+      colors: [
+        { name: "Blood Red", colorClass: "bg-red-700 text-white", symbol: "Bravery, strength, and the historic defense of freedom" },
+        { name: "Eagle Black", colorClass: "bg-slate-950 text-white border border-slate-700", symbol: "The sovereign double-headed eagle of Gjergj Kastrioti Skanderbeg" }
+      ]
+    },
+    location: {
+      region: "Southern Europe",
+      coordinatesText: "41°19′ N, 19°49′ E",
+      neighbors: "Bordered by Montenegro to the northwest, Kosovo to the northeast, North Macedonia to the east, and Greece to the south.",
+      surroundingWaters: ["Adriatic Sea", "Ionian Sea", "Mediterranean Sea"],
+      adjacentCountries: [
+        { name: "Montenegro", flagUrl: "https://flagcdn.com/w160/me.png", lat: 42.44, lng: 19.26, relationship: "Northwest Border" },
+        { name: "North Macedonia", flagUrl: "https://flagcdn.com/w160/mk.png", lat: 41.99, lng: 21.43, relationship: "East Border" },
+        { name: "Greece", flagUrl: "https://flagcdn.com/w160/gr.png", lat: 39.66, lng: 20.85, relationship: "South Border" }
+      ]
+    },
+    color: "bg-red-700",
+    geo: { lat: 41.1533, lng: 20.1683, zoom: 7, capitalCoords: { lat: 41.3275, lng: 19.8187 } }
   }
 ];
 

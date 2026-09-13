@@ -2,6 +2,22 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 
+// Formats text so speech synthesis pronounces numbers and abbreviations naturally
+function cleanTextForSpeech(input: string): string {
+  if (!input) return "";
+  return input
+    // Expand number suffixes: 12M -> 12 Million, 2.8M -> 2.8 Million, 1.4B -> 1.4 Billion, 80K -> 80 Thousand
+    .replace(/(\b\d+(?:\.\d+)?)\s*M\b/gi, '$1 Million')
+    .replace(/(\b\d+(?:\.\d+)?)\s*B\b/gi, '$1 Billion')
+    .replace(/(\b\d+(?:\.\d+)?)\s*K\b/gi, '$1 Thousand')
+    // Expand Pop: to Population:
+    .replace(/\bPop:\s*/gi, 'Population: ')
+    // Expand geographic abbreviations
+    .replace(/\bsq\s*km\b/gi, 'square kilometers')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 export function useAudioGuide() {
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -64,7 +80,8 @@ export function useAudioGuide() {
       if (!isMounted.current) return;
       if (typeof window === "undefined" || !window.speechSynthesis) return;
 
-      const utterance = new SpeechSynthesisUtterance(text);
+      const speechText = cleanTextForSpeech(text);
+      const utterance = new SpeechSynthesisUtterance(speechText);
       utteranceRef.current = utterance;
 
       // Select a clear natural English voice

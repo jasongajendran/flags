@@ -55,17 +55,15 @@ export function RealCountryMap({
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<any>(null);
   const markersLayerRef = useRef<any>(null);
-  const [mapStyle, setMapStyle] = useState<'osm' | 'satellite' | 'topo'>('osm');
+  const [mapStyle, setMapStyle] = useState<'satellite' | 'topo'>('topo');
   const [mapLoaded, setMapLoaded] = useState(false);
 
-  const getTileUrl = (style: 'osm' | 'satellite' | 'topo') => {
+  const getTileUrl = (style: 'satellite' | 'topo') => {
     if (style === 'satellite') {
       return 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
     }
-    if (style === 'topo') {
-      return 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}';
-    }
-    return 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+    // Topographic default: Esri World Topo Map with clean global relief and English labels
+    return 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}';
   };
 
       const geoInfo = GEO_DATA[country.iso2.toLowerCase()] || {};
@@ -112,8 +110,9 @@ export function RealCountryMap({
 
         // Tile layer without any API keys required
         const tileLayer = L.tileLayer(getTileUrl(mapStyle), {
-          maxZoom: 18,
-          attribution: '© OpenStreetMap contributors | Esri',
+          maxZoom: 19,
+          subdomains: 'abcd',
+          attribution: '© OpenStreetMap contributors | CARTO | Esri',
         }).addTo(map);
 
         const markersLayer = L.layerGroup().addTo(map);
@@ -144,8 +143,9 @@ export function RealCountryMap({
     map.removeLayer(tileLayer);
 
     const newTileLayer = L.tileLayer(getTileUrl(mapStyle), {
-      maxZoom: 18,
-      attribution: '© OpenStreetMap contributors | Esri',
+      maxZoom: 19,
+      subdomains: 'abcd',
+      attribution: '© OpenStreetMap contributors | CARTO | Esri',
     }).addTo(map);
 
     mapInstanceRef.current.tileLayer = newTileLayer;
@@ -307,16 +307,6 @@ export function RealCountryMap({
         <div className="flex items-center gap-1.5">
           <div className="bg-white p-1 rounded-xl border border-slate-200 flex items-center gap-1 shadow-2xs">
             <button
-              onClick={() => setMapStyle('osm')}
-              className={`px-2.5 py-1 rounded-lg text-[10px] font-black transition-all cursor-pointer ${
-                mapStyle === 'osm'
-                  ? 'bg-indigo-600 text-white shadow-xs'
-                  : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              🗺️ OpenStreetMap
-            </button>
-            <button
               onClick={() => setMapStyle('topo')}
               className={`px-2.5 py-1 rounded-lg text-[10px] font-black transition-all cursor-pointer ${
                 mapStyle === 'topo'
@@ -324,7 +314,7 @@ export function RealCountryMap({
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >
-              🏔️ Topographic
+              🏔️ Topographic (Default)
             </button>
             <button
               onClick={() => setMapStyle('satellite')}
