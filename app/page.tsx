@@ -25,6 +25,7 @@ import {
   RefreshCw,
   Info,
   ArrowLeft,
+  ArrowRight,
   Camera,
   Landmark,
   Maximize2,
@@ -102,6 +103,33 @@ export default function KidsApp() {
       return matchesSearch && matchesContinent;
     });
   }, [searchQuery, catalogContinentFilter]);
+
+  // Sibling countries navigation state (Previous / Next within continent)
+  const currentContinent = useMemo(() => {
+    return continentsData.find(
+      c => c.countries.some(country => country.id === selectedCountry.id)
+    ) || activeContinent;
+  }, [selectedCountry, activeContinent]);
+
+  const siblingCountries = useMemo(() => {
+    return currentContinent.countries;
+  }, [currentContinent]);
+
+  const currentIndex = useMemo(() => {
+    return siblingCountries.findIndex(c => c.id === selectedCountry.id);
+  }, [siblingCountries, selectedCountry]);
+
+  const prevCountry = useMemo(() => {
+    if (siblingCountries.length === 0) return selectedCountry;
+    const idx = (currentIndex - 1 + siblingCountries.length) % siblingCountries.length;
+    return siblingCountries[idx];
+  }, [siblingCountries, currentIndex, selectedCountry]);
+
+  const nextCountry = useMemo(() => {
+    if (siblingCountries.length === 0) return selectedCountry;
+    const idx = (currentIndex + 1) % siblingCountries.length;
+    return siblingCountries[idx];
+  }, [siblingCountries, currentIndex, selectedCountry]);
 
   const stopAllAudio = () => {
     readAllActiveRef.current = false;
@@ -188,7 +216,12 @@ export default function KidsApp() {
     }
     setSelectedCountry(country);
     setMainView('country');
+    
+    // Smooth scroll to top, reinforced with a deferred frame call to counter React re-render layout shifts
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 60);
   };
 
   const getSectionHighlight = (section: NonNullable<AudioSection>) => {
@@ -409,7 +442,7 @@ export default function KidsApp() {
                       }}
                       className="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col items-center text-center transition-all duration-200 cursor-pointer group hover:-translate-y-1 hover:border-indigo-500 shadow-md"
                     >
-                      <div className="relative w-full aspect-3/2 rounded-lg overflow-hidden border border-slate-700 shadow-sm mb-3 group-hover:ring-2 group-hover:ring-indigo-400">
+                      <div className="relative w-full aspect-[3/2] rounded-lg overflow-hidden border border-slate-700 shadow-sm mb-3 group-hover:ring-2 group-hover:ring-indigo-400">
                         <Image
                           src={flagItem.flagUrl}
                           alt={`Flag of ${flagItem.name}`}
@@ -448,7 +481,7 @@ export default function KidsApp() {
               {/* Country Hero Header (Intro) */}
               <section id="section-intro" className={`bg-slate-950 border rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden scroll-mt-8 ${getSectionHighlight('intro')}`}>
                 <div className="flex flex-col lg:flex-row items-center gap-8 relative z-10">
-                  <div className="relative w-48 sm:w-64 aspect-3/2 rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700 shrink-0">
+                  <div className="relative w-48 sm:w-64 aspect-[3/2] rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700 shrink-0">
                     <Image
                       src={selectedCountry.flagUrl}
                       alt={`Flag of ${selectedCountry.name}`}
@@ -610,7 +643,7 @@ export default function KidsApp() {
 
                     {/* Flag Visual Reference Thumbnail */}
                     <div className="flex items-center gap-4 mb-5 p-3.5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-inner">
-                      <div className="relative w-20 sm:w-28 aspect-3/2 rounded-xl overflow-hidden shadow-md border border-slate-700 shrink-0 bg-slate-950">
+                      <div className="relative w-20 sm:w-28 aspect-[3/2] rounded-xl overflow-hidden shadow-md border border-slate-700 shrink-0 bg-slate-950">
                         <Image
                           src={selectedCountry.flagUrl}
                           alt={`${selectedCountry.name} Flag`}
@@ -714,7 +747,7 @@ export default function KidsApp() {
                               key={pIdx}
                               type="button"
                               onClick={() => setActivePhotoModal(photo)}
-                              className="group relative aspect-4/3 rounded-xl overflow-hidden border border-slate-800 hover:border-sky-400/80 transition-all cursor-pointer text-left shadow-sm"
+                              className="group relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-800 hover:border-sky-400/80 transition-all cursor-pointer text-left shadow-sm"
                               title={photo.title}
                             >
                               <Image
@@ -762,7 +795,7 @@ export default function KidsApp() {
                         onClick={() => setActivePhotoModal(photo)}
                         className="group bg-slate-900 border border-slate-800 hover:border-sky-500/60 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col"
                       >
-                        <div className="relative aspect-4/3 w-full overflow-hidden bg-slate-950">
+                        <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-950">
                           <Image
                             src={photo.url}
                             alt={photo.title}
@@ -795,6 +828,68 @@ export default function KidsApp() {
                       </div>
                     ))}
                   </div>
+
+                  {/* Sibling Country Navigation (Previous / Next within Continent) */}
+                  <div className="mt-8 pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <button
+                      type="button"
+                      onClick={() => handleSelectCountry(prevCountry, currentContinent)}
+                      className="w-full sm:w-auto group flex items-center gap-3 px-5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-850 border border-slate-800/60 hover:border-indigo-500/30 text-left transition-all cursor-pointer shadow-md"
+                    >
+                      <ArrowLeft size={18} className="text-indigo-400 shrink-0 transition-transform group-hover:-translate-x-1" />
+                      <div className="min-w-0">
+                        <span className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider">
+                          Previous Country
+                        </span>
+                        <div className="flex items-center gap-2 mt-0.5">
+                          <div className="relative w-6 h-4 rounded overflow-hidden border border-slate-700/60 shrink-0">
+                            <Image
+                              src={prevCountry.flagUrl}
+                              alt={prevCountry.name}
+                              fill
+                              className="object-cover"
+                              referrerPolicy="no-referrer"
+                            />
+                          </div>
+                          <span className="font-bold text-sm text-slate-200 group-hover:text-indigo-300 transition-colors truncate">
+                            {prevCountry.name}
+                          </span>
+                        </div>
+                      </div>
+                    </button>
+
+                    <div className="text-xs font-semibold text-slate-500 px-4 py-1.5 bg-slate-900/60 rounded-full border border-slate-800 shrink-0 flex items-center gap-2">
+                      <span>🌍</span>
+                      <span className="text-slate-300">{currentContinent.name} Guide</span>
+                    </div>
+
+                    <button
+                      type="button"
+                      onClick={() => handleSelectCountry(nextCountry, currentContinent)}
+                      className="w-full sm:w-auto group flex items-center justify-between sm:justify-start gap-3 px-5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-850 border border-slate-800/60 hover:border-indigo-500/30 text-right transition-all cursor-pointer shadow-md"
+                    >
+                      <div className="min-w-0 text-left sm:text-right">
+                        <span className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider">
+                          Next Country
+                        </span>
+                        <div className="flex items-center sm:justify-end gap-2 mt-0.5">
+                          <div className="relative w-6 h-4 rounded overflow-hidden border border-slate-700/60 shrink-0 order-first sm:order-last">
+                            <Image
+                              src={nextCountry.flagUrl}
+                              alt={nextCountry.name}
+                              fill
+                              className="object-cover"
+                              referrerPolicy="no-referrer"
+                            />
+                          </div>
+                          <span className="font-bold text-sm text-slate-200 group-hover:text-indigo-300 transition-colors truncate">
+                            {nextCountry.name}
+                          </span>
+                        </div>
+                      </div>
+                      <ArrowRight size={18} className="text-indigo-400 shrink-0 transition-transform group-hover:translate-x-1" />
+                    </button>
+                  </div>
                 </section>
               )}
 
@@ -813,7 +908,7 @@ export default function KidsApp() {
             className="bg-slate-900 border border-slate-800 rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl animate-in fade-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative aspect-16/10 w-full bg-slate-950">
+            <div className="relative aspect-[16/10] w-full bg-slate-950">
               <Image
                 src={activePhotoModal.url}
                 alt={activePhotoModal.title}

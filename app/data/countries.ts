@@ -76,33 +76,8 @@ export function enrichCountry(c: Country): Country {
   };
 }
 
-// Base raw continents list
-const rawContinentsData: Continent[] = [
-  europeContinent,
-  northAmericaContinent,
-  southAmericaContinent,
-  asiaContinent,
-  africaContinent,
-  oceaniaContinent,
-  antarcticaContinent
-];
-
-// Aggregate all 7 continents with fully enriched countries (guaranteed 3+ photos and 3+ facts)
-export const continentsData: Continent[] = rawContinentsData.map(continent => ({
-  ...continent,
-  countries: continent.countries.map(enrichCountry)
-}));
-
-// Flat list of all countries across continents
-export const allCountries: Country[] = continentsData.flatMap(c => c.countries);
-
 // Map by lowercase ID and ISO2 code for instant O(1) lookup
-const countryLookup = new Map<string, Country>();
-allCountries.forEach(c => {
-  countryLookup.set(c.id.toLowerCase(), c);
-  countryLookup.set(c.iso2.toLowerCase(), c);
-  countryLookup.set(c.name.toLowerCase(), c);
-});
+export const countryLookup = new Map<string, Country>();
 
 // Capital coordinates and regional approximate bounding center fallback
 const CONTINENT_COORDS: Record<string, { lat: number; lng: number; zoom: number }> = {
@@ -147,7 +122,7 @@ export function getCountryOrGenerate(item: WorldFlagItem): Country {
   const capitalCoords = geoInfo.capitalCoords ?? { lat, lng };
   
   const rawNeighbors = geoInfo.neighborsIso2 || [];
-  const neighbors = rawNeighbors.map((iso: string, idx: number) => {
+  const neighbors = rawNeighbors.map((iso: string) => {
     const nItem = WORLD_ALL_FLAGS.find(f => f.iso2.toLowerCase() === iso);
     if (!nItem) return null;
     const nGeo = GEO_DATA[iso] || {};
@@ -262,6 +237,51 @@ export function getCountryOrGenerate(item: WorldFlagItem): Country {
 
   return enriched;
 }
+
+// Base raw continents list
+const rawContinentsData: Continent[] = [
+  europeContinent,
+  northAmericaContinent,
+  southAmericaContinent,
+  asiaContinent,
+  africaContinent,
+  oceaniaContinent,
+  antarcticaContinent
+];
+
+// Aggregate all 7 continents with fully enriched countries (guaranteed 3+ photos and 3+ facts)
+// Pre-populates all 196 countries in their respective continents sorted alphabetically by name
+export const continentsData: Continent[] = rawContinentsData.map(continent => {
+  const matchName = continent.name.toLowerCase();
+  
+  const countriesInContinent = WORLD_ALL_FLAGS
+    .filter(f => f.continent.toLowerCase() === matchName)
+    .map(item => {
+      // Check if there is a statically defined country for this flag item
+      const staticCountry = continent.countries.find(
+        c => c.id.toLowerCase() === item.id.toLowerCase() || c.iso2.toLowerCase() === item.iso2.toLowerCase()
+      );
+      if (staticCountry) {
+        const enriched = enrichCountry(staticCountry);
+        countryLookup.set(item.id.toLowerCase(), enriched);
+        countryLookup.set(item.iso2.toLowerCase(), enriched);
+        countryLookup.set(item.name.toLowerCase(), enriched);
+        return enriched;
+      } else {
+        const generated = getCountryOrGenerate(item);
+        return generated;
+      }
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  return {
+    ...continent,
+    countries: countriesInContinent
+  };
+});
+
+// Flat list of all countries across continents
+export const allCountries: Country[] = continentsData.flatMap(c => c.countries);
 
 // Helper to generate full, natural storytelling narration without duplicate phrases
 export function getFullCountryGuideStory(
