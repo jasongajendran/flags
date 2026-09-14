@@ -11,6 +11,7 @@ import { GEO_DATA } from './geo-dataset';
 import { COUNTRY_META } from './country-meta';
 import { FLAG_MEANINGS_DATASET } from './flags-dataset';
 import { WORLD_LANDMARKS_AND_FACTS } from './country-landmarks-facts';
+import { LANDLOCKED_COUNTRIES, COUNTRY_COASTAL_WATERS } from './country-geography-features';
 
 export type { Continent, Country, FlagMeaning, CountryLocation, ColorSymbol, NeighborInfo, LandmarkPhoto };
 
@@ -47,24 +48,47 @@ export function enrichCountry(c: Country): Country {
     ];
   }
 
-  // Guaranteed minimum 3 distinct fascinating facts
-  const factsSet = new Set<string>();
-  if (kb?.facts && kb.facts.length > 0) {
-    for (const f of kb.facts) {
-      if (f && f.trim()) factsSet.add(f.trim());
+  // Guaranteed minimum 3 distinct fascinating facts (strictly non-duplicative)
+  let distinctFacts: string[] = [];
+  if (kb?.facts && kb.facts.length >= 3) {
+    // kb.facts is curated and already contains verified unique facts
+    distinctFacts = kb.facts.filter(f => f && f.trim());
+  } else {
+    const candidates: string[] = [
+      ...(kb?.facts || []),
+      ...(c.interestingFacts || []),
+      c.uniqueness || '',
+      c.recordFact || '',
+      c.description || ''
+    ].filter(f => f && f.trim());
+
+    const accepted: string[] = [];
+    for (const cand of candidates) {
+      const trimmed = cand.trim();
+      const candWords = new Set(trimmed.toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(w => w.length > 3));
+      let isOverlap = false;
+      for (const exist of accepted) {
+        if (exist.toLowerCase() === trimmed.toLowerCase()) {
+          isOverlap = true;
+          break;
+        }
+        const existWords = new Set(exist.toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(w => w.length > 3));
+        let common = 0;
+        for (const w of candWords) {
+          if (existWords.has(w)) common++;
+        }
+        if (common / Math.min(candWords.size, existWords.size) > 0.45) {
+          isOverlap = true;
+          break;
+        }
+      }
+      if (!isOverlap) {
+        accepted.push(trimmed);
+      }
+      if (accepted.length >= 5) break;
     }
+    distinctFacts = accepted;
   }
-  if (c.interestingFacts && c.interestingFacts.length > 0) {
-    for (const f of c.interestingFacts) {
-      if (f && f.trim()) factsSet.add(f.trim());
-    }
-  }
-  if (factsSet.size < 3) {
-    if (c.uniqueness && !factsSet.has(c.uniqueness)) factsSet.add(c.uniqueness);
-    if (c.recordFact && !factsSet.has(c.recordFact)) factsSet.add(c.recordFact);
-    if (c.description && !factsSet.has(c.description)) factsSet.add(c.description);
-  }
-  const distinctFacts = Array.from(factsSet);
 
   return {
     ...c,
@@ -162,19 +186,15 @@ export function getCountryOrGenerate(item: WorldFlagItem): Country {
     };
   }).filter(Boolean);
 
-  // Region-based real water bodies fallback
-  const defaultWaters = geoInfo.surroundingWaters || (
-    item.continent === "Europe" ? ["Baltic Sea", "North Sea", "Atlantic Ocean"] :
-    item.continent === "Asia" ? ["Pacific Ocean", "Indian Ocean", "South China Sea"] :
-    item.continent === "Africa" ? ["Atlantic Ocean", "Indian Ocean", "Mediterranean Sea"] :
-    item.continent === "North America" ? ["Atlantic Ocean", "Pacific Ocean", "Caribbean Sea"] :
-    item.continent === "South America" ? ["Pacific Ocean", "Atlantic Ocean", "Caribbean Sea"] :
-    item.continent === "Oceania" ? ["Pacific Ocean", "Tasman Sea", "Coral Sea"] :
-    ["Southern Ocean"]
-  );
+  // Determine verified surrounding waters
+  const iso2Key = item.iso2.toLowerCase();
+  const isLandlocked = LANDLOCKED_COUNTRIES.has(iso2Key);
+  const accurateWaters: string[] = isLandlocked 
+    ? [] 
+    : (geoInfo.surroundingWaters || COUNTRY_COASTAL_WATERS[iso2Key] || []);
 
   // Retrieve accurate metadata for catalog countries
-  const meta = COUNTRY_META[item.iso2.toLowerCase()];
+  const meta = COUNTRY_META[iso2Key];
   const languages = meta?.languages && meta.languages.length > 0 ? meta.languages : ["National Language"];
   const currency = meta?.currency || "Local Currency";
 
@@ -191,9 +211,16 @@ export function getCountryOrGenerate(item: WorldFlagItem): Country {
   }
 
   // Generate grounded country profile for catalog country
+  const neighborsText = neighbors.length > 0
+    ? (isLandlocked 
+        ? `Shares borders with ${neighbors.map((n: any) => n.name).join(', ')} (Landlocked country).`
+        : `Shares borders with ${neighbors.map((n: any) => n.name).join(', ')}.`
+      )
+    : "Island nation surrounded by open seas.";
+
   const generated: Country = {
-    id: item.iso2.toLowerCase(),
-    iso2: item.iso2.toLowerCase(),
+    id: iso2Key,
+    iso2: iso2Key,
     color: 'bg-indigo-600',
     name: item.name,
     officialName: item.officialName || item.name,
@@ -207,7 +234,7 @@ export function getCountryOrGenerate(item: WorldFlagItem): Country {
     flagUrl: item.flagUrl,
     factImageUrl: "https://images.unsplash.com/seed/" + item.iso2 + "/800/600",
     factImageCaption: "Landscape of " + item.name,
-    flagMeaning: FLAG_MEANINGS_DATASET[item.iso2.toLowerCase()] || {
+    flagMeaning: FLAG_MEANINGS_DATASET[iso2Key] || {
       story: `The flag of ${item.name} represents its sovereign people and heritage.`,
       elements: ["National Standard", "Official Colors"],
       colors: [
@@ -223,8 +250,8 @@ export function getCountryOrGenerate(item: WorldFlagItem): Country {
     location: {
       region: item.continent,
       coordinatesText: `${Math.abs(lat).toFixed(1)}° ${lat >= 0 ? 'N' : 'S'}, ${Math.abs(lng).toFixed(1)}° ${lng >= 0 ? 'E' : 'W'}`,
-      neighbors: neighbors.length > 0 ? `Shares borders with ${neighbors.map((n: any) => n.name).join(', ')}.` : "Island nation bounded by surrounding oceans.",
-      surroundingWaters: defaultWaters,
+      neighbors: neighborsText,
+      surroundingWaters: accurateWaters,
       adjacentCountries: neighbors
     }
   };

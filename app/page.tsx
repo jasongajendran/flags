@@ -1,6 +1,5 @@
 "use client";
 
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -48,18 +47,8 @@ import { useAudioGuide } from '@/hooks/use-audio-guide';
 import { useFullscreenWakelock } from '@/hooks/use-fullscreen-wakelock';
 import { ScrollToTop } from '@/components/scroll-to-top';
 import { WorldContinentsMap } from '@/components/world-continents-map';
-
-const RealCountryMap = dynamic(
-  () => import('@/components/real-country-map').then((mod) => mod.RealCountryMap),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="w-full h-80 sm:h-96 rounded-3xl bg-slate-100 animate-pulse border-4 border-slate-200 flex items-center justify-center text-slate-400 font-bold text-sm">
-        🗺️ Loading Map...
-      </div>
-    ),
-  }
-);
+import { RealCountryMap } from '@/components/real-country-map';
+import { ErrorBoundary } from '@/components/error-boundary';
 
 type AudioSection = 'intro' | 'flag' | 'geography' | 'facts' | null;
 
@@ -208,6 +197,23 @@ export default function KidsApp() {
       setActiveAudioSection(null);
     });
   };
+
+  // Recover gracefully if browser holds stale chunks after rebuilds
+  useEffect(() => {
+    function handleChunkLoadError(event: ErrorEvent) {
+      const msg = event?.message || '';
+      if (
+        msg.includes('ChunkLoadError') ||
+        msg.includes('Loading chunk') ||
+        event?.error?.name === 'ChunkLoadError'
+      ) {
+        console.warn('ChunkLoadError detected by page listener. Reloading with fresh assets...');
+        window.location.reload();
+      }
+    }
+    window.addEventListener('error', handleChunkLoadError);
+    return () => window.removeEventListener('error', handleChunkLoadError);
+  }, []);
 
   const handleSelectCountry = (country: Country, continent?: Continent) => {
     stopAllAudio();
@@ -563,34 +569,53 @@ export default function KidsApp() {
                 </div>
               </section>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {/* Real Map & Geography Section */}
-                <section id="section-geography" className={`bg-slate-950 border rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col h-full scroll-mt-8 ${getSectionHighlight('geography')}`}>
-                  <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-2xl font-bold text-white flex items-center gap-2">
-                      <MapPin size={24} className="text-emerald-400" />
-                      <span>Real Map &amp; Geography</span>
-                    </h3>
-                    <button
-                      id="btn-audio-geography"
-                      onClick={() => playSection('geography')}
-                      title="Listen to Geography"
-                      aria-label="Listen to Geography"
-                      className={`p-3 rounded-xl transition-all cursor-pointer shadow-md border ${
-                        activeAudioSection === 'geography'
-                          ? 'bg-rose-600 text-white animate-pulse border-rose-500'
-                          : 'bg-slate-800 text-emerald-400 hover:bg-emerald-600 hover:text-white border-slate-700'
-                      }`}
-                    >
-                      {activeAudioSection === 'geography' ? <Square size={20} fill="currentColor" /> : <Volume2 size={20} />}
-                    </button>
+              {/* Real Map & Geography Section - Full Width Showcase */}
+              <section id="section-geography" className={`bg-slate-950 border rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col scroll-mt-8 ${getSectionHighlight('geography')}`}>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                  <div className="flex items-center gap-3">
+                    <div className="p-3 bg-emerald-500/20 text-emerald-400 rounded-2xl border border-emerald-500/30">
+                      <MapPin size={26} />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl sm:text-3xl font-bold text-white flex items-center gap-2">
+                        <span>Real Map &amp; Geography</span>
+                      </h3>
+                      <p className="text-slate-400 text-xs sm:text-sm font-medium mt-0.5">
+                        High-definition topographic terrain, color-coded neighbors, adjacent seas, and major waterways
+                      </p>
+                    </div>
                   </div>
 
-                  <p className="text-slate-300 leading-relaxed mb-6">
-                    Situated in {selectedCountry.location.region} with its capital city at {selectedCountry.capital}. {selectedCountry.location.neighbors}
-                  </p>
+                  <button
+                    id="btn-audio-geography"
+                    onClick={() => playSection('geography')}
+                    title="Listen to Geography"
+                    aria-label="Listen to Geography"
+                    className={`p-3 rounded-xl transition-all cursor-pointer shadow-md border self-start sm:self-auto ${
+                      activeAudioSection === 'geography'
+                        ? 'bg-rose-600 text-white animate-pulse border-rose-500'
+                        : 'bg-slate-800 text-emerald-400 hover:bg-emerald-600 hover:text-white border-slate-700'
+                    }`}
+                  >
+                    {activeAudioSection === 'geography' ? <Square size={20} fill="currentColor" /> : <Volume2 size={20} />}
+                  </button>
+                </div>
 
-                  <div className="flex-grow min-h-[400px] w-full rounded-2xl overflow-hidden border-2 border-slate-800 relative z-0">
+                <div className="mb-6 p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-wrap items-center justify-between gap-3 text-slate-300">
+                  <div className="text-xs sm:text-sm leading-relaxed">
+                    <span className="text-slate-400 font-semibold">Location:</span>{' '}
+                    <span className="text-white font-bold">{selectedCountry.location.region}</span>
+                    <span className="mx-2 text-slate-600">•</span>
+                    <span className="text-slate-400 font-semibold">Capital:</span>{' '}
+                    <span className="text-amber-400 font-bold">★ {selectedCountry.capital}</span>
+                    <span className="mx-2 text-slate-600">•</span>
+                    <span className="text-slate-400 font-semibold">Borders:</span>{' '}
+                    <span className="text-slate-200">{selectedCountry.location.neighbors}</span>
+                  </div>
+                </div>
+
+                <div className="w-full relative z-0">
+                  <ErrorBoundary fallbackTitle="Geographic Map Preview" fallbackDescription="The interactive map is loading or updating. Click below if you wish to reload.">
                     <RealCountryMap
                       selectedCountry={selectedCountry}
                       activeContinent={activeContinent}
@@ -613,14 +638,14 @@ export default function KidsApp() {
                         }
                       }}
                     />
-                  </div>
-                </section>
+                  </ErrorBoundary>
+                </div>
+              </section>
 
-                {/* Flag & Fascinating Facts Column */}
-                <div className="space-y-8 flex flex-col h-full">
-                  
-                  {/* Flag Symbolism Section */}
-                  <section id="section-flag" className={`bg-slate-950 border rounded-3xl p-6 sm:p-8 shadow-xl scroll-mt-8 ${getSectionHighlight('flag')}`}>
+              {/* Flag Symbolism & Fascinating Facts Side-by-Side Grid */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Flag Symbolism Section */}
+                <section id="section-flag" className={`bg-slate-950 border rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col scroll-mt-8 ${getSectionHighlight('flag')}`}>
                     <div className="flex items-center justify-between mb-6">
                       <h3 className="text-2xl font-bold text-white flex items-center gap-2">
                         <Flag size={24} className="text-indigo-400" />
@@ -741,7 +766,7 @@ export default function KidsApp() {
                             <ChevronRight size={12} />
                           </button>
                         </div>
-                        <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-3">
+                        <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 sm:gap-3">
                           {selectedCountry.landmarks.map((photo, pIdx) => (
                             <button
                               key={pIdx}
@@ -767,66 +792,81 @@ export default function KidsApp() {
                       </div>
                     )}
                   </section>
-                </div>
               </div>
 
-              {/* Popular Landmarks & National Pictures Gallery (Minimum 3 Pictures) */}
+              {/* Popular Landmarks, Geography & Wildlife Gallery */}
               {selectedCountry.landmarks && selectedCountry.landmarks.length > 0 && (
                 <section id="section-landmarks" className="bg-slate-950 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl scroll-mt-8">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
                     <div>
                       <h3 className="text-2xl font-bold text-white flex items-center gap-2">
                         <Landmark size={24} className="text-sky-400" />
-                        <span>Popular Landmarks &amp; Iconic Sights</span>
+                        <span>Landmarks, Geography &amp; Wildlife</span>
                       </h3>
                       <p className="text-sm text-slate-400 mt-1">
-                        Important landmarks, scenic wonders, and well-known cultural sights of {selectedCountry.name}
+                        Important landmarks, scenic geographic wonders, and native wildlife of {selectedCountry.name}
                       </p>
                     </div>
                     <span className="text-xs font-semibold px-3 py-1 rounded-full bg-slate-900 text-sky-300 border border-slate-800 self-start sm:self-auto">
-                      {selectedCountry.landmarks.length} Popular Sights
+                      {selectedCountry.landmarks.length} Highlights
                     </span>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    {selectedCountry.landmarks.map((photo, pIdx) => (
-                      <div 
-                        key={pIdx}
-                        onClick={() => setActivePhotoModal(photo)}
-                        className="group bg-slate-900 border border-slate-800 hover:border-sky-500/60 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col"
-                      >
-                        <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-950">
-                          <Image
-                            src={photo.url}
-                            alt={photo.title}
-                            fill
-                            className="object-cover transition-transform duration-500 group-hover:scale-105"
-                            referrerPolicy="no-referrer"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent" />
-                          <div className="absolute top-3 right-3 p-1.5 rounded-lg bg-slate-900/80 text-white opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm shadow">
-                            <Maximize2 size={16} />
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5">
+                    {selectedCountry.landmarks.map((photo, pIdx, arr) => {
+                      const total = arr.length;
+                      const isWildlife = pIdx === total - 1;
+                      const isGeography = pIdx === total - 2;
+                      const badgeLabel = isWildlife 
+                        ? 'Native Wildlife' 
+                        : isGeography 
+                        ? 'Unique Geography' 
+                        : `Iconic Landmark #${pIdx + 1}`;
+                      const badgeClass = isWildlife 
+                        ? 'bg-amber-600 text-amber-50 border-amber-500/40' 
+                        : isGeography 
+                        ? 'bg-emerald-600 text-emerald-50 border-emerald-500/40' 
+                        : 'bg-sky-600 text-sky-50 border-sky-500/40';
+
+                      return (
+                        <div 
+                          key={pIdx}
+                          onClick={() => setActivePhotoModal(photo)}
+                          className="group bg-slate-900 border border-slate-800 hover:border-sky-500/60 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col"
+                        >
+                          <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-950">
+                            <Image
+                              src={photo.url}
+                              alt={photo.title}
+                              fill
+                              className="object-cover transition-transform duration-500 group-hover:scale-105"
+                              referrerPolicy="no-referrer"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent" />
+                            <div className="absolute top-3 right-3 p-1.5 rounded-lg bg-slate-900/80 text-white opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm shadow">
+                              <Maximize2 size={16} />
+                            </div>
+                            <div className="absolute bottom-3 left-3 right-3">
+                              <span className={`inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border mb-1 shadow ${badgeClass}`}>
+                                {badgeLabel}
+                              </span>
+                              <h4 className="text-sm sm:text-base font-bold text-white leading-snug drop-shadow-md line-clamp-1">
+                                {photo.title}
+                              </h4>
+                            </div>
                           </div>
-                          <div className="absolute bottom-3 left-3 right-3">
-                            <span className="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-sky-500 text-white mb-1 shadow">
-                              Popular Sight #{pIdx + 1}
-                            </span>
-                            <h4 className="text-base font-bold text-white leading-snug drop-shadow-md line-clamp-1">
-                              {photo.title}
-                            </h4>
+                          <div className="p-3.5 sm:p-4 flex-grow flex flex-col justify-between">
+                            <p className="text-xs text-slate-300 leading-relaxed line-clamp-3 group-hover:line-clamp-none transition-all">
+                              {photo.caption}
+                            </p>
+                            <div className="mt-3 pt-2.5 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-sky-400 font-medium">
+                              <span>Enlarge photo</span>
+                              <ChevronRight size={13} className="transition-transform group-hover:translate-x-1" />
+                            </div>
                           </div>
                         </div>
-                        <div className="p-4 flex-grow flex flex-col justify-between">
-                          <p className="text-xs text-slate-300 leading-relaxed">
-                            {photo.caption}
-                          </p>
-                          <div className="mt-3 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-sky-400 font-medium">
-                            <span>Click to enlarge photo</span>
-                            <ChevronRight size={14} className="transition-transform group-hover:translate-x-1" />
-                          </div>
-                        </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
 
                   {/* Sibling Country Navigation (Previous / Next within Continent) */}
