@@ -47,8 +47,23 @@ import { useAudioGuide } from '@/hooks/use-audio-guide';
 import { useFullscreenWakelock } from '@/hooks/use-fullscreen-wakelock';
 import { ScrollToTop } from '@/components/scroll-to-top';
 import { WorldContinentsMap } from '@/components/world-continents-map';
-import { RealCountryMap } from '@/components/real-country-map';
 import { ErrorBoundary } from '@/components/error-boundary';
+import dynamic from 'next/dynamic';
+
+const RealCountryMap = dynamic(
+  () => import('@/components/real-country-map').then((mod) => mod.RealCountryMap),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="w-full h-[460px] bg-slate-800/80 rounded-3xl animate-pulse flex items-center justify-center border border-slate-700/60">
+        <div className="flex items-center gap-3 text-slate-400 font-bold text-sm">
+          <div className="w-6 h-6 border-2 border-indigo-400 border-t-transparent rounded-full animate-spin" />
+          <span>Loading Interactive Geography Map...</span>
+        </div>
+      </div>
+    ),
+  }
+);
 
 type AudioSection = 'intro' | 'flag' | 'geography' | 'facts' | null;
 
@@ -580,9 +595,6 @@ export default function KidsApp() {
                       <h3 className="text-2xl sm:text-3xl font-bold text-white flex items-center gap-2">
                         <span>Real Map &amp; Geography</span>
                       </h3>
-                      <p className="text-slate-400 text-xs sm:text-sm font-medium mt-0.5">
-                        High-definition topographic terrain, color-coded neighbors, adjacent seas, and major waterways
-                      </p>
                     </div>
                   </div>
 

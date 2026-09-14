@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState, useCallback, useMemo } from 'react';
+import L from 'leaflet';
 import { 
   Compass, 
   MapPin, 
@@ -176,55 +177,46 @@ export function RealCountryMap({
 
   // Initialize Map safely
   useEffect(() => {
-    let isMounted = true;
+    if (typeof window === 'undefined' || !mapContainerRef.current) return;
 
-    async function initLeaflet() {
-      if (typeof window === 'undefined' || !mapContainerRef.current) return;
-
+    if (!mapInstanceRef.current && mapContainerRef.current) {
       try {
-        const leafletModule = await import('leaflet');
-        const L = leafletModule.default || leafletModule;
+        const map = L.map(mapContainerRef.current, {
+          center: [geo.lat, geo.lng],
+          zoom: geo.zoom,
+          zoomControl: false,
+          attributionControl: false,
+          scrollWheelZoom: true,
+        });
 
-        if (!isMounted || !mapContainerRef.current) return;
+        // Standard zoom control top-right
+        L.control.zoom({ position: 'topright' }).addTo(map);
 
-        if (!mapInstanceRef.current && mapContainerRef.current) {
-          const map = L.map(mapContainerRef.current, {
-            center: [geo.lat, geo.lng],
-            zoom: geo.zoom,
-            zoomControl: false,
-            attributionControl: false,
-            scrollWheelZoom: true,
-          });
+        // Tile layer with high-definition retina support
+        const tileLayer = L.tileLayer(getTileUrl(mapStyle), getTileOptions(mapStyle)).addTo(map);
+        let overlayLayer: L.TileLayer | null = null;
 
-          // Standard zoom control top-right
-          L.control.zoom({ position: 'topright' }).addTo(map);
-
-          // Tile layer with high-definition retina support
-          const tileLayer = L.tileLayer(getTileUrl(mapStyle), getTileOptions(mapStyle)).addTo(map);
-          let overlayLayer = null;
-
-          if (mapStyle === 'satellite') {
-            overlayLayer = L.tileLayer(
-              'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
-              { maxZoom: 18, detectRetina: true }
-            ).addTo(map);
-          }
-
-          const markersLayer = L.layerGroup().addTo(map);
-
-          mapInstanceRef.current = { map, tileLayer, L, overlayLayer };
-          markersLayerRef.current = markersLayer;
-          if (isMounted) setMapLoaded(true);
+        if (mapStyle === 'satellite') {
+          overlayLayer = L.tileLayer(
+            'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
+            { maxZoom: 18, detectRetina: true }
+          ).addTo(map);
         }
+
+        const markersLayer = L.layerGroup().addTo(map);
+
+        mapInstanceRef.current = { map, tileLayer, L, overlayLayer };
+        markersLayerRef.current = markersLayer;
+
+        map.whenReady(() => {
+          setMapLoaded(true);
+        });
       } catch (err) {
         console.error('Failed to initialize map:', err);
       }
     }
 
-    initLeaflet();
-
     return () => {
-      isMounted = false;
       if (mapInstanceRef.current) {
         mapInstanceRef.current.map.remove();
         mapInstanceRef.current = null;
@@ -484,19 +476,20 @@ export function RealCountryMap({
           html: riverMarkup,
           className: 'custom-map-indicator',
           iconSize: [80, 44],
-          iconAnchor: [40, 22]
+          iconAnchor: [40, 14]
         });
 
         L.marker([river.lat, river.lng], { icon: riverIcon, zIndexOffset: 350 })
           .addTo(markersLayer)
           .bindPopup(`
-            <div style="min-width: 170px; padding: 4px;">
+            <div style="min-width: 180px; padding: 4px;">
               <span style="display: inline-block; background: #ccfbf1; color: #0f766e; font-size: 9px; font-weight: 900; padding: 2px 8px; border-radius: 9999px; margin-bottom: 4px;">
                 LAYER 3 • MAJOR RIVER &amp; WATERWAY
               </span>
               <h4 style="margin: 0 0 3px; font-size: 13px; font-weight: 900; color: #0f172a;">${river.name}</h4>
               <p style="margin: 0 0 4px; font-size: 11px; color: #334155; font-weight: 600;">${river.description || ''}</p>
-              ${river.significance ? `<p style="margin: 0; font-size: 10px; color: #0d9488; font-weight: 700;">★ ${river.significance}</p>` : ''}
+              ${river.significance ? `<p style="margin: 0 0 4px; font-size: 10px; color: #0d9488; font-weight: 700;">★ ${river.significance}</p>` : ''}
+              <span style="font-size: 9px; color: #64748b; font-weight: 600;">📍 ${river.lat.toFixed(4)}°, ${river.lng.toFixed(4)}°</span>
             </div>
           `);
       });
@@ -572,6 +565,11 @@ export function RealCountryMap({
   const handleRecenter = () => {
     if (!mapInstanceRef.current) return;
     mapInstanceRef.current.map.flyTo([geo.lat, geo.lng], geo.zoom, { duration: 0.8 });
+  };
+
+  const panToLocation = (lat: number, lng: number, zoomLevel = 8) => {
+    if (!mapInstanceRef.current) return;
+    mapInstanceRef.current.map.flyTo([lat, lng], zoomLevel, { duration: 1.0 });
   };
 
   const toggleLayer = (key: keyof typeof layers) => {
@@ -926,12 +924,14 @@ export function RealCountryMap({
               {waterBodies.length > 0 ? (
                 <div className="flex flex-wrap gap-1.5 mb-2.5">
                   {waterBodies.map((water, idx) => (
-                    <span 
+                    <button
                       key={idx}
-                      className="bg-white dark:bg-slate-900 text-sky-900 dark:text-sky-200 text-xs font-black px-2.5 py-1 rounded-xl border border-sky-300 dark:border-sky-700 shadow-2xs flex items-center gap-1"
+                      onClick={() => panToLocation(water.lat, water.lng, 6)}
+                      className="bg-white dark:bg-slate-900 hover:bg-sky-100 dark:hover:bg-sky-900/60 transition-colors text-sky-900 dark:text-sky-200 text-xs font-black px-2.5 py-1 rounded-xl border border-sky-300 dark:border-sky-700 shadow-2xs flex items-center gap-1 cursor-pointer"
+                      title={`Click to focus on ${water.name}`}
                     >
-                      🌊 {water.name}
-                    </span>
+                      <span>🌊 {water.name}</span>
+                    </button>
                   ))}
                 </div>
               ) : (
@@ -963,31 +963,46 @@ export function RealCountryMap({
                 </span>
               </div>
 
-              <div className="space-y-1.5 max-h-56 overflow-y-auto pr-1">
-                {majorRivers.map((river, idx) => (
-                  <div 
-                    key={idx}
-                    className="bg-white/95 dark:bg-slate-900/90 rounded-xl p-2.5 border border-teal-200/80 dark:border-teal-800 shadow-2xs"
-                  >
-                    <div className="flex items-center gap-1.5 mb-1">
-                      <span className="text-teal-600 dark:text-teal-400 font-bold">💧</span>
-                      <h6 className="text-xs font-black text-slate-900 dark:text-slate-100">
-                        {river.name}
-                      </h6>
+              {majorRivers.length > 0 ? (
+                <div className="space-y-1.5 max-h-56 overflow-y-auto pr-1">
+                  {majorRivers.map((river, idx) => (
+                    <div 
+                      key={idx}
+                      onClick={() => panToLocation(river.lat, river.lng, 8.5)}
+                      className="bg-white/95 dark:bg-slate-900/90 hover:bg-teal-100/70 dark:hover:bg-teal-900/40 cursor-pointer transition-all rounded-xl p-2.5 border border-teal-200/80 dark:border-teal-800 shadow-2xs group"
+                      title={`Click to focus on ${river.name}`}
+                    >
+                      <div className="flex items-center justify-between gap-1.5 mb-1">
+                        <div className="flex items-center gap-1.5 min-w-0">
+                          <span className="text-teal-600 dark:text-teal-400 font-bold">💧</span>
+                          <h6 className="text-xs font-black text-slate-900 dark:text-slate-100 group-hover:text-teal-900 dark:group-hover:text-teal-200 truncate">
+                            {river.name}
+                          </h6>
+                        </div>
+                        <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded shrink-0">
+                          {river.lat.toFixed(2)}°, {river.lng.toFixed(2)}°
+                        </span>
+                      </div>
+                      {river.description && (
+                        <p className="text-[11px] text-slate-600 dark:text-slate-300 font-medium leading-tight mb-1">
+                          {river.description}
+                        </p>
+                      )}
+                      {river.significance && (
+                        <span className="inline-block text-[10px] font-bold text-teal-800 dark:text-teal-300 bg-teal-100 dark:bg-teal-900/50 px-2 py-0.5 rounded-md">
+                          ★ {river.significance}
+                        </span>
+                      )}
                     </div>
-                    {river.description && (
-                      <p className="text-[11px] text-slate-600 dark:text-slate-300 font-medium leading-tight mb-1">
-                        {river.description}
-                      </p>
-                    )}
-                    {river.significance && (
-                      <span className="inline-block text-[10px] font-bold text-teal-800 dark:text-teal-300 bg-teal-100 dark:bg-teal-900/50 px-2 py-0.5 rounded-md">
-                        ★ {river.significance}
-                      </span>
-                    )}
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="bg-white/90 dark:bg-slate-900/90 rounded-xl p-3 border border-teal-200 dark:border-teal-800 text-center">
+                  <span className="text-xs font-bold text-teal-950 dark:text-teal-300 leading-relaxed block">
+                    🏜️ No permanent surface river network — Relies on deep aquifers, seasonal wadis, catchments, or desalination.
+                  </span>
+                </div>
+              )}
             </div>
           </div>
 
