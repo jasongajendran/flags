@@ -31,27 +31,28 @@ export const FLAG_MEANINGS_DATASET: Record<string, FlagMeaning> = {
     ]
   },
   "by": {
-    "story": "The flag of Belarus consists of a horizontal red and green field bordered at the hoist by an intricate Belarusian ornamental weaving pattern, designed in 1917 by local weaver Matrona Markevich.",
+    "story": "The flag of Belarus features a horizontal red and green field (in a 2:1 ratio) with a distinctive white vertical hoist band on the left displaying a traditional red Belarusian ornamental folk weaving pattern ('Rushnik'), created in 1917 by weaver Matrona Markevich.",
     "elements": [
       "Traditional Folk Ornament",
       "Two-to-One Red/Green Proportions",
-      "Rushnik Weaving Pattern"
+      "Rushnik Weaving Pattern",
+      "White Hoist Band"
     ],
     "colors": [
       {
         "name": "Deep Red",
         "colorClass": "bg-red-600 text-white",
-        "symbol": "Historical bravery at Grunwald and defense of the homeland."
+        "symbol": "The upper two-thirds horizontal field, honoring historic bravery, sacrifice, and the defense of the homeland."
       },
       {
         "name": "Forest Green",
         "colorClass": "bg-emerald-600 text-white",
-        "symbol": "Vast forests, nature reserves, and the agricultural vitality of Belarus."
+        "symbol": "The lower one-third horizontal field, symbolizing the lush Belarusian forests, nature reserves, and agricultural vitality."
       },
       {
-        "name": "White Ornament",
+        "name": "White Hoist Stripe (with Red Ornament)",
         "colorClass": "bg-slate-100 text-slate-900",
-        "symbol": "Traditional Belarusian cultural heritage, purity, and hospitality."
+        "symbol": "The vertical white band along the left flagpole hoist, displaying the traditional red folk textile pattern that represents Belarusian cultural heritage, purity, and hospitality."
       }
     ]
   },

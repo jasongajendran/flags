@@ -3,17 +3,31 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
 // Formats text so speech synthesis pronounces numbers and abbreviations naturally
-function cleanTextForSpeech(input: string): string {
+export function cleanTextForSpeech(input: string): string {
   if (!input) return "";
   return input
+    // Expand Saint abbreviations before capitalized words and names (e.g. St. Peter -> Saint Peter, St. John's -> Saint John's, St. Lucia -> Saint Lucia)
+    .replace(/\bSt\.\s+([A-Z])/g, 'Saint $1')
+    .replace(/\bSte\.\s+([A-Z])/g, 'Sainte $1')
+    .replace(/\bSt\s+(Peter|John|George|Andrew|Patrick|Kitts|Lucia|Vincent|Helier|Pierre|Paul|Louis|Lawrence|Basil|Floris|Kinga|Thomas|Croix|Martin|Maarten|Omer)\b/gi, 'Saint $1')
+    // Expand Mountain / Mount abbreviations: Mt. Everest -> Mount Everest
+    .replace(/\bMt\.\s+([A-Z])/g, 'Mount $1')
+    .replace(/\bFt\.\s+([A-Z])/g, 'Fort $1')
+    .replace(/\bPt\.\s+([A-Z])/g, 'Point $1')
+    .replace(/\bDr\.\s+([A-Z])/g, 'Doctor $1')
     // Expand number suffixes: 12M -> 12 Million, 2.8M -> 2.8 Million, 1.4B -> 1.4 Billion, 80K -> 80 Thousand
-    .replace(/(\b\d+(?:\.\d+)?)\s*M\b/gi, '$1 Million')
-    .replace(/(\b\d+(?:\.\d+)?)\s*B\b/gi, '$1 Billion')
-    .replace(/(\b\d+(?:\.\d+)?)\s*K\b/gi, '$1 Thousand')
+    .replace(/(\b\d+(?:\.\d+)?)\s*M\b/g, '$1 Million')
+    .replace(/(\b\d+(?:\.\d+)?)\s*B\b/g, '$1 Billion')
+    .replace(/(\b\d+(?:\.\d+)?)\s*K\b/g, '$1 Thousand')
     // Expand Pop: to Population:
     .replace(/\bPop:\s*/gi, 'Population: ')
     // Expand geographic abbreviations
     .replace(/\bsq\s*km\b/gi, 'square kilometers')
+    .replace(/\bkm²\b/gi, 'square kilometers')
+    .replace(/\bkm\b/gi, 'kilometers')
+    .replace(/\bsq\s*mi\b/gi, 'square miles')
+    .replace(/\bmi²\b/gi, 'square miles')
+    .replace(/\b(\d+)\s*m\s+(above|elevation|altitude|high|deep)\b/gi, '$1 meters $2')
     .replace(/\s+/g, ' ')
     .trim();
 }

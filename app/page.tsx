@@ -317,11 +317,10 @@ export default function KidsApp() {
         {/* VIEW 1: WORLD DIRECTORY                                        */}
         {/* ============================================================== */}
         {mainView === 'world' && (
-          <AnimatePresence>
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="space-y-8">
-              
-              {/* World Continents Reference Map (Gauge where each continent is across Earth) */}
-              <WorldContinentsMap
+          <div className="space-y-8 animate-in fade-in duration-300">
+            
+            {/* World Continents Reference Map (Gauge where each continent is across Earth) */}
+            <WorldContinentsMap
                 activeContinentFilter={catalogContinentFilter}
                 onSelectContinent={(continentName) => {
                   setCatalogContinentFilter(continentName);
@@ -488,18 +487,16 @@ export default function KidsApp() {
                 </div>
               </section>
 
-            </motion.div>
-          </AnimatePresence>
+            </div>
         )}
 
         {/* ============================================================== */}
         {/* VIEW 2: UNIFIED COUNTRY PROFILE                                */}
         {/* ============================================================== */}
         {mainView === 'country' && (
-          <AnimatePresence>
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="space-y-8">
-              
-              {/* Country Hero Header (Intro) */}
+          <div className="space-y-8 animate-in fade-in duration-300">
+            
+            {/* Country Hero Header (Intro) */}
               <section id="section-intro" className={`bg-slate-950 border rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden scroll-mt-8 ${getSectionHighlight('intro')}`}>
                 <div className="flex flex-col lg:flex-row items-center gap-8 relative z-10">
                   <div className="relative w-48 sm:w-64 aspect-[3/2] rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700 shrink-0">
@@ -945,8 +942,7 @@ export default function KidsApp() {
                 </section>
               )}
 
-            </motion.div>
-          </AnimatePresence>
+            </div>
         )}
       </main>
 

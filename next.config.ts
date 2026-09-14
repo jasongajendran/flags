@@ -1,7 +1,19 @@
 import type { NextConfig } from 'next';
 
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+let repoName = '';
+if (isGithubActions && process.env.GITHUB_REPOSITORY) {
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '');
+  if (!repo.endsWith('.github.io')) {
+    repoName = `/${repo}`;
+  }
+}
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || repoName;
+
 const nextConfig: NextConfig = {
   output: 'export',
+  ...(basePath ? { basePath, assetPrefix: basePath } : {}),
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
