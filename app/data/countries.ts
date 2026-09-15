@@ -12,6 +12,7 @@ import { COUNTRY_META } from './country-meta';
 import { FLAG_MEANINGS_DATASET } from './flags-dataset';
 import { WORLD_LANDMARKS_AND_FACTS } from './country-landmarks-facts';
 import { LANDLOCKED_COUNTRIES, COUNTRY_COASTAL_WATERS } from './country-geography-features';
+import { getVerifiedCountryGeography } from './verified-country-geography';
 
 export type { Continent, Country, FlagMeaning, CountryLocation, ColorSymbol, NeighborInfo, LandmarkPhoto };
 
@@ -90,8 +91,23 @@ export function enrichCountry(c: Country): Country {
     distinctFacts = accepted;
   }
 
+  const verified = getVerifiedCountryGeography(iso, WORLD_ALL_FLAGS);
+  const updatedGeo = {
+    lat: verified.lat,
+    lng: verified.lng,
+    zoom: verified.zoom,
+    capitalCoords: verified.capitalCoords
+  };
+  const verifiedNeighbors = verified.adjacentCountries;
+
   return {
     ...c,
+    geo: updatedGeo,
+    location: {
+      ...c.location,
+      adjacentCountries: verifiedNeighbors.length > 0 ? verifiedNeighbors : c.location?.adjacentCountries,
+      coordinatesText: `${Math.abs(updatedGeo.lat).toFixed(1)}° ${updatedGeo.lat >= 0 ? 'N' : 'S'}, ${Math.abs(updatedGeo.lng).toFixed(1)}° ${updatedGeo.lng >= 0 ? 'E' : 'W'}`
+    },
     population: formatPopulation(c.population),
     landmarks,
     interestingFacts: distinctFacts,
@@ -139,55 +155,16 @@ export function getCountryOrGenerate(item: WorldFlagItem): Country {
     return existing;
   }
 
-  const geoInfo = GEO_DATA[item.iso2.toLowerCase()] || {};
-  const lat = geoInfo.lat ?? 20.0;
-  const lng = geoInfo.lng ?? 0.0;
-  const zoom = geoInfo.zoom ?? 5;
-  const capitalCoords = geoInfo.capitalCoords ?? { lat, lng };
-  
-  const rawNeighbors = geoInfo.neighborsIso2 || [];
-  const neighbors = rawNeighbors.map((iso: string) => {
-    const nItem = WORLD_ALL_FLAGS.find(f => f.iso2.toLowerCase() === iso);
-    if (!nItem) return null;
-    const nGeo = GEO_DATA[iso] || {};
-    let nLat = nGeo.lat ?? lat;
-    let nLng = nGeo.lng ?? lng;
-
-    // Clamp distant neighbor pins so they appear on the country's local map view
-    const dLat = nLat - lat;
-    const dLng = nLng - lng;
-    const dist = Math.sqrt(dLat * dLat + dLng * dLng);
-    if (dist > 8) {
-      // Angle towards neighbor, clamped to ~2.5 degrees radius
-      const angle = Math.atan2(dLat, dLng);
-      nLat = lat + Math.sin(angle) * 2.8;
-      nLng = lng + Math.cos(angle) * 2.8;
-    }
-
-    // Determine direction relationship label
-    let rel = "Bordering Country";
-    const dLatNorm = nLat - lat;
-    const dLngNorm = nLng - lng;
-    if (dLatNorm > 0.5 && Math.abs(dLngNorm) <= 1) rel = "North Border";
-    else if (dLatNorm < -0.5 && Math.abs(dLngNorm) <= 1) rel = "South Border";
-    else if (dLngNorm > 0.5 && Math.abs(dLatNorm) <= 1) rel = "East Border";
-    else if (dLngNorm < -0.5 && Math.abs(dLatNorm) <= 1) rel = "West Border";
-    else if (dLatNorm > 0 && dLngNorm > 0) rel = "Northeast Border";
-    else if (dLatNorm > 0 && dLngNorm < 0) rel = "Northwest Border";
-    else if (dLatNorm < 0 && dLngNorm > 0) rel = "Southeast Border";
-    else if (dLatNorm < 0 && dLngNorm < 0) rel = "Southwest Border";
-
-    return {
-      name: nItem.name,
-      flagUrl: nItem.flagUrl,
-      lat: Number(nLat.toFixed(4)),
-      lng: Number(nLng.toFixed(4)),
-      relationship: rel
-    };
-  }).filter(Boolean);
+  const iso2Key = item.iso2.toLowerCase();
+  const verifiedGeo = getVerifiedCountryGeography(iso2Key, WORLD_ALL_FLAGS);
+  const lat = verifiedGeo.lat;
+  const lng = verifiedGeo.lng;
+  const zoom = verifiedGeo.zoom;
+  const capitalCoords = verifiedGeo.capitalCoords;
+  const neighbors = verifiedGeo.adjacentCountries;
+  const geoInfo = GEO_DATA[iso2Key] || {};
 
   // Determine verified surrounding waters
-  const iso2Key = item.iso2.toLowerCase();
   const isLandlocked = LANDLOCKED_COUNTRIES.has(iso2Key);
   const accurateWaters: string[] = isLandlocked 
     ? [] 
@@ -280,9 +257,17 @@ const rawContinentsData: Continent[] = [
 // Pre-populates all 196 countries in their respective continents sorted alphabetically by name
 export const continentsData: Continent[] = rawContinentsData.map(continent => {
   const matchName = continent.name.toLowerCase();
+  const matchId = continent.id.toLowerCase();
   
   const countriesInContinent = WORLD_ALL_FLAGS
-    .filter(f => f.continent.toLowerCase() === matchName)
+    .filter(f => {
+      const fCont = f.continent.toLowerCase();
+      return fCont === matchName || 
+             fCont === matchId || 
+             (matchId === 'oceania' && (fCont === 'oceania' || fCont.includes('oceania') || fCont.includes('australia'))) ||
+             (matchId === 'north-america' && (fCont === 'north america' || fCont === 'north-america')) ||
+             (matchId === 'south-america' && (fCont === 'south america' || fCont === 'south-america'));
+    })
     .map(item => {
       // Check if there is a statically defined country for this flag item
       const staticCountry = continent.countries.find(

@@ -24,6 +24,7 @@ import {
 import { Country, Continent } from '@/app/data/countries';
 import { GEO_DATA } from '@/app/data/geo-dataset';
 import { WORLD_ALL_FLAGS } from '@/app/data/world-flags-catalog';
+import { getVerifiedCountryGeography } from '@/app/data/verified-country-geography';
 import { 
   getCountryWaterBodies, 
   getCountryRivers, 
@@ -133,25 +134,15 @@ export function RealCountryMap({
   };
 
   const geo = useMemo(() => {
-    const geoInfo = GEO_DATA[country.iso2.toLowerCase()] || {};
+    const verified = getVerifiedCountryGeography(country.iso2, WORLD_ALL_FLAGS);
     return {
-      lat: country.geo?.lat ?? geoInfo.lat ?? 51.5,
-      lng: country.geo?.lng ?? geoInfo.lng ?? 0,
-      zoom: country.geo?.zoom ?? geoInfo.zoom ?? 5,
-      capitalCoords: country.geo?.capitalCoords ?? geoInfo.capitalCoords ?? { lat: 51.5, lng: 0 },
+      lat: country.geo?.lat ?? verified.lat,
+      lng: country.geo?.lng ?? verified.lng,
+      zoom: country.geo?.zoom ?? verified.zoom,
+      capitalCoords: country.geo?.capitalCoords ?? verified.capitalCoords,
       neighbors: (country.location?.adjacentCountries && country.location.adjacentCountries.length > 0) 
         ? country.location.adjacentCountries 
-        : (geoInfo.neighborsIso2 || []).map((iso: string) => {
-            const nGeo = GEO_DATA[iso] || {};
-            const catalogItem = WORLD_ALL_FLAGS.find(f => f.iso2.toLowerCase() === iso);
-            return {
-              name: catalogItem ? catalogItem.name : iso.toUpperCase(),
-              flagUrl: catalogItem ? catalogItem.flagUrl : "https://flagcdn.com/w160/" + iso + ".png",
-              lat: nGeo.lat ?? 0,
-              lng: nGeo.lng ?? 0,
-              relationship: "Bordering Country"
-            };
-          }),
+        : verified.adjacentCountries,
       rawWaters: country.location?.surroundingWaters || []
     };
   }, [country]);
