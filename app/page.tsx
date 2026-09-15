@@ -247,7 +247,7 @@ export default function KidsApp() {
 
   const getSectionHighlight = (section: NonNullable<AudioSection>) => {
     return isPlaying && activeAudioSection === section 
-      ? 'ring-4 ring-amber-400 bg-amber-400/10 shadow-lg shadow-amber-500/20 transform scale-[1.01] transition-all duration-300' 
+      ? 'ring-4 ring-amber-400 bg-amber-400/10 shadow-lg shadow-amber-500/20 transition-all duration-300' 
       : 'border-slate-800 transition-all duration-300';
   };
 
@@ -623,7 +623,7 @@ export default function KidsApp() {
                   </div>
                 </div>
 
-                <div className="w-full relative z-0">
+                <div className="w-full">
                   <ErrorBoundary fallbackTitle="Geographic Map Preview" fallbackDescription="The interactive map is loading or updating. Click below if you wish to reload.">
                     <RealCountryMap
                       selectedCountry={selectedCountry}

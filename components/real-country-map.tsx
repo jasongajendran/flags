@@ -262,15 +262,15 @@ export function RealCountryMap({
   useEffect(() => {
     if (mapInstanceRef.current?.map) {
       const map = mapInstanceRef.current.map;
-      const delays = [30, 100, 200, 400, 700];
-      const timers = delays.map(delay => 
-        setTimeout(() => {
-          if (mapInstanceRef.current?.map) {
-            map.invalidateSize({ animate: false });
-            map.setView([geo.lat, geo.lng], map.getZoom() || geo.zoom, { animate: false });
-          }
-        }, delay)
-      );
+      const triggerResize = () => {
+        if (mapInstanceRef.current?.map) {
+          map.invalidateSize({ animate: false });
+          map.setView([geo.lat, geo.lng], map.getZoom() || geo.zoom, { animate: false });
+        }
+      };
+      triggerResize();
+      const delays = [20, 60, 120, 250, 450, 800, 1200];
+      const timers = delays.map(delay => setTimeout(triggerResize, delay));
       return () => timers.forEach(clearTimeout);
     }
   }, [isEnlarged, geo.lat, geo.lng, geo.zoom]);
@@ -308,6 +308,14 @@ export function RealCountryMap({
     const markersLayer = markersLayerRef.current;
 
     markersLayer.clearLayers();
+
+    // Helper to wrap longitudes consistently around country center (prevents antimeridian jumps across 180°/-180°)
+    const normalizeLng = (targetLng: number, baseLng: number): number => {
+      let delta = targetLng - baseLng;
+      while (delta > 180) delta -= 360;
+      while (delta < -180) delta += 360;
+      return baseLng + delta;
+    };
 
     // -------------------------------------------------------------
     // LAYER 0: Actual Selected Country (Base Layer - Foundation)
@@ -366,6 +374,7 @@ export function RealCountryMap({
     if (layers.neighbors && geo.neighbors.length > 0) {
       geo.neighbors.forEach((neighbor: any) => {
         const dir = getDirectionBadge(neighbor.relationship);
+        const normNeighborLng = normalizeLng(neighbor.lng, geo.lng);
 
         const neighborMarkup = `
           <div class="group relative flex flex-col items-center cursor-pointer transition-transform hover:scale-125" data-neighbor-name="${neighbor.name}">
@@ -391,7 +400,7 @@ export function RealCountryMap({
           iconAnchor: [40, 24]
         });
 
-        L.marker([neighbor.lat, neighbor.lng], { icon: neighborIcon, zIndexOffset: 250 })
+        L.marker([neighbor.lat, normNeighborLng], { icon: neighborIcon, zIndexOffset: 250 })
           .addTo(markersLayer)
           .bindPopup(`
             <div style="min-width: 170px; padding: 4px;">
@@ -416,6 +425,9 @@ export function RealCountryMap({
     // -------------------------------------------------------------
     if (layers.waters && waterBodies.length > 0) {
       waterBodies.forEach((water) => {
+        const normWaterLng = normalizeLng(water.lng, geo.lng);
+        const directionSnippet = water.direction ? water.direction.split('(')[0].trim() : '';
+
         const waterMarkup = `
           <div class="group relative flex flex-col items-center cursor-pointer transition-transform hover:scale-125">
             <div class="relative flex items-center justify-center">
@@ -424,8 +436,9 @@ export function RealCountryMap({
                 🌊
               </div>
             </div>
-            <div class="bg-blue-950/90 backdrop-blur-xs text-sky-200 font-black text-[9px] px-2 py-0.5 rounded-full shadow mt-0.5 border border-sky-400/50 whitespace-nowrap">
-              ${water.name}
+            <div class="bg-blue-950/95 backdrop-blur-xs text-sky-200 font-black text-[9px] px-2 py-0.5 rounded-full shadow mt-0.5 border border-sky-400/60 whitespace-nowrap flex items-center gap-1">
+              <span>${water.name}</span>
+              ${directionSnippet ? `<span class="text-[8px] text-sky-300 font-medium">(${directionSnippet})</span>` : ''}
             </div>
           </div>
         `;
@@ -433,21 +446,23 @@ export function RealCountryMap({
         const waterIcon = L.divIcon({
           html: waterMarkup,
           className: 'custom-map-indicator',
-          iconSize: [90, 48],
-          iconAnchor: [45, 24]
+          iconSize: [110, 48],
+          iconAnchor: [55, 24]
         });
 
-        L.marker([water.lat, water.lng], { icon: waterIcon, zIndexOffset: 200 })
+        L.marker([water.lat, normWaterLng], { icon: waterIcon, zIndexOffset: 200 })
           .addTo(markersLayer)
           .bindPopup(`
-            <div style="min-width: 160px; padding: 4px; text-align: center;">
+            <div style="min-width: 180px; padding: 4px; text-align: center;">
               <span style="display: inline-block; background: #e0f2fe; color: #0369a1; font-size: 9px; font-weight: 900; padding: 2px 8px; border-radius: 9999px; margin-bottom: 4px;">
                 LAYER 2 • ADJACENT ${water.type.toUpperCase()}
               </span>
               <h4 style="margin: 0 0 3px; font-size: 14px; font-weight: 900; color: #0f172a;">${water.name}</h4>
-              <p style="margin: 0; font-size: 11px; color: #475569; font-weight: 600;">
-                Major marine body of water adjacent to ${country.name}
+              ${water.direction ? `<p style="margin: 0 0 4px; font-size: 11px; color: #0284c7; font-weight: 700;">🧭 ${water.direction}</p>` : ''}
+              <p style="margin: 0 0 4px; font-size: 11px; color: #475569; font-weight: 600;">
+                ${water.description || `Major marine body of water adjacent to ${country.name}`}
               </p>
+              <span style="font-size: 9px; color: #64748b; font-weight: 600;">📍 ${water.lat.toFixed(2)}°, ${water.lng.toFixed(2)}°</span>
             </div>
           `);
       });
@@ -458,6 +473,8 @@ export function RealCountryMap({
     // -------------------------------------------------------------
     if (layers.rivers && majorRivers.length > 0) {
       majorRivers.forEach((river) => {
+        const normRiverLng = normalizeLng(river.lng, geo.lng);
+
         const riverMarkup = `
           <div class="group relative flex flex-col items-center cursor-pointer transition-transform hover:scale-125">
             <div class="relative flex items-center justify-center">
@@ -479,7 +496,7 @@ export function RealCountryMap({
           iconAnchor: [40, 14]
         });
 
-        L.marker([river.lat, river.lng], { icon: riverIcon, zIndexOffset: 350 })
+        L.marker([river.lat, normRiverLng], { icon: riverIcon, zIndexOffset: 350 })
           .addTo(markersLayer)
           .bindPopup(`
             <div style="min-width: 180px; padding: 4px;">
@@ -501,7 +518,8 @@ export function RealCountryMap({
     if (layers.capital && geo.capitalCoords) {
       const isSameAsCenter = Math.abs(geo.capitalCoords.lat - geo.lat) < 0.01 && Math.abs(geo.capitalCoords.lng - geo.lng) < 0.01;
       const capLat = isSameAsCenter ? geo.lat + 0.35 : geo.capitalCoords.lat;
-      const capLng = isSameAsCenter ? geo.lng - 0.35 : geo.capitalCoords.lng;
+      const rawCapLng = isSameAsCenter ? geo.lng - 0.35 : geo.capitalCoords.lng;
+      const capLng = normalizeLng(rawCapLng, geo.lng);
 
       const capitalMarkup = `
         <div class="group relative flex flex-col items-center cursor-pointer transition-transform hover:scale-125">
@@ -569,15 +587,36 @@ export function RealCountryMap({
 
   const panToLocation = (lat: number, lng: number, zoomLevel = 8) => {
     if (!mapInstanceRef.current) return;
-    mapInstanceRef.current.map.flyTo([lat, lng], zoomLevel, { duration: 1.0 });
+    let delta = lng - geo.lng;
+    while (delta > 180) delta -= 360;
+    while (delta < -180) delta += 360;
+    const normLng = geo.lng + delta;
+    mapInstanceRef.current.map.flyTo([lat, normLng], zoomLevel, { duration: 1.0 });
   };
 
   const toggleLayer = (key: keyof typeof layers) => {
     setLayers(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
+  // Lock body scroll on mobile/desktop when enlarged
+  useEffect(() => {
+    if (isEnlarged) {
+      const originalOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      return () => {
+        document.body.style.overflow = originalOverflow;
+      };
+    }
+  }, [isEnlarged]);
+
   return (
-    <div className={isEnlarged ? 'fixed inset-0 top-0 left-0 w-full h-full min-h-[100dvh] z-[999999] bg-slate-950 p-2 sm:p-4 flex flex-col overflow-hidden' : 'space-y-4'}>
+    <div 
+      className={isEnlarged 
+        ? 'fixed inset-0 top-0 left-0 w-screen h-screen min-h-[100dvh] max-h-[100dvh] z-[9999999] bg-slate-950 p-2 sm:p-4 flex flex-col overflow-hidden' 
+        : 'space-y-4'
+      }
+      style={isEnlarged ? { height: '100dvh', width: '100vw', position: 'fixed', top: 0, left: 0, zIndex: 9999999 } : undefined}
+    >
       
       {/* Real Map Header Controls */}
       <div className={`flex items-center justify-between gap-2 p-2 sm:p-3 rounded-2xl border shadow-xs shrink-0 ${
@@ -664,20 +703,23 @@ export function RealCountryMap({
       </div>
 
       {/* Main Interactive Map Viewport */}
-      <div className={`relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border-2 sm:border-4 border-slate-300 dark:border-slate-700 shadow-xl bg-slate-900 ${
-        isEnlarged ? 'flex-1 min-h-[300px] w-full h-full' : 'h-[520px] sm:h-[600px] lg:h-[680px]'
-      }`}>
-        <div ref={mapContainerRef} className="absolute inset-0 w-full h-full" />
+      <div 
+        className={`relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border-2 sm:border-4 border-slate-300 dark:border-slate-700 shadow-xl bg-slate-900 ${
+          isEnlarged ? 'flex-1 min-h-0 w-full h-full' : 'h-[520px] sm:h-[600px] lg:h-[680px]'
+        }`}
+        style={isEnlarged ? { flex: '1 1 0%', minHeight: 0, height: '100%' } : undefined}
+      >
+        <div ref={mapContainerRef} style={{ width: '100%', height: '100%' }} className="absolute inset-0 w-full h-full" />
 
         {/* Mobile floating close button when in enlarged mode */}
         {isEnlarged && (
           <button
             onClick={() => setIsEnlarged(false)}
             title="Exit enlarged view"
-            className="sm:hidden absolute top-3 right-3 z-[500] px-3 py-1.5 bg-rose-600 text-white text-xs font-bold rounded-xl shadow-2xl border border-rose-400 flex items-center gap-1 cursor-pointer"
+            className="sm:hidden absolute top-3 right-3 z-[500] px-3.5 py-2 bg-rose-600 active:bg-rose-700 text-white text-xs font-black rounded-xl shadow-2xl border border-rose-400 flex items-center gap-1.5 cursor-pointer"
           >
-            <Minimize2 size={14} />
-            <span>Close</span>
+            <Minimize2 size={15} />
+            <span>Close Map</span>
           </button>
         )}
 
@@ -927,10 +969,15 @@ export function RealCountryMap({
                     <button
                       key={idx}
                       onClick={() => panToLocation(water.lat, water.lng, 6)}
-                      className="bg-white dark:bg-slate-900 hover:bg-sky-100 dark:hover:bg-sky-900/60 transition-colors text-sky-900 dark:text-sky-200 text-xs font-black px-2.5 py-1 rounded-xl border border-sky-300 dark:border-sky-700 shadow-2xs flex items-center gap-1 cursor-pointer"
-                      title={`Click to focus on ${water.name}`}
+                      className="bg-white dark:bg-slate-900 hover:bg-sky-100 dark:hover:bg-sky-900/60 transition-colors text-sky-900 dark:text-sky-200 text-xs font-black px-2.5 py-1.5 rounded-xl border border-sky-300 dark:border-sky-700 shadow-2xs flex items-center gap-1.5 cursor-pointer"
+                      title={`Click to focus on ${water.name}${water.direction ? ` (${water.direction})` : ''}`}
                     >
                       <span>🌊 {water.name}</span>
+                      {water.direction && (
+                        <span className="text-[10px] text-sky-600 dark:text-sky-400 font-bold bg-sky-100/70 dark:bg-sky-950 px-1.5 py-0.5 rounded">
+                          {water.direction.split('(')[0].trim()}
+                        </span>
+                      )}
                     </button>
                   ))}
                 </div>

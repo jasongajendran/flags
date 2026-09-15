@@ -13,6 +13,7 @@ export interface WaterBodyFeature {
   lng: number;
   type: 'ocean' | 'sea' | 'gulf' | 'bay' | 'strait' | 'lake';
   direction?: string;
+  description?: string;
 }
 
 // Global landmark coordinate positions for major seas, gulfs, bays, straits, and lakes
@@ -291,6 +292,1074 @@ export const COUNTRY_COASTAL_WATERS: Record<string, string[]> = {
   "ao": ["South Atlantic Ocean"],
   "cm": ["Gulf of Guinea", "Atlantic Ocean"],
   "ga": ["Atlantic Ocean", "Gulf of Guinea"]
+};
+
+// Fact-checked, grounded coastal water coordinates for sovereign coastal nations worldwide
+// Placed strictly offshore in their true geographic quadrants relative to each country
+export const COUNTRY_COASTAL_COORDINATES: Record<string, WaterBodyFeature[]> = {
+  // Oceania
+  "nz": [
+    {
+      name: "South Pacific Ocean",
+      lat: -38.5,
+      lng: 180.5,
+      type: "ocean",
+      direction: "East Coast (Open Pacific)",
+      description: "Expansive ocean basin bordering New Zealand's eastern seaboard, stretching across the South Pacific towards South America"
+    },
+    {
+      name: "Tasman Sea",
+      lat: -41.0,
+      lng: 167.5,
+      type: "sea",
+      direction: "West Coast (between NZ & Australia)",
+      description: "Marginal sea of the South Pacific, approximately 2,000 km wide, separating New Zealand from the Australian continent"
+    },
+    {
+      name: "Cook Strait",
+      lat: -41.35,
+      lng: 174.45,
+      type: "strait",
+      direction: "Central Channel (between North & South Island)",
+      description: "Strategic 22 km-wide maritime strait connecting the Tasman Sea with the South Pacific Ocean between Wellington and Marlborough Sounds"
+    },
+    {
+      name: "Southern Ocean",
+      lat: -48.0,
+      lng: 167.5,
+      type: "ocean",
+      direction: "South Coast (Sub-Antarctic Waters)",
+      description: "Circumpolar ocean basin south of New Zealand extending towards Antarctica"
+    }
+  ],
+  "au": [
+    {
+      name: "Pacific Ocean",
+      lat: -27.5,
+      lng: 156.0,
+      type: "ocean",
+      direction: "East Coast",
+      description: "Vast ocean basin along Australia's eastern seaboard past Brisbane, Sydney, and the Gold Coast"
+    },
+    {
+      name: "Coral Sea",
+      lat: -16.5,
+      lng: 151.0,
+      type: "sea",
+      direction: "Northeast (Great Barrier Reef)",
+      description: "Tropical sea harboring the world's largest coral reef ecosystem off the coast of Queensland"
+    },
+    {
+      name: "Tasman Sea",
+      lat: -36.5,
+      lng: 153.5,
+      type: "sea",
+      direction: "Southeast",
+      description: "Deep oceanic sea separating southeastern Australia and Tasmania from New Zealand"
+    },
+    {
+      name: "Indian Ocean",
+      lat: -25.0,
+      lng: 110.0,
+      type: "ocean",
+      direction: "West Coast",
+      description: "Major ocean basin flanking Western Australia past Perth, Ningaloo Reef, and Broome"
+    },
+    {
+      name: "Southern Ocean",
+      lat: -38.5,
+      lng: 135.0,
+      type: "ocean",
+      direction: "South (Great Australian Bight)",
+      description: "Frigid southern waters washing the Great Australian Bight and Tasmania's southern coast"
+    },
+    {
+      name: "Timor Sea",
+      lat: -11.5,
+      lng: 126.5,
+      type: "sea",
+      direction: "Northwest",
+      description: "Warm tropical sea between Australia's Northern Territory and the island of Timor"
+    },
+    {
+      name: "Arafura Sea",
+      lat: -9.5,
+      lng: 135.0,
+      type: "sea",
+      direction: "North",
+      description: "Shallow tropical sea between northern Australia and New Guinea"
+    }
+  ],
+  "fj": [
+    {
+      name: "South Pacific Ocean",
+      lat: -16.5,
+      lng: 179.5,
+      type: "ocean",
+      direction: "Surrounding Ocean",
+      description: "Surrounding tropical South Pacific basin embracing the 330 islands of the Fijian archipelago"
+    },
+    {
+      name: "Koro Sea",
+      lat: -17.7,
+      lng: 179.6,
+      type: "sea",
+      direction: "Central Basin",
+      description: "Warm intra-island sea encircled by Viti Levu, Vanua Levu, and the Lau group"
+    }
+  ],
+  "pg": [
+    {
+      name: "Pacific Ocean",
+      lat: -2.5,
+      lng: 147.0,
+      type: "ocean",
+      direction: "North Coast",
+      description: "Equatorial Pacific waters stretching north of the Bismarck Archipelago"
+    },
+    {
+      name: "Bismarck Sea",
+      lat: -4.5,
+      lng: 148.0,
+      type: "sea",
+      direction: "Northeast",
+      description: "Inter-island sea bounded by New Britain, New Ireland, and the northern mainland coast"
+    },
+    {
+      name: "Solomon Sea",
+      lat: -7.5,
+      lng: 152.0,
+      type: "sea",
+      direction: "East Coast",
+      description: "Tropical sea between Papua New Guinea and the Solomon Islands archipelago"
+    },
+    {
+      name: "Coral Sea",
+      lat: -11.0,
+      lng: 147.0,
+      type: "sea",
+      direction: "South Coast (Gulf of Papua)",
+      description: "Warm southern marine waters separating Port Moresby and the Papuan coast from Australia"
+    }
+  ],
+
+  // North America
+  "us": [
+    {
+      name: "Atlantic Ocean",
+      lat: 35.5,
+      lng: -73.0,
+      type: "ocean",
+      direction: "East Coast",
+      description: "Historic ocean basin bordering the Eastern Seaboard from Maine down to Florida"
+    },
+    {
+      name: "Pacific Ocean",
+      lat: 35.5,
+      lng: -125.0,
+      type: "ocean",
+      direction: "West Coast",
+      description: "Vast ocean along the western coast of California, Oregon, and Washington State"
+    },
+    {
+      name: "Gulf of Mexico",
+      lat: 26.0,
+      lng: -90.0,
+      type: "gulf",
+      direction: "South Coast",
+      description: "Major oceanic basin bordering Texas, Louisiana, Mississippi, Alabama, and Florida"
+    },
+    {
+      name: "Arctic Ocean (Alaska)",
+      lat: 72.5,
+      lng: -150.0,
+      type: "ocean",
+      direction: "North (Alaska)",
+      description: "Icy polar waters bordering Alaska's North Slope and Prudhoe Bay"
+    },
+    {
+      name: "Bering Sea (Alaska)",
+      lat: 58.0,
+      lng: -170.0,
+      type: "sea",
+      direction: "West (Alaska)",
+      description: "Sub-polar sea separating Alaska from Siberia across the Bering Strait"
+    }
+  ],
+  "ca": [
+    {
+      name: "Pacific Ocean",
+      lat: 52.0,
+      lng: -133.0,
+      type: "ocean",
+      direction: "West (British Columbia)",
+      description: "Rugged fjord coastline along Vancouver Island and British Columbia"
+    },
+    {
+      name: "Atlantic Ocean",
+      lat: 48.0,
+      lng: -52.0,
+      type: "ocean",
+      direction: "East (Maritimes)",
+      description: "Historic fishing banks off Newfoundland, Nova Scotia, and Labrador"
+    },
+    {
+      name: "Arctic Ocean",
+      lat: 75.0,
+      lng: -115.0,
+      type: "ocean",
+      direction: "North (Arctic Archipelago)",
+      description: "Frozen channels and islands of the Canadian Arctic and Northwest Passage"
+    },
+    {
+      name: "Hudson Bay",
+      lat: 60.0,
+      lng: -85.0,
+      type: "bay",
+      direction: "Central-North Inland Sea",
+      description: "Enormous inland saltwater sea piercing deeply into northeastern Canada"
+    },
+    {
+      name: "Beaufort Sea",
+      lat: 72.0,
+      lng: -135.0,
+      type: "sea",
+      direction: "Northwest (Yukon/NWT)",
+      description: "Arctic marginal sea north of Yukon and the Northwest Territories"
+    }
+  ],
+  "mx": [
+    {
+      name: "Pacific Ocean",
+      lat: 20.0,
+      lng: -106.5,
+      type: "ocean",
+      direction: "West Coast",
+      description: "Open Pacific waters bordering western Mexico from Baja California to Chiapas"
+    },
+    {
+      name: "Gulf of Mexico",
+      lat: 23.0,
+      lng: -93.5,
+      type: "gulf",
+      direction: "East Coast",
+      description: "Rich maritime basin bordering Veracruz, Tamaulipas, and Tabasco"
+    },
+    {
+      name: "Caribbean Sea",
+      lat: 20.5,
+      lng: -86.5,
+      type: "sea",
+      direction: "Southeast (Yucatan/Cancún)",
+      description: "Turquoise tropical waters off the Riviera Maya and Cozumel"
+    },
+    {
+      name: "Gulf of California",
+      lat: 26.5,
+      lng: -110.5,
+      type: "gulf",
+      direction: "Northwest (Sea of Cortez)",
+      description: "Famed 'Aquarium of the World' between the Baja Peninsula and Sonora"
+    }
+  ],
+
+  // Europe
+  "gb": [
+    {
+      name: "North Sea",
+      lat: 55.0,
+      lng: 2.5,
+      type: "sea",
+      direction: "East Coast",
+      description: "Active marine trading and wind-energy sea bordering England and Scotland"
+    },
+    {
+      name: "Atlantic Ocean",
+      lat: 57.0,
+      lng: -9.5,
+      type: "ocean",
+      direction: "Northwest (Hebrides)",
+      description: "Open North Atlantic swells washing western Scotland and Northern Ireland"
+    },
+    {
+      name: "English Channel",
+      lat: 50.1,
+      lng: -1.5,
+      type: "strait",
+      direction: "South",
+      description: "Busiest shipping lane in the world separating southern England from France"
+    },
+    {
+      name: "Irish Sea",
+      lat: 53.6,
+      lng: -4.8,
+      type: "sea",
+      direction: "West (between GB & Ireland)",
+      description: "Historic sea separating Great Britain from the island of Ireland"
+    },
+    {
+      name: "Celtic Sea",
+      lat: 50.2,
+      lng: -7.0,
+      type: "sea",
+      direction: "Southwest (Cornwall)",
+      description: "Open Atlantic marine zone south of Ireland and southwest of Wales and Cornwall"
+    }
+  ],
+  "ie": [
+    {
+      name: "Atlantic Ocean",
+      lat: 53.5,
+      lng: -11.0,
+      type: "ocean",
+      direction: "West Coast",
+      description: "Wild Atlantic Way featuring dramatic sea cliffs including the Cliffs of Moher"
+    },
+    {
+      name: "Irish Sea",
+      lat: 53.5,
+      lng: -5.5,
+      type: "sea",
+      direction: "East Coast",
+      description: "Sheltered waterway separating Dublin and eastern Ireland from Great Britain"
+    },
+    {
+      name: "Celtic Sea",
+      lat: 51.2,
+      lng: -8.0,
+      type: "sea",
+      direction: "South Coast",
+      description: "Temperate southern sea washing the shores of Cork and Waterford"
+    },
+    {
+      name: "Saint George's Channel",
+      lat: 52.2,
+      lng: -5.8,
+      type: "strait",
+      direction: "Southeast",
+      description: "Channel connecting the Irish Sea to the Celtic Sea between Ireland and Wales"
+    }
+  ],
+  "fr": [
+    {
+      name: "Mediterranean Sea",
+      lat: 42.5,
+      lng: 5.5,
+      type: "sea",
+      direction: "South Coast",
+      description: "Sunny Côte d'Azur and Gulf of Lion off Marseille, Nice, and Cannes"
+    },
+    {
+      name: "Bay of Biscay",
+      lat: 45.5,
+      lng: -3.5,
+      type: "bay",
+      direction: "West Coast",
+      description: "Atlantic gulf washing the western shores of Aquitaine and Brittany"
+    },
+    {
+      name: "English Channel",
+      lat: 49.9,
+      lng: -0.5,
+      type: "strait",
+      direction: "North Coast",
+      description: "La Manche channel linking the Atlantic to the North Sea along Normandy"
+    },
+    {
+      name: "Celtic Sea",
+      lat: 48.5,
+      lng: -6.0,
+      type: "sea",
+      direction: "Northwest (Brittany)",
+      description: "Atlantic marine zone off the rugged western tip of the Breton peninsula"
+    }
+  ],
+  "es": [
+    {
+      name: "Mediterranean Sea",
+      lat: 39.5,
+      lng: 1.5,
+      type: "sea",
+      direction: "East & Southeast",
+      description: "Warm Mediterranean coast bordering Catalonia, Valencia, and the Balearic Islands"
+    },
+    {
+      name: "Atlantic Ocean",
+      lat: 36.5,
+      lng: -7.5,
+      type: "ocean",
+      direction: "Southwest (Gulf of Cadiz)",
+      description: "Historic departure point for Columbus off Andalusia and the Canary Islands"
+    },
+    {
+      name: "Bay of Biscay",
+      lat: 44.0,
+      lng: -4.5,
+      type: "bay",
+      direction: "North (Cantabrian Sea)",
+      description: "Rugged green northern coast bordering the Basque Country, Cantabria, and Asturias"
+    },
+    {
+      name: "Strait of Gibraltar",
+      lat: 35.95,
+      lng: -5.6,
+      type: "strait",
+      direction: "South",
+      description: "Strategic narrow channel (14 km wide) linking the Atlantic to the Mediterranean"
+    }
+  ],
+  "it": [
+    {
+      name: "Mediterranean Sea",
+      lat: 36.5,
+      lng: 14.5,
+      type: "sea",
+      direction: "South (Strait of Sicily)",
+      description: "Central Mediterranean basin south of Sicily and the Pelagie Islands"
+    },
+    {
+      name: "Adriatic Sea",
+      lat: 43.0,
+      lng: 15.0,
+      type: "sea",
+      direction: "East Coast",
+      description: "Elongated sea along Italy's eastern spine from Venice to Puglia"
+    },
+    {
+      name: "Tyrrhenian Sea",
+      lat: 40.0,
+      lng: 12.5,
+      type: "sea",
+      direction: "West Coast",
+      description: "Deep sea between western Italy, Sardinia, and Sicily past Rome and Naples"
+    },
+    {
+      name: "Ionian Sea",
+      lat: 38.0,
+      lng: 17.5,
+      type: "sea",
+      direction: "Southeast",
+      description: "Deepest sector of the Mediterranean bordering Calabria and the Gulf of Taranto"
+    },
+    {
+      name: "Ligurian Sea",
+      lat: 43.8,
+      lng: 9.0,
+      type: "sea",
+      direction: "Northwest",
+      description: "Scenic northern basin bordering the Italian Riviera, Genoa, and Cinque Terre"
+    }
+  ],
+  "de": [
+    {
+      name: "North Sea",
+      lat: 54.5,
+      lng: 7.5,
+      type: "sea",
+      direction: "Northwest",
+      description: "North Sea gateway past the East Frisian Islands and Hamburg's Elbe estuary"
+    },
+    {
+      name: "Baltic Sea",
+      lat: 54.6,
+      lng: 12.8,
+      type: "sea",
+      direction: "Northeast",
+      description: "Baltic coastline featuring the chalk cliffs of Rügen and Lübeck bay"
+    }
+  ],
+  "nl": [
+    {
+      name: "North Sea",
+      lat: 52.8,
+      lng: 3.8,
+      type: "sea",
+      direction: "West Coast",
+      description: "Vital North Sea waters hosting the Port of Rotterdam, Europe's largest seaport"
+    },
+    {
+      name: "Wadden Sea",
+      lat: 53.3,
+      lng: 5.5,
+      type: "sea",
+      direction: "North",
+      description: "UNESCO World Heritage tidal mudflats behind the West Frisian Islands"
+    },
+    {
+      name: "IJsselmeer",
+      lat: 52.7,
+      lng: 5.4,
+      type: "lake",
+      direction: "Inland Bay (Zuiderzee)",
+      description: "Major freshwater inland bay enclosed by the iconic Afsluitdijk dike"
+    }
+  ],
+  "no": [
+    {
+      name: "Norwegian Sea",
+      lat: 66.0,
+      lng: 7.0,
+      type: "sea",
+      direction: "West Coast",
+      description: "Deep Atlantic marine basin bordering Norway's dramatic western fjords"
+    },
+    {
+      name: "North Sea",
+      lat: 59.0,
+      lng: 4.5,
+      type: "sea",
+      direction: "Southwest",
+      description: "Southern marine zone off Bergen, Stavanger, and the North Sea energy fields"
+    },
+    {
+      name: "Barents Sea",
+      lat: 72.0,
+      lng: 28.0,
+      type: "sea",
+      direction: "North (Arctic)",
+      description: "Arctic shelf sea bordering Finnmark and northern Norway"
+    },
+    {
+      name: "Arctic Ocean",
+      lat: 78.0,
+      lng: 20.0,
+      type: "ocean",
+      direction: "Far North (Svalbard)",
+      description: "Polar ocean surrounding the Norwegian archipelago of Svalbard"
+    }
+  ],
+  "gr": [
+    {
+      name: "Aegean Sea",
+      lat: 38.5,
+      lng: 25.5,
+      type: "sea",
+      direction: "East",
+      description: "Famous island-filled sea containing the Cyclades, Dodecanese, and Santorini"
+    },
+    {
+      name: "Ionian Sea",
+      lat: 38.0,
+      lng: 20.0,
+      type: "sea",
+      direction: "West",
+      description: "Deep sea west of the Greek mainland harboring Corfu, Zakynthos, and Kefalonia"
+    },
+    {
+      name: "Mediterranean Sea",
+      lat: 35.0,
+      lng: 24.5,
+      type: "sea",
+      direction: "South",
+      description: "Open Mediterranean waters extending south from Crete toward Africa"
+    },
+    {
+      name: "Sea of Crete",
+      lat: 36.0,
+      lng: 25.0,
+      type: "sea",
+      direction: "South (North of Crete)",
+      description: "Southern sector of the Aegean situated immediately north of the island of Crete"
+    }
+  ],
+  "tr": [
+    {
+      name: "Mediterranean Sea",
+      lat: 36.0,
+      lng: 31.0,
+      type: "sea",
+      direction: "South (Turkish Riviera)",
+      description: "Turquoise Coast bordering Antalya, Alanya, and the southern Taurus mountains"
+    },
+    {
+      name: "Aegean Sea",
+      lat: 38.5,
+      lng: 26.5,
+      type: "sea",
+      direction: "West Coast",
+      description: "Historic sea bordering Izmir, Bodrum, and ancient Ionian coastal ruins"
+    },
+    {
+      name: "Black Sea",
+      lat: 42.0,
+      lng: 35.0,
+      type: "sea",
+      direction: "North Coast",
+      description: "Lush northern coastline bordering Trabzon, Samsun, and Pontic tea-growing valleys"
+    },
+    {
+      name: "Sea of Marmara",
+      lat: 40.7,
+      lng: 28.3,
+      type: "sea",
+      direction: "Northwest (Istanbul)",
+      description: "Inland sea connecting the Black Sea and Aegean via the Bosphorus and Dardanelles"
+    }
+  ],
+  "ru": [
+    {
+      name: "Baltic Sea",
+      lat: 59.9,
+      lng: 28.5,
+      type: "sea",
+      direction: "West (Gulf of Finland)",
+      description: "Maritime gateway to St. Petersburg and the Kaliningrad exclave"
+    },
+    {
+      name: "Black Sea",
+      lat: 44.0,
+      lng: 37.5,
+      type: "sea",
+      direction: "Southwest (Sochi)",
+      description: "Subtropical Russian coast along the Caucasus and Krasnodar Krai"
+    },
+    {
+      name: "Barents Sea",
+      lat: 71.0,
+      lng: 40.0,
+      type: "sea",
+      direction: "North (Murmansk)",
+      description: "Ice-free Arctic port waters of the Kola Peninsula and Northern Fleet"
+    },
+    {
+      name: "Sea of Okhotsk",
+      lat: 55.0,
+      lng: 150.0,
+      type: "sea",
+      direction: "Far East (Kamchatka)",
+      description: "Rich sub-Arctic marine sea enclosed by Siberia, Sakhalin, and the Kamchatka Peninsula"
+    },
+    {
+      name: "Bering Sea",
+      lat: 60.0,
+      lng: 175.0,
+      type: "sea",
+      direction: "Northeast (Chukotka)",
+      description: "Pacific-Arctic sea washing the Chukchi Peninsula across from Alaska"
+    },
+    {
+      name: "Arctic Ocean",
+      lat: 78.0,
+      lng: 100.0,
+      type: "ocean",
+      direction: "North",
+      description: "Extensive Northern Sea Route spanning Siberia's Kara, Laptev, and East Siberian seas"
+    }
+  ],
+
+  // Asia
+  "jp": [
+    {
+      name: "Sea of Japan",
+      lat: 38.0,
+      lng: 135.0,
+      type: "sea",
+      direction: "West Coast",
+      description: "Marginal sea between the Japanese archipelago and the Asian mainland"
+    },
+    {
+      name: "Pacific Ocean",
+      lat: 35.0,
+      lng: 143.5,
+      type: "ocean",
+      direction: "East Coast",
+      description: "Deep ocean trench waters bordering Tokyo, Honshu, and Mount Fuji's eastern flank"
+    },
+    {
+      name: "East China Sea",
+      lat: 30.0,
+      lng: 128.0,
+      type: "sea",
+      direction: "Southwest (Ryukyu/Okinawa)",
+      description: "Tropical sea washing Kyushu and the southwest island chain towards Okinawa"
+    },
+    {
+      name: "Sea of Okhotsk",
+      lat: 45.5,
+      lng: 145.0,
+      type: "sea",
+      direction: "North (Hokkaido)",
+      description: "Sub-polar sea north of Hokkaido known for winter drift ice (ryuhyo)"
+    },
+    {
+      name: "Philippine Sea",
+      lat: 31.0,
+      lng: 137.0,
+      type: "sea",
+      direction: "South Coast",
+      description: "Warm open sea bordering the Izu and Ogasawara archipelagos"
+    }
+  ],
+  "cn": [
+    {
+      name: "Bohai Sea",
+      lat: 38.5,
+      lng: 120.0,
+      type: "sea",
+      direction: "Northeast (Beijing Gateway)",
+      description: "Innermost gulf of the Yellow Sea adjacent to Tianjin, Shandong, and Liaoning"
+    },
+    {
+      name: "Yellow Sea",
+      lat: 35.0,
+      lng: 123.0,
+      type: "sea",
+      direction: "East Coast",
+      description: "Marginal sea between mainland China and the Korean Peninsula"
+    },
+    {
+      name: "East China Sea",
+      lat: 28.0,
+      lng: 124.0,
+      type: "sea",
+      direction: "East (Shanghai)",
+      description: "Bustling maritime trade sea into which the Yangtze River drains at Shanghai"
+    },
+    {
+      name: "South China Sea",
+      lat: 18.0,
+      lng: 114.0,
+      type: "sea",
+      direction: "South (Guangdong/Hainan)",
+      description: "Vast tropical sea south of the Pearl River Delta, Hong Kong, and Hainan Island"
+    }
+  ],
+  "in": [
+    {
+      name: "Arabian Sea",
+      lat: 18.0,
+      lng: 69.5,
+      type: "sea",
+      direction: "West Coast",
+      description: "Major maritime basin along India's Konkan and Malabar coasts past Mumbai and Goa"
+    },
+    {
+      name: "Bay of Bengal",
+      lat: 16.0,
+      lng: 85.0,
+      type: "bay",
+      direction: "East Coast",
+      description: "World's largest water bay bordering Chennai, Andhra Pradesh, Odisha, and Bengal"
+    },
+    {
+      name: "Indian Ocean",
+      lat: 6.5,
+      lng: 79.5,
+      type: "ocean",
+      direction: "South (Kanyakumari)",
+      description: "Trive-sea confluence point at India's southernmost tip at Cape Comorin"
+    },
+    {
+      name: "Andaman Sea",
+      lat: 11.5,
+      lng: 94.0,
+      type: "sea",
+      direction: "Southeast (Andaman & Nicobar)",
+      description: "Tropical sea washing the Andaman and Nicobar Union Territory"
+    }
+  ],
+  "id": [
+    {
+      name: "Indian Ocean",
+      lat: -9.5,
+      lng: 110.0,
+      type: "ocean",
+      direction: "South Coast",
+      description: "Deep oceanic swells washing the southern coastlines of Java, Bali, and Lombok"
+    },
+    {
+      name: "Pacific Ocean",
+      lat: 1.5,
+      lng: 135.0,
+      type: "ocean",
+      direction: "Northeast (Papua)",
+      description: "Equatorial Pacific waters north of Papua and the Maluku islands"
+    },
+    {
+      name: "Java Sea",
+      lat: -5.0,
+      lng: 111.0,
+      type: "sea",
+      direction: "Central",
+      description: "Shallow heartland sea between Java, Sumatra, and Kalimantan (Borneo)"
+    },
+    {
+      name: "Banda Sea",
+      lat: -5.5,
+      lng: 127.0,
+      type: "sea",
+      direction: "East (Spice Islands)",
+      description: "Deep sea in the Maluku archipelago famous for the historic Nutmeg Spice Islands"
+    },
+    {
+      name: "Celebes Sea",
+      lat: 3.5,
+      lng: 122.0,
+      type: "sea",
+      direction: "North (Sulawesi)",
+      description: "Bio-diverse sea between northern Sulawesi and the Sulu Archipelago"
+    }
+  ],
+  "ph": [
+    {
+      name: "Philippine Sea",
+      lat: 14.0,
+      lng: 125.5,
+      type: "sea",
+      direction: "East Coast",
+      description: "Deep western Pacific sea bordering Luzon, Samar, and the Philippine Trench"
+    },
+    {
+      name: "South China Sea",
+      lat: 15.0,
+      lng: 118.5,
+      type: "sea",
+      direction: "West Coast (West Philippine Sea)",
+      description: "Major maritime sea bordering Manila Bay, Palawan, and northern Luzon"
+    },
+    {
+      name: "Sulu Sea",
+      lat: 8.5,
+      lng: 120.5,
+      type: "sea",
+      direction: "Southwest",
+      description: "Tropical inland sea housing the Tubbataha Reefs Natural Park UNESCO site"
+    },
+    {
+      name: "Celebes Sea",
+      lat: 4.5,
+      lng: 123.0,
+      type: "sea",
+      direction: "South Coast (Mindanao)",
+      description: "Deep oceanic sea south of Mindanao bordering Indonesian waters"
+    }
+  ],
+  "th": [
+    {
+      name: "Gulf of Thailand",
+      lat: 10.5,
+      lng: 101.0,
+      type: "gulf",
+      direction: "East Coast",
+      description: "Shallow tropical gulf bordering Bangkok, Pattaya, Koh Samui, and Surat Thani"
+    },
+    {
+      name: "Andaman Sea",
+      lat: 8.0,
+      lng: 98.0,
+      type: "sea",
+      direction: "West Coast",
+      description: "Spectacular limestone karst coastline harboring Phuket, Krabi, and the Phi Phi Islands"
+    }
+  ],
+  "vn": [
+    {
+      name: "South China Sea",
+      lat: 14.0,
+      lng: 110.5,
+      type: "sea",
+      direction: "East Coast (East Sea)",
+      description: "3,260 km-long coastline bordering Da Nang, Nha Trang, and Halong Bay"
+    },
+    {
+      name: "Gulf of Thailand",
+      lat: 9.5,
+      lng: 103.5,
+      type: "gulf",
+      direction: "Southwest (Phu Quoc)",
+      description: "Tropical southwestern marine waters around the island resort of Phu Quoc"
+    }
+  ],
+  "my": [
+    {
+      name: "South China Sea",
+      lat: 4.5,
+      lng: 106.0,
+      type: "sea",
+      direction: "East (between Peninsular & Borneo)",
+      description: "Expansive sea separating Peninsular Malaysia from Sabah and Sarawak on Borneo"
+    },
+    {
+      name: "Strait of Malacca",
+      lat: 3.0,
+      lng: 100.5,
+      type: "strait",
+      direction: "West Coast",
+      description: "World's most critical maritime shipping chokepoint between Malaya and Sumatra"
+    },
+    {
+      name: "Andaman Sea",
+      lat: 6.0,
+      lng: 99.0,
+      type: "sea",
+      direction: "Northwest (Langkawi)",
+      description: "Tropical island marine waters surrounding the Langkawi archipelago"
+    }
+  ],
+  "sg": [
+    {
+      name: "Singapore Strait",
+      lat: 1.22,
+      lng: 103.85,
+      type: "strait",
+      direction: "South Coast",
+      description: "16 km-wide international shipping strait between Singapore and the Riau Islands"
+    },
+    {
+      name: "Strait of Malacca",
+      lat: 1.30,
+      lng: 103.65,
+      type: "strait",
+      direction: "West",
+      description: "Maritime approach funneling global container vessels into the Port of Singapore"
+    }
+  ],
+
+  // Africa
+  "eg": [
+    {
+      name: "Mediterranean Sea",
+      lat: 32.0,
+      lng: 30.5,
+      type: "sea",
+      direction: "North Coast",
+      description: "Ancient sea washing Alexandria, Port Said, and the Nile River Delta"
+    },
+    {
+      name: "Red Sea",
+      lat: 26.5,
+      lng: 35.0,
+      type: "sea",
+      direction: "East Coast",
+      description: "World-renowned coral diving destination bordering Hurghada and Marsa Alam"
+    },
+    {
+      name: "Gulf of Suez",
+      lat: 28.5,
+      lng: 33.2,
+      type: "gulf",
+      direction: "East (Sinai West)",
+      description: "Arm of the Red Sea leading directly into the historic Suez Canal"
+    },
+    {
+      name: "Gulf of Aqaba",
+      lat: 28.8,
+      lng: 34.7,
+      type: "gulf",
+      direction: "Northeast (Sinai East)",
+      description: "Deep rift valley gulf bordering Sharm El-Sheikh, Dahab, and Taba"
+    }
+  ],
+  "za": [
+    {
+      name: "Atlantic Ocean",
+      lat: -33.5,
+      lng: 16.5,
+      type: "ocean",
+      direction: "West Coast",
+      description: "Cool Benguela current waters washing Cape Town, Table Bay, and the West Coast"
+    },
+    {
+      name: "Indian Ocean",
+      lat: -30.0,
+      lng: 32.0,
+      type: "ocean",
+      direction: "East Coast",
+      description: "Warm Agulhas current ocean along Durban, the Wild Coast, and KwaZulu-Natal"
+    },
+    {
+      name: "Southern Ocean",
+      lat: -37.0,
+      lng: 22.0,
+      type: "ocean",
+      direction: "South Coast (Cape Agulhas)",
+      description: "Official meeting point of the Atlantic and Indian oceans at Africa's southernmost tip"
+    }
+  ],
+
+  // South America
+  "br": [
+    {
+      name: "Atlantic Ocean",
+      lat: -12.0,
+      lng: -35.0,
+      type: "ocean",
+      direction: "Northeast Coast",
+      description: "Tropical Atlantic coast bordering Salvador, Recife, and Fortaleza"
+    },
+    {
+      name: "South Atlantic Ocean",
+      lat: -25.0,
+      lng: -44.0,
+      type: "ocean",
+      direction: "Southeast Coast",
+      description: "Iconic coastline embracing Rio de Janeiro's Copacabana and Santos harbor"
+    }
+  ],
+  "ar": [
+    {
+      name: "South Atlantic Ocean",
+      lat: -44.0,
+      lng: -63.0,
+      type: "ocean",
+      direction: "East Coast",
+      description: "Sweeping Patagonian coastline bordering the Valdés Peninsula whale sanctuaries"
+    },
+    {
+      name: "Río de la Plata",
+      lat: -35.2,
+      lng: -56.8,
+      type: "bay",
+      direction: "Northeast (Buenos Aires)",
+      description: "Broadest estuary in the world separating Argentina from Uruguay"
+    }
+  ],
+  "cl": [
+    {
+      name: "South Pacific Ocean",
+      lat: -33.5,
+      lng: -73.0,
+      type: "ocean",
+      direction: "West Coast",
+      description: "Continuous 4,270 km Pacific coastline bordering Valparaíso, Atacama, and fjords"
+    },
+    {
+      name: "Drake Passage",
+      lat: -58.5,
+      lng: -66.0,
+      type: "strait",
+      direction: "South (Cape Horn)",
+      description: "Tempestuous body of water connecting the Pacific and Atlantic south of Cape Horn"
+    }
+  ],
+
+  // Antarctica
+  "aq": [
+    {
+      name: "Southern Ocean",
+      lat: -63.0,
+      lng: 0.0,
+      type: "ocean",
+      direction: "Circumpolar",
+      description: "Continuous circumpolar ocean ringing the frozen Antarctic continent"
+    },
+    {
+      name: "Ross Sea",
+      lat: -75.0,
+      lng: 175.0,
+      type: "sea",
+      direction: "Ross Ice Shelf (South of NZ)",
+      description: "Deep southern bay south of New Zealand harboring McMurdo Station and Mount Erebus"
+    },
+    {
+      name: "Weddell Sea",
+      lat: -73.0,
+      lng: -45.0,
+      type: "sea",
+      direction: "Atlantic Sector",
+      description: "Pack-ice sea famed for Shackleton's Endurance expedition"
+    }
+  ]
 };
 
 // Curated major rivers with grounded coordinates for countries around the globe
@@ -803,7 +1872,28 @@ export function getCountryWaterBodies(
     return [];
   }
 
-  // Filter out any text that says 'landlocked' or 'none'
+  // 1. Priority: Return verified fact-checked coordinates if country is in curated coastal registry
+  if (COUNTRY_COASTAL_COORDINATES[iso]) {
+    const curated = COUNTRY_COASTAL_COORDINATES[iso];
+    if (declaredWaters && declaredWaters.length > 0) {
+      const validDeclared = declaredWaters
+        .filter(name => name && !/landlocked|none|inland/i.test(name))
+        .map(w => w.toLowerCase());
+
+      if (validDeclared.length > 0) {
+        // Match declared names against curated entries
+        const matched = curated.filter(c => 
+          validDeclared.some(v => v.includes(c.name.toLowerCase()) || c.name.toLowerCase().includes(v))
+        );
+        if (matched.length > 0) {
+          return matched;
+        }
+      }
+    }
+    return curated;
+  }
+
+  // 2. Filter out any text that says 'landlocked' or 'none'
   const validWaterNames = (declaredWaters && declaredWaters.length > 0 ? declaredWaters : COUNTRY_COASTAL_WATERS[iso] || [])
     .filter(name => name && !/landlocked|none|inland/i.test(name));
 
@@ -814,20 +1904,29 @@ export function getCountryWaterBodies(
   const result: WaterBodyFeature[] = [];
 
   // Map each valid water body to accurate offshore geographic coordinates
-  validWaterNames.forEach((waterName) => {
+  validWaterNames.forEach((waterName, idx) => {
     const known = KNOWN_WATER_BODIES[waterName];
     if (known) {
       const dLat = known.lat - countryLat;
-      const dLng = known.lng - countryLng;
+      let dLng = known.lng - countryLng;
+
+      // Antimeridian-safe longitude wrap
+      while (dLng > 180) dLng -= 360;
+      while (dLng < -180) dLng += 360;
+
       const dist = Math.sqrt(dLat * dLat + dLng * dLng);
 
       let pLat = known.lat;
       let pLng = known.lng;
 
-      // Project offshore into the sea from the country
-      if (dist > 5) {
-        const angle = Math.atan2(dLat, dLng);
-        const offsetDist = Math.min(dist, 2.5); // Place ~2.5 degrees offshore into the sea
+      // Project offshore adaptively into the sea based on country distance
+      if (dist > 3) {
+        let angle = Math.atan2(dLat, dLng);
+        // Angular offset if multiple waters point in similar direction to avoid overlaps
+        if (idx > 0) {
+          angle += (idx % 2 === 1 ? 0.35 : -0.35) * Math.floor((idx + 1) / 2);
+        }
+        const offsetDist = Math.max(2.2, Math.min(dist * 0.4, 5.5));
         pLat = countryLat + Math.sin(angle) * offsetDist;
         pLng = countryLng + Math.cos(angle) * offsetDist;
       }
@@ -836,17 +1935,18 @@ export function getCountryWaterBodies(
         name: waterName,
         lat: Number(pLat.toFixed(4)),
         lng: Number(pLng.toFixed(4)),
-        type: known.type
+        type: known.type,
+        description: `Marine water body adjacent to the coastal border`
       });
     } else {
-      // If recognized water body
-      const hash = waterName.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0);
-      const angle = (hash % 360) * (Math.PI / 180);
+      // Deterministic distinct angular distribution around country for unknown waters
+      const baseAngle = (idx * (360 / Math.max(1, validWaterNames.length))) * (Math.PI / 180);
       result.push({
         name: waterName,
-        lat: Number((countryLat + Math.sin(angle) * 2.0).toFixed(4)),
-        lng: Number((countryLng + Math.cos(angle) * 2.0).toFixed(4)),
-        type: waterName.toLowerCase().includes('ocean') ? 'ocean' : 'sea'
+        lat: Number((countryLat + Math.sin(baseAngle) * 2.8).toFixed(4)),
+        lng: Number((countryLng + Math.cos(baseAngle) * 2.8).toFixed(4)),
+        type: waterName.toLowerCase().includes('ocean') ? 'ocean' : 'sea',
+        description: `Coastal water body bounding the territory`
       });
     }
   });
