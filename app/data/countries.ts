@@ -26,7 +26,11 @@ export function enrichCountry(c: Country): Country {
   // Guaranteed minimum 3 pictures with titles & captions
   let landmarks: LandmarkPhoto[] = [];
   if (kb?.landmarks && kb.landmarks.length >= 3) {
-    landmarks = kb.landmarks;
+    landmarks = kb.landmarks.map(item => ({
+      title: item.name,
+      caption: item.description,
+      url: item.imageUrl
+    }));
   } else if (c.landmarks && c.landmarks.length >= 3) {
     landmarks = c.landmarks;
   } else {
@@ -53,10 +57,11 @@ export function enrichCountry(c: Country): Country {
   let distinctFacts: string[] = [];
   if (kb?.facts && kb.facts.length >= 3) {
     // kb.facts is curated and already contains verified unique facts
-    distinctFacts = kb.facts.filter(f => f && f.trim());
+    distinctFacts = kb.facts.map(f => (typeof f === 'string' ? f : f.fact)).filter(f => f && f.trim());
   } else {
+    const rawKbFacts = (kb?.facts || []).map(f => (typeof f === 'string' ? f : f.fact));
     const candidates: string[] = [
-      ...(kb?.facts || []),
+      ...rawKbFacts,
       ...(c.interestingFacts || []),
       c.uniqueness || '',
       c.recordFact || '',

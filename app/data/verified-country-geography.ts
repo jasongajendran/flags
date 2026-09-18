@@ -54,6 +54,13 @@ const BORDER_ANCHORS: Record<string, Record<string, { lat: number; lng: number }
     ee: { lat: 57.5000, lng: 25.5000 }, // Valmiera (South of Estonia)
     ru: { lat: 56.5000, lng: 27.5000 }, // Eastern Latvia (West of Russia)
   },
+  // Greece (gr) anchors when viewed from bordering neighbors
+  gr: {
+    al: { lat: 39.6650, lng: 20.8537 }, // Ioannina / Epirus border region (South of Albania)
+    mk: { lat: 40.7833, lng: 21.4000 }, // Florina / Western Macedonia (South of North Macedonia)
+    bg: { lat: 41.1333, lng: 24.8833 }, // Xanthi / Thrace (South of Bulgaria)
+    tr: { lat: 41.5000, lng: 26.5000 }, // Evros / Orestiada (West of Turkey)
+  },
   // Ukraine (ua) anchors
   ua: {
     by: { lat: 51.2500, lng: 28.8000 }, // Northern Ukraine / Zhytomyr Oblast (South of Belarus)
@@ -152,7 +159,7 @@ export function calculateCompassDirection(
  */
 export const VERIFIED_COUNTRIES_DATA: Record<string, VerifiedCountryGeo> = {
   // EUROPE
-  al: { lat: 41.1533, lng: 20.1683, zoom: 7, capital: "Tirana", capitalCoords: { lat: 41.3275, lng: 19.8187 }, neighborsIso2: ["me", "rs", "mk", "gr"] },
+  al: { lat: 41.1533, lng: 20.1683, zoom: 7, capital: "Tirana", capitalCoords: { lat: 41.3275, lng: 19.8187 }, neighborsIso2: ["me", "xk", "mk", "gr"] },
   ad: { lat: 42.5462, lng: 1.6016, zoom: 11, capital: "Andorra la Vella", capitalCoords: { lat: 42.5063, lng: 1.5218 }, neighborsIso2: ["fr", "es"] },
   at: { lat: 47.5162, lng: 14.5501, zoom: 7, capital: "Vienna", capitalCoords: { lat: 48.2082, lng: 16.3738 }, neighborsIso2: ["de", "cz", "sk", "hu", "si", "it", "ch", "li"] },
   by: { lat: 53.7098, lng: 27.9534, zoom: 6, capital: "Minsk", capitalCoords: { lat: 53.9006, lng: 27.5590 }, neighborsIso2: ["pl", "lt", "lv", "ru", "ua"] },
@@ -180,16 +187,17 @@ export const VERIFIED_COUNTRIES_DATA: Record<string, VerifiedCountryGeo> = {
   mt: { lat: 35.9375, lng: 14.3754, zoom: 11, capital: "Valletta", capitalCoords: { lat: 35.8989, lng: 14.5146 }, neighborsIso2: [] },
   md: { lat: 47.4116, lng: 28.3699, zoom: 7, capital: "Chisinau", capitalCoords: { lat: 47.0105, lng: 28.8638 }, neighborsIso2: ["ro", "ua"] },
   mc: { lat: 43.7384, lng: 7.4246, zoom: 14, capital: "Monaco", capitalCoords: { lat: 43.7384, lng: 7.4246 }, neighborsIso2: ["fr"] },
-  me: { lat: 42.7087, lng: 19.3744, zoom: 8, capital: "Podgorica", capitalCoords: { lat: 42.4304, lng: 19.2594 }, neighborsIso2: ["ba", "rs", "al", "hr"] },
+  me: { lat: 42.7087, lng: 19.3744, zoom: 8, capital: "Podgorica", capitalCoords: { lat: 42.4304, lng: 19.2594 }, neighborsIso2: ["ba", "rs", "xk", "al", "hr"] },
   nl: { lat: 52.1326, lng: 5.2913, zoom: 7, capital: "Amsterdam", capitalCoords: { lat: 52.3676, lng: 4.9041 }, neighborsIso2: ["de", "be"] },
-  mk: { lat: 41.6086, lng: 21.7453, zoom: 8, capital: "Skopje", capitalCoords: { lat: 41.9973, lng: 21.4280 }, neighborsIso2: ["rs", "bg", "gr", "al"] },
+  mk: { lat: 41.6086, lng: 21.7453, zoom: 8, capital: "Skopje", capitalCoords: { lat: 41.9973, lng: 21.4280 }, neighborsIso2: ["rs", "xk", "bg", "gr", "al"] },
   no: { lat: 60.4720, lng: 8.4689, zoom: 5, capital: "Oslo", capitalCoords: { lat: 59.9139, lng: 10.7522 }, neighborsIso2: ["se", "fi", "ru"] },
   pl: { lat: 51.9194, lng: 19.1451, zoom: 6, capital: "Warsaw", capitalCoords: { lat: 52.2297, lng: 21.0122 }, neighborsIso2: ["de", "cz", "sk", "ua", "by", "lt", "ru"] },
   pt: { lat: 39.3999, lng: -8.2245, zoom: 6, capital: "Lisbon", capitalCoords: { lat: 38.7223, lng: -9.1393 }, neighborsIso2: ["es"] },
   ro: { lat: 45.9432, lng: 24.9668, zoom: 6, capital: "Bucharest", capitalCoords: { lat: 44.4268, lng: 26.1025 }, neighborsIso2: ["ua", "md", "bg", "rs", "hu"] },
   ru: { lat: 55.7558, lng: 37.6173, zoom: 4, capital: "Moscow", capitalCoords: { lat: 55.7558, lng: 37.6173 }, neighborsIso2: ["no", "fi", "ee", "lv", "lt", "pl", "by", "ua", "ge", "az", "kz", "cn", "mn", "kp"] },
   sm: { lat: 43.9424, lng: 12.4578, zoom: 12, capital: "San Marino", capitalCoords: { lat: 43.9424, lng: 12.4578 }, neighborsIso2: ["it"] },
-  rs: { lat: 44.0165, lng: 21.0059, zoom: 7, capital: "Belgrade", capitalCoords: { lat: 44.7866, lng: 20.4489 }, neighborsIso2: ["hu", "ro", "bg", "mk", "al", "me", "ba", "hr"] },
+  rs: { lat: 44.0165, lng: 21.0059, zoom: 7, capital: "Belgrade", capitalCoords: { lat: 44.7866, lng: 20.4489 }, neighborsIso2: ["hu", "ro", "bg", "mk", "xk", "me", "ba", "hr"] },
+  xk: { lat: 42.6026, lng: 20.9030, zoom: 8, capital: "Pristina", capitalCoords: { lat: 42.6629, lng: 21.1655 }, neighborsIso2: ["rs", "mk", "al", "me"] },
   sk: { lat: 48.6690, lng: 19.6990, zoom: 7, capital: "Bratislava", capitalCoords: { lat: 48.1486, lng: 17.1077 }, neighborsIso2: ["cz", "pl", "ua", "hu", "at"] },
   si: { lat: 46.1512, lng: 14.9955, zoom: 8, capital: "Ljubljana", capitalCoords: { lat: 46.0569, lng: 14.5058 }, neighborsIso2: ["at", "hu", "hr", "it"] },
   es: { lat: 40.4637, lng: -3.7492, zoom: 6, capital: "Madrid", capitalCoords: { lat: 40.4168, lng: -3.7038 }, neighborsIso2: ["pt", "fr", "ad", "ma"] },

@@ -42,6 +42,7 @@ import {
   getCountryOrGenerate,
   formatPopulation 
 } from '@/app/data/countries';
+import { getFactMediaForCountry } from '@/app/data/verified-fact-images';
 import { WORLD_ALL_FLAGS, WorldFlagItem } from '@/app/data/world-flags-catalog';
 import { useAudioGuide } from '@/hooks/use-audio-guide';
 import { useFullscreenWakelock } from '@/hooks/use-fullscreen-wakelock';
@@ -86,6 +87,9 @@ export default function KidsApp() {
   const [searchQuery, setSearchQuery] = useState('');
   const [catalogContinentFilter, setCatalogContinentFilter] = useState('All');
   
+  // Fallback tracking for fact images keyed by countryId-factIndex
+  const [failedFactImages, setFailedFactImages] = useState<Record<string, boolean>>({});
+
   // Audio state tracking which section is being read
   const { play, stop, isPlaying } = useAudioGuide();
   const [activeAudioSection, setActiveAudioSection] = useState<AudioSection>(null);
@@ -583,7 +587,7 @@ export default function KidsApp() {
 
               {/* Real Map & Geography Section - Full Width Showcase */}
               <section id="section-geography" className={`bg-slate-950 border rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col scroll-mt-8 ${getSectionHighlight('geography')}`}>
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
                   <div className="flex items-center gap-3">
                     <div className="p-3 bg-emerald-500/20 text-emerald-400 rounded-2xl border border-emerald-500/30">
                       <MapPin size={26} />
@@ -608,19 +612,6 @@ export default function KidsApp() {
                   >
                     {activeAudioSection === 'geography' ? <Square size={20} fill="currentColor" /> : <Volume2 size={20} />}
                   </button>
-                </div>
-
-                <div className="mb-6 p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-wrap items-center justify-between gap-3 text-slate-300">
-                  <div className="text-xs sm:text-sm leading-relaxed">
-                    <span className="text-slate-400 font-semibold">Location:</span>{' '}
-                    <span className="text-white font-bold">{selectedCountry.location.region}</span>
-                    <span className="mx-2 text-slate-600">•</span>
-                    <span className="text-slate-400 font-semibold">Capital:</span>{' '}
-                    <span className="text-amber-400 font-bold">★ {selectedCountry.capital}</span>
-                    <span className="mx-2 text-slate-600">•</span>
-                    <span className="text-slate-400 font-semibold">Borders:</span>{' '}
-                    <span className="text-slate-200">{selectedCountry.location.neighbors}</span>
-                  </div>
                 </div>
 
                 <div className="w-full">
@@ -742,17 +733,66 @@ export default function KidsApp() {
                       </button>
                     </div>
 
-                    <div className="space-y-3 flex-grow">
-                      {Array.from(new Set(selectedCountry.interestingFacts || [])).filter(Boolean).map((fact, idx) => (
-                        <div key={idx} className="bg-slate-900 border border-slate-800 rounded-xl p-4 flex items-start gap-4 shadow-sm">
-                          <span className="flex-shrink-0 flex items-center justify-center h-7 w-7 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 font-bold text-xs mt-0.5">
-                            {idx + 1}
-                          </span>
-                          <span className="text-sm text-slate-300 leading-relaxed">
-                            {fact}
-                          </span>
-                        </div>
-                      ))}
+                    <div className="space-y-3.5 flex-grow">
+                      {Array.from(new Set(selectedCountry.interestingFacts || [])).filter(Boolean).map((fact, idx) => {
+                        const factMedia = getFactMediaForCountry(selectedCountry.iso2, idx);
+                        const imageKey = `${selectedCountry.id}-${idx}`;
+                        const hasFailed = failedFactImages[imageKey];
+                        // ONLY display a picture if there is an exact, verified match for this specific fact and it has not failed
+                        // NEVER fall back to an unrelated landmark or flag for a specific fact statement
+                        const imageUrl = factMedia && !hasFailed ? factMedia.url : null;
+                        const imageTitle = factMedia?.title || '';
+                        const imageCaption = factMedia?.caption || fact;
+
+                        return (
+                          <div 
+                            key={idx} 
+                            className="bg-slate-900/90 border border-slate-800 hover:border-slate-700/80 rounded-2xl p-3.5 sm:p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3.5 sm:gap-4 shadow-sm transition-all"
+                          >
+                            <div className="flex items-start gap-3.5 flex-grow min-w-0">
+                              <span className="flex-shrink-0 flex items-center justify-center h-7 w-7 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 font-black text-xs mt-0.5 shadow-xs">
+                                {idx + 1}
+                              </span>
+                              <p className="text-sm text-slate-200 leading-relaxed">
+                                {fact}
+                              </p>
+                            </div>
+
+                            {/* Small Verified Picture Associated with Fact Content */}
+                            {imageUrl && factMedia && (
+                              <button
+                                type="button"
+                                onClick={() => setActivePhotoModal({
+                                  title: imageTitle,
+                                  caption: imageCaption,
+                                  url: imageUrl
+                                })}
+                                className="group relative flex-shrink-0 w-24 h-20 sm:w-28 sm:h-20 rounded-xl overflow-hidden border border-slate-800 hover:border-amber-400/90 transition-all cursor-pointer shadow-md bg-slate-950 self-end sm:self-center text-left"
+                                title={`Click to view verified HD picture: ${imageTitle}`}
+                                aria-label={`View verified picture for fact ${idx + 1}: ${imageTitle}`}
+                              >
+                                <Image
+                                  src={imageUrl}
+                                  alt={imageTitle}
+                                  fill
+                                  className="object-cover transition-transform duration-300 group-hover:scale-110"
+                                  referrerPolicy="no-referrer"
+                                  onError={() => {
+                                    setFailedFactImages((prev) => ({ ...prev, [imageKey]: true }));
+                                  }}
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent group-hover:via-transparent transition-opacity" />
+                                <span className="absolute bottom-1 left-1.5 right-1.5 text-[9px] sm:text-[10px] font-bold text-white truncate block drop-shadow">
+                                  {imageTitle}
+                                </span>
+                                <span className="absolute top-1 right-1 p-1 rounded-md bg-slate-950/80 text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                                  <Maximize2 size={10} />
+                                </span>
+                              </button>
+                            )}
+                          </div>
+                        );
+                      })}
                     </div>
 
                     {/* Quick Preview of Popular Pictures */}

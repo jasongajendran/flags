@@ -1,0 +1,2684 @@
+[
+  {
+    "code": "al",
+    "country": "Albania",
+    "factIndex": 0,
+    "factText": "Albania has over 173,000 concrete military dome bunkers built during the Cold War scattered across mountains and beaches.",
+    "imageTitle": "Cold War Dome Bunker in Albania",
+    "imageUrl": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Historic Cold War concrete military dome bunker, one of over 173,000 preserved throughout Albania."
+  },
+  {
+    "code": "al",
+    "country": "Albania",
+    "factIndex": 1,
+    "factText": "Mother Teresa, the world-renowned Nobel Peace Prize laureate and humanitarian, was ethnically Albanian.",
+    "imageTitle": "Mother Teresa (Saint Teresa of Calcutta)",
+    "imageUrl": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Nobel Peace Prize laureate and humanitarian, of Albanian heritage."
+  },
+  {
+    "code": "at",
+    "country": "Austria",
+    "factIndex": 0,
+    "factText": "Vienna has been home to legendary composers like Wolfgang Amadeus Mozart, Ludwig van Beethoven, and Franz Schubert.",
+    "imageTitle": "Wolfgang Amadeus Mozart",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Wolfgang-amadeus-mozart_1.jpg/960px-Wolfgang-amadeus-mozart_1.jpg",
+    "caption": "Austrian classical composer Wolfgang Amadeus Mozart."
+  },
+  {
+    "code": "at",
+    "country": "Austria",
+    "factIndex": 1,
+    "factText": "Over 60% of Austria's territory is covered by the spectacular alpine peaks of the Austrian Alps.",
+    "imageTitle": "Austrian Alps & Mountain Peaks",
+    "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Austrian Alps covering over 60% of the country."
+  },
+  {
+    "code": "by",
+    "country": "Belarus",
+    "factIndex": 1,
+    "factText": "Belovezhskaya Pushcha is one of the last remnants of the immense primeval forest that once covered the European Plain.",
+    "imageTitle": "Wild European Bison (Żubr) in Belovezhskaya Pushcha",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/European_bison_%28Bison_bonasus%29_male.jpg/960px-European_bison_%28Bison_bonasus%29_male.jpg",
+    "caption": "The majestic European bison roaming the ancient UNESCO primeval forest sanctuary of Belovezhskaya Pushcha."
+  },
+  {
+    "code": "by",
+    "country": "Belarus",
+    "factIndex": 2,
+    "factText": "Belarusian folk textiles feature the distinctive 'Rushnik' red-and-white woven geometric pattern, honored directly on its national flag.",
+    "imageTitle": "Traditional Belarusian Rushnik Woven Pattern",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/BelarusBNP09.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Historic red-and-white geometric textile pattern honoring traditional Belarusian folk craft."
+  },
+  {
+    "code": "be",
+    "country": "Belgium",
+    "factIndex": 0,
+    "factText": "Belgium produces over 220,000 tons of gourmet chocolate each year, with Brussels Airport being the world's largest chocolate sales point.",
+    "imageTitle": "Belgian Chocolate & Pralines",
+    "imageUrl": "https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=1200&q=80",
+    "caption": "World-renowned artisanal Belgian chocolate and pralines."
+  },
+  {
+    "code": "ba",
+    "country": "Bosnia and Herzegovina",
+    "factIndex": 1,
+    "factText": "Local divers leap from the 24-meter-high Stari Most bridge into the chilly Neretva River in a tradition dating back to 1664.",
+    "imageTitle": "Stari Most (Old Bridge) in Mostar",
+    "imageUrl": "https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The 24-meter-high Stari Most bridge over the Neretva River in Mostar."
+  },
+  {
+    "code": "bg",
+    "country": "Bulgaria",
+    "factIndex": 2,
+    "factText": "Bulgaria produces up to 85% of the world's precious attar of roses in the famous Rose Valley near Kazanlak.",
+    "imageTitle": "Rose Valley (Attar of Roses)",
+    "imageUrl": "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Bulgaria's renowned Rose Valley near Kazanlak, producing precious rose oil."
+  },
+  {
+    "code": "hr",
+    "country": "Croatia",
+    "factIndex": 0,
+    "factText": "The Dalmatian dog breed traces its historic origin to the coastal Dalmatia region of Croatia.",
+    "imageTitle": "Dalmatian Dog (Native to Dalmatia)",
+    "imageUrl": "https://images.unsplash.com/photo-1598133894008-61f7fdb8cc3a?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The distinctive spotted Dalmatian dog breed from coastal Croatia."
+  },
+  {
+    "code": "cy",
+    "country": "Cyprus",
+    "factIndex": 0,
+    "factText": "Cyprus is the legendary birthplace of Aphrodite, the ancient goddess of love and beauty.",
+    "imageTitle": "Aphrodite's Rock (Petra tou Romiou)",
+    "imageUrl": "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Aphrodite's Rock, the mythical sea birthplace of the goddess of love."
+  },
+  {
+    "code": "cz",
+    "country": "Czech Republic",
+    "factIndex": 0,
+    "factText": "Prague Castle is recognized by the Guinness Book of Records as the largest ancient coherent castle complex in the world.",
+    "imageTitle": "Prague Castle Complex",
+    "imageUrl": "https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Prague Castle, the largest ancient coherent castle complex in the world."
+  },
+  {
+    "code": "cz",
+    "country": "Czech Republic",
+    "factIndex": 1,
+    "factText": "The Czech Republic consumes more beer per capita than any other country on Earth, leading world rankings for decades.",
+    "imageTitle": "Czech Pilsner Urquell & Beer Tradition",
+    "imageUrl": "https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Czech Republic consumes more beer per capita than any other nation."
+  },
+  {
+    "code": "cz",
+    "country": "Czech Republic",
+    "factIndex": 2,
+    "factText": "The word 'robot' was coined in the Czech Republic by writer Karel Čapek in his 1920 science fiction play R.U.R.",
+    "imageTitle": "Writer Karel Čapek (Coined 'Robot')",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Karel-capek.jpg",
+    "caption": "Writer Karel Čapek coined the word 'robot' in his 1920 science fiction play R.U.R."
+  },
+  {
+    "code": "dk",
+    "country": "Denmark",
+    "factIndex": 1,
+    "factText": "LEGO bricks were invented in Billund, Denmark in 1932 by carpenter Ole Kirk Christiansen.",
+    "imageTitle": "LEGO Bricks (Invented in Billund)",
+    "imageUrl": "https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Iconic interlocking LEGO bricks invented in Billund, Denmark."
+  },
+  {
+    "code": "dk",
+    "country": "Denmark",
+    "factIndex": 2,
+    "factText": "Copenhagen is famed as the most bicycle-friendly capital in the world, with over 60% of residents cycling to work or school daily.",
+    "imageTitle": "Copenhagen Bicycle Culture",
+    "imageUrl": "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Bicycle-friendly Copenhagen, where residents cycle to work and school daily."
+  },
+  {
+    "code": "ee",
+    "country": "Estonia",
+    "factIndex": 2,
+    "factText": "More than 50% of Estonia's land area is blanketed by virgin forests, bogs, and pristine natural wetlands.",
+    "imageTitle": "Soomaa National Park Bogs",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Raudna_j%C3%B5gi-masterplaan-2008.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Pristine wetland wilderness famed for its 'fifth season' spring floods navigated by traditional dugout canoes."
+  },
+  {
+    "code": "fi",
+    "country": "Finland",
+    "factIndex": 1,
+    "factText": "There are over 3 million saunas in Finland—more than one sauna for every two citizens!",
+    "imageTitle": "Traditional Finnish Lakeside Sauna",
+    "imageUrl": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Over 3 million saunas exist across Finland, a core national tradition."
+  },
+  {
+    "code": "fi",
+    "country": "Finland",
+    "factIndex": 2,
+    "factText": "Known as the 'Land of a Thousand Lakes', Finland actually boasts 187,888 registered natural lakes.",
+    "imageTitle": "Finnish Lakeland (Land of 1,000 Lakes)",
+    "imageUrl": "https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Finland boasts 187,888 registered natural lakes."
+  },
+  {
+    "code": "fr",
+    "country": "France",
+    "factIndex": 0,
+    "factText": "France is the world's most visited country, welcoming over 100 million international tourists each year.",
+    "imageTitle": "Eiffel Tower in Paris",
+    "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Eiffel Tower welcoming over 100 million visitors annually."
+  },
+  {
+    "code": "fr",
+    "country": "France",
+    "factIndex": 1,
+    "factText": "It produces over 1,500 distinct varieties of registered cheese, celebrated by French culinary heritage.",
+    "imageTitle": "Artisan French Cheeses",
+    "imageUrl": "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Over 1,500 distinct varieties of French cheese produced across regions."
+  },
+  {
+    "code": "fr",
+    "country": "France",
+    "factIndex": 2,
+    "factText": "Mont Blanc (4,808 m) in the French Alps is the highest mountain summit in Western Europe.",
+    "imageTitle": "Mont Blanc Summit (4,808 m)",
+    "imageUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Mont Blanc in the French Alps, the highest summit in Western Europe."
+  },
+  {
+    "code": "de",
+    "country": "Germany",
+    "factIndex": 0,
+    "factText": "Neuschwanstein Castle in Bavaria directly inspired Walt Disney's iconic Cinderella and Sleeping Beauty castle.",
+    "imageTitle": "Neuschwanstein Castle in Bavaria",
+    "imageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Neuschwanstein Castle, inspiring Disney's fairy-tale castles."
+  },
+  {
+    "code": "de",
+    "country": "Germany",
+    "factIndex": 2,
+    "factText": "Germany is home to over 25,000 historic castles, palaces, and medieval fortresses.",
+    "imageTitle": "Historic Medieval Castle in Germany",
+    "imageUrl": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Over 25,000 historic castles and fortresses stand across Germany."
+  },
+  {
+    "code": "gr",
+    "country": "Greece",
+    "factIndex": 1,
+    "factText": "It features thousands of islands and islets, with roughly 227 inhabited across the Ionian and Aegean Seas.",
+    "imageTitle": "Santorini Caldera & Oia Village",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Oia_sunset_-_panoramio_%282%29.jpg/3840px-Oia_sunset_-_panoramio_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Dazzling whitewashed cliffside villages with blue-domed churches perched high above volcanic Aegean waters."
+  },
+  {
+    "code": "hu",
+    "country": "Hungary",
+    "factIndex": 0,
+    "factText": "The Rubik's Cube was invented in 1974 by Hungarian architect and professor Ernő Rubik in Budapest.",
+    "imageTitle": "Ernő Rubik and the Rubik's Cube",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Erno_Rubik_Genius_Gala_2014.jpg/960px-Erno_Rubik_Genius_Gala_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Hungarian architect and inventor Ernő Rubik, who created the world-famous mechanical puzzle in Budapest in 1974."
+  },
+  {
+    "code": "is",
+    "country": "Iceland",
+    "factIndex": 0,
+    "factText": "Iceland runs on nearly 100% renewable energy, utilizing natural geothermal steam and hydroelectric power.",
+    "imageTitle": "Volcanoes & Glaciers of Iceland",
+    "imageUrl": "https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Land of Fire and Ice, with active volcanoes and glacial ice caps."
+  },
+  {
+    "code": "ie",
+    "country": "Ireland",
+    "factIndex": 0,
+    "factText": "The harp is the official national symbol of Ireland, making it the only country in the world with a musical instrument as its national emblem.",
+    "imageTitle": "The Brian Boru Celtic Harp (Trinity College)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Trinity_College_harp_side.jpg/960px-Trinity_College_harp_side.jpg",
+    "caption": "The medieval Celtic harp, the official national emblem of Ireland and symbol of Irish music and heritage."
+  },
+  {
+    "code": "ie",
+    "country": "Ireland",
+    "factIndex": 2,
+    "factText": "Halloween originated in ancient Ireland from the Celtic pagan harvest festival of Samhain over 2,000 years ago.",
+    "imageTitle": "Rock of Cashel",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rock_of_Cashel_%2849163525453%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Historic ecclesiastical fortress and seat of ancient Munster kings set upon a limestone outcrop."
+  },
+  {
+    "code": "it",
+    "country": "Italy",
+    "factIndex": 0,
+    "factText": "Italy boasts 60 UNESCO World Heritage Sites, tying for the highest number of any country on Earth.",
+    "imageTitle": "The Colosseum of Rome",
+    "imageUrl": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Colosseum in Rome, one of Italy's 60 UNESCO World Heritage Sites."
+  },
+  {
+    "code": "it",
+    "country": "Italy",
+    "factIndex": 1,
+    "factText": "Pizza was born in Naples during the 18th century, with the classic Pizza Margherita created in 1889 honoring Queen Margherita.",
+    "imageTitle": "Authentic Neapolitan Pizza Margherita",
+    "imageUrl": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Pizza Margherita, created in Naples in 1889 honoring Queen Margherita."
+  },
+  {
+    "code": "lv",
+    "country": "Latvia",
+    "factIndex": 0,
+    "factText": "Latvia is home to Ventas Rumba in Kuldīga, the widest natural waterfall in Europe at up to 270 meters across.",
+    "imageTitle": "Riga Art Nouveau Historic Quarter",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Liepajas_Sveta_Jazepa_Romas_katolu_katedrale_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Over 800 elaborate Art Nouveau building facades with gargoyles and statues across Riga's city center."
+  },
+  {
+    "code": "lv",
+    "country": "Latvia",
+    "factIndex": 2,
+    "factText": "Jeans inventor Jacob Davis (born Jākobs Jufess) was a Latvian tailor who emigrated to America and patented riveted jeans with Levi Strauss.",
+    "imageTitle": "Jacob W. Davis (Patented Riveted Jeans)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Jacob_W._Davis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Latvian-born tailor Jacob Davis, who patented copper-riveted denim blue jeans alongside Levi Strauss in 1873."
+  },
+  {
+    "code": "li",
+    "country": "Liechtenstein",
+    "factIndex": 0,
+    "factText": "Liechtenstein is one of only two 'doubly landlocked' countries in the world (surrounded exclusively by landlocked neighbors).",
+    "imageTitle": "Vaduz Castle",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Liechtenstein_asv2022-10_img22_Vaduz_Schloss.jpg/3840px-Liechtenstein_asv2022-10_img22_Vaduz_Schloss.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The official residence of the Reigning Prince of Liechtenstein, overlooking the Rhine valley from an alpine ridge."
+  },
+  {
+    "code": "lu",
+    "country": "Luxembourg",
+    "factIndex": 0,
+    "factText": "Luxembourg is the only remaining sovereign Grand Duchy in the world, headed by a constitutional Grand Duke.",
+    "imageTitle": "Grand Ducal Palace",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Luxemburg_BW_2016-09-15_11-46-49_stitch.jpg/3840px-Luxemburg_BW_2016-09-15_11-46-49_stitch.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The official residence of the Grand Duke of Luxembourg in the historic town center with Flemish Renaissance facade."
+  },
+  {
+    "code": "lu",
+    "country": "Luxembourg",
+    "factIndex": 1,
+    "factText": "In 2020, Luxembourg became the very first country on Earth to make all public transit (buses, trains, and trams) 100% free nationwide.",
+    "imageTitle": "Little Switzerland (Luxembourg)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Mullerthal.jpg/330px-Mullerthal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Little Switzerland is a nickname for a region in the east of Luxembourg, bestowed upon the region on account of its reputed geographical..."
+  },
+  {
+    "code": "lu",
+    "country": "Luxembourg",
+    "factIndex": 2,
+    "factText": "Nearly half of Luxembourg's total resident population consists of foreign expatriates representing over 170 nationalities.",
+    "imageTitle": "Little Switzerland (Luxembourg)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Mullerthal.jpg/330px-Mullerthal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Little Switzerland is a nickname for a region in the east of Luxembourg, bestowed upon the region on account of its reputed geographical..."
+  },
+  {
+    "code": "mt",
+    "country": "Malta",
+    "factIndex": 0,
+    "factText": "Malta's megalithic temples, such as Ġgantija and Ħaġar Qim, date to 3600 BC and are older than Stonehenge and the Egyptian Pyramids.",
+    "imageTitle": "Blue Grotto (Malta)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Blue_Grotto_Malta.jpg/330px-Blue_Grotto_Malta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Blue Grotto refers to a number of sea caverns on the south east coast of Malta, a short distance from the fishing harbour limits of..."
+  },
+  {
+    "code": "mt",
+    "country": "Malta",
+    "factIndex": 1,
+    "factText": "The capital city of Valletta, founded in 1566 by the Knights of St. John, is the smallest national capital in the European Union.",
+    "imageTitle": "St. John's Co-Cathedral in Valletta",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/St_John%27s_Co-Cathedral%2C_Valletta_001.jpg/3840px-St_John%27s_Co-Cathedral%2C_Valletta_001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Baroque masterpiece featuring an intricately carved gilded interior and Caravaggio's masterpiece painting."
+  },
+  {
+    "code": "md",
+    "country": "Moldova",
+    "factIndex": 0,
+    "factText": "Mileștii Mici holds the Guinness World Record for the largest wine collection in the world, storing nearly 2 million bottles.",
+    "imageTitle": "Mileștii Mici Underground Cellars",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Mile%C5%9Ftii_Mici_%283944427747%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Guinness World Record largest wine cellar, spanning over 200 km of subterranean limestone galleries."
+  },
+  {
+    "code": "md",
+    "country": "Moldova",
+    "factIndex": 2,
+    "factText": "Its national emblem is the Aurochs, an extinct colossal wild ox that symbolized the historic Principality of Moldavia.",
+    "imageTitle": "Soroca Fortress",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/%D0%A1%D0%BE%D1%80%D0%BE%D0%BA%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D1%8C_Cetatea_Soroca_Soroca_Fortress_%2842928890910%29.jpg/3840px-%D0%A1%D0%BE%D1%80%D0%BE%D0%BA%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D1%8C_Cetatea_Soroca_Soroca_Fortress_%2842928890910%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Historic circular stone fortress built by Prince Stephen the Great on the banks of the Dniester River."
+  },
+  {
+    "code": "mc",
+    "country": "Monaco",
+    "factIndex": 0,
+    "factText": "Monaco is the second-smallest independent sovereign state in the world after Vatican City, spanning just 2.08 square kilometers.",
+    "imageTitle": "Monte Carlo Casino & Square",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Panorama_von_Monaco-La_Turbie.jpg/3840px-Panorama_von_Monaco-La_Turbie.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The world-famous Belle Époque gambling and entertainment complex overlooking the French Riviera."
+  },
+  {
+    "code": "mc",
+    "country": "Monaco",
+    "factIndex": 1,
+    "factText": "Native citizens of Monaco (Monégasques) are legally prohibited from gambling or entering the gaming rooms of the Monte Carlo Casino.",
+    "imageTitle": "Monte Carlo Casino & Square",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Panorama_von_Monaco-La_Turbie.jpg/3840px-Panorama_von_Monaco-La_Turbie.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The world-famous Belle Époque gambling and entertainment complex overlooking the French Riviera."
+  },
+  {
+    "code": "mc",
+    "country": "Monaco",
+    "factIndex": 2,
+    "factText": "The Monaco Grand Prix has been held annually through the narrow, winding city streets since 1929, forming motorsport's Triple Crown.",
+    "imageTitle": "Prince's Palace of Monaco",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/%D0%9C%D0%9E%D0%9D%D0%90%D0%9A%D0%9E_-_panoramio_%284%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Fortified cliffside palace of the Grimaldi family atop 'The Rock' with daily changing of the guard."
+  },
+  {
+    "code": "me",
+    "country": "Montenegro",
+    "factIndex": 0,
+    "factText": "The Tara River Canyon in Montenegro is the deepest river canyon in Europe and the second-deepest in the world after the Grand Canyon.",
+    "imageTitle": "Durmitor National Park & Tara River",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Durmitor.jpg/3840px-Durmitor.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Rugged glacial peaks and the deepest river canyon in Europe, acclaimed for whitewater rafting."
+  },
+  {
+    "code": "me",
+    "country": "Montenegro",
+    "factIndex": 2,
+    "factText": "The Bay of Kotor is considered southern Europe's southernmost fjord-like ria, celebrated for dramatic limestone cliffs plunging into the sea.",
+    "imageTitle": "Bay of Kotor & Perast",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Wyspa_%C5%9Bw._Jerzego_w_Pera%C5%9Bcie_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "caption": "Dramatic fjord-like Adriatic inlet surrounded by sheer limestone cliffs and medieval stone villages."
+  },
+  {
+    "code": "nl",
+    "country": "Netherlands",
+    "factIndex": 1,
+    "factText": "There are more bicycles in the Netherlands (roughly 23 million) than human residents (17.8 million).",
+    "imageTitle": "Amsterdam Canals & Bridges",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "UNESCO-listed 17th-century concentric canal network traversed by historic bicycles and canal cruisers."
+  },
+  {
+    "code": "mk",
+    "country": "North Macedonia",
+    "factIndex": 0,
+    "factText": "Lake Ohrid is one of Europe's deepest (288 m) and oldest lakes, estimated to have formed between 4 and 10 million years ago.",
+    "imageTitle": "Lake Ohrid & St. John at Kaneo",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Lake_Ohrid%2C_Macedonia-Albania_viewed_from_a_NASA_satellite.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Ancient deep tectonic lake and cliffside Byzantine church with panoramic sparkling blue views."
+  },
+  {
+    "code": "mk",
+    "country": "North Macedonia",
+    "factIndex": 1,
+    "factText": "Skopje's Old Bazaar is the largest and most well-preserved Ottoman-era bazaar in the Balkans outside of Istanbul.",
+    "imageTitle": "Skopje Stone Bridge & Old Bazaar",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/08_Skopje.jpg/3840px-08_Skopje.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "15th-century Ottoman bridge connecting modern Macedonia Square to the Ottoman trading quarter."
+  },
+  {
+    "code": "mk",
+    "country": "North Macedonia",
+    "factIndex": 2,
+    "factText": "Mother Teresa was born in Skopje in 1910 when the city was part of the Ottoman Empire.",
+    "imageTitle": "Mother Teresa Memorial House in Skopje",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Mother_Teresa_1.jpg/960px-Mother_Teresa_1.jpg",
+    "caption": "Mother Teresa was born Anjezë Gonxhe Bojaxhiu in Skopje in 1910."
+  },
+  {
+    "code": "no",
+    "country": "Norway",
+    "factIndex": 0,
+    "factText": "Norway has the second-longest coastline in the world (over 100,000 km including fjords and 50,000+ coastal islands).",
+    "imageTitle": "Geirangerfjord & Dramatic Fjords",
+    "imageUrl": "https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Norway's breathtaking glacial fjords and sheer coastal cliffs."
+  },
+  {
+    "code": "pl",
+    "country": "Poland",
+    "factIndex": 0,
+    "factText": "Poland's Constitution of May 3, 1791 was the first modern written democratic constitution in Europe and the second in the world after the US.",
+    "imageTitle": "Białowieża Primeval Forest",
+    "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
+    "caption": "One of the last remnants of the primeval forest that once stretched across Europe."
+  },
+  {
+    "code": "pl",
+    "country": "Poland",
+    "factIndex": 1,
+    "factText": "Marie Skłodowska Curie, born in Warsaw, was the first person to win two Nobel Prizes in two different scientific fields (Physics and Chemistry).",
+    "imageTitle": "Marie Skłodowska-Curie",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg",
+    "caption": "Marie Skłodowska-Curie, born in Warsaw, was the first person to win two Nobel Prizes."
+  },
+  {
+    "code": "ro",
+    "country": "Romania",
+    "factIndex": 0,
+    "factText": "The Palace of the Parliament in Bucharest weighs an astonishing 4.1 million tonnes, recognized as the heaviest building on Earth.",
+    "imageTitle": "Palace of the Parliament in Bucharest",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/en/thumb/1/18/Bucharest_-_Palace_of_the_Parliament_%282024%29_%282%29.jpg/3840px-Bucharest_-_Palace_of_the_Parliament_%282024%29_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The world's heaviest building and second-largest administrative building, containing over 1,100 rooms."
+  },
+  {
+    "code": "ru",
+    "country": "Russia",
+    "factIndex": 1,
+    "factText": "Lake Baikal in Siberia contains more freshwater than all five North American Great Lakes combined.",
+    "imageTitle": "Lake Baikal in Siberia",
+    "imageUrl": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Lake Baikal, holding 20% of Earth's unfrozen surface fresh water."
+  },
+  {
+    "code": "sm",
+    "country": "San Marino",
+    "factIndex": 0,
+    "factText": "San Marino is recognized as the world's oldest surviving constitutional republic, founded in 301 AD by Saint Marinus.",
+    "imageTitle": "Three Towers of San Marino (Guaita Fortress)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/San_marino%2C_veduta_del_monte_titano_02.jpg/3840px-San_marino%2C_veduta_del_monte_titano_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Iconic 11th-century cliffside castle perched atop the three peaks of Mount Titano overlooking the Adriatic coast."
+  },
+  {
+    "code": "sm",
+    "country": "San Marino",
+    "factIndex": 1,
+    "factText": "It has two heads of state, called Captains Regent, who are elected every six months to ensure balanced democratic leadership.",
+    "imageTitle": "Mount Titano Panorama",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/San_marino%2C_veduta_del_monte_titano_02.jpg/3840px-San_marino%2C_veduta_del_monte_titano_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Limestone mountain ridge hosting the historic microstate with sweeping views reaching from the Apennines to the sea."
+  },
+  {
+    "code": "sm",
+    "country": "San Marino",
+    "factIndex": 2,
+    "factText": "San Marino is the only country in the world that has more registered motor vehicles than human residents.",
+    "imageTitle": "Three Towers of San Marino (Guaita Fortress)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/San_marino%2C_veduta_del_monte_titano_02.jpg/3840px-San_marino%2C_veduta_del_monte_titano_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Iconic 11th-century cliffside castle perched atop the three peaks of Mount Titano overlooking the Adriatic coast."
+  },
+  {
+    "code": "sk",
+    "country": "Slovakia",
+    "factIndex": 1,
+    "factText": "Slovakia is the world's largest producer of cars per capita, manufacturing over 1 million vehicles annually.",
+    "imageTitle": "High Tatras Alpine Range",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Tatry_Panorama01xxx.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The jagged granite alpine peaks forming the natural border between Slovakia and Poland, featuring Lake Štrbské Pleso."
+  },
+  {
+    "code": "si",
+    "country": "Slovenia",
+    "factIndex": 1,
+    "factText": "Postojna Cave is home to the olm ('baby dragon'), an extraordinary sightless amphibian that can survive up to 10 years without food.",
+    "imageTitle": "Postojna Cave System",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Postojna_%2822206343750%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Enchanting 24-kilometer karst cave system navigated by an electric subterranean train to see stalactites and olm salamanders."
+  },
+  {
+    "code": "es",
+    "country": "Spain",
+    "factIndex": 0,
+    "factText": "Spain is the world's leading producer of olive oil, accounting for more than 40% of the entire global supply.",
+    "imageTitle": "Olive Groves in Andalusia",
+    "imageUrl": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Spain produces over 40% of the world's entire olive oil supply."
+  },
+  {
+    "code": "se",
+    "country": "Sweden",
+    "factIndex": 1,
+    "factText": "The Nobel Prizes were founded by Swedish inventor and industrialist Alfred Nobel in his 1895 will, awarded annually in Stockholm.",
+    "imageTitle": "Alfred Nobel (Founder of Nobel Prizes)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/AlfredNobel_adjusted.jpg",
+    "caption": "Swedish chemist and industrialist Alfred Nobel who established the Nobel Prizes in 1895."
+  },
+  {
+    "code": "ch",
+    "country": "Switzerland",
+    "factIndex": 1,
+    "factText": "The Swiss consume approximately 11 kilograms of chocolate per person annually, the highest chocolate consumption in the world.",
+    "imageTitle": "Fine Swiss Chocolate",
+    "imageUrl": "https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Swiss consume approximately 11 kg of chocolate per person annually, the highest rate globally."
+  },
+  {
+    "code": "gb",
+    "country": "United Kingdom",
+    "factIndex": 0,
+    "factText": "The United Kingdom is the birthplace of modern parliamentary democracy, the Industrial Revolution, football, cricket, and rugby.",
+    "imageTitle": "Palace of Westminster (Parliament)",
+    "imageUrl": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Palace of Westminster in London, historic seat of the 'Mother of Parliaments'."
+  },
+  {
+    "code": "va",
+    "country": "Vatican City",
+    "factIndex": 0,
+    "factText": "Vatican City is the smallest independent sovereign state in the world, covering an area of just 0.49 square kilometers (121 acres).",
+    "imageTitle": "Saint Peter's Square",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Crowds_in_Vatican_Museum_%285789666941%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Colossal elliptical piazza framed by Bernini's four-row colonnade and ancient Egyptian obelisk."
+  },
+  {
+    "code": "va",
+    "country": "Vatican City",
+    "factIndex": 1,
+    "factText": "The Vatican is guarded by the Pontifical Swiss Guard, the world's oldest active military unit, founded in 1506.",
+    "imageTitle": "Gardens of Vatican City",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Vatikanische_Gaerten_Museen_Rom.jpg/330px-Vatikanische_Gaerten_Museen_Rom.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Gardens of Vatican City, also informally known as the Vatican Gardens in Vatican City, are private urban gardens and parks which..."
+  },
+  {
+    "code": "ag",
+    "country": "Antigua and Barbuda",
+    "factIndex": 0,
+    "factText": "Antigua is famous for having 'a beach for every day of the year'—boasting exactly 365 distinct sandy beaches.",
+    "imageTitle": "Devil's Bridge (Antigua and Barbuda)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Devils_Bridge%2C_Antigua.JPG/330px-Devils_Bridge%2C_Antigua.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Devil's Bridge National Park is a natural rock arch in eastern Antigua."
+  },
+  {
+    "code": "ag",
+    "country": "Antigua and Barbuda",
+    "factIndex": 1,
+    "factText": "Nelson's Dockyard is the world's only continuously operating Georgian naval dockyard.",
+    "imageTitle": "Nelson's Dockyard in English Harbour",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Nelson%27s_Dockyard.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Fully restored 18th-century Georgian naval dockyard and UNESCO World Heritage site named after Admiral Horatio Nelson."
+  },
+  {
+    "code": "ag",
+    "country": "Antigua and Barbuda",
+    "factIndex": 2,
+    "factText": "Antigua and Barbuda does not have a single natural permanent river or natural lake on either of its main islands.",
+    "imageTitle": "Barbuda Frigate Bird Sanctuary",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Barbuda_in_its_region_%28zoomed%29.svg/500px-Barbuda_in_its_region_%28zoomed%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The largest nesting colony of magnificent frigatebirds in the Caribbean, home to over 5,000 birds in Codrington Lagoon."
+  },
+  {
+    "code": "bb",
+    "country": "Barbados",
+    "factIndex": 1,
+    "factText": "Barbados became the world's newest parliamentary republic in November 2021, removing the British monarch as head of state.",
+    "imageTitle": "Historic Bridgetown & Garrison",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Bridgetown_aerial.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "UNESCO-listed British colonial port town featuring 17th-century fortifications and the historic Parliament Buildings."
+  },
+  {
+    "code": "bb",
+    "country": "Barbados",
+    "factIndex": 2,
+    "factText": "Pop and cultural superstar Rihanna was born and raised in Bridgetown, Barbados, where a street is named Rihanna Drive in her honor.",
+    "imageTitle": "Historic Bridgetown & Garrison",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Bridgetown_aerial.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "UNESCO-listed British colonial port town featuring 17th-century fortifications and the historic Parliament Buildings."
+  },
+  {
+    "code": "bz",
+    "country": "Belize",
+    "factIndex": 0,
+    "factText": "Belize is the only country in Central America where English is the official language.",
+    "imageTitle": "Belize Barrier Reef",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Satellite_image_of_Belize_in_March_31%2C_2002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The second-largest coral reef system in the world (after Australia's Great Barrier Reef), sheltering manatees and sharks."
+  },
+  {
+    "code": "bz",
+    "country": "Belize",
+    "factIndex": 1,
+    "factText": "The Belize Barrier Reef is the longest barrier reef in the Western Hemisphere, stretching 300 kilometers.",
+    "imageTitle": "Belize Barrier Reef",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Satellite_image_of_Belize_in_March_31%2C_2002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The second-largest coral reef system in the world (after Australia's Great Barrier Reef), sheltering manatees and sharks."
+  },
+  {
+    "code": "bz",
+    "country": "Belize",
+    "factIndex": 2,
+    "factText": "Over 60% of Belize's land surface is blanketed by lush subtropical forest, with more than 40% under protected status.",
+    "imageTitle": "Belize Barrier Reef",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Satellite_image_of_Belize_in_March_31%2C_2002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The second-largest coral reef system in the world (after Australia's Great Barrier Reef), sheltering manatees and sharks."
+  },
+  {
+    "code": "ca",
+    "country": "Canada",
+    "factIndex": 0,
+    "factText": "Canada has the longest coastline of any nation on Earth, measuring 202,080 kilometers across three oceans.",
+    "imageTitle": "Moraine Lake & Canadian Rockies",
+    "imageUrl": "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Canada contains more natural freshwater lakes than the rest of the world combined."
+  },
+  {
+    "code": "ca",
+    "country": "Canada",
+    "factIndex": 1,
+    "factText": "Canada contains more than half of all the natural lakes on planet Earth, with over 2 million lakes spanning its territory.",
+    "imageTitle": "Pure Canadian Maple Syrup",
+    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Canada produces over 70% of the entire world's maple syrup."
+  },
+  {
+    "code": "dm",
+    "country": "Dominica",
+    "factIndex": 2,
+    "factText": "Dominica's flag is the only sovereign national flag in the world that features the color purple (on the Sisserou parrot emblem).",
+    "imageTitle": "Champagne Reef",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/1770s_montage.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Subterranean geothermal vents bubbling thousands of warm bubbles up through colorful coral reefs like a glass of champagne."
+  },
+  {
+    "code": "do",
+    "country": "Dominican Republic",
+    "factIndex": 0,
+    "factText": "Santo Domingo's Cathedral of Santa María la Menor, consecrated in 1541, is the oldest cathedral in the Americas.",
+    "imageTitle": "Zona Colonial of Santo Domingo",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/SantoDomingoedit.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The oldest permanent European settlement in the Americas, featuring the first cathedral, hospital, and paved street."
+  },
+  {
+    "code": "do",
+    "country": "Dominican Republic",
+    "factIndex": 1,
+    "factText": "The Dominican Republic is the only place on Earth where the rare turquoise gemstone Larimar (blue pectolite) is mined.",
+    "imageTitle": "Punta Cana Beaches",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Cap_Cana_Marina_Dominican_Republic.jpg/3840px-Cap_Cana_Marina_Dominican_Republic.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "World-famous palm-lined white sand coast meeting the turquoise waters of the Atlantic and Caribbean."
+  },
+  {
+    "code": "sv",
+    "country": "El Salvador",
+    "factIndex": 0,
+    "factText": "El Salvador is known as the 'Land of Volcanoes' because it has more than 20 volcanoes situated across a relatively compact territory.",
+    "imageTitle": "Santa Ana Volcano (Ilamatepec)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Santa_Ana_Volcano.USAF.C-130.1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "El Salvador's highest volcano (2,381 m), featuring an intense turquoise emerald acidic crater lake."
+  },
+  {
+    "code": "gd",
+    "country": "Grenada",
+    "factIndex": 2,
+    "factText": "Grenada opened the world's very first underwater sculpture gallery at Molinere Bay in 2006.",
+    "imageTitle": "Molinere Underwater Sculpture Park",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Underwater_sculptures_at_Molinere_Underwater_Sculpture_Park.jpg/3840px-Underwater_sculptures_at_Molinere_Underwater_Sculpture_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The world's first underwater sculpture garden, created by artist Jason deCaires Taylor to foster coral reef regeneration."
+  },
+  {
+    "code": "gt",
+    "country": "Guatemala",
+    "factIndex": 0,
+    "factText": "Tikal was one of the greatest urban centers of the ancient Maya civilization, housing up to 100,000 residents at its peak.",
+    "imageTitle": "Tikal Ancient Maya Metropolis",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Tikal_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Monumental Maya ruins deep in the Petén jungle featuring towering steep limestone temple pyramids rising above the canopy."
+  },
+  {
+    "code": "gt",
+    "country": "Guatemala",
+    "factIndex": 1,
+    "factText": "The quetzal, a brilliantly colored emerald and crimson bird with long tail feathers, is the national symbol and currency of Guatemala.",
+    "imageTitle": "Antigua Guatemala",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Ciudad_de_Guatemala%2C_CA.jpg/3840px-Ciudad_de_Guatemala%2C_CA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Historic colonial capital famous for preserved Spanish Baroque architecture, ruins, and cobblestone streets beneath Volcán de Agua."
+  },
+  {
+    "code": "ht",
+    "country": "Haiti",
+    "factIndex": 0,
+    "factText": "Haiti was the first nation in Latin America and the Caribbean to achieve independence, and the first independent republic founded by former slaves (1804).",
+    "imageTitle": "Citadelle Laferrière",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Citadelle_Laferri%C3%A8re.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Monumental early 19th-century mountain fortress perched atop Bonnet à l'Évêque, the largest fortress in the Americas."
+  },
+  {
+    "code": "ht",
+    "country": "Haiti",
+    "factIndex": 1,
+    "factText": "Citadelle Laferrière is the largest fortress in the Americas, built by tens of thousands of workers to defend the young republic.",
+    "imageTitle": "Citadelle Laferrière",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Citadelle_Laferri%C3%A8re.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Monumental early 19th-century mountain fortress perched atop Bonnet à l'Évêque, the largest fortress in the Americas."
+  },
+  {
+    "code": "hn",
+    "country": "Honduras",
+    "factIndex": 0,
+    "factText": "The Hieroglyphic Stairway at Copán features over 2,000 individual carved glyphs, the longest known Maya hieroglyphic inscription in the world.",
+    "imageTitle": "Copán Ruinas & Hieroglyphic Stairway",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/Copanruinas.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Major Maya ceremonial center famous for elaborate high-relief stone stelae and the longest carved Maya text in the Americas."
+  },
+  {
+    "code": "hn",
+    "country": "Honduras",
+    "factIndex": 1,
+    "factText": "Honduras was the first country to establish a dedicated national marine reserve for the protection of whale sharks.",
+    "imageTitle": "Río Plátano Biosphere Reserve",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Cerro_Chachahuate.jpg/3840px-Cerro_Chachahuate.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "One of the few remaining large tropical rainforests in Central America, home to jaguars, tapirs, and indigenous peoples."
+  },
+  {
+    "code": "jm",
+    "country": "Jamaica",
+    "factIndex": 0,
+    "factText": "Jamaica is the birthplace of Reggae music, ska, rocksteady, dub, and legendary musical visionary Bob Marley.",
+    "imageTitle": "Bob Marley Museum in Kingston",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Rita-Marley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The legendary reggae icon's former residence and recording studio preserved with personal musical artifacts."
+  },
+  {
+    "code": "jm",
+    "country": "Jamaica",
+    "factIndex": 1,
+    "factText": "Jamaica was the very first Caribbean nation to gain independence from the United Kingdom (on August 6, 1962).",
+    "imageTitle": "Blue Mountains (Jamaica)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/JM_Blue_Mountain_Peak_1010_%2878%29_%2817049629637%29.jpg/330px-JM_Blue_Mountain_Peak_1010_%2878%29_%2817049629637%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Blue Mountains are the longest mountain range in Jamaica.  They include the island's highest point, Blue Mountain Peak, at 2,256 m (7,402 ft)."
+  },
+  {
+    "code": "ni",
+    "country": "Nicaragua",
+    "factIndex": 1,
+    "factText": "Cerro Negro volcano in Nicaragua is the only place in the world where thrill-seekers can practice 'volcano boarding' down black ash slopes.",
+    "imageTitle": "Masaya Volcano Lava Lake",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Volcan_Masaya2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Active volcano featuring the smoking Santiago crater where visitors can view glowing molten lava at night."
+  },
+  {
+    "code": "ni",
+    "country": "Nicaragua",
+    "factIndex": 2,
+    "factText": "Nicaragua is the largest country in Central America by geographic land area.",
+    "imageTitle": "Colonial Granada & Cathedral",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Nicaragua_2017-03-15_%2833978834325%29.jpg/3840px-Nicaragua_2017-03-15_%2833978834325%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "One of Central America's oldest European cities (founded 1524), celebrated for bright colonial facades and carriage rides."
+  },
+  {
+    "code": "pa",
+    "country": "Panama",
+    "factIndex": 0,
+    "factText": "Panama is the only place in the world where one can watch the sun rise over the Pacific Ocean and set over the Atlantic Ocean from the same spot.",
+    "imageTitle": "The Panama Canal & Miraflores Locks",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Panama_Canal_Map_EN.svg/500px-Panama_Canal_Map_EN.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Engineering marvel connecting the Atlantic and Pacific oceans, lifting colossal container ships 26 meters via locks."
+  },
+  {
+    "code": "pa",
+    "country": "Panama",
+    "factIndex": 1,
+    "factText": "The Panama Canal generates over 2 billion dollars in annual toll revenue and handles roughly 5% of all global maritime trade.",
+    "imageTitle": "The Panama Canal & Miraflores Locks",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Panama_Canal_Map_EN.svg/500px-Panama_Canal_Map_EN.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Engineering marvel connecting the Atlantic and Pacific oceans, lifting colossal container ships 26 meters via locks."
+  },
+  {
+    "code": "pa",
+    "country": "Panama",
+    "factIndex": 2,
+    "factText": "The indigenous Guna women of San Blas are famous for crafting intricate multi-layered applique textile art known as Molas.",
+    "imageTitle": "San Blas Islands (Guna Yala)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Kuna_Yala_beach_2003.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Archipelago of 365 postcard-perfect coral islands governed autonomously by the indigenous Guna people."
+  },
+  {
+    "code": "kn",
+    "country": "Saint Kitts and Nevis",
+    "factIndex": 1,
+    "factText": "American Founding Father Alexander Hamilton was born on the island of Nevis in 1755 or 1757.",
+    "imageTitle": "Alexander Hamilton (Born on Nevis)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Alexander_Hamilton_portrait_by_John_Trumbull_1806.jpg/960px-Alexander_Hamilton_portrait_by_John_Trumbull_1806.jpg",
+    "caption": "American Founding Father and first Secretary of the Treasury, born in Charlestown on the island of Nevis."
+  },
+  {
+    "code": "lc",
+    "country": "Saint Lucia",
+    "factIndex": 0,
+    "factText": "Saint Lucia is the only sovereign country in the world named after a historical woman (Saint Lucy of Syracuse).",
+    "imageTitle": "Pitons (Saint Lucia)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Pitons-aerial.jpg/330px-Pitons-aerial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Pitons are two mountainous volcanic plugs, volcanic spires, located in Saint Lucia.  Petit Piton is 743 m (2,438 ft) high and Gros Piton is 798."
+  },
+  {
+    "code": "lc",
+    "country": "Saint Lucia",
+    "factIndex": 1,
+    "factText": "Saint Lucia has produced two Nobel laureates (Sir Arthur Lewis for Economics and Derek Walcott for Literature), the highest per capita rate in the world.",
+    "imageTitle": "Derek Walcott (Nobel Laureate in Literature)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Derek_Walcott.jpg/960px-Derek_Walcott.jpg",
+    "caption": "Saint Lucian poet and playwright who won the 1992 Nobel Prize in Literature."
+  },
+  {
+    "code": "lc",
+    "country": "Saint Lucia",
+    "factIndex": 2,
+    "factText": "The iconic twin volcanic Pitons are recognized as a UNESCO World Heritage Site for their dramatic natural topography.",
+    "imageTitle": "The Pitons (Gros Piton & Petit Piton)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Pitons-aerial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Dramatic pair of towering volcanic emerald spires rising over 750 meters straight out of the Caribbean Sea in Soufrière."
+  },
+  {
+    "code": "vc",
+    "country": "Saint Vincent and the Grenadines",
+    "factIndex": 0,
+    "factText": "The country consists of the main island of Saint Vincent and the northern two-thirds of the 32 Grenadine islands.",
+    "imageTitle": "Saint Vincent amazon",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Amazona_guildingii_-Botanical_Gardens_-Kingstown_-Saint_Vincent-8a-4c.jpg/330px-Amazona_guildingii_-Botanical_Gardens_-Kingstown_-Saint_Vincent-8a-4c.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Saint Vincent amazon, also known as Saint Vincent parrot, is a large, approximately 40 cm (16 in) long, multi-colored amazon parrot..."
+  },
+  {
+    "code": "vc",
+    "country": "Saint Vincent and the Grenadines",
+    "factIndex": 1,
+    "factText": "Port Royal scenes in Disney's blockbuster Pirates of the Caribbean films were shot on location in Wallilabou Bay on Saint Vincent.",
+    "imageTitle": "Wallilabou Bay (Pirates of the Caribbean Location)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/St_Vincent_Beach.jpg/960px-St_Vincent_Beach.jpg",
+    "caption": "Scenic harbor and cove on Saint Vincent that served as Port Royal in Disney's Pirates of the Caribbean."
+  },
+  {
+    "code": "vc",
+    "country": "Saint Vincent and the Grenadines",
+    "factIndex": 2,
+    "factText": "The Saint Vincent Botanical Gardens, founded in 1765, is one of the oldest botanical gardens in the Western Hemisphere.",
+    "imageTitle": "Saint Vincent amazon",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Amazona_guildingii_-Botanical_Gardens_-Kingstown_-Saint_Vincent-8a-4c.jpg/330px-Amazona_guildingii_-Botanical_Gardens_-Kingstown_-Saint_Vincent-8a-4c.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Saint Vincent amazon, also known as Saint Vincent parrot, is a large, approximately 40 cm (16 in) long, multi-colored amazon parrot..."
+  },
+  {
+    "code": "bs",
+    "country": "The Bahamas",
+    "factIndex": 0,
+    "factText": "The name 'Bahamas' comes from the Spanish phrase 'baja mar', meaning 'shallow sea', reflecting its luminous turquoise waters.",
+    "imageTitle": "Exuma Cays & Pig Beach",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Exuma_and_Cays_in_Bahamas_%28zoom%29.svg/1920px-Exuma_and_Cays_in_Bahamas_%28zoom%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Idyllic uninhabited island famous for friendly feral pigs that swim out into crystal turquoise water to greet visitors."
+  },
+  {
+    "code": "bs",
+    "country": "The Bahamas",
+    "factIndex": 1,
+    "factText": "Christopher Columbus made his first landfall in the Americas in 1492 on the Bahamian island of San Salvador.",
+    "imageTitle": "Dean's Blue Hole",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Dean%E2%80%99s_Blue_Hole.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The world's second-deepest known saltwater blue hole (202 m), nestled in a sheltered bay on Long Island."
+  },
+  {
+    "code": "tt",
+    "country": "Trinidad and Tobago",
+    "factIndex": 0,
+    "factText": "The steelpan (steel drum) was invented in Trinidad and Tobago in the 1930s, recognized as the only acoustic musical instrument invented in the 20th century.",
+    "imageTitle": "Pigeon Point Beach in Tobago",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Pigeon_Point_beach.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Iconic thatched-roof jetty extending into tranquil turquoise waters fringed by coconut palms."
+  },
+  {
+    "code": "tt",
+    "country": "Trinidad and Tobago",
+    "factIndex": 1,
+    "factText": "Trinidad and Tobago is the birthplace of Calypso and Soca music, as well as the world-famous Trinidad Carnival.",
+    "imageTitle": "Pigeon Point Beach in Tobago",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Pigeon_Point_beach.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Iconic thatched-roof jetty extending into tranquil turquoise waters fringed by coconut palms."
+  },
+  {
+    "code": "tt",
+    "country": "Trinidad and Tobago",
+    "factIndex": 2,
+    "factText": "Pitch Lake has supplied natural asphalt to pave streets around the globe, including London's famous roadway to Buckingham Palace.",
+    "imageTitle": "Pitch Lake in La Brea",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Trinidad_pitch_lake_ENG.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The largest natural commercial asphalt deposit in the world, covering 100 acres and holding 10 million tons of asphalt."
+  },
+  {
+    "code": "us",
+    "country": "United States",
+    "factIndex": 0,
+    "factText": "The United States established the world's first national park in 1872 when President Ulysses S. Grant signed Yellowstone into law.",
+    "imageTitle": "Yellowstone National Park",
+    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Yellowstone, the world's first national park established in 1872."
+  },
+  {
+    "code": "us",
+    "country": "United States",
+    "factIndex": 2,
+    "factText": "The Apollo 11 mission landed American astronauts Neil Armstrong and Buzz Aldrin on the Moon in July 1969.",
+    "imageTitle": "Apollo 11 Astronaut on the Moon",
+    "imageUrl": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Apollo 11 moon landing with astronauts Neil Armstrong and Buzz Aldrin."
+  },
+  {
+    "code": "ar",
+    "country": "Argentina",
+    "factIndex": 0,
+    "factText": "Argentina is the birthplace of Tango, which originated in the immigrant working-class port neighborhoods of Buenos Aires in the late 19th century.",
+    "imageTitle": "Argentine Tango in Buenos Aires",
+    "imageUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Tango dance, born in late 19th-century immigrant working-class neighborhoods of Buenos Aires."
+  },
+  {
+    "code": "bo",
+    "country": "Bolivia",
+    "factIndex": 0,
+    "factText": "Salar de Uyuni holds an estimated 50% to 70% of the world's known lithium reserves beneath its white salt crust.",
+    "imageTitle": "Salar de Uyuni",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Salar_de_Uyuni%2C_Bolivia%2C_2016-02-04%2C_DD_16-18_HDR.JPG",
+    "caption": "The world's largest salt flat (10,582 sq km), transforming into a colossal mirror reflecting the sky and clouds during the wet season."
+  },
+  {
+    "code": "bo",
+    "country": "Bolivia",
+    "factIndex": 3,
+    "factText": "La Paz sits at 3,640 meters altitude and is served by Mi Teleférico, the world's highest and largest urban cable car network.",
+    "imageTitle": "La Paz & Mi Teleférico Urban Cable Cars",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/L%C3%ADnea_Roja_de_Mi_Telef%C3%A9rico_en_La_Paz%2C_Bolivia.jpg",
+    "caption": "The world's highest and longest urban cable car transit network gliding high above La Paz with panoramic views of snow-crested Mount Illimani (6,438 m)."
+  },
+  {
+    "code": "bo",
+    "country": "Bolivia",
+    "factIndex": 4,
+    "factText": "Lake Titicaca, shared with Peru at 3,812 m elevation, is the world's highest body of water navigable by large commercial vessels.",
+    "imageTitle": "Lake Titicaca & Isla del Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Lake_Titicaca_ESA22522896.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The highest navigable lake on Earth (3,812 m) and the sacred Isla del Sol, celebrated in Inca mythology as the birthplace of the Sun God Inti."
+  },
+  {
+    "code": "br",
+    "country": "Brazil",
+    "factIndex": 1,
+    "factText": "The Amazon River discharges approximately 20% of all the river water that empties into the world's oceans.",
+    "imageTitle": "Amazon River & Rainforest",
+    "imageUrl": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Amazon River discharging 20% of the world's river waters."
+  },
+  {
+    "code": "cl",
+    "country": "Chile",
+    "factIndex": 0,
+    "factText": "Chile is the longest and narrowest country in the world, stretching over 4,300 kilometers north to south with an average width of just 175 km.",
+    "imageTitle": "Atacama Desert (Driest Non-Polar Desert)",
+    "imageUrl": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Atacama Desert in northern Chile, Earth's driest non-polar desert."
+  },
+  {
+    "code": "co",
+    "country": "Colombia",
+    "factIndex": 0,
+    "factText": "Colombia is the second-most biodiverse country in the world, and number one in the world for bird, orchid, and butterfly species.",
+    "imageTitle": "Cocora Valley Wax Palms",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Valle_del_cocora_-_general_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Misty Andean valley home to the Quindío wax palm, the world's tallest palm species, soaring up to 60 meters high."
+  },
+  {
+    "code": "co",
+    "country": "Colombia",
+    "factIndex": 2,
+    "factText": "Caño Cristales is hailed as the 'Liquid Rainbow' due to the vibrant blooming of the endemic Macarenia clavigera aquatic plant.",
+    "imageTitle": "Caño Cristales ('River of Five Colors')",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ca%C3%B1o_Cristales_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Spectacular river in the Serranía de la Macarena that glows vibrant red, magenta, and green from aquatic plants."
+  },
+  {
+    "code": "gy",
+    "country": "Guyana",
+    "factIndex": 0,
+    "factText": "Kaieteur Falls is about four times higher than Niagara Falls and twice as high as Victoria Falls for a single-drop waterfall.",
+    "imageTitle": "Kaieteur Falls",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/GuyanaKaieteurFalls2004.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The world's largest single-drop waterfall by volume, plunging 226 meters (four times taller than Niagara) into a pristine jungle canyon."
+  },
+  {
+    "code": "pe",
+    "country": "Peru",
+    "factIndex": 0,
+    "factText": "Machu Picchu was built without mortar; the Incas used a technique called ashlar, fitting giant stones so tightly that not even a knife blade can pass.",
+    "imageTitle": "Machu Picchu Inca Citadel",
+    "imageUrl": "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Machu Picchu, ancient Inca citadel built with mortarless ashlar stones."
+  },
+  {
+    "code": "sr",
+    "country": "Suriname",
+    "factIndex": 0,
+    "factText": "Suriname is the most heavily forested country on Earth, with approximately 93% of its landmass covered by intact tropical forest.",
+    "imageTitle": "Central Suriname Nature Reserve",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Amazon_jungle_from_above.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Vast pristine rainforest reserve protecting 1.6 million hectares of primary Amazon forest and granite dome inselbergs."
+  },
+  {
+    "code": "sr",
+    "country": "Suriname",
+    "factIndex": 1,
+    "factText": "Dutch is the sole official language of Suriname, making it the only Dutch-speaking nation in South America.",
+    "imageTitle": "Central Suriname Nature Reserve",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Amazon_jungle_from_above.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Vast pristine rainforest reserve protecting 1.6 million hectares of primary Amazon forest and granite dome inselbergs."
+  },
+  {
+    "code": "sr",
+    "country": "Suriname",
+    "factIndex": 2,
+    "factText": "Suriname is celebrated for its religious harmony, exemplified by a historic Jewish synagogue and a Muslim mosque situated peacefully side by side in Paramaribo.",
+    "imageTitle": "Historic Inner City of Paramaribo",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Paramaribo_city_collage.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "UNESCO-listed Dutch colonial town featuring unique wooden colonial architecture blending European and indigenous styles."
+  },
+  {
+    "code": "uy",
+    "country": "Uruguay",
+    "factIndex": 0,
+    "factText": "Uruguay hosted the very first FIFA World Cup in 1930 and won the tournament, defeating Argentina in the final at Estadio Centenario.",
+    "imageTitle": "Casapueblo in Punta Ballena",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Casapueblo.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Whimsical Mediterranean-style cliffside sculpture-hotel created by Uruguayan artist Carlos Páez Vilaró."
+  },
+  {
+    "code": "ve",
+    "country": "Venezuela",
+    "factIndex": 0,
+    "factText": "Angel Falls (Kerepakupai Merú) is the highest waterfall in the world at 979 meters, with an uninterrupted plunge of 807 meters.",
+    "imageTitle": "Angel Falls (Salto Ángel)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/SaltoAngel1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The world's highest uninterrupted waterfall, plunging 979 meters from the cliff of the Auyán-tepui plateau in Canaima."
+  },
+  {
+    "code": "ve",
+    "country": "Venezuela",
+    "factIndex": 1,
+    "factText": "Catatumbo Lightning in Venezuela is a unique atmospheric phenomenon producing continuous lightning storms up to 160 nights a year over Lake Maracaibo.",
+    "imageTitle": "Mount Roraima Tepui",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Roraima3_%2879%29.JPG/3840px-Roraima3_%2879%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Ancient tabletop sandstone mountain rising above the Gran Sabana with sheer 400-meter cliffs and unique carnivorous plants."
+  },
+  {
+    "code": "am",
+    "country": "Armenia",
+    "factIndex": 2,
+    "factText": "Armenian lavash flatbread is inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity.",
+    "imageTitle": "Armenian mouflon",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Armenian_mouflon.jpg/330px-Armenian_mouflon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Armenian mouflon is an endangered subspecies of mouflon endemic to Iran, Armenia, the Nakhchivan Autonomous Republic of Azerbaijan,..."
+  },
+  {
+    "code": "az",
+    "country": "Azerbaijan",
+    "factIndex": 1,
+    "factText": "Azerbaijan is home to nearly half of all the mud volcanoes on Earth, where cold subterranean mud erupts in geysers.",
+    "imageTitle": "Gobustan Mud Volcanoes & Petroglyphs",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/%C4%B0lham_%C6%8Fliyev_Pal%C3%A7%C4%B1q_Vulkanlar%C4%B1_Turizm_Kompleksinin_t%C9%99m%C9%99lqoyma_m%C9%99rasimind%C9%99_%2817%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Rare geological desert landscape home to nearly half the world's bubbling mud volcanoes and prehistoric rock art."
+  },
+  {
+    "code": "bh",
+    "country": "Bahrain",
+    "factIndex": 0,
+    "factText": "Bahrain was the first country in the Arabian Gulf to discover commercial oil in 1932.",
+    "imageTitle": "Qal'at al-Bahrain (Bahrain Fort)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Bahrain_Fort_March_2015.JPG/3840px-Bahrain_Fort_March_2015.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "UNESCO-listed ancient Portuguese and Dilmun coastal fortress guarding the Arabian Gulf shore."
+  },
+  {
+    "code": "bh",
+    "country": "Bahrain",
+    "factIndex": 1,
+    "factText": "For centuries, Bahrain was renowned globally as the premier source of natural saltwater pearls in the world.",
+    "imageTitle": "Qal'at al-Bahrain (Bahrain Fort)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Bahrain_Fort_March_2015.JPG/3840px-Bahrain_Fort_March_2015.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "UNESCO-listed ancient Portuguese and Dilmun coastal fortress guarding the Arabian Gulf shore."
+  },
+  {
+    "code": "bd",
+    "country": "Bangladesh",
+    "factIndex": 0,
+    "factText": "Cox's Bazar in Bangladesh is the longest uninterrupted natural sea beach in the world at 120 km.",
+    "imageTitle": "Cox's Bazar Beach",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Cox%27s_Bazaar_Sunset_Sep2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The world's longest unbroken natural sea sand beach, stretching over 120 kilometers along the Bay of Bengal."
+  },
+  {
+    "code": "bd",
+    "country": "Bangladesh",
+    "factIndex": 1,
+    "factText": "The Sundarbans delta is the largest mangrove forest and home to the world's highest density of Bengal tigers.",
+    "imageTitle": "Sundarbans Mangrove Forest",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Save_the_sundarbans_20.jpg/3840px-Save_the_sundarbans_20.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The largest contiguous mangrove wetland forest on Earth, sanctuary to the endangered Royal Bengal tiger."
+  },
+  {
+    "code": "bd",
+    "country": "Bangladesh",
+    "factIndex": 2,
+    "factText": "The 1952 Language Movement in Dhaka led the United Nations to designate February 21 as International Mother Language Day.",
+    "imageTitle": "Lalbagh Fort in Dhaka",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/%E0%A6%B2%E0%A6%BE%E0%A6%B2_%E0%A6%95%E0%A7%87%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B0_%E0%A6%AE%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A6%BE.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Incomplete 17th-century Mughal fortress palace with terraced gardens and the Tomb of Pari Bibi."
+  },
+  {
+    "code": "bn",
+    "country": "Brunei",
+    "factIndex": 1,
+    "factText": "Kampong Ayer is one of the largest stilt settlements in the world, inhabited continuously for over 1,000 years.",
+    "imageTitle": "Kampong Ayer Water Village",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/BN-bsb-kampong-ayer.jpg/3840px-BN-bsb-kampong-ayer.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The 'Venice of the East', a traditional settlement of wooden houses on stilts over the Brunei River."
+  },
+  {
+    "code": "kh",
+    "country": "Cambodia",
+    "factIndex": 0,
+    "factText": "Angkor Wat is the only national monument depicted directly on a sovereign nation's flag in the entire world.",
+    "imageTitle": "Angkor Wat Temple Complex",
+    "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Angkor Wat, the largest religious monument complex in the world."
+  },
+  {
+    "code": "cn",
+    "country": "China",
+    "factIndex": 1,
+    "factText": "Giant pandas are native exclusively to central China's bamboo forests in Sichuan, Shaanxi, and Gansu.",
+    "imageTitle": "Giant Panda Eating Bamboo",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/960px-Grosser_Panda.JPG",
+    "caption": "Giant pandas are native exclusively to China's central bamboo forests."
+  },
+  {
+    "code": "in",
+    "country": "India",
+    "factIndex": 1,
+    "factText": "Yoga originated in ancient northern India over 5,000 years ago as a discipline uniting body, mind, and spirit.",
+    "imageTitle": "Yoga Practice in India",
+    "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Yoga originated in ancient northern India over 5,000 years ago."
+  },
+  {
+    "code": "id",
+    "country": "Indonesia",
+    "factIndex": 0,
+    "factText": "Indonesia is the largest island nation on Earth, comprising over 17,500 islands stretching across 5,000 kilometers.",
+    "imageTitle": "Raja Ampat Islands",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Raja_Ampat_Islands_-_journal.pbio.1001457.g001.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Pristine archipelago in West Papua renowned as the global epicenter of marine biodiversity and coral reef life."
+  },
+  {
+    "code": "id",
+    "country": "Indonesia",
+    "factIndex": 1,
+    "factText": "It is home to the Komodo dragon, the world's largest living lizard species, found only in Komodo National Park.",
+    "imageTitle": "Komodo dragon",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/202306_Varanus_komodoensis.jpg/330px-202306_Varanus_komodoensis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Komodo dragon, also known as the Komodo monitor, is a large reptile of the monitor lizard family Varanidae that is endemic to the..."
+  },
+  {
+    "code": "id",
+    "country": "Indonesia",
+    "factIndex": 2,
+    "factText": "Indonesia has more active volcanoes than any other country in the world, with over 130 active peaks.",
+    "imageTitle": "Mount Bromo Volcano",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bromo-Semeru-Batok-Widodaren.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Active volcanic caldera rising dramatically from the Sea of Sand desert on Java, revered for sunrise panoramas."
+  },
+  {
+    "code": "ir",
+    "country": "Iran",
+    "factIndex": 0,
+    "factText": "Persian civilization is one of the world's oldest continuous civilizations, with urban settlements dating back to 4000 BC.",
+    "imageTitle": "Persepolis Ancient Ruins",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Achaemenid_Empire_500_BCE.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The monumental ceremonial capital of the Achaemenid Persian Empire founded by Darius the Great in 518 BC."
+  },
+  {
+    "code": "iq",
+    "country": "Iraq",
+    "factIndex": 0,
+    "factText": "Mesopotamia ('the land between the rivers' Tigris and Euphrates) is widely recognized as the Cradle of Civilization.",
+    "imageTitle": "Euphrates softshell turtle",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Req%C3%AA_s%C3%AAlane.jpg/330px-Req%C3%AA_s%C3%AAlane.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Euphrates softshell turtle, also known as the Mesopotamian softshell turtle, is a species of softshell turtle in the family..."
+  },
+  {
+    "code": "iq",
+    "country": "Iraq",
+    "factIndex": 1,
+    "factText": "The ancient Sumerians of Iraq invented the world's first written language (cuneiform), the wheel, and the 60-minute hour.",
+    "imageTitle": "Ruins of Ancient Babylon & Ishtar Gate",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Ishtar_Gate.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Legendary capital of Mesopotamia along the Euphrates River, home to Hammurabi's Code and King Nebuchadnezzar."
+  },
+  {
+    "code": "iq",
+    "country": "Iraq",
+    "factIndex": 2,
+    "factText": "The Code of Hammurabi, written in Babylon around 1750 BC, is one of the oldest deciphered legal codes in human history.",
+    "imageTitle": "Ruins of Ancient Babylon & Ishtar Gate",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Ishtar_Gate.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Legendary capital of Mesopotamia along the Euphrates River, home to Hammurabi's Code and King Nebuchadnezzar."
+  },
+  {
+    "code": "il",
+    "country": "Israel",
+    "factIndex": 0,
+    "factText": "The Dead Sea, bordered by Israel and Jordan, is the lowest elevation of land on the surface of the Earth at 430 meters below sea level.",
+    "imageTitle": "Dead Sea",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Dead_Sea_beach_00.JPG/330px-Dead_Sea_beach_00.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Dead Sea, also known by other names, is a landlocked salt lake bordered by Jordan to the east, the West Bank to the west and Israel..."
+  },
+  {
+    "code": "jp",
+    "country": "Japan",
+    "factIndex": 0,
+    "factText": "Tokyo is the world's most populous metropolitan area, with over 37 million residents across its greater urban region.",
+    "imageTitle": "Tokyo Metropolitan Skyline",
+    "imageUrl": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Tokyo metropolitan area, the world's most populous urban region with over 37 million residents."
+  },
+  {
+    "code": "jp",
+    "country": "Japan",
+    "factIndex": 2,
+    "factText": "The Japanese Shinkansen bullet train network has carried over 10 billion passengers with zero passenger fatalities due to derailments or collisions.",
+    "imageTitle": "Shinkansen High-Speed Bullet Train",
+    "imageUrl": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Japanese Shinkansen bullet train network, operating since 1964 with zero passenger derailment fatalities."
+  },
+  {
+    "code": "jo",
+    "country": "Jordan",
+    "factIndex": 0,
+    "factText": "Petra was carved into rose-colored sandstone cliffs over 2,000 years ago by Nabataean engineers who pioneered advanced water cisterns.",
+    "imageTitle": "Petra Treasury (Al-Khazneh)",
+    "imageUrl": "https://images.unsplash.com/photo-1548786811-dd6e453ccca7?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The ancient rose-red city of Petra, carved directly into sandstone cliffs."
+  },
+  {
+    "code": "kz",
+    "country": "Kazakhstan",
+    "factIndex": 1,
+    "factText": "The Baikonur Cosmodrome in Kazakhstan is the world's oldest and largest operational space launch facility, from which Yuri Gagarin launched into space.",
+    "imageTitle": "Hazrat Sultan Mosque in Astana",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5c/Khazret_Sultan_Mosque_2_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Monumental white marble mosque in the capital city, featuring the largest dome in Kazakhstan."
+  },
+  {
+    "code": "kz",
+    "country": "Kazakhstan",
+    "factIndex": 2,
+    "factText": "Wild apples originated in the mountains of Kazakhstan; Almaty, its former capital, literally translates to 'Father of Apples'.",
+    "imageTitle": "Big Almaty Lake",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Big_Almaty_Lake_%282511_m%29_and_snowy_peak_of_Soviets_%284317_m%29_in_September%2C_2%2C_2017.jpg/330px-Big_Almaty_Lake_%282511_m%29_and_snowy_peak_of_Soviets_%284317_m%29_in_September%2C_2%2C_2017.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Big Almaty Lake is a natural alpine reservoir."
+  },
+  {
+    "code": "kw",
+    "country": "Kuwait",
+    "factIndex": 1,
+    "factText": "Kuwait has one of the highest levels of per capita oil reserves in the world, holding roughly 7% of global oil reserves.",
+    "imageTitle": "Kuwait Towers",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Kuwait_City_Skyline_1.jpg/3840px-Kuwait_City_Skyline_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Trio of slender reinforced-concrete towers clad in shimmering turquoise enameled steel discs."
+  },
+  {
+    "code": "kw",
+    "country": "Kuwait",
+    "factIndex": 2,
+    "factText": "Al-Hamra Tower in Kuwait City is the tallest carved concrete skyscraper in the world, soaring 414 meters into the sky.",
+    "imageTitle": "Kuwait Towers",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Kuwait_City_Skyline_1.jpg/3840px-Kuwait_City_Skyline_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Trio of slender reinforced-concrete towers clad in shimmering turquoise enameled steel discs."
+  },
+  {
+    "code": "kg",
+    "country": "Kyrgyzstan",
+    "factIndex": 0,
+    "factText": "Over 90% of Kyrgyzstan's terrain is mountainous, dominated by the majestic peaks of the Tian Shan and Pamir ranges.",
+    "imageTitle": "Issyk-Kul Alpine Lake",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Issykkul_plyag.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The world's second-largest high-altitude saline lake, framed by snow-capped Tian Shan mountain ranges."
+  },
+  {
+    "code": "kg",
+    "country": "Kyrgyzstan",
+    "factIndex": 2,
+    "factText": "The traditional Kyrgyz yurt (boz ui) is so culturally important that the tunduk (wooden roof crown) forms the central symbol of its national flag.",
+    "imageTitle": "Song-Kul Lake & Yurts",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Song-K%C3%B6l.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Remote high mountain lake where Kyrgyz semi-nomadic shepherds graze their livestock in summer yurts."
+  },
+  {
+    "code": "la",
+    "country": "Laos",
+    "factIndex": 0,
+    "factText": "Laos is the only landlocked country in Southeast Asia, surrounded by China, Vietnam, Cambodia, Thailand, and Myanmar.",
+    "imageTitle": "Kuang Si Waterfalls",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/The_river_of_Kuang_si_waterfalls.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Three-tiered cascades plunging into brilliant turquoise swimming pools surrounded by tropical jungle."
+  },
+  {
+    "code": "la",
+    "country": "Laos",
+    "factIndex": 1,
+    "factText": "Sticky rice (khao niao) is the staple food of Laos; Laotians consume more sticky rice per capita than any other people in the world.",
+    "imageTitle": "Luang Prabang Historic Town",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/en/thumb/2/28/Vientiane_-_Patuxai_-_0003.jpg/3840px-Vientiane_-_Patuxai_-_0003.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "UNESCO-listed royal capital blending traditional gilded Lao wooden architecture with French colonial mansions."
+  },
+  {
+    "code": "lb",
+    "country": "Lebanon",
+    "factIndex": 0,
+    "factText": "Byblos in Lebanon is one of the oldest continuously inhabited cities in the world, with settlements dating back over 7,000 years.",
+    "imageTitle": "Byblos Ancient Harbor",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Byblos_Libanon_2003.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "One of the oldest continuously inhabited cities on Earth, where the Phoenician phonetic alphabet was born."
+  },
+  {
+    "code": "mn",
+    "country": "Mongolia",
+    "factIndex": 1,
+    "factText": "Horses outnumber humans in Mongolia, playing an indispensable role in pastoral nomadic culture and the annual Naadam festival.",
+    "imageTitle": "Przewalski's horse",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Przewalskis_horse_02.jpg/330px-Przewalskis_horse_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Przewalski's horse, also called the takhi, Mongolian wild horse or Dzungarian horse, is a rare and endangered wild horse originally..."
+  },
+  {
+    "code": "mm",
+    "country": "Myanmar",
+    "factIndex": 0,
+    "factText": "Bagan was the capital of the Pagan Kingdom, where over 10,000 Buddhist temples and stupas were built between the 11th and 13th centuries.",
+    "imageTitle": "Bagan Temple Plains",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Bagan%2C_Burma.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Over 2,200 ancient Buddhist temples and pagodas rising above the green plains along the Ayeyarwady River."
+  },
+  {
+    "code": "mm",
+    "country": "Myanmar",
+    "factIndex": 1,
+    "factText": "Both men and women in Myanmar traditionally wear thanaka, a fragrant yellow-white paste made from ground tree bark, as natural sunscreen.",
+    "imageTitle": "Shwedagon Pagoda in Yangon",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Shwedagon_Pagoda_2017.jpg/3840px-Shwedagon_Pagoda_2017.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Glistening 99-meter golden stupa adorned with thousands of genuine diamonds and rubies, the holiest pagoda in Myanmar."
+  },
+  {
+    "code": "mm",
+    "country": "Myanmar",
+    "factIndex": 2,
+    "factText": "Traditional Intha fishermen on Inle Lake practice a unique one-legged rowing technique to keep their hands free for fishing nets.",
+    "imageTitle": "Inle Lake & Leg-Rowers",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Inle_Lake_%28Myanmar%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Scenic freshwater lake famous for floating vegetable gardens and fishermen who steer long wooden boats using one leg."
+  },
+  {
+    "code": "np",
+    "country": "Nepal",
+    "factIndex": 1,
+    "factText": "Eight of the world's ten highest mountain peaks, including Mount Everest (8,848.86 m), lie within or on Nepal's borders.",
+    "imageTitle": "Mount Everest Himalayan Summit",
+    "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Mount Everest (8,848.86 m), Earth's highest summit towering along Nepal's northern border."
+  },
+  {
+    "code": "kp",
+    "country": "North Korea",
+    "factIndex": 0,
+    "factText": "Mount Paektu, the highest peak on the Korean Peninsula, is an active volcano considered the mythical spiritual birthplace of the Korean people.",
+    "imageTitle": "Mount Paektu & Heaven Lake",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Laika_ac_Mt._Paekdu_%287998657081%29.jpg/3840px-Laika_ac_Mt._Paekdu_%287998657081%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Sacred volcanic mountain on the Chinese border featuring a deep caldera lake filled with turquoise water."
+  },
+  {
+    "code": "kp",
+    "country": "North Korea",
+    "factIndex": 1,
+    "factText": "North Korea uses the Juche calendar, which begins with year 1 marked by the birth year of Kim Il-sung in 1912.",
+    "imageTitle": "Juche Tower in Pyongyang",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Tower_of_Juche_Idea%2C_Pyongyang%2C_North_Korea_%282909246855%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Monumental 170-meter stone tower topped by a glowing 20-meter torch overlooking the Taedong River."
+  },
+  {
+    "code": "kp",
+    "country": "North Korea",
+    "factIndex": 2,
+    "factText": "The Rungrado 1st of May Stadium in Pyongyang is one of the largest stadium arenas in the world, with a seating capacity of 114,000.",
+    "imageTitle": "Juche Tower in Pyongyang",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Tower_of_Juche_Idea%2C_Pyongyang%2C_North_Korea_%282909246855%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Monumental 170-meter stone tower topped by a glowing 20-meter torch overlooking the Taedong River."
+  },
+  {
+    "code": "om",
+    "country": "Oman",
+    "factIndex": 2,
+    "factText": "Traditional Omani falaj water irrigation channels date back over 2,000 years and are recognized as UNESCO World Heritage treasures.",
+    "imageTitle": "Nizwa Fort & Heritage Souq",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Nizwa_%285%29.jpg/3840px-Nizwa_%285%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Massive 17th-century circular defense tower fortress guarding oasis date palms and artisan silver markets."
+  },
+  {
+    "code": "ps",
+    "country": "Palestine",
+    "factIndex": 0,
+    "factText": "Jericho is widely considered one of the oldest continuously inhabited cities on Earth, with archaeological evidence spanning over 11,000 years.",
+    "imageTitle": "Hisham's Palace in Jericho",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Hisham_Palace_in_Jericho2.jpg/3840px-Hisham_Palace_in_Jericho2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Umayyad desert palace famous for its magnificent 'Tree of Life' floor mosaic, one of the largest in antiquity."
+  },
+  {
+    "code": "ph",
+    "country": "Philippines",
+    "factIndex": 1,
+    "factText": "It is home to the Philippine eagle (monkey-eating eagle), one of the largest, rarest, and most powerful eagles in the world.",
+    "imageTitle": "Philippine eagle",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Pamarayeg_IIIx2_%28cropped%29.jpg/330px-Pamarayeg_IIIx2_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Philippine eagle, also known as the monkey-eating eagle or great Philippine eagle, is a critically endangered species of eagle of..."
+  },
+  {
+    "code": "ph",
+    "country": "Philippines",
+    "factIndex": 2,
+    "factText": "The Puerto Princesa Subterranean River in Palawan is an 8.2-kilometer navigable underground river flowing directly into the sea.",
+    "imageTitle": "El Nido Lagoons in Palawan",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/El_Nido_Bay_December_2018.jpg/3840px-El_Nido_Bay_December_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Towering limestone karst cliffs enclosing secret turquoise lagoons and crystal-clear tropical snorkeling reefs."
+  },
+  {
+    "code": "qa",
+    "country": "Qatar",
+    "factIndex": 2,
+    "factText": "Traditional falconry is a celebrated national sport in Qatar, with a dedicated falcon hospital operating in Souq Waqif.",
+    "imageTitle": "Souq Waqif",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Souq_Waqif%2C_Doha%2C_Catar%2C_2013-08-05%2C_DD_84.JPG/3840px-Souq_Waqif%2C_Doha%2C_Catar%2C_2013-08-05%2C_DD_84.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Vibrant traditional marketplace in Doha famous for spices, falconry shops, Arabian horses, and woven textiles."
+  },
+  {
+    "code": "sg",
+    "country": "Singapore",
+    "factIndex": 0,
+    "factText": "Singapore is one of only three surviving sovereign city-states in the world, alongside Monaco and Vatican City.",
+    "imageTitle": "Marina Bay Sands & SkyPark",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Marina_Bay_Sands_%28I%29.jpg/3840px-Marina_Bay_Sands_%28I%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Three 55-story hotel towers topped by a cantilevered ship-shaped sky terrace and 150-meter infinity pool."
+  },
+  {
+    "code": "sg",
+    "country": "Singapore",
+    "factIndex": 1,
+    "factText": "Singapore is known as the 'City in a Garden', with green spaces and rooftop vegetation covering nearly 50% of the island.",
+    "imageTitle": "Gardens by the Bay & Supertrees",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Supertree_Grove%2C_Gardens_by_the_Bay%2C_Singapore_-_20120712-02.jpg/3840px-Supertree_Grove%2C_Gardens_by_the_Bay%2C_Singapore_-_20120712-02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Futuristic horticultural sanctuary featuring 18 vertical vertical plant-covered Supertrees and climate biomes."
+  },
+  {
+    "code": "sg",
+    "country": "Singapore",
+    "factIndex": 2,
+    "factText": "Singapore Changi Airport has been repeatedly named the World's Best Airport by Skytrax more times than any other airport.",
+    "imageTitle": "Jewel Changi HSBC Rain Vortex",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/JewelSingaporeVortex1.jpg/3840px-JewelSingaporeVortex1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The world's tallest indoor waterfall, cascading seven stories (40 m) down through a lush forest canopy dome."
+  },
+  {
+    "code": "kr",
+    "country": "South Korea",
+    "factIndex": 2,
+    "factText": "Kimchi, Korea's national dish of seasoned fermented vegetables, has over 200 registered regional varieties.",
+    "imageTitle": "Jeju Island & Hallasan Volcano",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Jeju_Island.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Subtropical volcanic island home to South Korea's highest peak (1,947 m) and natural lava tubes."
+  },
+  {
+    "code": "sy",
+    "country": "Syria",
+    "factIndex": 0,
+    "factText": "Damascus, the capital of Syria, is widely cited as one of the oldest continuously inhabited cities in recorded world history.",
+    "imageTitle": "Umayyad Mosque of Damascus",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Umayyad_Mosque%2C_Damascus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "One of the oldest and largest mosques in the world, located in the heart of Damascus's walled ancient city."
+  },
+  {
+    "code": "sy",
+    "country": "Syria",
+    "factIndex": 2,
+    "factText": "Syrian laurel Aleppo soap has been handcrafted in the city of Aleppo for over 3,000 years, celebrated as the world's first hard soap.",
+    "imageTitle": "Syrian brown bear",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Ursus_arctos_syriacus.jpg/330px-Ursus_arctos_syriacus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Syrian brown bear is a medium-sized and endangered subspecies of brown bear native to the Middle East and West-Central Asia,..."
+  },
+  {
+    "code": "tj",
+    "country": "Tajikistan",
+    "factIndex": 1,
+    "factText": "Fedchenko Glacier in the Pamir Mountains is the longest non-polar valley glacier in the world, spanning 77 kilometers.",
+    "imageTitle": "Pamir Highway (M41)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Pamir_Highway_Route.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The world's second-highest international road, traversing the dramatic high-altitude 'Roof of the World'."
+  },
+  {
+    "code": "tl",
+    "country": "Timor-Leste",
+    "factIndex": 0,
+    "factText": "Scientists discovered that the waters surrounding Atauro Island have the highest average reef fish biodiversity in the world.",
+    "imageTitle": "Atauro Island Reefs",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Atauro_coast_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Pristine island across from Dili scientifically documented as having the most biodiverse reef fish waters on Earth."
+  },
+  {
+    "code": "tl",
+    "country": "Timor-Leste",
+    "factIndex": 2,
+    "factText": "According to local folklore, the island of Timor was formed from the body of an ancient giant crocodile who befriended a boy.",
+    "imageTitle": "Saltwater crocodile",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/SaltwaterCrocodile%28%27Maximo%27%29.jpg/330px-SaltwaterCrocodile%28%27Maximo%27%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The saltwater crocodile is a crocodilian native to saltwater habitats, brackish wetlands and freshwater rivers from India's east coast..."
+  },
+  {
+    "code": "tr",
+    "country": "Turkey",
+    "factIndex": 0,
+    "factText": "Istanbul is the only transcontinental metropolis in the world situated across two continents: Europe and Asia.",
+    "imageTitle": "Hagia Sophia Grand Mosque",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Hagia_Sophia_%28228968325%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "6th-century Byzantine architectural wonder in Istanbul with a soaring dome that revolutionized world architecture."
+  },
+  {
+    "code": "tm",
+    "country": "Turkmenistan",
+    "factIndex": 0,
+    "factText": "Ashgabat holds the Guinness World Record for the highest concentration of white marble buildings, with over 540 marble facades.",
+    "imageTitle": "White Marble City of Ashgabat",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/View_of_Ashgabat_%2842376779291%29.jpg/3840px-View_of_Ashgabat_%2842376779291%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Guinness World Record capital holding the highest density of white marble-clad buildings in the world."
+  },
+  {
+    "code": "tm",
+    "country": "Turkmenistan",
+    "factIndex": 1,
+    "factText": "The Darvaza gas crater was accidentally ignited by Soviet geologists in 1971 expecting it to burn out in weeks, but it has burned for over 50 years.",
+    "imageTitle": "Darvaza Gas Crater ('Door to Hell')",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Darvasa_gas_crater_panorama.jpg/3840px-Darvasa_gas_crater_panorama.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "A 70-meter-wide fiery natural gas crater in the Karakum Desert that has been burning continuously since 1971."
+  },
+  {
+    "code": "tm",
+    "country": "Turkmenistan",
+    "factIndex": 2,
+    "factText": "Turkmenistan is famous for its Akhal-Teke horse breed, known as 'golden horses' for their natural metallic shimmering coats.",
+    "imageTitle": "Akhal-Teke",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Dagat-Geli.jpg/330px-Dagat-Geli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Akhal-Teke is a Turkmen horse breed."
+  },
+  {
+    "code": "ae",
+    "country": "United Arab Emirates",
+    "factIndex": 0,
+    "factText": "The Burj Khalifa in Dubai is the world's tallest building at 828 meters, visible from up to 95 kilometers away.",
+    "imageTitle": "Burj Khalifa in Dubai",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/3840px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The tallest building and freestanding structure in human history, soaring 828 meters above the Dubai skyline."
+  },
+  {
+    "code": "ae",
+    "country": "United Arab Emirates",
+    "factIndex": 2,
+    "factText": "Dubai's police fleet includes high-performance supercars like Bugatti Veyrons, Aston Martins, and Ferraris for public engagement.",
+    "imageTitle": "Burj Khalifa in Dubai",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/3840px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The tallest building and freestanding structure in human history, soaring 828 meters above the Dubai skyline."
+  },
+  {
+    "code": "uz",
+    "country": "Uzbekistan",
+    "factIndex": 1,
+    "factText": "Samarkand was a crown jewel of the ancient Silk Road, with its blue-tiled architecture praised by Alexander the Great and Marco Polo.",
+    "imageTitle": "Registan Square in Samarkand",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/RegistanSquare_Samarkand.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Majestic ensemble of three monumental 15th- and 17th-century Islamic madrasahs covered in dazzling azure tilework."
+  },
+  {
+    "code": "vn",
+    "country": "Vietnam",
+    "factIndex": 0,
+    "factText": "Vietnam is the world's second-largest producer and exporter of coffee, renowned for its strong Robusta beans and condensed milk coffee (cà phê sữa đá).",
+    "imageTitle": "Traditional Vietnamese Coffee",
+    "imageUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Vietnam is the world's second-largest coffee producer, renowned for rich Robusta beans."
+  },
+  {
+    "code": "ye",
+    "country": "Yemen",
+    "factIndex": 0,
+    "factText": "Shibam in Yemen features the oldest skyscrapers in the world, built from sun-dried mudbrick over 500 years ago.",
+    "imageTitle": "Old Walled City of Shibam",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/%D9%85%D8%AF%D9%8A%D9%86%D8%A9_%D8%B4%D8%A8%D8%A7%D9%85_%D8%AD%D8%B6%D8%B1%D9%85%D9%88%D8%AA.jpg/3840px-%D9%85%D8%AF%D9%8A%D9%86%D8%A9_%D8%B4%D8%A8%D8%A7%D9%85_%D8%AD%D8%B6%D8%B1%D9%85%D9%88%D8%AA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The 'Manhattan of the Desert', ancient mudbrick high-rises soaring up to 11 stories built in the 16th century."
+  },
+  {
+    "code": "ye",
+    "country": "Yemen",
+    "factIndex": 1,
+    "factText": "Socotra Island is often called the 'most alien place on Earth' because over 37% of its 800+ plant species are found nowhere else.",
+    "imageTitle": "Dragon's Blood Trees of Socotra",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Dragonblood_tree_in_Socotra_2.jpg/3840px-Dragonblood_tree_in_Socotra_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Otherworldly umbrella-shaped dragon blood trees producing dark red resin on the isolated island of Socotra."
+  },
+  {
+    "code": "dz",
+    "country": "Algeria",
+    "factIndex": 1,
+    "factText": "Tassili n'Ajjer contains over 15,000 prehistoric rock paintings depicting a green Sahara with herds of elephants and giraffes.",
+    "imageTitle": "Tassili n'Ajjer National Park",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Martyrs_Memorial._Algiers%2C_Algeria.jpg/3840px-Martyrs_Memorial._Algiers%2C_Algeria.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Vast sandstone plateau in the Sahara Desert preserving thousands of prehistoric cave paintings."
+  },
+  {
+    "code": "dz",
+    "country": "Algeria",
+    "factIndex": 2,
+    "factText": "Algeria is the homeland of renowned Algerian novelist and Nobel laureate Albert Camus, who was born in Mondovi.",
+    "imageTitle": "Albert Camus (Nobel Laureate in Literature)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/Albert_Camus%2C_gagnant_de_prix_Nobel%2C_portrait_en_buste%2C_pos%C3%A9_au_bureau%2C_faisant_face_%C3%A0_gauche%2C_cigarette_de_tabagisme.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "World-renowned French-Algerian philosopher, novelist, and 1957 Nobel laureate in Literature, born in Mondovi."
+  },
+  {
+    "code": "ao",
+    "country": "Angola",
+    "factIndex": 0,
+    "factText": "Angola is the native home of the rare giant sable antelope (palanca negra gigante), a national symbol thought extinct until rediscovered.",
+    "imageTitle": "Giant sable antelope",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Giant_sable_bull_in_Luando.jpg/330px-Giant_sable_bull_in_Luando.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The giant sable antelope is a critically endangered subspecies of the common sable antelope native and endemic to the central highlands..."
+  },
+  {
+    "code": "ao",
+    "country": "Angola",
+    "factIndex": 1,
+    "factText": "The Welwitschia mirabilis plant, endemic to the Namib desert in Angola, can survive for over 1,500 years on coastal fog alone.",
+    "imageTitle": "Miradouro da Lua (Moon Viewpoint)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Luanda_2025_focused_%28cropped%29.jpg/3840px-Luanda_2025_focused_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Spectacular moon-like coastal karst landscape of eroded multicolored clay cliffs overlooking the Atlantic."
+  },
+  {
+    "code": "bj",
+    "country": "Benin",
+    "factIndex": 0,
+    "factText": "Benin is the historic birthplace of Vodun (Voodoo), an official recognized religion practiced alongside Christianity and Islam.",
+    "imageTitle": "Royal Palaces of Abomey",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Abomey_2006_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Historic earthen palaces of the twelve kings of Dahomey who ruled between 1625 and 1900."
+  },
+  {
+    "code": "bj",
+    "country": "Benin",
+    "factIndex": 2,
+    "factText": "Ganvié was established in the 17th century by people fleeing slave raiders, whose religious taboos prevented them from attacking over water.",
+    "imageTitle": "Ganvié Stilt Village",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Ganvi%C3%A9_fishing_village_on_stilts_in_Benin_%2810282059623%29_%282%29.jpg/3840px-Ganvi%C3%A9_fishing_village_on_stilts_in_Benin_%2810282059623%29_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The 'Venice of Africa', a lagoon city of over 20,000 residents living in wooden houses built on stilts in Lake Nokoué."
+  },
+  {
+    "code": "bw",
+    "country": "Botswana",
+    "factIndex": 0,
+    "factText": "Botswana is home to roughly one-third of Africa's remaining wild elephant population, with over 130,000 elephants.",
+    "imageTitle": "Okavango Delta Wildlife Oasis",
+    "imageUrl": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Okavango Delta, the world's largest inland delta teeming with African wildlife."
+  },
+  {
+    "code": "bi",
+    "country": "Burundi",
+    "factIndex": 0,
+    "factText": "The ritual dance of the royal drum (Karyenda) is recognized by UNESCO as an Intangible Cultural Heritage of Humanity.",
+    "imageTitle": "Gishora Drum Sanctuary",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Dioc%C3%A8se_Gitega_y.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Historic royal site where master drummers perform the sacred ritual royal dance of the Karienda drums."
+  },
+  {
+    "code": "bi",
+    "country": "Burundi",
+    "factIndex": 1,
+    "factText": "Burundi claims the southernmost source of the Nile River, marked by a stone pyramid at Rutovu.",
+    "imageTitle": "Rusizi National Park",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Rusizi_NP_hippopotamus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "River delta reserve where the Rusizi River enters Lake Tanganyika, home to hippos, sitatungas, and crocodiles."
+  },
+  {
+    "code": "bi",
+    "country": "Burundi",
+    "factIndex": 2,
+    "factText": "Lake Tanganyika holds roughly 17% of the world's available surface freshwater and contains over 250 species of cichlid fish.",
+    "imageTitle": "Lake Tanganyika Shoreline",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/STS51G-034-0012_Lake_Tanganyika_June1985.jpg/3840px-STS51G-034-0012_Lake_Tanganyika_June1985.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The world's second-deepest and second-largest freshwater lake by volume, fringed by palm beaches in Bujumbura."
+  },
+  {
+    "code": "cm",
+    "country": "Cameroon",
+    "factIndex": 0,
+    "factText": "Cameroon is nicknamed 'Africa in Miniature' because it features all of the continent's major climates: desert, savanna, rainforest, and mountains.",
+    "imageTitle": "Mount Cameroon (Fako)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Mount_Cameroon_view_from_Buea_%28Soppo%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "An active volcano and the highest peak in West and Central Africa (4,040 m), known as the 'Chariot of the Gods'."
+  },
+  {
+    "code": "cm",
+    "country": "Cameroon",
+    "factIndex": 1,
+    "factText": "Lobé Waterfalls near Kribi is one of the very few waterfalls on Earth that empties directly into the open ocean.",
+    "imageTitle": "Chutes de la Lobé (Lobé Waterfalls)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b1/Mars_Express_film_poster.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "One of the rare waterfalls in the world that cascades directly into the Atlantic Ocean over granite cliffs."
+  },
+  {
+    "code": "cm",
+    "country": "Cameroon",
+    "factIndex": 2,
+    "factText": "Over 250 distinct indigenous linguistic and ethnic groups live peacefully together across Cameroon.",
+    "imageTitle": "Mount Cameroon (Fako)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Mount_Cameroon_view_from_Buea_%28Soppo%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "An active volcano and the highest peak in West and Central Africa (4,040 m), known as the 'Chariot of the Gods'."
+  },
+  {
+    "code": "cf",
+    "country": "Central African Republic",
+    "factIndex": 0,
+    "factText": "Dzanga Bai, known as the 'Village of Elephants', attracts up to 100 forest elephants daily to lick mineral-rich saline mud.",
+    "imageTitle": "Dzanga-Sangha National Park",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Dzanga_Bai_forest_clearing_with_African_forest_elephants%2C_Central_African_Republic.jpg/3840px-Dzanga_Bai_forest_clearing_with_African_forest_elephants%2C_Central_African_Republic.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Pristine Congo Basin tropical rainforest sanctuary famous for the Dzanga Bai forest clearing filled with forest elephants."
+  },
+  {
+    "code": "cf",
+    "country": "Central African Republic",
+    "factIndex": 1,
+    "factText": "The Central African Republic is home to the indigenous Ba'Aka Pygmies, renowned for their complex polyphonic vocal music.",
+    "imageTitle": "African forest elephant",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Loxodontacyclotis.jpg/330px-Loxodontacyclotis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The African forest elephant is an elephant species native to humid tropical forests in West Africa and the Congo Basin."
+  },
+  {
+    "code": "cf",
+    "country": "Central African Republic",
+    "factIndex": 2,
+    "factText": "The country contains the second-largest contiguous expanse of dense tropical rainforest on Earth after the Amazon.",
+    "imageTitle": "African forest elephant",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Loxodontacyclotis.jpg/330px-Loxodontacyclotis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The African forest elephant is an elephant species native to humid tropical forests in West Africa and the Congo Basin."
+  },
+  {
+    "code": "td",
+    "country": "Chad",
+    "factIndex": 0,
+    "factText": "The Lakes of Ounianga in the heart of the hyper-arid Sahara are supplied by ancient subterranean fossil water aquifers.",
+    "imageTitle": "Lakes of Ounianga",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Ounianga_Serir.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Eighteen interconnected hyper-saline and freshwater blue lakes surrounded by golden Saharan sand dunes."
+  },
+  {
+    "code": "td",
+    "country": "Chad",
+    "factIndex": 1,
+    "factText": "The Aloba Arch in Chad's Ennedi Plateau is one of the largest natural rock arches in the world, spanning 77 meters across.",
+    "imageTitle": "Ennedi Natural & Cultural Reserve",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/24_Kamele_ziehen_zur_Wasserstelle_im_Ennedi-Gebirge_im_Tschad.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Breathtaking desert sandstone plateau featuring towering arches, natural canyons, and hidden guelta waterholes."
+  },
+  {
+    "code": "ci",
+    "country": "Côte d'Ivoire",
+    "factIndex": 1,
+    "factText": "The Basilica of Our Lady of Peace in Yamoussoukro is recognized by the Guinness World Records as the largest church on Earth.",
+    "imageTitle": "Basilica of Our Lady of Peace",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/0/02/Notre_dame_de_la_paix_yamoussoukro_by_felix_krohn.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The largest church in the world by surface area, constructed of Italian marble in Yamoussoukro."
+  },
+  {
+    "code": "dj",
+    "country": "Djibouti",
+    "factIndex": 0,
+    "factText": "Lake Assal is the lowest point in Africa (-155 m) and the most saline body of water on Earth outside Antarctica (nearly 10x saltier than the ocean).",
+    "imageTitle": "Lake Assal",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Lake_Assal_NASA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "A hypersaline crater lake sitting 155 meters below sea level, the lowest land point in Africa and third-lowest on Earth."
+  },
+  {
+    "code": "dj",
+    "country": "Djibouti",
+    "factIndex": 2,
+    "factText": "The Gulf of Tadjoura in Djibouti is one of the world's premier locations for swimming alongside gentle juvenile whale sharks.",
+    "imageTitle": "Lake Assal (Djibouti)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Lake_Assal_NASA.jpg/330px-Lake_Assal_NASA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Lake Assal is a crater lake in central-western Djibouti.  It is located at the western end of Gulf of Tadjoura between Arta Region, and Tadjoura Region, touching Dikhil Region, at the top of the Great Rift Valley, some 120 km (75 mi) west of Djibouti city."
+  },
+  {
+    "code": "eg",
+    "country": "Egypt",
+    "factIndex": 0,
+    "factText": "Ancient Egyptian civilization lasted for over 3,000 years, producing the monumental pyramids, hieroglyphic writing, and papyrus paper.",
+    "imageTitle": "The Great Pyramids of Giza & Sphinx",
+    "imageUrl": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Pyramids of Giza, built over 4,500 years ago along the Nile."
+  },
+  {
+    "code": "eg",
+    "country": "Egypt",
+    "factIndex": 2,
+    "factText": "The Nile River flows through Egypt from south to north, providing the vital lifeblood that gave rise to ancient agriculture.",
+    "imageTitle": "The Nile River in Egypt",
+    "imageUrl": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Nile River, lifeblood of Egyptian civilization flowing south to north."
+  },
+  {
+    "code": "gq",
+    "country": "Equatorial Guinea",
+    "factIndex": 1,
+    "factText": "The capital city, Malabo, is situated on Bioko Island in the Atlantic Ocean, while a large portion of the territory lies on the African mainland.",
+    "imageTitle": "Malabo Cathedral & Santa Isabel",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Hotel_de_Federaciones_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Neo-Gothic cathedral designed by architect Luis Segarra Llairadó on Bioko Island overlooking the harbor."
+  },
+  {
+    "code": "gq",
+    "country": "Equatorial Guinea",
+    "factIndex": 2,
+    "factText": "It is constructing a brand-new planned administrative capital city named Ciudad de la Paz (formerly Oyala) in the mainland interior.",
+    "imageTitle": "Monte Alén National Park",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Nationalpark_Monte_Al%C3%A9n_%28Tafel%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Dense tropical rainforest reserve in mainland Río Muni sheltering gorillas, chimpanzees, and forest elephants."
+  },
+  {
+    "code": "er",
+    "country": "Eritrea",
+    "factIndex": 0,
+    "factText": "Asmara was designated a UNESCO World Heritage site in 2017 for its extraordinarily preserved 1930s Italian modernist and Art Deco architecture.",
+    "imageTitle": "Asmara Art Deco Architecture",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Asmara_Montage.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "UNESCO World Heritage capital city celebrated as 'Little Rome' for hundreds of modernist Italian Futurism buildings."
+  },
+  {
+    "code": "sz",
+    "country": "Eswatini",
+    "factIndex": 1,
+    "factText": "Sibebe Rock is the second-largest exposed granite pluton in the world, with ancient rock formations dating back 3 billion years.",
+    "imageTitle": "Sibebe Rock Monolith",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/012_035_Ile_Mingan_Niapiscau.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The world's second-largest exposed granite monolith (after Uluru in Australia), estimated at 3 billion years old."
+  },
+  {
+    "code": "ga",
+    "country": "Gabon",
+    "factIndex": 1,
+    "factText": "In 2002, Gabon's government designated over 11% of its entire national territory as a network of 13 protected national parks.",
+    "imageTitle": "Lopé National Park",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Lop%C3%A9_National_Park_river_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "UNESCO-listed mosaic of ancient tropical rainforest and relic savanna preserving 400,000 years of human habitation."
+  },
+  {
+    "code": "ga",
+    "country": "Gabon",
+    "factIndex": 2,
+    "factText": "Loango National Park is one of the only places on Earth where wild hippos and elephants can be seen roaming Atlantic ocean beaches.",
+    "imageTitle": "Loango National Park",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/African_Forest_Buffalo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The 'Africa's Last Eden', famous for surfing hippos, forest elephants, and red river hogs on uninhabited Atlantic beaches."
+  },
+  {
+    "code": "gm",
+    "country": "Gambia",
+    "factIndex": 0,
+    "factText": "The Gambia is the smallest sovereign country in mainland Africa, tracing a narrow strip of land along both banks of the Gambia River.",
+    "imageTitle": "River Gambia National Park",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Rijeka_Gambija_2026.jpg/330px-Rijeka_Gambija_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "River Gambia National Park is a national park in the Gambia."
+  },
+  {
+    "code": "gm",
+    "country": "Gambia",
+    "factIndex": 1,
+    "factText": "In national elections, Gambian citizens traditionally vote by dropping a glass marble into color-coded drums attached to bicycle bells.",
+    "imageTitle": "River Gambia National Park",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Rijeka_Gambija_2026.jpg/330px-Rijeka_Gambija_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "River Gambia National Park is a national park in the Gambia."
+  },
+  {
+    "code": "gm",
+    "country": "Gambia",
+    "factIndex": 2,
+    "factText": "Kunta Kinteh, the protagonist of Alex Haley's novel Roots, was born in Juffureh along the Gambia River.",
+    "imageTitle": "Kunta Kinteh Island (James Island)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/River_gambia_galleryfull.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Historic UNESCO-listed fortified river island in the Gambia River, memorial of the transatlantic slave trade."
+  },
+  {
+    "code": "gh",
+    "country": "Ghana",
+    "factIndex": 0,
+    "factText": "In 1957, Ghana became the very first sub-Saharan African nation to gain independence from colonial rule.",
+    "imageTitle": "African elephant",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "African elephants are members of the genus Loxodonta comprising two living elephant species, the African bush elephant and the smaller..."
+  },
+  {
+    "code": "gh",
+    "country": "Ghana",
+    "factIndex": 1,
+    "factText": "Lake Volta in Ghana is the world's largest man-made reservoir by surface area, covering roughly 3.6% of the country's total land.",
+    "imageTitle": "Lake Volta",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Adomi-bridge_0418.png/3840px-Adomi-bridge_0418.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The largest artificial reservoir in the world by surface area (8,502 sq km), formed by the Akosombo Dam."
+  },
+  {
+    "code": "gn",
+    "country": "Guinea",
+    "factIndex": 1,
+    "factText": "Guinea possesses roughly one-third of the world's total known reserves of bauxite, the principal ore of aluminum.",
+    "imageTitle": "Mount Nimba Strict Nature Reserve",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Nimba_Range.jpg/330px-Nimba_Range.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Mount Nimba Strict Nature Reserve is a protected area and UNESCO World Heritage Site located in both Guinea and Côte d'Ivoire, extending..."
+  },
+  {
+    "code": "gw",
+    "country": "Guinea-Bissau",
+    "factIndex": 0,
+    "factText": "The Bijagós Archipelago in Guinea-Bissau is home to one of the world's only known populations of saltwater-swimming hippopotamuses.",
+    "imageTitle": "Bijagós Archipelago Biosphere",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/L%27Archipel_des_Bijagos_vu_par_Sentinel_2.jpg/3840px-L%27Archipel_des_Bijagos_vu_par_Sentinel_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Untouched Atlantic archipelago of 88 islands home to saltwater hippopotamuses, sea turtles, and mangrove labyrinths."
+  },
+  {
+    "code": "gw",
+    "country": "Guinea-Bissau",
+    "factIndex": 1,
+    "factText": "The Bijagós society is matrilineal, where women hold central authority in spiritual affairs, law, and land ownership.",
+    "imageTitle": "Bijagós Archipelago Biosphere",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/L%27Archipel_des_Bijagos_vu_par_Sentinel_2.jpg/3840px-L%27Archipel_des_Bijagos_vu_par_Sentinel_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Untouched Atlantic archipelago of 88 islands home to saltwater hippopotamuses, sea turtles, and mangrove labyrinths."
+  },
+  {
+    "code": "gw",
+    "country": "Guinea-Bissau",
+    "factIndex": 2,
+    "factText": "Cashew nuts are the cornerstone of the national economy, with Guinea-Bissau ranking among the world's top cashew exporters.",
+    "imageTitle": "Historic Bissau Velho",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Fortaleza_de_S%C3%A3o_Jos%C3%A9_da_Amura%2C_Bissau.jpg",
+    "caption": "Charming colonial old quarter in Bissau with pastel Portuguese architecture and bustling fish markets."
+  },
+  {
+    "code": "ke",
+    "country": "Kenya",
+    "factIndex": 0,
+    "factText": "The annual Great Migration across the Mara River is hailed as the 'Eighth Wonder of the Natural World'.",
+    "imageTitle": "Great Migration in the Maasai Mara",
+    "imageUrl": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Over 1.5 million wildebeest migrate across the Mara River in Kenya's Maasai Mara reserve."
+  },
+  {
+    "code": "lr",
+    "country": "Liberia",
+    "factIndex": 0,
+    "factText": "Founded in 1847 by freed African Americans, Liberia is the oldest independent modern democratic republic in Africa.",
+    "imageTitle": "Sapo National Park",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Zwergflusspferd_-_Pygmy_Hippopotamus_-_Hexaprotodon_liberiensis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "caption": "Liberia's largest protected area and one of West Africa's last primary rainforests, home to the rare pygmy hippopotamus."
+  },
+  {
+    "code": "lr",
+    "country": "Liberia",
+    "factIndex": 1,
+    "factText": "Liberia is one of only two African nations (along with Ethiopia) that maintained its sovereignty throughout the 'Scramble for Africa'.",
+    "imageTitle": "Providence Island in Monrovia",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Providence_Island_view_of_downtown_Monrovia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Historic landing point on the Mesurado River where freed African-American settlers landed in 1822."
+  },
+  {
+    "code": "ly",
+    "country": "Libya",
+    "factIndex": 0,
+    "factText": "Leptis Magna contains monumental Roman architecture including the Arch of Septimius Severus, marble baths, and a seaside amphitheater.",
+    "imageTitle": "Leptis Magna Roman Metropolis",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/CarthageMap.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "One of the most extensive and best-preserved Roman ruins in the Mediterranean, birthplace of Emperor Septimius Severus."
+  },
+  {
+    "code": "ly",
+    "country": "Libya",
+    "factIndex": 2,
+    "factText": "Over 90% of Libya's territory is covered by the Sahara Desert, which experiences virtually zero annual rainfall in interior regions.",
+    "imageTitle": "Acacus Mountains Rock Art",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Tadrart_Acacus_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Surreal desert massif containing rock shelters and petroglyphs chronicling thousands of years of Saharan culture."
+  },
+  {
+    "code": "mg",
+    "country": "Madagascar",
+    "factIndex": 0,
+    "factText": "Madagascar separated from the Indian subcontinent roughly 88 million years ago; over 90% of its wildlife is found nowhere else on Earth.",
+    "imageTitle": "Avenue of the Baobabs",
+    "imageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Madagascar's ancient Grandidier's baobabs lining the iconic Avenue."
+  },
+  {
+    "code": "mw",
+    "country": "Malawi",
+    "factIndex": 0,
+    "factText": "Lake Malawi contains more species of freshwater fish than any other lake in the world, with over 1,000 distinct species of cichlids.",
+    "imageTitle": "Lake Malawi National Park",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Lake_Malawi_seen_from_orbit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "UNESCO World Heritage freshwater marine park renowned for hundreds of brightly colored endemic cichlid fish."
+  },
+  {
+    "code": "mw",
+    "country": "Malawi",
+    "factIndex": 1,
+    "factText": "Malawi is warmly affectionately known across Africa as the 'Warm Heart of Africa' due to the friendliness of its people.",
+    "imageTitle": "Lake Malawi National Park",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Lake_Malawi_seen_from_orbit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "UNESCO World Heritage freshwater marine park renowned for hundreds of brightly colored endemic cichlid fish."
+  },
+  {
+    "code": "mw",
+    "country": "Malawi",
+    "factIndex": 2,
+    "factText": "Mount Mulanje is believed to have inspired J.R.R. Tolkien's depiction of the Lonely Mountain after he visited southern Africa.",
+    "imageTitle": "Mount Mulanje (Sapitwa Peak)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Mulanje_ETM_26may02.jpg/3840px-Mulanje_ETM_26may02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Colossal granite inselberg soaring 3,002 meters high, crowned by the endemic Mulanje cedar and tea estates."
+  },
+  {
+    "code": "ml",
+    "country": "Mali",
+    "factIndex": 1,
+    "factText": "The annual replastering of the Great Mosque of Djenné is a vibrant one-day community festival that has occurred every spring for generations.",
+    "imageTitle": "Great Mosque of Djenné",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Djenne_great_mud_mosque.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The largest mudbrick building in the world, a monument of Sudano-Sahelian architecture replastered annually by the town."
+  },
+  {
+    "code": "mr",
+    "country": "Mauritania",
+    "factIndex": 0,
+    "factText": "The Mauritania Iron Ore Train is one of the longest and heaviest trains in the world, stretching up to 3 kilometers across the Sahara.",
+    "imageTitle": "Richat Structure ('Eye of the Sahara')",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Richat_Structure_ISS030-E-12516.jpg/3840px-Richat_Structure_ISS030-E-12516.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Prominent 40-kilometer circular geological dome in the Sahara clearly visible from space orbits."
+  },
+  {
+    "code": "mr",
+    "country": "Mauritania",
+    "factIndex": 1,
+    "factText": "The Richat Structure ('Eye of the Sahara') is a colossal circular eroded dome used as a landmark by early space astronauts.",
+    "imageTitle": "Richat Structure ('Eye of the Sahara')",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Richat_Structure_ISS030-E-12516.jpg/3840px-Richat_Structure_ISS030-E-12516.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Prominent 40-kilometer circular geological dome in the Sahara clearly visible from space orbits."
+  },
+  {
+    "code": "mr",
+    "country": "Mauritania",
+    "factIndex": 2,
+    "factText": "Chinguetti is recognized as the seventh holy city of Islam, housing centuries-old libraries of rare calligraphy manuscripts.",
+    "imageTitle": "Historic Ksour of Chinguetti",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/LocationWesternAfrica.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Ancient 13th-century desert trade crossroads celebrated for stone desert libraries preserving Islamic manuscripts."
+  },
+  {
+    "code": "mu",
+    "country": "Mauritius",
+    "factIndex": 0,
+    "factText": "Mauritius was the sole habitat of the extinct flightless Dodo bird before Dutch sailors arrived in the 16th century.",
+    "imageTitle": "Mauritius kestrel",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Mauritius_kestrel_%28Falco_punctatus%29.jpg/330px-Mauritius_kestrel_%28Falco_punctatus%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Mauritius kestrel is a bird of prey from the family Falconidae endemic to the forests of Mauritius, where it is restricted to the..."
+  },
+  {
+    "code": "mu",
+    "country": "Mauritius",
+    "factIndex": 1,
+    "factText": "The 'Underwater Waterfall' off the coast of Le Morne is an optical illusion caused by sand runoff plunging into an ocean trench.",
+    "imageTitle": "Le Morne Brabant Mountain",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Le_Morne_Peninsula_in_Mauritius_%2853697779236%29.jpg/3840px-Le_Morne_Peninsula_in_Mauritius_%2853697779236%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Dramatic UNESCO basaltic mountain rising from the turquoise lagoon, historic sanctuary of runaway slaves."
+  },
+  {
+    "code": "mu",
+    "country": "Mauritius",
+    "factIndex": 2,
+    "factText": "Mauritius is consistently ranked as the most peaceful and economically competitive nation in Africa.",
+    "imageTitle": "Mauritius kestrel",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Mauritius_kestrel_%28Falco_punctatus%29.jpg/330px-Mauritius_kestrel_%28Falco_punctatus%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Mauritius kestrel is a bird of prey from the family Falconidae endemic to the forests of Mauritius, where it is restricted to the..."
+  },
+  {
+    "code": "ma",
+    "country": "Morocco",
+    "factIndex": 2,
+    "factText": "Chefchaouen is painted in shades of blue because Jewish refugees who settled there in the 15th century believed blue mirrored the sky and heaven.",
+    "imageTitle": "Chefchaouen (The Blue Pearl)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Chefchaouen-the-blue-city-of-morocco-with-palm-trees-and-the-mountain-view-in-the-backrgound.jpg/3840px-Chefchaouen-the-blue-city-of-morocco-with-palm-trees-and-the-mountain-view-in-the-backrgound.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Enchanting mountain medina painted in soothing shades of cobalt, sky blue, and indigo."
+  },
+  {
+    "code": "mz",
+    "country": "Mozambique",
+    "factIndex": 0,
+    "factText": "Mozambique's national flag is the only national flag in the world to feature a modern rifle (an AK-47) alongside a hoe and book.",
+    "imageTitle": "Island of Mozambique (Ilha de Moçambique)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Ilha_de_Mocambique.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "UNESCO-listed coral island with fortified Portuguese colonial architecture and the Chapel of Nossa Senhora de Baluarte."
+  },
+  {
+    "code": "mz",
+    "country": "Mozambique",
+    "factIndex": 1,
+    "factText": "The Bazaruto Archipelago shelters the last remaining viable wild population of dugongs (sea cows) in the Western Indian Ocean.",
+    "imageTitle": "Bazaruto Archipelago Marine Park",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/ISS059-E-92404_-_View_of_Mozambique.jpg/3840px-ISS059-E-92404_-_View_of_Mozambique.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Group of six idyllic sandy barrier islands famous for towering sand dunes, coral reefs, and rare dugongs."
+  },
+  {
+    "code": "mz",
+    "country": "Mozambique",
+    "factIndex": 2,
+    "factText": "Over 2,500 kilometers of pristine coastline along the Indian Ocean makes Mozambique a premier destination for scuba diving.",
+    "imageTitle": "Island of Mozambique (Ilha de Moçambique)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Ilha_de_Mocambique.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "UNESCO-listed coral island with fortified Portuguese colonial architecture and the Chapel of Nossa Senhora de Baluarte."
+  },
+  {
+    "code": "na",
+    "country": "Namibia",
+    "factIndex": 0,
+    "factText": "The Namib Desert in Namibia is considered the oldest desert in the world, having endured arid conditions for at least 55 million years.",
+    "imageTitle": "Sossusvlei & Dune 45",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Sossusvlei.jpg/3840px-Sossusvlei.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Massive rust-red sand dunes in the Namib Desert, the oldest desert on Earth, rising over 300 meters high."
+  },
+  {
+    "code": "ne",
+    "country": "Niger",
+    "factIndex": 0,
+    "factText": "The Grand Mosque of Agadez is the tallest mudbrick structure in the world, built in 1515 and restored in 1844.",
+    "imageTitle": "Agadez Grand Mosque",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/1997_277-9A_Agadez_mosque_cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Imposing 27-meter-tall mudbrick minaret reinforced with protruding wooden beams in the historic caravan city of Agadez."
+  },
+  {
+    "code": "ne",
+    "country": "Niger",
+    "factIndex": 1,
+    "factText": "The Ténéré desert region in Niger is so isolated that a single acacia tree (Tree of Ténéré) was once the only tree for 400 km in any direction.",
+    "imageTitle": "W National Park of Niger",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Niger%2C_Niamey%2C_Pont_Kennedy_%281%29.jpg/3840px-Niger%2C_Niamey%2C_Pont_Kennedy_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Transboundary protected savanna along the W-shaped loop of the Niger River, home to West African lions."
+  },
+  {
+    "code": "ne",
+    "country": "Niger",
+    "factIndex": 2,
+    "factText": "Niger is famous for the Cure Salée festival held by Tuareg and Wodaabe nomadic pastoralists to celebrate the end of the rainy season.",
+    "imageTitle": "W National Park of Niger",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Niger%2C_Niamey%2C_Pont_Kennedy_%281%29.jpg/3840px-Niger%2C_Niamey%2C_Pont_Kennedy_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Transboundary protected savanna along the W-shaped loop of the Niger River, home to West African lions."
+  },
+  {
+    "code": "cg",
+    "country": "Republic of the Congo",
+    "factIndex": 0,
+    "factText": "Brazzaville, the capital of Republic of the Congo, sits directly across the Congo River from Kinshasa (DR Congo)—the world's closest pair of capital cities.",
+    "imageTitle": "Odzala-Kokoua National Park",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/3840px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Ancient Congo Basin rainforest sanctuary home to Western lowland gorillas and forest buffalo."
+  },
+  {
+    "code": "st",
+    "country": "São Tomé and Príncipe",
+    "factIndex": 1,
+    "factText": "Pico Cão Grande is a nearly vertical volcanic phonolite needle rising 370 meters above its surroundings, frequently shrouded in cloud.",
+    "imageTitle": "Pico Cão Grande (Great Dog Peak)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Pico_C%C3%A3o_Grande.jpg/3840px-Pico_C%C3%A3o_Grande.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Dramatic 370-meter volcanic plug needle soaring vertically out of the primary rainforest mist on São Tomé."
+  },
+  {
+    "code": "sn",
+    "country": "Senegal",
+    "factIndex": 0,
+    "factText": "Dakar, the capital of Senegal, sits on the Cap-Vert Peninsula, making it the westernmost city on the mainland of the African continent.",
+    "imageTitle": "African Renaissance Monument",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Monument_renaissance.jpg/3840px-Monument_renaissance.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Colossal 52-meter bronze statue in Dakar, the tallest statue on the African continent, overlooking the Atlantic Ocean."
+  },
+  {
+    "code": "sn",
+    "country": "Senegal",
+    "factIndex": 1,
+    "factText": "Lake Retba's striking pink hue is caused by salt-loving algae, allowing swimmers to float effortlessly due to high salinity.",
+    "imageTitle": "Lake Retba (Pink Lake)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/RetbaLakeShore.jpg/3840px-RetbaLakeShore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Vibrant strawberry-pink saline lake colored by Dunaliella salina microalgae, historically the finish of the Paris-Dakar Rally."
+  },
+  {
+    "code": "sn",
+    "country": "Senegal",
+    "factIndex": 2,
+    "factText": "Senegal has never experienced a military coup d'état since gaining independence in 1960, standing as a pillar of democratic stability in West Africa.",
+    "imageTitle": "African Renaissance Monument",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Monument_renaissance.jpg/3840px-Monument_renaissance.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Colossal 52-meter bronze statue in Dakar, the tallest statue on the African continent, overlooking the Atlantic Ocean."
+  },
+  {
+    "code": "sc",
+    "country": "Seychelles",
+    "factIndex": 1,
+    "factText": "The Coco de Mer palm seed native to Praslin can weigh up to 30 kilograms (66 lbs), holding the world record for the largest seed.",
+    "imageTitle": "Vallée de Mai on Praslin",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Valle%C3%A9_de_mai2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Prehistoric palm forest sanctuary home to the endemic Coco de Mer palm bearing the world's largest and heaviest seed."
+  },
+  {
+    "code": "sc",
+    "country": "Seychelles",
+    "factIndex": 2,
+    "factText": "Almost 50% of Seychelles' total land area is designated under strict environmental protection laws.",
+    "imageTitle": "Mahé highlands and surrounding areas Important Bird Area",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Morne_Seychellois_NP_footpath.jpg/330px-Morne_Seychellois_NP_footpath.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Mahé highlands and surrounding areas Important Bird Area occupy the central and north-western part of the island of Mahé in the Seychelles archipelago of the western Indian Ocean."
+  },
+  {
+    "code": "sl",
+    "country": "Sierra Leone",
+    "factIndex": 1,
+    "factText": "The Gullah Geechee people of coastal South Carolina and Georgia in the US trace strong ancestral and linguistic roots directly to Sierra Leone.",
+    "imageTitle": "Bunce Island Historic Fortress",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Bunce_Island_slave_castle_in_Sierra_Leone.jpg",
+    "caption": "Historic 18th-century British slave castle in the Sierra Leone River, crucial site for Afro-American Gullah heritage."
+  },
+  {
+    "code": "so",
+    "country": "Somalia",
+    "factIndex": 0,
+    "factText": "Somalia has the longest coastline in mainland Africa, extending over 3,333 kilometers along the Indian Ocean and Gulf of Aden.",
+    "imageTitle": "Somali wild ass",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Equus_africanus_somaliensis_2_%28cropped%29.jpg/330px-Equus_africanus_somaliensis_2_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Somali wild ass is a subspecies of the African wild ass."
+  },
+  {
+    "code": "ss",
+    "country": "South Sudan",
+    "factIndex": 1,
+    "factText": "Recent aerial surveys revealed that the mammal migration across South Sudan's Boma-Badingilo landscape is the largest land mammal migration on Earth.",
+    "imageTitle": "Boma National Park",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Boma_Neighborhood_Street.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Vast grassland wilderness hosting the massive seasonal migration of millions of white-eared kob and tiang antelopes."
+  },
+  {
+    "code": "ss",
+    "country": "South Sudan",
+    "factIndex": 2,
+    "factText": "The Sudd swamp on the White Nile is so vast that it can swell to the size of England during the peak rainy season.",
+    "imageTitle": "The Sudd Wetland",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Sudd_swamp.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "One of the largest freshwater wetland floodplains in the world, fed by the White Nile and spanning over 30,000 sq km."
+  },
+  {
+    "code": "sd",
+    "country": "Sudan",
+    "factIndex": 0,
+    "factText": "Sudan has more pyramids than Egypt—over 250 ancient Nubian pyramids stand across sites like Meroë, El Kurru, and Nuri.",
+    "imageTitle": "Meroë Pyramids",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/NubianMeroePyramids30sep2005%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Nearly 200 steep-angled sandstone pyramids rising from desert dunes, royal tombs of the ancient Kingdom of Kush."
+  },
+  {
+    "code": "sd",
+    "country": "Sudan",
+    "factIndex": 1,
+    "factText": "The Kingdom of Kush ruled over all of Egypt during the 25th Dynasty, known to historians as the Black Pharaohs.",
+    "imageTitle": "Jebel Barkal & Napata",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Gebel_Barkal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Sacred sandstone mountain in Nubia revered by pharaohs and Kushite kings as the southern home of the god Amun."
+  },
+  {
+    "code": "tz",
+    "country": "Tanzania",
+    "factIndex": 0,
+    "factText": "Over 30% of Tanzania's land area is allocated to national parks, wildlife reserves, and protected nature sanctuaries.",
+    "imageTitle": "Serengeti National Park Savanna Wildlife",
+    "imageUrl": "https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Over 30% of Tanzania is dedicated to vast national parks and protected nature reserves."
+  },
+  {
+    "code": "tg",
+    "country": "Togo",
+    "factIndex": 0,
+    "factText": "The traditional Takienta mud tower houses of the Batammariba people in northern Togo are considered masterpieces of sustainable African architecture.",
+    "imageTitle": "Lake Togo & Togoville",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Leonhard_Seppala_with_dogs.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Historic lakeside village across Lake Togo where traditional voodoo shrines and the historic 1884 German protectorate treaty stand."
+  },
+  {
+    "code": "tg",
+    "country": "Togo",
+    "factIndex": 1,
+    "factText": "The Akodessawa Fetish Market in Lomé, Togo is recognized as the largest voodoo traditional medicine and fetish market in the world.",
+    "imageTitle": "Lake Togo & Togoville",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Leonhard_Seppala_with_dogs.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Historic lakeside village across Lake Togo where traditional voodoo shrines and the historic 1884 German protectorate treaty stand."
+  },
+  {
+    "code": "tg",
+    "country": "Togo",
+    "factIndex": 2,
+    "factText": "Togo is one of the narrowest countries in the world, measuring just 115 kilometers across at its widest point.",
+    "imageTitle": "Lake Togo & Togoville",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Leonhard_Seppala_with_dogs.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Historic lakeside village across Lake Togo where traditional voodoo shrines and the historic 1884 German protectorate treaty stand."
+  },
+  {
+    "code": "tn",
+    "country": "Tunisia",
+    "factIndex": 0,
+    "factText": "Ancient Carthage in Tunisia was the formidable maritime rival to the Roman Republic, led by military genius Hannibal.",
+    "imageTitle": "El Jem Roman Amphitheatre",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/The_Amphitheatre_of_El_Jem%2C_built_around_AD_238_in_Thysdrus_in_Africa_Proconsularis%2C_the_estimated_capacity_is_35%2C000%2C_Tunisia_-_52717762494.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Colossal 3rd-century Roman amphitheater in the desert, one of the best-preserved in the world, seating 35,000 spectators."
+  },
+  {
+    "code": "ug",
+    "country": "Uganda",
+    "factIndex": 1,
+    "factText": "Bwindi Impenetrable Forest is one of the most biologically diverse ecosystems on Earth, with over 350 bird species and 120 mammal species.",
+    "imageTitle": "Bwindi Impenetrable National Park",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Bwindi.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Misty montane rainforest harboring almost half of the world's remaining population of endangered mountain gorillas."
+  },
+  {
+    "code": "ug",
+    "country": "Uganda",
+    "factIndex": 2,
+    "factText": "The crested crane, known for its elegant golden crown of stiff feathers, is the beloved national bird featured on Uganda's flag.",
+    "imageTitle": "Grey crowned crane",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Grey_crowned_crane_%28Balearica_regulorum_gibbericeps%29.jpg/330px-Grey_crowned_crane_%28Balearica_regulorum_gibbericeps%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The grey crowned crane or gray crowned crane is a large crane species native to Sub-Saharan Africa.  It occurs mainly in dry savannah, although it nests in somewhat wetter habitats, and can also be found in marshes, cultivated lands and grassy flatlands near rivers and lakes."
+  },
+  {
+    "code": "zm",
+    "country": "Zambia",
+    "factIndex": 0,
+    "factText": "Victoria Falls forms the largest curtain of falling water on Earth, plunging roughly 108 meters into the Batoka Gorge.",
+    "imageTitle": "Victoria Falls (Mosi-oa-Tunya)",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_04.jpg/3840px-Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The 'Smoke that Thunders', the world's largest sheet of falling water spanning 1,708 meters across the Zambezi gorge."
+  },
+  {
+    "code": "zm",
+    "country": "Zambia",
+    "factIndex": 1,
+    "factText": "Zambia is the historic birthplace of the guided walking safari, pioneered by conservationist Norman Carr in South Luangwa.",
+    "imageTitle": "South Luangwa National Park",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Luangwa_River_crossing.jpg/3840px-Luangwa_River_crossing.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "World-renowned wildlife sanctuary along the Luangwa River, celebrated as the birthplace of walking safaris."
+  },
+  {
+    "code": "zw",
+    "country": "Zimbabwe",
+    "factIndex": 0,
+    "factText": "The name 'Zimbabwe' originates from the Shona phrase 'Dzimba-dza-mabwe', meaning 'large houses of stone', referring to Great Zimbabwe.",
+    "imageTitle": "Great Zimbabwe Monument",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg/3840px-Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Monumental medieval stone city with dry-stone granite walls built without mortar between the 11th and 15th centuries."
+  },
+  {
+    "code": "zw",
+    "country": "Zimbabwe",
+    "factIndex": 1,
+    "factText": "The Zimbabwe Bird carved from soapstone at Great Zimbabwe is the national emblem proudly displayed on the flag and coat of arms.",
+    "imageTitle": "Great Zimbabwe Monument",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg/3840px-Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Monumental medieval stone city with dry-stone granite walls built without mortar between the 11th and 15th centuries."
+  },
+  {
+    "code": "zw",
+    "country": "Zimbabwe",
+    "factIndex": 2,
+    "factText": "Mana Pools National Park along the lower Zambezi River is famed for elephants that stand on their hind legs to reach high acacia pods.",
+    "imageTitle": "Hwange National Park",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Down_the_water_hole.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Zimbabwe's largest natural reserve, home to one of Africa's largest elephant populations and wild dog packs."
+  },
+  {
+    "code": "au",
+    "country": "Australia",
+    "factIndex": 0,
+    "factText": "Australia is the only continent covered entirely by a single nation and is home to unique marsupials like kangaroos, koalas, and wombats.",
+    "imageTitle": "Red Kangaroo in Australia",
+    "imageUrl": "https://images.unsplash.com/photo-1529778873920-4da4926a72c2?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Kangaroos and native marsupials across the Australian continent."
+  },
+  {
+    "code": "au",
+    "country": "Australia",
+    "factIndex": 1,
+    "factText": "The Great Barrier Reef is the largest living structure on Earth, composed of over 2,900 individual reefs and 900 islands.",
+    "imageTitle": "Great Barrier Reef Corals",
+    "imageUrl": "https://images.unsplash.com/photo-1582967788606-a171c1080cb0?auto=format&fit=crop&w=1200&q=80",
+    "caption": "The Great Barrier Reef, the largest living coral structure on Earth."
+  },
+  {
+    "code": "fj",
+    "country": "Fiji",
+    "factIndex": 0,
+    "factText": "The 180-degree meridian (International Date Line) passes right through Taveuni, Fiji, allowing visitors to stand with one foot in 'today' and one in 'yesterday'.",
+    "imageTitle": "Bouma National Heritage Park in Taveuni",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Trisia_Farrelly_ONZM_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Protected rainforest on the 'Garden Island' of Taveuni featuring the three cascading Tavoro Waterfalls."
+  },
+  {
+    "code": "ki",
+    "country": "Kiribati",
+    "factIndex": 1,
+    "factText": "Millennium Island (Caroline Atoll) in Kiribati is the first place on Earth to welcome the rising sun each new calendar year.",
+    "imageTitle": "Phoenix Islands Protected Area (PIPA)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Rotjan_-_Enderbury_Day_1_-_2nd_half_%2862%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "One of the largest marine protected reserves on Earth, conserving pristine deep ocean ecosystems and corals."
+  },
+  {
+    "code": "ki",
+    "country": "Kiribati",
+    "factIndex": 2,
+    "factText": "Kiribati consists of 33 coral atolls and reef islands dispersed across an ocean expanse larger than India.",
+    "imageTitle": "Phoenix Islands Protected Area (PIPA)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Rotjan_-_Enderbury_Day_1_-_2nd_half_%2862%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "One of the largest marine protected reserves on Earth, conserving pristine deep ocean ecosystems and corals."
+  },
+  {
+    "code": "mh",
+    "country": "Marshall Islands",
+    "factIndex": 0,
+    "factText": "The Marshallese people were master navigators who created traditional 'stick charts' (rebbelib and mattang) to read ocean wave swells.",
+    "imageTitle": "Majuro Atoll Lagoon",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Eneko_Islet_02.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Slender ribbon of coral islands enclosing a calm 295-sq-km emerald lagoon plied by traditional outrigger canoes."
+  },
+  {
+    "code": "mh",
+    "country": "Marshall Islands",
+    "factIndex": 1,
+    "factText": "The bikini swimwear was named in 1946 after Bikini Atoll in the Marshall Islands, capturing global attention like an atomic blast.",
+    "imageTitle": "Majuro Atoll Lagoon",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Eneko_Islet_02.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Slender ribbon of coral islands enclosing a calm 295-sq-km emerald lagoon plied by traditional outrigger canoes."
+  },
+  {
+    "code": "mh",
+    "country": "Marshall Islands",
+    "factIndex": 2,
+    "factText": "The Marshall Islands established the world's largest shark sanctuary in 2011, covering nearly 2 million square kilometers of ocean.",
+    "imageTitle": "Arno Atoll Coral Reefs",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Elphinstone_Reef.jpg/3840px-Elphinstone_Reef.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Tranquil outer atoll celebrated for traditional coconut copra production, shark sanctuaries, and marine life."
+  },
+  {
+    "code": "fm",
+    "country": "Micronesia",
+    "factIndex": 0,
+    "factText": "Nan Madol on Pohnpei is the only ancient city ever constructed entirely on top of a coral reef, using basalt stone columns weighing tons.",
+    "imageTitle": "Nan Madol Megalithic Ruins",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Nan_madol.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The 'Venice of the Pacific', an ancient stone city built atop 92 artificial islets linked by tidal canals off Pohnpei."
+  },
+  {
+    "code": "fm",
+    "country": "Micronesia",
+    "factIndex": 1,
+    "factText": "Yap Island is famous for Rai stones, the world's largest stone money discs, quarried in Palau and paddled across hundreds of miles of ocean.",
+    "imageTitle": "Yap Island Rai Stone Money",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/Yap_Stone_Money.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Historic limestone circular carved stones measuring up to 3.6 meters across, still used for ceremonial transactions."
+  },
+  {
+    "code": "fm",
+    "country": "Micronesia",
+    "factIndex": 2,
+    "factText": "The Federated States of Micronesia comprises 607 islands spread across nearly 2.7 million square kilometers of the western Pacific.",
+    "imageTitle": "Yap Island Rai Stone Money",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/Yap_Stone_Money.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Historic limestone circular carved stones measuring up to 3.6 meters across, still used for ceremonial transactions."
+  },
+  {
+    "code": "nr",
+    "country": "Nauru",
+    "factIndex": 0,
+    "factText": "Nauru is the smallest independent sovereign republic in the world, covering a mere 21 square kilometers (8.1 sq miles).",
+    "imageTitle": "Anibare Bay & Harbour",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Living_on_a_Blue_Planet_-_Nauru.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Pristine white sand beach framed by dramatic limestone pinnacle reefs on the eastern Pacific shore of Nauru."
+  },
+  {
+    "code": "nz",
+    "country": "New Zealand",
+    "factIndex": 1,
+    "factText": "New Zealand has more sheep than people—approximately five sheep for every human resident.",
+    "imageTitle": "Sheep Grazing on New Zealand Pastures",
+    "imageUrl": "https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?auto=format&fit=crop&w=1200&q=80",
+    "caption": "New Zealand has approximately five sheep for every human resident across its green hills."
+  },
+  {
+    "code": "pw",
+    "country": "Palau",
+    "factIndex": 0,
+    "factText": "Visitors to Palau must sign the 'Palau Pledge' stamped into their passports, swearing to tread lightly and preserve the island environment.",
+    "imageTitle": "Palau fruit dove",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Palau_fruit_dove_%28Ptilinopus_pelewensis%29_Rock_Islands.jpg/330px-Palau_fruit_dove_%28Ptilinopus_pelewensis%29_Rock_Islands.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Palau fruit dove is a species of bird in the family Columbidae."
+  },
+  {
+    "code": "pw",
+    "country": "Palau",
+    "factIndex": 1,
+    "factText": "In 2009, Palau created the world's very first dedicated National Shark Sanctuary, banning all commercial shark fishing in its EEZ.",
+    "imageTitle": "Palau fruit dove",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Palau_fruit_dove_%28Ptilinopus_pelewensis%29_Rock_Islands.jpg/330px-Palau_fruit_dove_%28Ptilinopus_pelewensis%29_Rock_Islands.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Palau fruit dove is a species of bird in the family Columbidae."
+  },
+  {
+    "code": "pw",
+    "country": "Palau",
+    "factIndex": 2,
+    "factText": "Palau is renowned for Jellyfish Lake, where swimmers can safely snorkel with millions of stingless golden jellyfish.",
+    "imageTitle": "Jellyfish Lake (Ongeim'l Tketau)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Jellyfish_Lake_aerial_%28March_2008%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Isolated marine lake populated by millions of golden jellyfish that lost their stinging ability over evolutionary time."
+  },
+  {
+    "code": "pg",
+    "country": "Papua New Guinea",
+    "factIndex": 0,
+    "factText": "Papua New Guinea is the most linguistically diverse country on Earth, with over 840 living indigenous languages spoken.",
+    "imageTitle": "Mount Wilhelm Peak",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Mount_Wilhelm.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The highest mountain in Papua New Guinea (4,509 m), featuring glacial alpine valleys and equatorial tarns."
+  },
+  {
+    "code": "pg",
+    "country": "Papua New Guinea",
+    "factIndex": 1,
+    "factText": "It is home to the stunning Birds of Paradise, whose elaborate plumage and courtship dances are celebrated in tribal Sing-Sing festivals.",
+    "imageTitle": "Raggiana bird-of-paradise",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Raggiana_Bird-of-paradise_0A2A5379.jpg/330px-Raggiana_Bird-of-paradise_0A2A5379.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Raggiana bird-of-paradise, also known as Count Raggi's bird-of-paradise, is a large bird in the bird-of-paradise family Paradisaeidae."
+  },
+  {
+    "code": "sb",
+    "country": "Solomon Islands",
+    "factIndex": 0,
+    "factText": "Marovo Lagoon in the Solomon Islands is the largest saltwater lagoon protected by a double barrier reef on Earth.",
+    "imageTitle": "Marovo Lagoon",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Vangunu_Island_NASA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The world's largest saltwater double-barrier lagoon, dotted with hundreds of forested coral islets in New Georgia."
+  },
+  {
+    "code": "to",
+    "country": "Tonga",
+    "factIndex": 2,
+    "factText": "Every winter, hundreds of southern humpback whales migrate from Antarctica to the warm sheltered waters of Tonga to calve.",
+    "imageTitle": "Humpback Whale Nurseries of Vava'u",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Humpback_Whale_underwater_shot.jpg",
+    "caption": "Sheltered tropical island channels where migratory Antarctic humpback whales mate and nurse newborn calves."
+  },
+  {
+    "code": "vu",
+    "country": "Vanuatu",
+    "factIndex": 2,
+    "factText": "Vanuatu has the world's only underwater post office, located 3 meters beneath the surface in Hideaway Island's marine sanctuary.",
+    "imageTitle": "Vanuatu flying fox",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Pteropus_anetianus.jpg/330px-Pteropus_anetianus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "The Vanuatu flying fox or white flying fox is a species of flying fox in the family Pteropodidae."
+  },
+  {
+    "code": "aq",
+    "country": "Antarctica",
+    "factIndex": 0,
+    "factText": "Antarctica is the coldest, windiest, and driest continent on Earth, containing approximately 90% of all the ice and 70% of all freshwater on the planet.",
+    "imageTitle": "Mount Erebus Active Volcano",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Mt_erebus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "The southernmost active volcano on planet Earth, renowned for its persistent boiling anorthoclase phonolite lava lake."
+  },
+  {
+    "code": "aq",
+    "country": "Antarctica",
+    "factIndex": 2,
+    "factText": "Emperor penguins are the only animal species that remain on the open Antarctic sea ice throughout the brutal, sunless polar winter to breed.",
+    "imageTitle": "Emperor Penguins on Antarctic Sea Ice",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Emperor_Penguin_Manchot_empereur_01.jpg/960px-Emperor_Penguin_Manchot_empereur_01.jpg",
+    "caption": "Emperor penguins endure the sub-zero Antarctic winter ice pack to breed and rear their chicks."
+  },
+  {
+    "code": "rs",
+    "country": "Serbia",
+    "factIndex": 0,
+    "factText": "Nikola Tesla, the pioneering electrical engineer who invented alternating current (AC) power, was of Serbian heritage.",
+    "imageTitle": "Nikola Tesla (Pioneering Inventor)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Tesla_circa_1890.jpeg",
+    "caption": "Nikola Tesla, pioneering electrical engineer who invented alternating current (AC) power."
+  }
+]

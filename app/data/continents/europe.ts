@@ -818,9 +818,10 @@ export const europeCountries: Country[] = [
       region: "Southern Europe",
       coordinatesText: "41°19′ N, 19°49′ E",
       neighbors: "Bordered by Montenegro to the northwest, Kosovo to the northeast, North Macedonia to the east, and Greece to the south.",
-      surroundingWaters: ["Adriatic Sea", "Ionian Sea", "Mediterranean Sea"],
+      surroundingWaters: ["Adriatic Sea", "Ionian Sea"],
       adjacentCountries: [
         { name: "Montenegro", flagUrl: "https://flagcdn.com/w160/me.png", lat: 42.44, lng: 19.26, relationship: "Northwest Border" },
+        { name: "Kosovo", flagUrl: "https://flagcdn.com/w160/xk.png", lat: 42.66, lng: 21.17, relationship: "Northeast Border" },
         { name: "North Macedonia", flagUrl: "https://flagcdn.com/w160/mk.png", lat: 41.99, lng: 21.43, relationship: "East Border" },
         { name: "Greece", flagUrl: "https://flagcdn.com/w160/gr.png", lat: 39.66, lng: 20.85, relationship: "South Border" }
       ]

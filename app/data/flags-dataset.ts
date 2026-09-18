@@ -456,6 +456,31 @@ export const FLAG_MEANINGS_DATASET: Record<string, FlagMeaning> = {
       }
     ]
   },
+  "xk": {
+    "story": "Adopted in 2008 upon independence, the flag features an azure blue field displaying a golden map silhouette of Kosovo surmounted by an arc of six white stars representing its major ethnic communities.",
+    "elements": [
+      "Golden Map Silhouette of Kosovo",
+      "Six White Five-Pointed Stars",
+      "Azure Blue Field"
+    ],
+    "colors": [
+      {
+        "name": "Azure Blue",
+        "colorClass": "bg-blue-800 text-white",
+        "symbol": "Aspirations for European integration, democracy, and freedom."
+      },
+      {
+        "name": "Golden Silhouette",
+        "colorClass": "bg-amber-400 text-slate-950",
+        "symbol": "Sovereign homeland territory and rich geological resources."
+      },
+      {
+        "name": "White Stars",
+        "colorClass": "bg-white text-slate-900",
+        "symbol": "The six major ethnic communities: Albanians, Serbs, Bosniaks, Turks, Romani, and Gorani living in mutual respect."
+      }
+    ]
+  },
   "mk": {
     "story": "Adopted in 1995, the flag depicts a stylized golden-yellow sun with eight widening rays radiating towards the edges on a red field, representing \"The new sun of Liberty\" sung in the national anthem.",
     "elements": [

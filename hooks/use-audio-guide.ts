@@ -98,25 +98,45 @@ export function useAudioGuide() {
       const utterance = new SpeechSynthesisUtterance(speechText);
       utteranceRef.current = utterance;
 
-      // Select a clear natural English voice
-      let selectedVoice = availableVoices.find(v => 
-        v.lang === 'en-GB' && (v.name.toLowerCase().includes('female') || v.name.toLowerCase().includes('natural'))
-      );
-      if (!selectedVoice) {
-        selectedVoice = availableVoices.find(v => v.lang === 'en-GB');
-      }
-      if (!selectedVoice) {
-        selectedVoice = availableVoices.find(v => v.lang.startsWith('en') && (v.name.toLowerCase().includes('natural') || v.name.toLowerCase().includes('online')));
-      }
-      if (!selectedVoice) {
-        selectedVoice = availableVoices.find(v => v.lang.startsWith('en'));
-      }
+      // Prioritize British young female voices (e.g. Google UK English Female, Microsoft Libby/Sonia, Stephanie, Serena, Hazel)
+      const scoreVoice = (v: SpeechSynthesisVoice) => {
+        let score = 0;
+        const name = v.name.toLowerCase();
+        const lang = v.lang.toLowerCase().replace('_', '-');
+        
+        // British English language match
+        if (lang === 'en-gb') score += 100;
+        else if (lang.startsWith('en')) score += 20;
+
+        // British young female voice indicators
+        if (name.includes('libby')) score += 80; // Young British female natural voice
+        if (name.includes('sonia')) score += 80; // Young British female natural voice
+        if (name.includes('stephanie')) score += 80; // British female voice
+        if (name.includes('serena')) score += 75; // British female voice
+        if (name.includes('hazel')) score += 60; // UK female voice
+        if (name.includes('kate') && lang === 'en-gb') score += 60;
+        if (name.includes('victoria') && lang === 'en-gb') score += 60;
+        if (name.includes('female')) score += 50;
+        if (name.includes('uk english') && name.includes('female')) score += 60;
+        if (name.includes('girl') || name.includes('young')) score += 40;
+        if (name.includes('natural') || name.includes('online')) score += 20;
+
+        // Penalize male voices
+        if (name.includes('male') && !name.includes('female')) score -= 100;
+        if (name.includes('george') || name.includes('david') || name.includes('oliver') || name.includes('ryan')) score -= 100;
+
+        return score;
+      };
+
+      const sortedVoices = [...availableVoices].sort((a, b) => scoreVoice(b) - scoreVoice(a));
+      const selectedVoice = sortedVoices[0] || null;
       if (selectedVoice) {
         utterance.voice = selectedVoice;
       }
       
-      utterance.rate = 0.95;
-      utterance.pitch = 1.05;
+      // Articulate, cheerful young British female tone
+      utterance.rate = 0.98;
+      utterance.pitch = 1.14;
 
       utterance.onstart = () => {
         if (!isMounted.current) return;
