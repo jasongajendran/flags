@@ -167,18 +167,18 @@ export function WorldContinentsMap({
       {/* Header Bar */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-800/80">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="p-1.5 bg-indigo-500/20 text-indigo-400 rounded-lg border border-indigo-500/30">
+          <div className="flex items-center gap-2.5">
+            <span className="p-1.5 bg-indigo-500/15 text-indigo-400 rounded-lg border border-indigo-500/25">
               <Globe size={18} />
             </span>
-            <h2 className="text-lg sm:text-xl font-black text-white tracking-tight">
+            <h2 className="text-base sm:text-lg font-normal text-slate-100">
               World Continents Reference Map
             </h2>
-            <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-slate-800 text-amber-300 border border-slate-700">
+            <span className="text-[11px] font-normal px-2.5 py-0.5 rounded-full bg-slate-900 text-slate-300 border border-slate-700/70">
               All 7 Continents
             </span>
           </div>
-          <p className="text-xs text-slate-400 mt-1">
+          <p className="text-xs text-slate-400 mt-1.5 font-normal leading-relaxed">
             Tap or hover any continent to gauge where it sits on Earth, view bordering oceans, and filter sovereign nations.
           </p>
         </div>

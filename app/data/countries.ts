@@ -310,12 +310,35 @@ export function getFullCountryGuideStory(
     .join(', and ');
 
   const popFormatted = formatPopulation(country.population);
-  const introText = `${country.name}, officially the ${country.officialName}, is located in ${country.location.region} with its capital at ${country.capital}. It has a population of approximately ${popFormatted}. ${country.description} ${country.uniqueness && country.uniqueness !== country.description ? country.uniqueness : ''}`.trim();
+
+  // Format language and currency narration
+  const langText = country.languages && country.languages.length > 0
+    ? country.languages.length === 1
+      ? `The official language is ${country.languages[0]}.`
+      : `The official languages are ${country.languages.join(' and ')}.`
+    : '';
+
+  const cleanCurrency = country.currency
+    ? country.currency.replace(/\s*\([^)]*\)/g, '').trim() || country.currency
+    : '';
+  const currText = cleanCurrency ? `The official currency is the ${cleanCurrency}.` : '';
+
+  const statsText = [
+    `It has a population of approximately ${popFormatted}.`,
+    langText,
+    currText
+  ].filter(Boolean).join(' ');
+
+  const officialNameText = country.officialName && country.officialName !== country.name
+    ? `${country.name}, officially the ${country.officialName.replace(/^the\s+/i, '')},`
+    : country.name;
+
+  const introText = `${officialNameText} is located in ${country.location.region} with its capital at ${country.capital}. ${statsText} ${country.description} ${country.uniqueness && country.uniqueness !== country.description ? country.uniqueness : ''}`.trim();
   
   const flagText = `The national flag of ${country.name}: ${country.flagMeaning.story} ${colorsText ? `The colors signify: ${colorsText}.` : ''}`.trim();
   
   const waters = country.location.surroundingWaters.join(', ');
-  const geoText = `${country.name} is located in ${country.location.region}. ${country.location.neighbors} The surrounding waters include ${waters}.`.trim();
+  const geoText = `${country.name} is located in ${country.location.region}. ${country.location.neighbors} ${waters ? `The surrounding waters include ${waters}.` : ''}`.trim();
   
   // Deduplicate and filter facts for spoken narration
   const distinctFacts = Array.from(new Set(country.interestingFacts || [])).filter(Boolean);

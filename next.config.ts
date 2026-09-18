@@ -12,7 +12,7 @@ if (isGithubActions && process.env.GITHUB_REPOSITORY) {
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || repoName;
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  ...(isGithubActions ? { output: 'export' } : {}),
   ...(basePath ? { basePath, assetPrefix: basePath } : {}),
   reactStrictMode: true,
   eslint: {

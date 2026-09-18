@@ -270,17 +270,51 @@ export default function KidsApp() {
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100 pb-32 font-sans selection:bg-amber-400 selection:text-slate-950">
       
-      {/* Top Global Header - Simple & Clean */}
-      <header className="bg-slate-950/90 backdrop-blur-md border-b border-slate-800 py-3.5 px-4 sm:px-6 sticky top-0 z-30 shadow-xl">
+      {/* Top Global Header - Innovative & Creative Banner */}
+      <header className="bg-slate-950/95 backdrop-blur-md border-b border-slate-800/80 py-3 px-4 sm:px-6 sticky top-0 z-30 shadow-2xl">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="p-2.5 bg-gradient-to-br from-indigo-600 to-amber-500 rounded-xl text-white shadow-lg shadow-indigo-950/50 shrink-0 cursor-pointer" onClick={() => { stopAllAudio(); setMainView('world'); }}>
-              <Globe size={22} className="animate-spin-slow" />
+          <div 
+            className="group flex items-center gap-3.5 cursor-pointer select-none"
+            onClick={() => { stopAllAudio(); setMainView('world'); }}
+            role="button"
+            tabIndex={0}
+            aria-label="Return to World Atlas"
+          >
+            {/* Innovative Multi-Layered Globe & Compass Emblem */}
+            <div className="relative flex-shrink-0 w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-indigo-900 via-sky-950 to-slate-950 border border-sky-500/40 p-0.5 shadow-lg shadow-sky-950/60 transition-transform duration-300 group-hover:scale-105">
+              <div className="relative w-full h-full rounded-[14px] overflow-hidden flex items-center justify-center bg-gradient-to-tr from-slate-950 via-indigo-950/80 to-sky-900/60">
+                {/* Glowing subtle orbital ring */}
+                <div className="absolute inset-0.5 rounded-full border border-sky-400/25 border-dashed animate-spin-slow" />
+                <div className="absolute inset-1.5 rounded-full border border-amber-400/20 border-dotted" />
+                
+                {/* Center glowing globe icon */}
+                <Globe size={22} className="text-sky-300 relative z-10 drop-shadow-[0_0_8px_rgba(56,189,248,0.6)] group-hover:text-amber-300 transition-colors duration-300" />
+                
+                {/* Sparkle micro-badge */}
+                <Sparkles size={10} className="absolute top-1 right-1 text-amber-400 animate-pulse z-10" />
+              </div>
             </div>
-            <div>
-              <h1 className="text-lg sm:text-xl font-black text-white tracking-tight cursor-pointer" onClick={() => { stopAllAudio(); setMainView('world'); }}>
-                World Flags &amp; Country Explorer 🌍
-              </h1>
+
+            {/* Creative Typography & Badges */}
+            <div className="flex flex-col">
+              <div className="flex items-center gap-2">
+                <h1 className="text-base sm:text-xl font-bold tracking-tight text-white group-hover:text-sky-200 transition-colors flex items-center gap-1.5">
+                  <span className="bg-gradient-to-r from-white via-sky-100 to-amber-200 bg-clip-text text-transparent font-extrabold">
+                    World Flags &amp; Country Explorer
+                  </span>
+                </h1>
+                <span className="hidden md:inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-sky-950/80 border border-sky-500/30 text-[10px] font-medium text-sky-300">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+                  Atlas 360°
+                </span>
+              </div>
+              <p className="text-[11px] sm:text-xs text-slate-400 font-normal flex items-center gap-2 mt-0.5">
+                <span>196 Nations</span>
+                <span className="text-slate-600">•</span>
+                <span>7 Continents</span>
+                <span className="text-slate-600">•</span>
+                <span className="text-amber-400/90 font-medium">Audio Narrated</span>
+              </p>
             </div>
           </div>
           
@@ -291,7 +325,7 @@ export default function KidsApp() {
                   stopAllAudio();
                   setMainView('world');
                 }}
-                className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs sm:text-sm rounded-xl transition-all cursor-pointer border border-slate-700"
+                className="flex items-center gap-1.5 px-3.5 py-1.5 bg-slate-800/90 hover:bg-slate-700 text-white font-medium text-xs sm:text-sm rounded-xl transition-all cursor-pointer border border-slate-700 shadow-sm"
               >
                 <ArrowLeft size={15} />
                 <span>Atlas</span>
