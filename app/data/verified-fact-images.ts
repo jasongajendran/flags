@@ -32,9 +32,21 @@ export const VERIFIED_FACT_IMAGES: Record<string, FactMediaItem[]> = {
       "title": "Austrian Alps & Mountain Peaks",
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/300%C2%B0_Diedamskopf_Panorama.jpg/1280px-300%C2%B0_Diedamskopf_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "caption": "The Austrian Alps covering over 60% of the country's total land area."
+    },
+    {
+      "factIndex": 2,
+      "title": "Viennese Waltz & Ballroom Heritage",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Wiener_Staatsoper.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "caption": "The traditional Viennese waltz and grand ballroom culture of Austria."
     }
   ],
   "by": [
+    {
+      "factIndex": 0,
+      "title": "Primeval Forest of Belovezhskaya Pushcha",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Bialowieza_National_Park_in_Poland0029.JPG/1280px-Bialowieza_National_Park_in_Poland0029.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Dense primeval woodland spanning Belarus, known as the 'Lungs of Europe'."
+    },
     {
       "factIndex": 1,
       "title": "Wild European Bison (Żubr) in Belovezhskaya Pushcha",
@@ -54,9 +66,27 @@ export const VERIFIED_FACT_IMAGES: Record<string, FactMediaItem[]> = {
       "title": "Belgian Chocolate & Pralines",
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Belgium_Chocolates.jpg/1280px-Belgium_Chocolates.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "caption": "World-famous Belgian chocolates and pralines crafted by historic chocolatiers."
+    },
+    {
+      "factIndex": 1,
+      "title": "Multilingual Regions of Belgium",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Belgium_provinces_regions_striped.svg/1280px-Belgium_provinces_regions_striped.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Belgium's three linguistic communities: Dutch (Flemish), French (Walloon), and German."
+    },
+    {
+      "factIndex": 2,
+      "title": "Berlaymont Building (European Commission HQ, Brussels)",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Belgique_-_Bruxelles_-_Schuman_-_Berlaymont_-_01.jpg/1280px-Belgique_-_Bruxelles_-_Schuman_-_Berlaymont_-_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Brussels serves as the headquarters of the European Union and NATO."
     }
   ],
   "ba": [
+    {
+      "factIndex": 0,
+      "title": "Historic Sarajevo Electric Tram Network",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Sarajevo_Stadler_Tango_NF3_009_May2024_%28cropped%29.JPG/1280px-Sarajevo_Stadler_Tango_NF3_009_May2024_%28cropped%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Sarajevo operated Europe's first full-time commercial electric tram system in 1885."
+    },
     {
       "factIndex": 1,
       "title": "Stari Most (Old Bridge) in Mostar",
@@ -65,6 +95,18 @@ export const VERIFIED_FACT_IMAGES: Record<string, FactMediaItem[]> = {
     }
   ],
   "bg": [
+    {
+      "factIndex": 0,
+      "title": "Ancient Kingdom of Bulgaria",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/First_Bulgarian_Empire_Flag_Krum_Manasses_Chronicle_Render.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "caption": "Preserving the continuous national name of Bulgaria since its founding in 681 AD."
+    },
+    {
+      "factIndex": 1,
+      "title": "Cyrillic Alphabet Heritage",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/LordsPrayerRomanianCyr.svg/1280px-LordsPrayerRomanianCyr.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "The Cyrillic script developed in the First Bulgarian Empire during the 9th century."
+    },
     {
       "factIndex": 2,
       "title": "Rose Petal Harvest in Kazanlak (Rose Valley)",
@@ -78,6 +120,18 @@ export const VERIFIED_FACT_IMAGES: Record<string, FactMediaItem[]> = {
       "title": "Dalmatian Dog (Native to Dalmatia)",
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Dalmatian_and_Dobermann.jpg/1280px-Dalmatian_and_Dobermann.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "caption": "The distinctive spotted Dalmatian dog breed originating from the historical region of Dalmatia."
+    },
+    {
+      "factIndex": 1,
+      "title": "Croatian Cravat (Origin of the Modern Necktie)",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Memphis_tie_1A.JPG/1280px-Memphis_tie_1A.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "The necktie (cravat) originated from neckerchiefs worn by Croatian military regiments in the 17th century."
+    },
+    {
+      "factIndex": 2,
+      "title": "Kornati Archipelago & Adriatic Coastline",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Kornati.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "caption": "Over 1,200 islands, islets, and reefs along Croatia's Adriatic coastline."
     }
   ],
   "cy": [
@@ -86,6 +140,18 @@ export const VERIFIED_FACT_IMAGES: Record<string, FactMediaItem[]> = {
       "title": "Aphrodite's Rock (Petra tou Romiou)",
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Petra_tou_romiou_2.jpg/1280px-Petra_tou_romiou_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "caption": "The mythical birthplace of the ancient Greek goddess Aphrodite off the coast of Paphos."
+    },
+    {
+      "factIndex": 1,
+      "title": "Commandaria Dessert Wine",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Commandaria_Legacy_2000_Lionspirit_Collection_Wine.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "caption": "The world's oldest named wine still in production, dating back to 2000 BC in Cyprus."
+    },
+    {
+      "factIndex": 2,
+      "title": "Nicosia Divided Capital (Green Line)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Cyprus_districts_named.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "caption": "The UN buffer zone crossing through the historic divided capital city of Nicosia."
     }
   ],
   "cz": [
@@ -109,6 +175,12 @@ export const VERIFIED_FACT_IMAGES: Record<string, FactMediaItem[]> = {
     }
   ],
   "dk": [
+    {
+      "factIndex": 0,
+      "title": "Dannebrog (World's Oldest National Flag)",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/1280px-Flag_of_Denmark.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "The Danish Dannebrog has flown continuously as a sovereign national banner since 1219."
+    },
     {
       "factIndex": 1,
       "title": "LEGO Bricks (Invented in Billund)",
@@ -176,9 +248,21 @@ export const VERIFIED_FACT_IMAGES: Record<string, FactMediaItem[]> = {
       "title": "Historic Medieval Castle in Germany",
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/F-15s_over_Burg_Eltz_1977.JPEG/1280px-F-15s_over_Burg_Eltz_1977.JPEG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "caption": "Over 20,000 preserved medieval castles and fortresses across Germany."
+    },
+    {
+      "factIndex": 2,
+      "title": "Neuschwanstein Castle in Bavaria",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Schloss_Neuschwanstein_2013.jpg/1280px-Schloss_Neuschwanstein_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "One of over 25,000 historic castles and fortresses located across Germany."
     }
   ],
   "gr": [
+    {
+      "factIndex": 0,
+      "title": "The Parthenon on the Athenian Acropolis",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/The_Parthenon_in_Athens.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "caption": "Cradle of Western democracy, classical philosophy, and architectural excellence."
+    },
     {
       "factIndex": 1,
       "title": "Santorini Caldera & Oia Village",
@@ -192,14 +276,38 @@ export const VERIFIED_FACT_IMAGES: Record<string, FactMediaItem[]> = {
       "title": "Ernő Rubik and the Rubik's Cube",
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Erno_Rubik_Genius_Gala_2014.jpg/960px-Erno_Rubik_Genius_Gala_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "caption": "Hungarian architect and inventor Ernő Rubik, who created the world-famous mechanical puzzle in Budapest in 1974."
+    },
+    {
+      "factIndex": 1,
+      "title": "Széchenyi Thermal Baths in Budapest",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Budapest_Sz%C3%A9chenyi_Baths_R02.jpg/1280px-Budapest_Sz%C3%A9chenyi_Baths_R02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Historic natural geothermal medicinal baths in the 'City of Spas'."
+    },
+    {
+      "factIndex": 2,
+      "title": "Budapest Millennium Underground Railway (M1)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Topografischer_Linienplan_M1_Budapest.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "caption": "Continental Europe's oldest electric underground railway system, opened in 1896."
     }
   ],
   "is": [
+    {
+      "factIndex": 0,
+      "title": "Geothermal Power Facility in Iceland",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Borehole.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "caption": "Nearly 100% of Iceland's energy is sourced from geothermal steam and hydroelectric power."
+    },
     {
       "factIndex": 1,
       "title": "Volcanoes & Glaciers of Iceland",
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Eyjafjallaj%C3%B6kull.jpeg/1280px-Eyjafjallaj%C3%B6kull.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "caption": "Iceland's active volcanic geothermal systems and ice caps."
+    },
+    {
+      "factIndex": 2,
+      "title": "Thingvellir (Site of the Ancient Althing)",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/%C3%9Eingvellir_from_the_information_centre.JPG/1280px-%C3%9Eingvellir_from_the_information_centre.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "The world's oldest surviving parliament, founded by Norse settlers at Thingvellir in 930 AD."
     }
   ],
   "ie": [
@@ -2114,6 +2222,216 @@ export const VERIFIED_FACT_IMAGES: Record<string, FactMediaItem[]> = {
       "title": "Nikola Tesla (Pioneering Inventor)",
       "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Tesla_circa_1890.jpeg",
       "caption": "Nikola Tesla, pioneering electrical engineer who invented alternating current (AC) power."
+    }
+  ],
+  "ad": [
+    {
+      "factIndex": 0,
+      "title": "Andorra la Vella in the Pyrenees",
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/d/da/Casa_de_la_Vall_4.JPG/1280px-Casa_de_la_Vall_4.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "The highest capital city in Europe, situated at 1,023 meters elevation in the Pyrenees."
+    },
+    {
+      "factIndex": 1,
+      "title": "Casa de la Vall (Historical Parliament)",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Casa_de_la_Vall_2015-10.JPG/1280px-Casa_de_la_Vall_2015-10.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Historic seat of the General Council of Andorra, representing the unique co-principality system."
+    }
+  ],
+  "xk": [
+    {
+      "factIndex": 0,
+      "title": "Visoki Dečani UNESCO Monastery",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Manastir_Visoki_De%C4%8Dani_%28%D0%9C%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80_%D0%92%D0%B8%D1%81%D0%BE%D0%BA%D0%B8_%D0%94%D0%B5%D1%87%D0%B0%D0%BD%D0%B8%29_-_by_Pudelek..jpg/1280px-Manastir_Visoki_De%C4%8Dani_%28%D0%9C%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80_%D0%92%D0%B8%D1%81%D0%BE%D0%BA%D0%B8_%D0%94%D0%B5%D1%87%D0%B0%D0%BD%D0%B8%29_-_by_Pudelek..jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "14th-century Serbian Orthodox monastery in the Rugova Canyon foothills of Kosovo."
+    }
+  ],
+  "my": [
+    {
+      "factIndex": 2,
+      "title": "Giant Rafflesia arnoldii Flower",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Rafflesia_arnoldii%2C_Sumatra.jpg/1280px-Rafflesia_arnoldii%2C_Sumatra.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "The world's largest individual flower, blooming up to 1 meter wide in Malaysian rainforests."
+    }
+  ],
+  "pk": [
+    {
+      "factIndex": 0,
+      "title": "K2 (Godwin-Austen) in the Karakoram",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Chogori.jpg/1280px-Chogori.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "The second-highest mountain peak on Earth, located in the Karakoram range of Pakistan."
+    },
+    {
+      "factIndex": 1,
+      "title": "Mohenjo-daro Indus Valley Civilization",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Mohenjodaro_-_view_of_the_stupa_mound.JPG/1280px-Mohenjodaro_-_view_of_the_stupa_mound.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Ancient Bronze Age planned metropolis with advanced urban grid sanitation in Sindh."
+    },
+    {
+      "factIndex": 2,
+      "title": "Hand-Stitched Footballs of Sialkot",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Clock_Tower%2C_Sialkot_21.jpg/1280px-Clock_Tower%2C_Sialkot_21.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Sialkot manufactures over 70% of the world's hand-stitched professional FIFA match footballs."
+    }
+  ],
+  "sa": [
+    {
+      "factIndex": 0,
+      "title": "Rub' al Khali (Empty Quarter Sand Desert)",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Rub_al_Khali_002.JPG/1280px-Rub_al_Khali_002.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "The world's largest continuous sand desert, spanning over 650,000 square kilometers."
+    },
+    {
+      "factIndex": 2,
+      "title": "Al-Masjid an-Nabawi in Medina",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Masjid_Nabawi_The_Prophet%27s_Mosque%2C_Madina.jpg/1280px-Masjid_Nabawi_The_Prophet%27s_Mosque%2C_Madina.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "One of the holy sanctuaries situated in the western Hejaz region of Saudi Arabia."
+    }
+  ],
+  "lk": [
+    {
+      "factIndex": 0,
+      "title": "Ceylon Black Tea Plantations",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Ceylon_Pettiagalla_Tea.jpg/1280px-Ceylon_Pettiagalla_Tea.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "High-altitude terraced tea estates in the central highlands of Sri Lanka."
+    },
+    {
+      "factIndex": 1,
+      "title": "Sirimavo Bandaranaike (World's First Female PM)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Bandaranaike_1974.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "caption": "Sirimavo Bandaranaike elected Prime Minister of Ceylon (Sri Lanka) in 1960."
+    },
+    {
+      "factIndex": 2,
+      "title": "True Ceylon Cinnamon (Cinnamomum verum)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Cinnamomum_verum1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "caption": "True cinnamon is indigenous to Sri Lanka, producing the majority of world supply."
+    }
+  ],
+  "th": [
+    {
+      "factIndex": 2,
+      "title": "Kitti's Hog-Nosed Bat (Bumblebee Bat)",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Craseonycteris_thonglongyai_414843825.jpg/1280px-Craseonycteris_thonglongyai_414843825.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "The world's smallest mammal by length, native to limestone caves in western Thailand."
+    }
+  ],
+  "bf": [
+    {
+      "factIndex": 1,
+      "title": "FESPACO Panafrican Film Festival",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_du_FESPACO.jpg/1280px-Logo_du_FESPACO.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Africa's largest and most prestigious film and television festival, hosted in Ouagadougou."
+    }
+  ],
+  "cv": [
+    {
+      "factIndex": 1,
+      "title": "Cesária Évora ('Barefoot Diva')",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Ces%C3%A1ria_%C3%89vora_2008.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "caption": "Grammy-winning Cape Verdean singer who brought the soulful traditional morna genre to world acclaim."
+    }
+  ],
+  "km": [
+    {
+      "factIndex": 0,
+      "title": "Ylang-Ylang (Cananga odorata) Blossoms",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Cananga_odorata_01.JPG/1280px-Cananga_odorata_01.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Comoros produces the majority of the world's natural ylang-ylang essential perfume oil."
+    },
+    {
+      "factIndex": 1,
+      "title": "West Indian Ocean Coelacanth (Living Fossil)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Coelacanth_off_Pumula_on_the_KwaZulu-Natal_South_Coast%2C_South_Africa%2C_on_22_November_2019.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "caption": "Ancient lobe-finned fish, thriving in deep volcanic undersea trenches off the Comoros."
+    }
+  ],
+  "cd": [
+    {
+      "factIndex": 0,
+      "title": "Congo Basin Tropical Rainforest",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Congobasinmap.png/1280px-Congobasinmap.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "The world's second-largest tropical rainforest ecosystem, spanning DR Congo."
+    },
+    {
+      "factIndex": 1,
+      "title": "The Okapi (Forest Giraffe) of the Ituri Forest",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg/1280px-Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Elusive striped mammal indigenous exclusively to the Ituri rainforest in DR Congo."
+    }
+  ],
+  "et": [
+    {
+      "factIndex": 0,
+      "title": "Battle of Adwa (1896)",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Adoua_1.jpg/1280px-Adoua_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Ethiopian forces defended national sovereignty against imperial conquest in 1896."
+    },
+    {
+      "factIndex": 1,
+      "title": "Wild Coffea arabica in Kaffa Highlands",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Coffee_Flowers.JPG/1280px-Coffee_Flowers.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Wild coffee plants native to the southwestern highland rainforests of Ethiopia."
+    }
+  ],
+  "ls": [
+    {
+      "factIndex": 2,
+      "title": "Basotho Mokorotlo Conical Straw Hat",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Mokorotlo.jpg/1280px-Mokorotlo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Traditional handcrafted straw hat and woven Basotho blanket, national cultural emblems of Lesotho."
+    }
+  ],
+  "ng": [
+    {
+      "factIndex": 1,
+      "title": "National Arts Theatre & Nollywood Cinema in Lagos",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/National_Theatre_Nigeria.jpg/1280px-National_Theatre_Nigeria.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Nigeria's vibrant Nollywood film industry is the world's second-largest by volume, producing over 2,500 films annually."
+    }
+  ],
+  "rw": [
+    {
+      "factIndex": 1,
+      "title": "Terraced Hills of Rwanda",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Volcanoes_National_Park_Banner_Image.gif/1280px-Volcanoes_National_Park_Banner_Image.gif?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Terraced rolling green hills of the 'Land of a Thousand Hills' (Pays des Mille Collines)."
+    },
+    {
+      "factIndex": 2,
+      "title": "Umuganda Community Service Day",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Umuganda%22Rwandan_community_work%22.jpg/1280px-Umuganda%22Rwandan_community_work%22.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Nationwide monthly Saturday morning community civic service and environmental cleanup."
+    }
+  ],
+  "za": [
+    {
+      "factIndex": 0,
+      "title": "Parliament of South Africa in Cape Town",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Houses_of_Parliament_%28Cape_Town%29.jpg/1280px-Houses_of_Parliament_%28Cape_Town%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "One of South Africa's three constitutional capitals (Cape Town: Legislative, Pretoria: Executive, Bloemfontein: Judicial)."
+    },
+    {
+      "factIndex": 2,
+      "title": "Cape Floral Kingdom Biodiversity",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Floraregio_van_de_Kaap.jpg/1280px-Floraregio_van_de_Kaap.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "The smallest and most biodiverse floral kingdom on Earth, featuring over 9,000 fynbos plant species."
+    }
+  ],
+  "ws": [
+    {
+      "factIndex": 2,
+      "title": "Vailima Residence & Mount Vaea of Robert Louis Stevenson",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Robert_Louis_Stevenson_by_Henry_Walter_Barnett_bw.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "caption": "Scottish author Robert Louis Stevenson spent his final years in Samoa, laid to rest on Mount Vaea."
+    }
+  ],
+  "tv": [
+    {
+      "factIndex": 1,
+      "title": "Tuvalu Island Lagoon & .tv Domain",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/DotTV_logo.svg/1280px-DotTV_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "caption": "Tuvalu's top-level internet domain '.tv' is licensed globally, providing crucial economic support."
     }
   ]
 };

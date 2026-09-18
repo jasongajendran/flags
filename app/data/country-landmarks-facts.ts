@@ -1,26 +1,31 @@
 export interface LandmarkItem {
   name: string;
   description: string;
-  category: 'natural' | 'cultural' | 'historical' | 'modern';
   imageUrl: string;
-  location?: string;
-  UNESCO?: boolean;
+  category?: string;
+  [key: string]: any;
 }
 
-export interface FunFactItem {
+export interface FactItem {
   fact: string;
-  category: 'culture' | 'geography' | 'history' | 'nature' | 'record' | 'food';
-  verified: boolean;
-  sourceNote?: string;
+  year?: number;
+  tag?: string;
+  category?: string;
+  verified?: boolean;
+  source?: string;
+  media?: any;
+  [key: string]: any;
 }
 
-export interface CountryLandmarksAndFacts {
-  countryCode: string;
+export interface CountryKnowledge {
   landmarks: LandmarkItem[];
-  facts: FunFactItem[];
+  facts: FactItem[];
+  countryCode?: string;
+  countryName?: string;
+  [key: string]: any;
 }
 
-export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts> = {
+export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryKnowledge> = {
   "ad": {
     "landmarks": [
       {
@@ -43,13 +48,13 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Coma Pedrosa",
-        "description": "Coma Pedrosa is the highest mountain in Andorra.",
+        "description": "Coma Pedrosa is the highest mountain in Andorra. It is popular with mountain climbers, its ascent being technically straightforward, although strenuous.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Comapedrosa01.jpg/330px-Comapedrosa01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "name": "Pyrenean chamois",
-        "description": "The Pyrenean chamois is a goat-antelope that lives in the Pyrenees and Cantabrian Mountains of Spain, France and Andorra, and the...",
+        "description": "The Pyrenean chamois is a goat-antelope that lives in the Pyrenees and Cantabrian Mountains of Spain, France and Andorra, and the Apennine Mountains of central Italy.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Isard_des_pyrenees_bigorre_2003.jpg/330px-Isard_des_pyrenees_bigorre_2003.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -95,7 +100,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Hajar Mountains",
-        "description": "The Hajar Mountains are one of the highest mountain ranges in the Arabian Peninsula, shared between northern Oman and eastern United...",
+        "description": "The Hajar Mountains are one of the highest mountain ranges in the Arabian Peninsula, shared between northern Oman and eastern United Arab Emirates.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Nakhal_Fort_1.jpg/330px-Nakhal_Fort_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -309,7 +314,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Armenian mouflon",
-        "description": "The Armenian mouflon is an endangered subspecies of mouflon endemic to Iran, Armenia, the Nakhchivan Autonomous Republic of Azerbaijan,...",
+        "description": "The Armenian mouflon is an endangered subspecies of mouflon endemic to Iran, Armenia, the Nakhchivan Autonomous Republic of Azerbaijan, Turkey and Iraq.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Armenian_mouflon.jpg/330px-Armenian_mouflon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -361,7 +366,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Giant sable antelope",
-        "description": "The giant sable antelope is a critically endangered subspecies of the common sable antelope native and endemic to the central highlands...",
+        "description": "The giant sable antelope is a critically endangered subspecies of the common sable antelope native and endemic to the central highlands of Angola, occurring specifically in two areas: Cangandala National Park and Luando Natural Strict Reserve.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Giant_sable_bull_in_Luando.jpg/330px-Giant_sable_bull_in_Luando.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -407,7 +412,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Blood Falls",
-        "description": "Blood Falls is an outflow of an iron(III) oxide–tainted plume of saltwater, flowing from the tongue of Taylor Glacier onto the...",
+        "description": "Blood Falls is an outflow of an iron(III) oxide–tainted plume of saltwater, flowing from the tongue of Taylor Glacier onto the ice-covered surface of West Lake Bonney in the Taylor Valley of the McMurdo Dry Valleys in Victoria Land, East Antarctica.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Blood_Falls_by_Peter_Rejcek.jpg/330px-Blood_Falls_by_Peter_Rejcek.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -511,7 +516,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Grossglockner",
-        "description": "The Großglockner, or just Glockner, is, at 3,798 metres above the Adriatic (12,461 ft), the highest mountain in Austria and highest...",
+        "description": "The Großglockner, or just Glockner, is, at 3,798 metres above the Adriatic (12,461 ft), the highest mountain in Austria and highest mountain in the Alps east of the Brenner Pass.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Gro%C3%9Fglockner_from_behind_the_glass_panorama_tower.JPG/330px-Gro%C3%9Fglockner_from_behind_the_glass_panorama_tower.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -615,7 +620,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Gobustan Rock Art Cultural Landscape",
-        "description": "The Gobustan Rock Art Cultural Landscape is a historic site in Azerbaijan, comprising a large collection of petroglyphs that reflect the...",
+        "description": "The Gobustan Rock Art Cultural Landscape is a historic site in Azerbaijan, comprising a large collection of petroglyphs that reflect the flora, fauna, hunting practices, social structures, and cultural expressions of human societies from prehistoric to medieval times. These engravings provide detailed depictions of anthropomorphic figures, such as lance-bearers and ritualistic dance scenes, as well as various animal species, bullfighting events, camel caravans, and celestial symbols such as the sun and other stars. Estimated to date back approximately 5,000 to 20,000 years, the rock art offers insight into the spiritual life and daily activities of early human populations in the region. It is recognized as a UNESCO World Heritage Site and forms part of the larger Gobustan State Historical and Cultural Reserve, which preserves archaeological, cultural, and natural landmarks.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Petroglyphs_of_Qobustan_2.jpg/330px-Petroglyphs_of_Qobustan_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -823,13 +828,13 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Ardennes",
-        "description": "The Ardennes, also known as the Ardennes Forest or Forest of Ardennes, is a region of extensive forests, rough terrain, rolling hills...",
+        "description": "The Ardennes, also known as the Ardennes Forest or Forest of Ardennes, is a region of extensive forests, rough terrain, rolling hills and ridges primarily in Belgium and Luxembourg, extending into Germany and France.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Frahan_JPG01.jpg/330px-Frahan_JPG01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "name": "Wild boar",
-        "description": "The wild boar, also known as the wild swine, common wild pig, Eurasian wild pig, or simply wild pig, is a suid native to much of Eurasia...",
+        "description": "The wild boar, also known as the wild swine, common wild pig, Eurasian wild pig, or simply wild pig, is a suid native to much of Eurasia and North Africa and has been introduced to the Americas and Oceania.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Wildschwein%2C_N%C3%A4he_Pulverstampftor_%28cropped%29.jpg/330px-Wildschwein%2C_N%C3%A4he_Pulverstampftor_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -1141,7 +1146,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Proboscis monkey",
-        "description": "The proboscis monkey or long-nosed monkey is an arboreal Old World monkey with an unusually large nose, a reddish-brown skin color and a...",
+        "description": "The proboscis monkey or long-nosed monkey is an arboreal Old World monkey with an unusually large nose, a reddish-brown skin color and a long tail.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Proboscis_Monkey_in_Borneo.jpg/330px-Proboscis_Monkey_in_Borneo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -1417,7 +1422,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Makgadikgadi Pan",
-        "description": "The Makgadikgadi Pan is a salt pan situated in the middle of the dry savanna of north-eastern Botswana, is one of the largest salt flats...",
+        "description": "The Makgadikgadi Pan is a salt pan situated in the middle of the dry savanna of north-eastern Botswana, is one of the largest salt flats in the world.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/DeltaOkawango.jpg/330px-DeltaOkawango.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -1475,7 +1480,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "European bison",
-        "description": "The European bison or the European wood bison, also known as the wisent, the zubr, or sometimes colloquially as the European buffalo, is...",
+        "description": "The European bison or the European wood bison, also known as the wisent, the zubr, or sometimes colloquially as the European buffalo, is a European species of bison.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/European_bison_%28Bison_bonasus%29_male_Bia%C5%82owieza.jpg/330px-European_bison_%28Bison_bonasus%29_male_Bia%C5%82owieza.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -1527,7 +1532,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Keel-billed toucan",
-        "description": "The keel-billed toucan, also known as rainbow-billed toucan or sulphur-breasted toucan, is a species of toucan native to southern...",
+        "description": "The keel-billed toucan, also known as rainbow-billed toucan or sulphur-breasted toucan, is a species of toucan native to southern Mexico, Central America and the far northwest of South America, and is found in tropical forests.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Keel-billed_toucan_%28Ramphastos_sulfuratus_sulfuratus%29_on_foxtail_palm_%28Wodyetia_bifurcata%29_Cayo.jpg/330px-Keel-billed_toucan_%28Ramphastos_sulfuratus_sulfuratus%29_on_foxtail_palm_%28Wodyetia_bifurcata%29_Cayo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -1677,7 +1682,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Dzanga-Sangha Special Reserve",
-        "description": "The Dzanga-Sangha Special Reserve is a protected area in southwestern Central African Republic, covering 6,865.54 km2 (2,650.80 sq mi)...",
+        "description": "80 sq mi) of tropical rainforest within the Congo Basin. Established in 1990, it surrounds Dzanga-Ndoki National Park, together forming the Dzanga-Sangha Complex of Protected Areas.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Dzanga_Sangha_Entry_Point%2C_Central_African_Republic.jpg/330px-Dzanga_Sangha_Entry_Point%2C_Central_African_Republic.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -1839,7 +1844,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Pygmy hippopotamus",
-        "description": "The pygmy hippopotamus or pygmy hippo is a small hippopotamid which is native to the forests and swamps of West Africa, primarily in...",
+        "description": "The pygmy hippopotamus or pygmy hippo is a small hippopotamid which is native to the forests and swamps of West Africa, primarily in Liberia, with small populations in Sierra Leone, Guinea, and Ivory Coast.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Hexaprotodon_liberiensis_in_Edinburgh_Zoo.JPG/330px-Hexaprotodon_liberiensis_in_Edinburgh_Zoo.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -1943,7 +1948,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Western lowland gorilla",
-        "description": "The western lowland gorilla is one of two critically endangered subspecies of the western gorilla that lives in montane, primary and...",
+        "description": "The western lowland gorilla is one of two critically endangered subspecies of the western gorilla that lives in montane, primary and secondary forest and lowland swampland in central Africa in Angola, Cameroon, Central African Republic, Republic of the Congo, Democratic Republic of the Congo, Equatorial Guinea and Gabon. It is the nominate subspecies of the western gorilla, and the smallest of the four gorilla subspecies.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/WesternLowlandGorilla03.jpg/330px-WesternLowlandGorilla03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -2197,7 +2202,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Sal, Cape Verde",
-        "description": "Sal is an island in Cape Verde.",
+        "description": "Sal is an island in Cape Verde. Sal is a tourist destination with white sand beaches and over 350 days of sunshine a year.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Bela-vista-net-Sal-map.jpg/330px-Bela-vista-net-Sal-map.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -2255,7 +2260,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Cyprus mouflon",
-        "description": "The Cyprus mouflon, also known as Cypriot mouflon, is an endangered subspecies of mouflon endemic only to Cyprus in the mountains of...",
+        "description": "The Cyprus mouflon, also known as Cypriot mouflon, is an endangered subspecies of mouflon endemic only to Cyprus in the mountains of Paphos District.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Cypriot_Male_Mouflon.jpg/330px-Cypriot_Male_Mouflon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -2301,7 +2306,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Bohemian Switzerland",
-        "description": "Bohemian Switzerland, also known as Czech Switzerland, is a nature region in the Elbe Sandstone Mountains in the northwestern Czech...",
+        "description": "Bohemian Switzerland, also known as Czech Switzerland, is a nature region in the Elbe Sandstone Mountains in the northwestern Czech Republic, protected as a national park.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Pravcicka_brana_001.jpg/330px-Pravcicka_brana_001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -2353,7 +2358,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Black Forest",
-        "description": "The Black Forest is a large forested mountain range in the state of Baden-Württemberg in southwest Germany, bounded by the Rhine Valley...",
+        "description": "The Black Forest is a large forested mountain range in the state of Baden-Württemberg in southwest Germany, bounded by the Rhine Valley to the west and south and close to the borders with France and Switzerland.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Blick_vom_Hohfelsen.jpg/330px-Blick_vom_Hohfelsen.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -2457,7 +2462,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Møns Klint",
-        "description": "Møns Klint is a 6 km stretch of limestone and chalk cliffs along the eastern coast of the Danish island of Møn in the Baltic Sea, and as...",
+        "description": "Møns Klint is a 6 km stretch of limestone and chalk cliffs along the eastern coast of the Danish island of Møn in the Baltic Sea, and as of July 2025 a World Heritage Site.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/M%C3%B8ns_Klint_7.jpg/330px-M%C3%B8ns_Klint_7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -2509,13 +2514,13 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Morne Trois Pitons National Park",
-        "description": "Morne Trois Pitons National Park is a national park in Dominica established in July 1975, the first to be legally established in the...",
+        "description": "Morne Trois Pitons National Park is a national park in Dominica established in July 1975, the first to be legally established in the country.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Dominica_Hiking_Path.JPG/330px-Dominica_Hiking_Path.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "name": "Imperial amazon",
-        "description": "The imperial amazon or Dominican amazon, also known as the sisserou or sisserou parrot, is a parrot found only on the Caribbean island...",
+        "description": "The imperial amazon or Dominican amazon, also known as the sisserou or sisserou parrot, is a parrot found only on the Caribbean island of Dominica.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Amazona_imperialis_-Roseau_-Dominica_-aviary-6a-3c.jpg/330px-Amazona_imperialis_-Roseau_-Dominica_-aviary-6a-3c.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -2931,7 +2936,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Walia ibex",
-        "description": "The Walia ibex is a vulnerable species of ibex.",
+        "description": "The Walia ibex is a vulnerable species of ibex. It is sometimes considered an endemic subspecies of the Alpine ibex.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Walia_ibex_3.jpg/330px-Walia_ibex_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -2983,7 +2988,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Saimaa ringed seal",
-        "description": "The Saimaa ringed seal is a species of seal.",
+        "description": "The Saimaa ringed seal is a species of seal. It is among the most endangered seals in the world, having a total population of only about 500 individuals.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Pusa_hispida_saimensis_304551354.jpg/330px-Pusa_hispida_saimensis_304551354.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -3035,7 +3040,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Brachylophus bulabula",
-        "description": "Brachylophus bulabula, commonly known as the Central Fijian banded iguana is a species of iguanid lizard endemic to some of the larger...",
+        "description": "Brachylophus bulabula, commonly known as the Central Fijian banded iguana is a species of iguanid lizard endemic to some of the larger central and northwestern islands of Fiji, where it occurs in Fijian wet forest.",
         "category": "cultural",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Brachylophus_bulabula_Cologne_Zoo.jpg/330px-Brachylophus_bulabula_Cologne_Zoo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -3139,7 +3144,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Chamois",
-        "description": "The chamois, or Alpine chamois, is a species of goat-antelope native to mountainous parts of Europe and Western Asia, from the Pyrenees...",
+        "description": "The chamois, or Alpine chamois, is a species of goat-antelope native to mountainous parts of Europe and Western Asia, from the Pyrenees and the Cantabrian Mountain Range, the Alps, the Apennines, the Dinarides, the Tatra to the Carpathian Mountains, the Balkan Mountains, the Rila–Rhodope massif, Pindus, the northeastern mountains of Turkey, and the Caucasus. It has also been introduced to the South Island of New Zealand. Some subspecies of chamois are strictly protected in the EU under the European Habitats Directive.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/064_Wild_Chamois_Parc_r%C3%A9gional_Chasseral_Photo_by_Giles_Laurent.jpg/330px-064_Wild_Chamois_Parc_r%C3%A9gional_Chasseral_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -3191,7 +3196,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Western lowland gorilla",
-        "description": "The western lowland gorilla is one of two critically endangered subspecies of the western gorilla that lives in montane, primary and...",
+        "description": "The western lowland gorilla is one of two critically endangered subspecies of the western gorilla that lives in montane, primary and secondary forest and lowland swampland in central Africa in Angola, Cameroon, Central African Republic, Republic of the Congo, Democratic Republic of the Congo, Equatorial Guinea and Gabon. It is the nominate subspecies of the western gorilla, and the smallest of the four gorilla subspecies.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/WesternLowlandGorilla03.jpg/330px-WesternLowlandGorilla03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -3237,13 +3242,13 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Giant's Causeway",
-        "description": "The Giant's Causeway is an area of approximately 40,000 interlocking basalt columns, the result of an ancient volcanic fissure eruption,...",
+        "description": "The Giant's Causeway is an area of approximately 40,000 interlocking basalt columns, the result of an ancient volcanic fissure eruption, part of the North Atlantic Igneous Province active in the region during the Paleogene period.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Causeway-code_poet-4.jpg/330px-Causeway-code_poet-4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "name": "European robin",
-        "description": "The European robin, known simply as the robin or robin redbreast in the British Isles, is a small insectivorous passerine bird belonging...",
+        "description": "The European robin, known simply as the robin or robin redbreast in the British Isles, is a small insectivorous passerine bird belonging to the Old World flycatcher family Muscicapidae.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Erithacus_rubecula_with_cocked_head.jpg/330px-Erithacus_rubecula_with_cocked_head.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -3341,7 +3346,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Mount Kazbek",
-        "description": "Mount Kazbek or Mount Kazbegi is a dormant stratovolcano and one of the major mountains of the Caucasus, located in Georgia, just south...",
+        "description": "Mount Kazbek or Mount Kazbegi is a dormant stratovolcano and one of the major mountains of the Caucasus, located in Georgia, just south of the border with Russia.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Kazbegi%2C_Mount_Kazbek%2C_Georgia.jpg/330px-Kazbegi%2C_Mount_Kazbek%2C_Georgia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -3399,7 +3404,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "African elephant",
-        "description": "African elephants are members of the genus Loxodonta comprising two living elephant species, the African bush elephant and the smaller...",
+        "description": "African elephants are members of the genus Loxodonta comprising two living elephant species, the African bush elephant and the smaller African forest elephant.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -3451,7 +3456,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Hippopotamus",
-        "description": "The hippopotamus, often shortened to hippo, further qualified as the common hippopotamus, Nile hippopotamus and river hippopotamus, is a...",
+        "description": "The hippopotamus, often shortened to hippo, further qualified as the common hippopotamus, Nile hippopotamus and river hippopotamus, is a large semiaquatic mammal native to sub-Saharan Africa.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/330px-Portrait_Hippopotamus_in_the_water.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -3497,7 +3502,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Mount Nimba Strict Nature Reserve",
-        "description": "Mount Nimba Strict Nature Reserve is a protected area and UNESCO World Heritage Site located in both Guinea and Côte d'Ivoire, extending...",
+        "description": "4 km2 in Guinea, and 50 km2 in Côte d'Ivoire. The reserve covers significant portions of the Nimba Range, a geographically unique area with unusually rich flora and fauna, including exceptional numbers of single-site endemic species, such as Nimbaphrynoides, the Nimba otter shrew, and multiple species of horseshoe bats. Its highest peak is Mount Richard-Molard at 1,752 m (5,750 ft), which is the highest peak of both countries.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Nimba_Range.jpg/330px-Nimba_Range.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -3555,7 +3560,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Goliath frog",
-        "description": "The goliath frog, otherwise known commonly as the giant slippery frog and the goliath bullfrog, is a species of frog in the family...",
+        "description": "The goliath frog, otherwise known commonly as the giant slippery frog and the goliath bullfrog, is a species of frog in the family Conrauidae.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Conraua_goliath_photo_from_iNaturalist_539752953.jpg/330px-Conraua_goliath_photo_from_iNaturalist_539752953.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -3601,13 +3606,13 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Samaria Gorge",
-        "description": "The Samariá Gorge is a\nNational Park of Greece since 1962 on the island of Crete – a major tourist attraction of the island – and a...",
+        "description": "The Samariá Gorge is a\nNational Park of Greece since 1962 on the island of Crete – a major tourist attraction of the island – and a World's Biosphere Reserve.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Landkarte_Westkreta.jpg/330px-Landkarte_Westkreta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "name": "Kri-kri",
-        "description": "The kri-kri, sometimes called the Cretan goat, Agrimi, or Cretan Ibex, is a feral goat inhabiting the Eastern Mediterranean, previously...",
+        "description": "The kri-kri, sometimes called the Cretan goat, Agrimi, or Cretan Ibex, is a feral goat inhabiting the Eastern Mediterranean, previously considered a subspecies of wild goat.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Male_and_female_Cretan_ibex.jpg/330px-Male_and_female_Cretan_ibex.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -3659,7 +3664,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Resplendent quetzal",
-        "description": "The resplendent quetzal is a small bird found in Central America and southern Mexico that lives in tropical forests, particularly...",
+        "description": "The resplendent quetzal is a small bird found in Central America and southern Mexico that lives in tropical forests, particularly montane cloud forests.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Resplendent_quetzal_san_gerardo_de_dota_3.31.24_DSC_3989-topaz-denoiseraw.jpg/330px-Resplendent_quetzal_san_gerardo_de_dota_3.31.24_DSC_3989-topaz-denoiseraw.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -3705,13 +3710,13 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Bijagós Islands",
-        "description": "The Bijagós Islands, often misspelled Bijagos in English text and formerly known in English as Bissagots, are a group of about 88...",
+        "description": "The Bijagós Islands, often misspelled Bijagos in English text and formerly known in English as Bissagots, are a group of about 88 islands and islets located in the Atlantic Ocean off the coast of Guinea-Bissau.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/L%27Archipel_des_Bijagos_vu_par_Sentinel_2.jpg/330px-L%27Archipel_des_Bijagos_vu_par_Sentinel_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "name": "African manatee",
-        "description": "The African manatee, also known as the West African manatee, is a species of manatee that inhabits much of Western Africa – from Senegal...",
+        "description": "The African manatee, also known as the West African manatee, is a species of manatee that inhabits much of Western Africa – from Senegal to Angola.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/African_manatee_at_Coex_Aquarium%2C_South_Korea.jpg/330px-African_manatee_at_Coex_Aquarium%2C_South_Korea.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -3815,7 +3820,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "White-tailed deer",
-        "description": "The white-tailed deer, also known commonly as the whitetail and the Virginia deer, is a medium-sized species of deer native to North and...",
+        "description": "The white-tailed deer, also known commonly as the whitetail and the Virginia deer, is a medium-sized species of deer native to North and South America.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/White-tailed_deer.jpg/330px-White-tailed_deer.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -4023,7 +4028,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Komodo dragon",
-        "description": "The Komodo dragon, also known as the Komodo monitor, is a large reptile of the monitor lizard family Varanidae that is endemic to the...",
+        "description": "The Komodo dragon, also known as the Komodo monitor, is a large reptile of the monitor lizard family Varanidae that is endemic to the Indonesian islands of Komodo, Rinca, Flores, Gili Dasami, and Gili Motang.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/202306_Varanus_komodoensis.jpg/330px-202306_Varanus_komodoensis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -4075,7 +4080,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Lepus timidus hibernicus",
-        "description": "Lepus timidus hibernicus, more commonly known as the Irish hare, is a subspecies of the mountain hare that is native to the island of...",
+        "description": "Lepus timidus hibernicus, more commonly known as the Irish hare, is a subspecies of the mountain hare that is native to the island of Ireland.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Irish_Mountain_Hare_imported_from_iNaturalist_photo_322047161_on_22_April_2024.jpg/330px-Irish_Mountain_Hare_imported_from_iNaturalist_photo_322047161_on_22_April_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -4121,7 +4126,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Dead Sea",
-        "description": "The Dead Sea, also known by other names, is a landlocked salt lake bordered by Jordan to the east, the West Bank to the west and Israel...",
+        "description": "The Dead Sea, also known by other names, is a landlocked salt lake bordered by Jordan to the east, the West Bank to the west and Israel to the southwest.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Dead_Sea_beach_00.JPG/330px-Dead_Sea_beach_00.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -4225,13 +4230,13 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Mesopotamian Marshes",
-        "description": "The Mesopotamian Marshes, also known as the Iraqi Marshes, are a wetland area located in southern Iraq and southwestern Iran as well as...",
+        "description": "The Mesopotamian Marshes, also known as the Iraqi Marshes, are a wetland area located in southern Iraq and southwestern Iran as well as partially in northern Kuwait.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Chibaish_Marches%2C_Iraq_-_An_Nasiriyah.jpg/330px-Chibaish_Marches%2C_Iraq_-_An_Nasiriyah.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "name": "Euphrates softshell turtle",
-        "description": "The Euphrates softshell turtle, also known as the Mesopotamian softshell turtle, is a species of softshell turtle in the family...",
+        "description": "The Euphrates softshell turtle, also known as the Mesopotamian softshell turtle, is a species of softshell turtle in the family Trionychidae.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Req%C3%AA_s%C3%AAlane.jpg/330px-Req%C3%AA_s%C3%AAlane.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -4485,7 +4490,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Dead Sea",
-        "description": "The Dead Sea, also known by other names, is a landlocked salt lake bordered by Jordan to the east, the West Bank to the west and Israel...",
+        "description": "The Dead Sea, also known by other names, is a landlocked salt lake bordered by Jordan to the east, the West Bank to the west and Israel to the southwest.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Dead_Sea_beach_00.JPG/330px-Dead_Sea_beach_00.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -4693,7 +4698,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Tonle Sap",
-        "description": "Tonle Sap is a lake in central Cambodia.",
+        "description": "Tonle Sap is a lake in central Cambodia. Belonging to the Mekong river system, Tonle Sap is the largest freshwater lake in Southeast Asia and one of the most diverse and productive ecosystems in the world.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Cambodia%2C_Tonle_Sap_IMG_3285.JPG/330px-Cambodia%2C_Tonle_Sap_IMG_3285.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -4855,7 +4860,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Brown pelican",
-        "description": "The brown pelican is a bird of the pelican family, Pelecanidae, one of three species found in the Americas and one of two that feed by...",
+        "description": "The brown pelican is a bird of the pelican family, Pelecanidae, one of three species found in the Americas and one of two that feed by diving into water.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Brown_pelican_in_flight_%28Bodega_Bay%29.jpg/330px-Brown_pelican_in_flight_%28Bodega_Bay%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -4959,7 +4964,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Siberian tiger",
-        "description": "The Siberian tiger or Amur tiger is a population of the tiger subspecies Panthera tigris tigris native to Northeast China, the Russian...",
+        "description": "The Siberian tiger or Amur tiger is a population of the tiger subspecies Panthera tigris tigris native to Northeast China, the Russian Far East, and possibly North Korea.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/P.t.altaica_Tomak_Male.jpg/330px-P.t.altaica_Tomak_Male.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -5011,7 +5016,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Dromedary",
-        "description": "The dromedary, also known as the dromedary camel, Arabian camel and one-humped camel, is a large camel of the genus Camelus with one...",
+        "description": "The dromedary, also known as the dromedary camel, Arabian camel and one-humped camel, is a large camel of the genus Camelus with one hump on its back.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Camelus_dromedarius_in_Nuweiba.jpg/330px-Camelus_dromedarius_in_Nuweiba.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -5057,7 +5062,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Big Almaty Lake",
-        "description": "Big Almaty Lake is a natural alpine reservoir.",
+        "description": "Big Almaty Lake is a natural alpine reservoir. It is located in the Trans-Ili Alatau mountains, 15 km south from the center of Almaty in Kazakhstan.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Big_Almaty_Lake_%282511_m%29_and_snowy_peak_of_Soviets_%284317_m%29_in_September%2C_2%2C_2017.jpg/330px-Big_Almaty_Lake_%282511_m%29_and_snowy_peak_of_Soviets_%284317_m%29_in_September%2C_2%2C_2017.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -5109,7 +5114,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Kuang Si Falls",
-        "description": "The Kuang Si Falls \n or Kuang Xi Falls, alternatively known as the Tat Kuang Si Waterfalls, is a multi-tiered waterfall in Laos about 29...",
+        "description": "The Kuang Si Falls \n or Kuang Xi Falls, alternatively known as the Tat Kuang Si Waterfalls, is a multi-tiered waterfall in Laos about 29 kilometers (18 mi) south of the town of Luang Prabang.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/The_river_of_Kuang_si_waterfalls.jpg/330px-The_river_of_Kuang_si_waterfalls.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -5167,7 +5172,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Striped hyena",
-        "description": "The striped hyena is a species of hyena native to North and East Africa, the Middle East, the Caucasus, Central Asia, and the Indian...",
+        "description": "The striped hyena is a species of hyena native to North and East Africa, the Middle East, the Caucasus, Central Asia, and the Indian subcontinent.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Striped_hyena_in_Bhigwan_August_2025_by_Tisha_Mukherjee_07_%28cropped%29.jpg/330px-Striped_hyena_in_Bhigwan_August_2025_by_Tisha_Mukherjee_07_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -5219,7 +5224,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Saint Lucia amazon",
-        "description": "The Saint Lucia amazon, also known as the St.",
+        "description": "The Saint Lucia amazon, also known as the St. Lucia amazon and St. Lucia parrot, is a vulnerable species of bird in subfamily Arinae of the family Psittacidae, the African and New World parrots.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Amazona_versicolor_-St_Lucia-5a.jpg/330px-Amazona_versicolor_-St_Lucia-5a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -5375,7 +5380,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Pygmy hippopotamus",
-        "description": "The pygmy hippopotamus or pygmy hippo is a small hippopotamid which is native to the forests and swamps of West Africa, primarily in...",
+        "description": "The pygmy hippopotamus or pygmy hippo is a small hippopotamid which is native to the forests and swamps of West Africa, primarily in Liberia, with small populations in Sierra Leone, Guinea, and Ivory Coast.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Hexaprotodon_liberiensis_in_Edinburgh_Zoo.JPG/330px-Hexaprotodon_liberiensis_in_Edinburgh_Zoo.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -5525,13 +5530,13 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Little Switzerland (Luxembourg)",
-        "description": "Little Switzerland is a nickname for a region in the east of Luxembourg, bestowed upon the region on account of its reputed geographical...",
+        "description": "Little Switzerland is a nickname for a region in the east of Luxembourg, bestowed upon the region on account of its reputed geographical similarities to Switzerland.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Mullerthal.jpg/330px-Mullerthal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "name": "European badger",
-        "description": "The European badger, also known as the Eurasian badger, is a species of badger in the family Mustelidae native to Europe and West Asia...",
+        "description": "The European badger, also known as the Eurasian badger, is a species of badger in the family Mustelidae native to Europe and West Asia and parts of Central Asia.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/European_badger_%28Meles_meles_taxus%29_Drenthe.jpg/330px-European_badger_%28Meles_meles_taxus%29_Drenthe.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -5577,7 +5582,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Ķemeri National Park",
-        "description": "Ķemeri National Park is a national park located west of the city of Jūrmala, Latvia.  Established in 1997, Ķemeri is the third largest national park in the country by area, covering an area of 381.",
+        "description": "Ķemeri National Park is a national park located west of Jūrmala, Latvia, renowned for its Great Ķemeri Bog boardwalk and mineral springs.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Liela_Kemeru_taka_5jul03.JPG/330px-Liela_Kemeru_taka_5jul03.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -5687,7 +5692,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Barbary macaque",
-        "description": "The Barbary macaque is a macaque species native to the Atlas Mountains of Morocco, Algeria and Tunisia, along with a small introduced...",
+        "description": "The Barbary macaque is a macaque species native to the Atlas Mountains of Morocco, Algeria and Tunisia, along with a small introduced population in Gibraltar.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Macaca_sylvanus.Mother_and_baby.jpg/330px-Macaca_sylvanus.Mother_and_baby.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -5785,7 +5790,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Old Orhei",
-        "description": "Old Orhei is a Moldovan historical and archaeological complex located in Trebujeni, which is approximately 60 kilometres (37 mi)...",
+        "description": "Old Orhei is a Moldovan historical and archaeological complex located in Trebujeni, which is approximately 60 kilometres (37 mi) north-east of Chișinău on the Răut River in the Republic of Moldova.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Stanca_deasupra_Rautului_Butuceni.jpg/330px-Stanca_deasupra_Rautului_Butuceni.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -6051,7 +6056,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "West African giraffe",
-        "description": "The West African giraffe, also known as the Niger giraffe, is a species or subspecies of the giraffe distinguished by its light colored...",
+        "description": "The West African giraffe, also known as the Niger giraffe, is a species or subspecies of the giraffe distinguished by its light colored spots.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Giraffe-solo_Koure-NIGER.jpg/330px-Giraffe-solo_Koure-NIGER.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -6155,7 +6160,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Przewalski's horse",
-        "description": "Przewalski's horse, also called the takhi, Mongolian wild horse or Dzungarian horse, is a rare and endangered wild horse originally...",
+        "description": "Przewalski's horse, also called the takhi, Mongolian wild horse or Dzungarian horse, is a rare and endangered wild horse originally native to the steppes of Central Asia.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Przewalskis_horse_02.jpg/330px-Przewalskis_horse_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -6253,7 +6258,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Blue Grotto (Malta)",
-        "description": "The Blue Grotto refers to a number of sea caverns on the south east coast of Malta, a short distance from the fishing harbour limits of...",
+        "description": "The Blue Grotto refers to a number of sea caverns on the south east coast of Malta, a short distance from the fishing harbour limits of Wied iż-Żurrieq, Malta.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Blue_Grotto_Malta.jpg/330px-Blue_Grotto_Malta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -6311,7 +6316,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Mauritius kestrel",
-        "description": "The Mauritius kestrel is a bird of prey from the family Falconidae endemic to the forests of Mauritius, where it is restricted to the...",
+        "description": "The Mauritius kestrel is a bird of prey from the family Falconidae endemic to the forests of Mauritius, where it is restricted to the southwestern plateau's forests, cliffs, and ravines.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Mauritius_kestrel_%28Falco_punctatus%29.jpg/330px-Mauritius_kestrel_%28Falco_punctatus%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -6571,7 +6576,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Dugong",
-        "description": "The dugong is a marine mammal.",
+        "description": "The dugong is a marine mammal. It is one of four living species of the order Sirenia, which also includes three species of manatees.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Dugong.JPG/330px-Dugong.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -6727,7 +6732,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "African bush elephant",
-        "description": "The African bush elephant, also known as the African savanna elephant, is a species of elephant native to sub-Saharan Africa and the...",
+        "description": "4 t. It is characterised by its long prehensile trunk with two finger-like processes; a concave back; large ears which help reduce body heat; and sturdy tusks that are noticeably curved.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/330px-178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -6831,7 +6836,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Harbor seal",
-        "description": "The harbor seal, also known as the common seal, is a true seal found along temperate and Arctic marine coastlines of the Northern...",
+        "description": "The harbor seal, also known as the common seal, is a true seal found along temperate and Arctic marine coastlines of the Northern Hemisphere.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Common_seal_%28Phoca_vitulina%29_2.jpg/330px-Common_seal_%28Phoca_vitulina%29_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -6883,7 +6888,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Reindeer",
-        "description": "The reindeer or caribou is a species of deer with circumpolar distribution, native to Arctic, subarctic, tundra, boreal, and mountainous...",
+        "description": "The reindeer or caribou is a species of deer with circumpolar distribution, native to Arctic, subarctic, tundra, boreal, and mountainous regions of Northern Europe, Siberia, and North America.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg/330px-Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -7299,7 +7304,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Philippine eagle",
-        "description": "The Philippine eagle, also known as the monkey-eating eagle or great Philippine eagle, is a critically endangered species of eagle of...",
+        "description": "The Philippine eagle, also known as the monkey-eating eagle or great Philippine eagle, is a critically endangered species of eagle of the family Accipitridae which is endemic to forests in the Philippines.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Pamarayeg_IIIx2_%28cropped%29.jpg/330px-Pamarayeg_IIIx2_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -7351,7 +7356,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Markhor",
-        "description": "The markhor is a large wild Capra species native to the mountain regions at the crossroads of Central and South Asia, including the...",
+        "description": "The markhor is a large wild Capra species native to the mountain regions at the crossroads of Central and South Asia, including the Karakoram and Himalayas.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg/330px-Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -7397,13 +7402,13 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Tatra Mountains",
-        "description": "The Tatra Mountains or Tatras, are a series of mountains within the Western Carpathians that form a natural border between Slovakia and...",
+        "description": "The Tatra Mountains or Tatras, are a series of mountains within the Western Carpathians that form a natural border between Slovakia and Poland.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Tatra_mountains_western_side_2.jpg/330px-Tatra_mountains_western_side_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "name": "European bison",
-        "description": "The European bison or the European wood bison, also known as the wisent, the zubr, or sometimes colloquially as the European buffalo, is...",
+        "description": "The European bison or the European wood bison, also known as the wisent, the zubr, or sometimes colloquially as the European buffalo, is a European species of bison.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/European_bison_%28Bison_bonasus%29_male_Bia%C5%82owieza.jpg/330px-European_bison_%28Bison_bonasus%29_male_Bia%C5%82owieza.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -7449,13 +7454,13 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Wadi Qelt",
-        "description": "Wadi Qelt, in Hebrew Nahal Prat, formerly Naḥal Faran, is a valley, riverine gulch or stream in the West Bank, originating near...",
+        "description": "Wadi Qelt, in Hebrew Nahal Prat, formerly Naḥal Faran, is a valley, riverine gulch or stream in the West Bank, originating near Jerusalem and running into the Jordan River near Jericho, shortly before it flows into the Dead Sea.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/WadiKelt_ST_06.jpg/330px-WadiKelt_ST_06.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "name": "Mountain gazelle",
-        "description": "The mountain gazelle, also called the true gazelle or the Palestine mountain gazelle, is a species of gazelle that is widely but...",
+        "description": "The mountain gazelle, also called the true gazelle or the Palestine mountain gazelle, is a species of gazelle that is widely but unevenly distributed.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Gazella_gazella.jpg/330px-Gazella_gazella.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -7507,7 +7512,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Iberian wolf",
-        "description": "The Iberian wolf, is a subspecies of grey wolf.",
+        "description": "The Iberian wolf, is a subspecies of grey wolf. It inhabits the northwest of the Iberian Peninsula, which includes northwestern Spain and northern Portugal, housing 2,200 to 2,700 wolves.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Iberian_Wolf_AdF_001.jpg/330px-Iberian_Wolf_AdF_001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -7605,7 +7610,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Iguazu Falls",
-        "description": "Iguazú Falls or Iguaçu Falls are waterfalls of the Iguazu River on the border of the Argentine province of Misiones and the Brazilian...",
+        "description": "Iguazú Falls or Iguaçu Falls are waterfalls of the Iguazu River on the border of the Argentine province of Misiones and the Brazilian state of Paraná.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Aerial_Foz_de_Igua%C3%A7u_26_Nov_2005.jpg/330px-Aerial_Foz_de_Igua%C3%A7u_26_Nov_2005.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -7761,7 +7766,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Tara (mountain)",
-        "description": "Tara is a mountain in western Serbia.",
+        "description": "Tara is a mountain in western Serbia. It is part of the Dinaric Alps and stands at 1,000 to 1,590 m above sea level.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Mitrovac_na_Tari.jpg/330px-Mitrovac_na_Tari.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -7819,7 +7824,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Siberian tiger",
-        "description": "The Siberian tiger or Amur tiger is a population of the tiger subspecies Panthera tigris tigris native to Northeast China, the Russian...",
+        "description": "The Siberian tiger or Amur tiger is a population of the tiger subspecies Panthera tigris tigris native to Northeast China, the Russian Far East, and possibly North Korea.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/P.t.altaica_Tomak_Male.jpg/330px-P.t.altaica_Tomak_Male.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -8027,7 +8032,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Aldabra giant tortoise",
-        "description": "The Aldabra giant tortoise, Aldabra tortoise, or simply giant tortoise, is a species of tortoise in the family Testudinidae and genus...",
+        "description": "The Aldabra giant tortoise, Aldabra tortoise, or simply giant tortoise, is a species of tortoise in the family Testudinidae and genus Aldabrachelys.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Giant_Tortoise.JPG/330px-Giant_Tortoise.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -8217,7 +8222,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Postojna Cave System",
-        "description": "Enchanting 24-kilometer karst cave system navigated by an electric subterranean train to see stalactites and olm salamanders.",
+        "description": "Postojna Cave is a 24-kilometer-long karst cave system near Postojna, southwestern Slovenia, and the second-longest cave system in the country.",
         "category": "cultural",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Postojna_%2822206343750%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       },
@@ -8229,13 +8234,13 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Postojna Cave",
-        "description": "Postojna Cave is a 24. 34 km (15.",
+        "description": "12 mi) long karst cave system near Postojna, southwestern Slovenia. It is the second-longest cave system in the country as well as one of its top tourism sites.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Postojna_%2822206343750%29.jpg/330px-Postojna_%2822206343750%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "name": "Olm",
-        "description": "The olm or proteus is an aquatic salamander which is the only species in the genus Proteus of the family Proteidae and the only...",
+        "description": "Olms are the 9 species in the genus Proteus. They are aquatic salamanders, and the only exclusively cave-dwelling chordate genus found in Europe.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Proteus_anguinus_Postojnska_Jama_Slovenija.jpg/330px-Proteus_anguinus_Postojnska_Jama_Slovenija.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -8333,7 +8338,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Banana Islands",
-        "description": "The Banana Islands are a group of islands that lie off the coast of Yawri Bay, south west of the Freetown Peninsula in the Western Area...",
+        "description": "The Banana Islands are a group of islands that lie off the coast of Yawri Bay, south west of the Freetown Peninsula in the Western Area of Sierra Leone.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Banana_Islands_%28Sierra_Leone%29.jpg/330px-Banana_Islands_%28Sierra_Leone%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
@@ -8755,7 +8760,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Syrian brown bear",
-        "description": "The Syrian brown bear is a medium-sized and endangered subspecies of brown bear native to the Middle East and West-Central Asia,...",
+        "description": "The Syrian brown bear is a medium-sized and endangered subspecies of brown bear native to the Middle East and West-Central Asia, particularly around the Caucasus Mountains.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Ursus_arctos_syriacus.jpg/330px-Ursus_arctos_syriacus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -8905,13 +8910,13 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Fazao Malfakassa National Park",
-        "description": "Fazao Malfakassa National Park or Parc national de Fazao Malfakassa is the largest of three national parks in Togo, the others being...",
+        "description": "Fazao Malfakassa National Park or Parc national de Fazao Malfakassa is the largest of three national parks in Togo, the others being Kéran and Fosse aux Lions.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Vue_de_la_montagne_%C3%A0_Fazao.jpg/330px-Vue_de_la_montagne_%C3%A0_Fazao.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "name": "African elephant",
-        "description": "African elephants are members of the genus Loxodonta comprising two living elephant species, the African bush elephant and the smaller...",
+        "description": "African elephants are members of the genus Loxodonta comprising two living elephant species, the African bush elephant and the smaller African forest elephant.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -9067,7 +9072,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Saltwater crocodile",
-        "description": "The saltwater crocodile is a crocodilian native to saltwater habitats, brackish wetlands and freshwater rivers from India's east coast...",
+        "description": "The saltwater crocodile is a crocodilian native to saltwater habitats, brackish wetlands and freshwater rivers from India's east coast across Southeast Asia and the Sundaland to northern Australia and Micronesia.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/SaltwaterCrocodile%28%27Maximo%27%29.jpg/330px-SaltwaterCrocodile%28%27Maximo%27%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -9119,7 +9124,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Akhal-Teke",
-        "description": "The Akhal-Teke is a Turkmen horse breed.",
+        "description": "The Akhal-Teke is a Turkmen horse breed. They have a reputation for speed and endurance, intelligence, thin manes and a distinctive metallic sheen which led to their nickname, \"Golden Horses\".",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Dagat-Geli.jpg/330px-Dagat-Geli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -9523,7 +9528,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Common nightingale",
-        "description": "The common nightingale, rufous nightingale or simply nightingale, is a small passerine bird which is known for its powerful and...",
+        "description": "The common nightingale, rufous nightingale or simply nightingale, is a small passerine bird which is known for its powerful and beautiful song, often described as one of the most beautiful sounds in nature.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Luscinia_megarhynchos_-_Common_nightingale_-_Nachtegaal_%28cropped%29.jpg/330px-Luscinia_megarhynchos_-_Common_nightingale_-_Nachtegaal_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -9679,7 +9684,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Southern lapwing",
-        "description": "The southern lapwing, commonly called quero-quero in Brazil, or tero in Argentina and Uruguay, tero-tero in Paraguay, and queltehue in...",
+        "description": "The southern lapwing, commonly called quero-quero in Brazil, or tero in Argentina and Uruguay, tero-tero in Paraguay, and queltehue in Chile is a wader in the order Charadriiformes.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Southern_Lapwing_-_Indaiatuba%2C_SP%2C_BR.jpg/330px-Southern_Lapwing_-_Indaiatuba%2C_SP%2C_BR.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -9777,13 +9782,13 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Gardens of Vatican City",
-        "description": "The Gardens of Vatican City, also informally known as the Vatican Gardens in Vatican City, are private urban gardens and parks which...",
+        "description": "The Gardens of Vatican City, also informally known as the Vatican Gardens in Vatican City, are private urban gardens and parks which cover more than half of the country, located in the west of the territory and owned by the Pope.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Vatikanische_Gaerten_Museen_Rom.jpg/330px-Vatikanische_Gaerten_Museen_Rom.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       },
       {
         "name": "Italian sparrow",
-        "description": "The Italian sparrow, also known as the cisalpine sparrow, is a passerine bird of the sparrow family Passeridae, found in Italy and other...",
+        "description": "The Italian sparrow, also known as the cisalpine sparrow, is a passerine bird of the sparrow family Passeridae, found in Italy and other parts of the Mediterranean region.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Sparrow_on_blue_chair_%28cropped%29.jpg/330px-Sparrow_on_blue_chair_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -9835,7 +9840,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Saint Vincent amazon",
-        "description": "The Saint Vincent amazon, also known as Saint Vincent parrot, is a large, approximately 40 cm (16 in) long, multi-colored amazon parrot...",
+        "description": "The Saint Vincent amazon, also known as Saint Vincent parrot, is a large, approximately 40 cm (16 in) long, multi-colored amazon parrot with a yellowish white, blue and green head, greenish-bronze upperparts plumage, and violet blue-green wings.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Amazona_guildingii_-Botanical_Gardens_-Kingstown_-Saint_Vincent-8a-4c.jpg/330px-Amazona_guildingii_-Botanical_Gardens_-Kingstown_-Saint_Vincent-8a-4c.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -9939,7 +9944,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Saola",
-        "description": "The saola, also called the spindlehorn, Asian unicorn, or infrequently, Vũ Quang bovid, is a forest-dwelling bovid native to the...",
+        "description": "The saola, also called the spindlehorn, Asian unicorn, or infrequently, Vũ Quang bovid, is a forest-dwelling bovid native to the Annamite Range in Vietnam and Laos.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Pseudoryx_nghetinhensis%2C_b.PNG/330px-Pseudoryx_nghetinhensis%2C_b.PNG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -10199,7 +10204,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "African fish eagle",
-        "description": "The African fish eagle or the African sea eagle is a large species of eagle found throughout sub-Saharan Africa wherever large bodies of...",
+        "description": "The African fish eagle or the African sea eagle is a large species of eagle found throughout sub-Saharan Africa wherever large bodies of open water with an abundant food supply occur.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/African_fish_eagle%2C_Haliaeetus_vocifer%2C_at_Chobe_National_Park%2C_Botswana_%2833516612831%29.jpg/330px-African_fish_eagle%2C_Haliaeetus_vocifer%2C_at_Chobe_National_Park%2C_Botswana_%2833516612831%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
@@ -10251,7 +10256,7 @@ export const WORLD_LANDMARKS_AND_FACTS: Record<string, CountryLandmarksAndFacts>
       },
       {
         "name": "Black rhinoceros",
-        "description": "The black rhinoceros, also called the black rhino or the hooked-lip rhinoceros, is a species of rhinoceros native to East and Southern...",
+        "description": "The black rhinoceros, also called the black rhino or the hooked-lip rhinoceros, is a species of rhinoceros native to East and Southern Africa, including Angola, Botswana, Eswatini, Kenya, Lesotho, Malawi, Mozambique, Namibia, South Africa, Tanzania, Zambia, and Zimbabwe. Although the species is referred to as black, its colours vary from brown to grey. It is the only extant species of the genus Diceros.",
         "category": "cultural",
         "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Black_Rhino_at_Working_with_Wildlife.jpg/330px-Black_Rhino_at_Working_with_Wildlife.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }

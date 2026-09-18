@@ -194,9 +194,6 @@ export function WorldContinentsMap({
               <span>Show All Continents</span>
             </button>
           )}
-          <span className="text-xs text-slate-400 hidden md:inline">
-            Interactive Robinson Projection
-          </span>
         </div>
       </div>
 

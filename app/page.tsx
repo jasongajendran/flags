@@ -66,7 +66,7 @@ const RealCountryMap = dynamic(
   }
 );
 
-type AudioSection = 'intro' | 'flag' | 'geography' | 'facts' | null;
+type AudioSection = 'intro' | 'flag' | 'geography' | 'facts' | string | null;
 
 export default function KidsApp() {
   const [mainView, setMainView] = useState<'world' | 'country'>('world');
@@ -151,7 +151,7 @@ export default function KidsApp() {
   };
 
   const playReadAllSequence = (stepIndex = 0) => {
-    const sequence: NonNullable<AudioSection>[] = ['intro', 'geography', 'flag', 'facts'];
+    const sequence: ('intro' | 'geography' | 'flag' | 'facts')[] = ['intro', 'geography', 'flag', 'facts'];
     
     if (stepIndex >= sequence.length || !readAllActiveRef.current) {
       readAllActiveRef.current = false;
@@ -194,7 +194,7 @@ export default function KidsApp() {
     }
   };
 
-  const playSection = (section: NonNullable<AudioSection>) => {
+  const playSection = (section: 'intro' | 'flag' | 'geography' | 'facts') => {
     // Clicking the component currently being read stops it immediately
     if (isPlaying && activeAudioSection === section) {
       stopAllAudio();
@@ -212,6 +212,18 @@ export default function KidsApp() {
     }
 
     const text = getFullCountryGuideStory(selectedCountry, section);
+    play(text, () => {
+      setActiveAudioSection(null);
+    });
+  };
+
+  const playItemAudio = (id: string, text: string) => {
+    if (isPlaying && activeAudioSection === id) {
+      stopAllAudio();
+      return;
+    }
+    stopAllAudio();
+    setActiveAudioSection(id);
     play(text, () => {
       setActiveAudioSection(null);
     });
@@ -760,35 +772,59 @@ export default function KidsApp() {
 
                             {/* Small Verified Picture Associated with Fact Content */}
                             {imageUrl && factMedia && (
-                              <button
-                                type="button"
-                                onClick={() => setActivePhotoModal({
-                                  title: imageTitle,
-                                  caption: imageCaption,
-                                  url: imageUrl
-                                })}
-                                className="group relative flex-shrink-0 w-24 h-20 sm:w-28 sm:h-20 rounded-xl overflow-hidden border border-slate-800 hover:border-amber-400/90 transition-all cursor-pointer shadow-md bg-slate-950 self-end sm:self-center text-left"
-                                title={`Click to view verified HD picture: ${imageTitle}`}
-                                aria-label={`View verified picture for fact ${idx + 1}: ${imageTitle}`}
-                              >
-                                <Image
-                                  src={imageUrl}
-                                  alt={imageTitle}
-                                  fill
-                                  className="object-cover transition-transform duration-300 group-hover:scale-110"
-                                  referrerPolicy="no-referrer"
-                                  onError={() => {
-                                    setFailedFactImages((prev) => ({ ...prev, [imageKey]: true }));
+                              <div className="relative group/fact flex-shrink-0 self-end sm:self-center">
+                                <button
+                                  type="button"
+                                  onClick={() => setActivePhotoModal({
+                                    title: imageTitle,
+                                    caption: imageCaption,
+                                    url: imageUrl
+                                  })}
+                                  className="group relative flex-shrink-0 w-24 h-20 sm:w-28 sm:h-20 rounded-xl overflow-hidden border border-slate-800 hover:border-amber-400/90 transition-all cursor-pointer shadow-md bg-slate-950 block text-left"
+                                  title={`Click to view verified HD picture: ${imageTitle}`}
+                                  aria-label={`View verified picture for fact ${idx + 1}: ${imageTitle}`}
+                                >
+                                  <Image
+                                    src={imageUrl}
+                                    alt={imageTitle}
+                                    fill
+                                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                                    referrerPolicy="no-referrer"
+                                    onError={() => {
+                                      setFailedFactImages((prev) => ({ ...prev, [imageKey]: true }));
+                                    }}
+                                  />
+                                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent group-hover:via-transparent transition-opacity" />
+                                  <span className="absolute bottom-1 left-1.5 right-1.5 text-[9px] sm:text-[10px] font-bold text-white truncate block drop-shadow">
+                                    {imageTitle}
+                                  </span>
+                                  <span className="absolute top-1 right-1 p-1 rounded-md bg-slate-950/80 text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <Maximize2 size={10} />
+                                  </span>
+                                </button>
+                                
+                                {/* Audio narration for fact picture */}
+                                <button
+                                  type="button"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    playItemAudio(`fact-media-${idx}`, `${imageTitle}. ${imageCaption}`);
                                   }}
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent group-hover:via-transparent transition-opacity" />
-                                <span className="absolute bottom-1 left-1.5 right-1.5 text-[9px] sm:text-[10px] font-bold text-white truncate block drop-shadow">
-                                  {imageTitle}
-                                </span>
-                                <span className="absolute top-1 right-1 p-1 rounded-md bg-slate-950/80 text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                                  <Maximize2 size={10} />
-                                </span>
-                              </button>
+                                  title={activeAudioSection === `fact-media-${idx}` ? "Stop narration" : `Listen to ${imageTitle}`}
+                                  aria-label={`Listen to ${imageTitle}`}
+                                  className={`absolute top-1 left-1 p-1.5 rounded-lg text-xs transition-all cursor-pointer z-10 border shadow-md ${
+                                    activeAudioSection === `fact-media-${idx}`
+                                      ? 'bg-rose-600 text-white animate-pulse border-rose-500 shadow-rose-900/50'
+                                      : 'bg-slate-950/85 text-amber-400 hover:bg-amber-600 hover:text-white border-slate-700/80'
+                                  }`}
+                                >
+                                  {activeAudioSection === `fact-media-${idx}` ? (
+                                    <Square size={11} fill="currentColor" />
+                                  ) : (
+                                    <Volume2 size={11} />
+                                  )}
+                                </button>
+                              </div>
                             )}
                           </div>
                         );
@@ -877,39 +913,92 @@ export default function KidsApp() {
                         ? 'bg-emerald-600 text-emerald-50 border-emerald-500/40' 
                         : 'bg-sky-600 text-sky-50 border-sky-500/40';
 
+                      const isThisPlaying = activeAudioSection === `landmark-${pIdx}`;
+
                       return (
                         <div 
                           key={pIdx}
                           onClick={() => setActivePhotoModal(photo)}
-                          className="group bg-slate-900 border border-slate-800 hover:border-sky-500/60 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col"
+                          className="group bg-slate-900 border border-slate-800 hover:border-sky-500/60 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col justify-between"
                         >
-                          <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-950">
-                            <Image
-                              src={photo.url}
-                              alt={photo.title}
-                              fill
-                              className="object-cover transition-transform duration-500 group-hover:scale-105"
-                              referrerPolicy="no-referrer"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent" />
-                            <div className="absolute top-3 right-3 p-1.5 rounded-lg bg-slate-900/80 text-white opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm shadow">
-                              <Maximize2 size={16} />
+                          <div>
+                            <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-950">
+                              <Image
+                                src={photo.url}
+                                alt={photo.title}
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                referrerPolicy="no-referrer"
+                              />
+                              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent" />
+                              
+                              {/* Audio button directly over the picture */}
+                              <button
+                                type="button"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  playItemAudio(`landmark-${pIdx}`, `${photo.title}. ${photo.caption}`);
+                                }}
+                                title={isThisPlaying ? "Stop narration" : `Listen to ${photo.title}`}
+                                aria-label={`Listen to ${photo.title}`}
+                                className={`absolute top-2.5 left-2.5 p-2 rounded-xl backdrop-blur-md transition-all cursor-pointer z-10 border shadow-md ${
+                                  isThisPlaying
+                                    ? 'bg-rose-600 text-white animate-pulse border-rose-500 ring-2 ring-rose-400/50'
+                                    : 'bg-slate-950/85 text-sky-300 hover:bg-sky-600 hover:text-white border-slate-700/80 hover:scale-105'
+                                }`}
+                              >
+                                {isThisPlaying ? (
+                                  <Square size={14} fill="currentColor" />
+                                ) : (
+                                  <Volume2 size={14} />
+                                )}
+                              </button>
+
+                              <div className="absolute top-2.5 right-2.5 p-1.5 rounded-lg bg-slate-900/80 text-white opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm shadow">
+                                <Maximize2 size={16} />
+                              </div>
+                              <div className="absolute bottom-3 left-3 right-3">
+                                <span className={`inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border mb-1 shadow ${badgeClass}`}>
+                                  {badgeLabel}
+                                </span>
+                                <h4 className="text-sm sm:text-base font-bold text-white leading-snug drop-shadow-md line-clamp-1">
+                                  {photo.title}
+                                </h4>
+                              </div>
                             </div>
-                            <div className="absolute bottom-3 left-3 right-3">
-                              <span className={`inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border mb-1 shadow ${badgeClass}`}>
-                                {badgeLabel}
-                              </span>
-                              <h4 className="text-sm sm:text-base font-bold text-white leading-snug drop-shadow-md line-clamp-1">
-                                {photo.title}
-                              </h4>
+                            <div className="p-3.5 sm:p-4">
+                              <p className="text-xs text-slate-300 leading-relaxed">
+                                {photo.caption}
+                              </p>
                             </div>
                           </div>
-                          <div className="p-3.5 sm:p-4 flex-grow flex flex-col justify-between">
-                            <p className="text-xs text-slate-300 leading-relaxed line-clamp-3 group-hover:line-clamp-none transition-all">
-                              {photo.caption}
-                            </p>
-                            <div className="mt-3 pt-2.5 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-sky-400 font-medium">
-                              <span>Enlarge photo</span>
+
+                          {/* Card Footer with Listen & Enlarge Actions */}
+                          <div className="px-3.5 pb-3.5 sm:px-4 sm:pb-4 pt-2.5 border-t border-slate-800/80 flex items-center justify-between">
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                playItemAudio(`landmark-${pIdx}`, `${photo.title}. ${photo.caption}`);
+                              }}
+                              title={isThisPlaying ? "Stop narration" : `Listen to ${photo.title}`}
+                              aria-label={`Listen to ${photo.title}`}
+                              className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl font-bold text-xs transition-all cursor-pointer border shadow-sm ${
+                                isThisPlaying
+                                  ? 'bg-rose-600 text-white animate-pulse border-rose-500 shadow-rose-900/50'
+                                  : 'bg-slate-800 text-sky-400 hover:bg-sky-600 hover:text-white border-slate-700/80'
+                              }`}
+                            >
+                              {isThisPlaying ? (
+                                <Square size={13} fill="currentColor" />
+                              ) : (
+                                <Volume2 size={13} />
+                              )}
+                              <span>{isThisPlaying ? 'Stop' : 'Listen'}</span>
+                            </button>
+
+                            <div className="flex items-center gap-1 text-[11px] text-sky-400 font-medium group-hover:text-sky-300">
+                              <span>Enlarge</span>
                               <ChevronRight size={13} className="transition-transform group-hover:translate-x-1" />
                             </div>
                           </div>
@@ -1014,13 +1103,34 @@ export default function KidsApp() {
               </button>
             </div>
             <div className="p-6">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="px-2.5 py-0.5 rounded-full bg-sky-500/20 text-sky-400 border border-sky-500/30 text-xs font-semibold">
-                  {selectedCountry.name}
-                </span>
-                <h3 className="text-xl font-bold text-white">{activePhotoModal.title}</h3>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-2">
+                <div>
+                  <span className="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/20 text-sky-400 border border-sky-500/30 text-xs font-semibold mb-1.5">
+                    {selectedCountry.name}
+                  </span>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white">{activePhotoModal.title}</h3>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => playItemAudio(`modal-${activePhotoModal.title}`, `${activePhotoModal.title}. ${activePhotoModal.caption}`)}
+                  title={activeAudioSection === `modal-${activePhotoModal.title}` ? "Stop narration" : "Listen to description"}
+                  aria-label="Listen to description"
+                  className={`flex items-center gap-2 px-4 py-2 rounded-2xl font-bold text-xs sm:text-sm transition-all cursor-pointer border shrink-0 shadow-md ${
+                    activeAudioSection === `modal-${activePhotoModal.title}`
+                      ? 'bg-rose-600 text-white animate-pulse border-rose-500 shadow-rose-900/50'
+                      : 'bg-slate-800 text-sky-400 hover:bg-sky-600 hover:text-white border-slate-700'
+                  }`}
+                >
+                  {activeAudioSection === `modal-${activePhotoModal.title}` ? (
+                    <Square size={16} fill="currentColor" />
+                  ) : (
+                    <Volume2 size={16} />
+                  )}
+                  <span>{activeAudioSection === `modal-${activePhotoModal.title}` ? 'Stop Narration' : 'Listen'}</span>
+                </button>
               </div>
-              <p className="text-sm text-slate-300 leading-relaxed mt-2">{activePhotoModal.caption}</p>
+              <p className="text-sm sm:text-base text-slate-300 leading-relaxed mt-2">{activePhotoModal.caption}</p>
             </div>
           </div>
         </div>
