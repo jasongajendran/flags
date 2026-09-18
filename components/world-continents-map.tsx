@@ -2,8 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Globe, Compass, Info, Check, ArrowRight, ExternalLink } from 'lucide-react';
-import { Continent, Country, continentsData } from '@/app/data/countries';
+import { Globe, Compass, Info, Check, ArrowRight, Sparkles, Navigation, Layers, Star, Zap, MapPin } from 'lucide-react';
 
 export interface WorldContinentsMapProps {
   activeContinentFilter: string;
@@ -15,7 +14,14 @@ interface ContinentInfo {
   id: string;
   name: string;
   filterName: string;
+  emoji: string;
+  cartoonTitle: string;
+  cartoonBadge: string;
+  sizeRank: string;
   color: string;
+  accentBg: string;
+  gradientFrom: string;
+  gradientTo: string;
   hoverColor: string;
   textColor: string;
   borderStroke: string;
@@ -23,6 +29,7 @@ interface ContinentInfo {
   population: string;
   area: string;
   oceans: string;
+  funFact: string;
   keyFact: string;
 }
 
@@ -31,99 +38,155 @@ export const CONTINENTS_INFO: Record<string, ContinentInfo> = {
     id: 'north_america',
     name: 'North America',
     filterName: 'North America',
-    color: '#fbbf24', // Amber/Yellow like image
+    emoji: '🦅',
+    cartoonTitle: 'Canyons, Tundras & Islands!',
+    cartoonBadge: '3rd Largest',
+    sizeRank: '3rd Largest Continent',
+    color: '#fbbf24',
+    accentBg: '#78350f',
+    gradientFrom: '#fde68a',
+    gradientTo: '#f59e0b',
     hoverColor: '#f59e0b',
     textColor: '#78350f',
     borderStroke: '#d97706',
     countriesCount: 23,
     population: '~600 Million',
-    area: '24.7 Million km² (3rd largest)',
+    area: '24.7 Million km²',
     oceans: 'Arctic, Atlantic, Pacific',
-    keyFact: 'Spans from tropical Caribbean islands to Arctic tundras of Canada and Greenland.'
+    funFact: 'Home to the world\'s largest island (Greenland) and all major climate zones!',
+    keyFact: 'Spans from tropical Caribbean coral reefs to Arctic tundras of Canada and Greenland.'
   },
   south_america: {
     id: 'south_america',
     name: 'South America',
     filterName: 'South America',
-    color: '#f87171', // Coral Red like image
-    hoverColor: '#ef4444',
-    textColor: '#7f1d1d',
-    borderStroke: '#dc2626',
+    emoji: '🦜',
+    cartoonTitle: 'Rainforests & Andes Peaks!',
+    cartoonBadge: '4th Largest',
+    sizeRank: '4th Largest Continent',
+    color: '#fb7185',
+    accentBg: '#881337',
+    gradientFrom: '#fda4af',
+    gradientTo: '#e11d48',
+    hoverColor: '#f43f5e',
+    textColor: '#881337',
+    borderStroke: '#be123c',
     countriesCount: 12,
     population: '~430 Million',
-    area: '17.8 Million km² (4th largest)',
+    area: '17.8 Million km²',
     oceans: 'Pacific, Atlantic, Caribbean',
-    keyFact: 'Home to the Amazon Rainforest, Amazon River, and longest mountain range (Andes).'
+    funFact: 'The Amazon River carries more water than the next 7 largest rivers combined!',
+    keyFact: 'Home to the Amazon Rainforest, Amazon River basin, and the 7,000 km Andes Mountain range.'
   },
   europe: {
     id: 'europe',
     name: 'Europe',
     filterName: 'Europe',
-    color: '#22c55e', // Green like image
-    hoverColor: '#16a34a',
+    emoji: '🏰',
+    cartoonTitle: 'Castles & Historic Wonders!',
+    cartoonBadge: '6th Largest',
+    sizeRank: '6th Largest Continent',
+    color: '#4ade80',
+    accentBg: '#14532d',
+    gradientFrom: '#86efac',
+    gradientTo: '#16a34a',
+    hoverColor: '#22c55e',
     textColor: '#14532d',
     borderStroke: '#15803d',
     countriesCount: 45,
     population: '~750 Million',
-    area: '10.2 Million km² (6th largest)',
+    area: '10.2 Million km²',
     oceans: 'Arctic, Atlantic, Mediterranean',
-    keyFact: 'Divided into 45 sovereign nations, deeply rich in world history and architecture.'
+    funFact: 'Boasts over 400 UNESCO World Heritage sites and 45 sovereign nations!',
+    keyFact: 'Comprises 45 sovereign nations, deeply rich in world heritage, culture, and architecture.'
   },
   africa: {
     id: 'africa',
     name: 'Africa',
     filterName: 'Africa',
-    color: '#818cf8', // Violet/Purple like image
-    hoverColor: '#6366f1',
+    emoji: '🦁',
+    cartoonTitle: 'The Wild Cradle of Life!',
+    cartoonBadge: '2nd Largest',
+    sizeRank: '2nd Largest Continent',
+    color: '#a5b4fc',
+    accentBg: '#312e81',
+    gradientFrom: '#c7d2fe',
+    gradientTo: '#6366f1',
+    hoverColor: '#818cf8',
     textColor: '#312e81',
     borderStroke: '#4f46e5',
     countriesCount: 54,
     population: '~1.4 Billion',
-    area: '30.3 Million km² (2nd largest)',
+    area: '30.3 Million km²',
     oceans: 'Atlantic, Indian, Mediterranean',
-    keyFact: 'Most sovereign nations of any continent (54), cradle of humankind.'
+    funFact: 'Features the world\'s longest river (Nile) and the gigantic Sahara Desert!',
+    keyFact: 'Cradle of humankind with the most sovereign nations of any continent (54) and Sahara Desert.'
   },
   asia: {
     id: 'asia',
     name: 'Asia',
     filterName: 'Asia',
-    color: '#fed7aa', // Warm Peach/Sand like image
-    hoverColor: '#fdba74',
+    emoji: '🌏',
+    cartoonTitle: 'The Colossal Mega-Continent!',
+    cartoonBadge: '1st Largest',
+    sizeRank: '1st Largest Continent',
+    color: '#fed7aa',
+    accentBg: '#7c2d12',
+    gradientFrom: '#ffedd5',
+    gradientTo: '#ea580c',
+    hoverColor: '#fb923c',
     textColor: '#7c2d12',
-    borderStroke: '#ea580c',
+    borderStroke: '#c2410c',
     countriesCount: 48,
-    population: '~4.7 Billion (60% of Earth)',
-    area: '44.6 Million km² (Largest)',
+    population: '~4.7 Billion',
+    area: '44.6 Million km²',
     oceans: 'Arctic, Pacific, Indian',
-    keyFact: 'Largest continent by both land area and population, with Earth’s highest peak (Everest).'
+    funFact: 'Contains Earth\'s highest mountain (Everest, 8,848m) and lowest land point (Dead Sea)!',
+    keyFact: 'Largest continent by land and population, featuring Mount Everest, Himalayas, and ancient silk routes.'
   },
   oceania: {
     id: 'oceania',
     name: 'Australia & Oceania',
     filterName: 'Oceania',
-    color: '#f472b6', // Pink/Magenta like image
+    emoji: '🦘',
+    cartoonTitle: 'Coral Atolls & Red Outback!',
+    cartoonBadge: '7th Largest',
+    sizeRank: '7th Largest (Smallest)',
+    color: '#f472b6',
+    accentBg: '#831843',
+    gradientFrom: '#fbcfe8',
+    gradientTo: '#db2777',
     hoverColor: '#ec4899',
     textColor: '#831843',
-    borderStroke: '#db2777',
+    borderStroke: '#be185d',
     countriesCount: 14,
     population: '~45 Million',
-    area: '8.5 Million km² (Smallest land)',
+    area: '8.5 Million km²',
     oceans: 'Pacific, Indian, Southern',
-    keyFact: 'Thousands of Pacific coral atolls, Great Barrier Reef, and vast Australian Outback.'
+    funFact: 'The Great Barrier Reef is so vast it can be seen by astronauts in space!',
+    keyFact: 'Vast Australian Outback, Great Barrier Reef, New Zealand fjords, and thousands of Pacific atolls.'
   },
   antarctica: {
     id: 'antarctica',
     name: 'Antarctica',
     filterName: 'Antarctica',
-    color: '#f1f5f9', // Ice white/silver like image
-    hoverColor: '#e2e8f0',
-    textColor: '#0f172a',
-    borderStroke: '#94a3b8',
+    emoji: '🐧',
+    cartoonTitle: 'The Frozen Giant of Ice!',
+    cartoonBadge: '5th Largest',
+    sizeRank: '5th Largest Continent',
+    color: '#e0f2fe',
+    accentBg: '#0369a1',
+    gradientFrom: '#ffffff',
+    gradientTo: '#bae6fd',
+    hoverColor: '#ffffff',
+    textColor: '#0369a1',
+    borderStroke: '#38bdf8',
     countriesCount: 0,
-    population: '~1,000 - 5,000 (Scientists)',
-    area: '14.2 Million km² (5th largest)',
+    population: '~1,000 - 5,000 Scientists',
+    area: '14.2 Million km²',
     oceans: 'Southern Ocean',
-    keyFact: 'Earth’s 7th continent! 90% of all ice, protected by the 1959 Antarctic Treaty for peace & science.'
+    funFact: 'Holds 90% of Earth\'s ice and 70% of the planet\'s freshwater reserves!',
+    keyFact: 'Earth’s 7th continent! 90% of all ice on Earth, protected by the 1959 Antarctic Treaty for science.'
   }
 };
 
@@ -162,6 +225,22 @@ export function WorldContinentsMap({
     }
   };
 
+  // Smart opposite positioning: ensures pop-up NEVER overlaps the user's cursor or continent under inspection!
+  const getPopupPositionClass = (id?: string) => {
+    if (!id) return 'top-4 left-4';
+    if (id === 'asia' || id === 'oceania') {
+      return 'top-3 left-3 sm:top-4 sm:left-4'; // Place in northwest when inspecting eastern continents
+    }
+    if (id === 'north_america' || id === 'south_america') {
+      return 'top-3 right-3 sm:top-4 sm:right-4'; // Place in northeast when inspecting western continents
+    }
+    if (id === 'antarctica') {
+      return 'top-3 left-1/2 -translate-x-1/2 sm:top-4'; // Top center for Antarctica
+    }
+    // Europe & Africa: placed on top-left
+    return 'top-3 left-3 sm:top-4 sm:left-4';
+  };
+
   return (
     <div className="bg-slate-950 border border-slate-800 rounded-3xl p-4 sm:p-6 shadow-2xl overflow-hidden">
       {/* Header Bar */}
@@ -189,7 +268,7 @@ export function WorldContinentsMap({
             <button
               type="button"
               onClick={() => onSelectContinent('All')}
-              className="text-xs px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-400 font-bold border border-slate-700 transition-all cursor-pointer flex items-center gap-1.5"
+              className="text-xs px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-400 font-medium border border-slate-700 transition-all cursor-pointer flex items-center gap-1.5"
             >
               <span>Show All Continents</span>
             </button>
@@ -198,449 +277,691 @@ export function WorldContinentsMap({
       </div>
 
       {/* SVG Map Canvas Container */}
-      <div className="relative w-full aspect-[16/9] max-h-[500px] bg-sky-500/90 rounded-2xl overflow-hidden border-2 border-sky-400 shadow-inner select-none">
+      <div className="relative w-full aspect-[16/9] max-h-[520px] bg-gradient-to-b from-sky-950 via-slate-950 to-slate-950 rounded-2xl overflow-hidden border border-sky-900/60 shadow-inner select-none">
         
         {/* SVG Graphic */}
         <svg 
           viewBox="0 0 1000 520" 
           className="w-full h-full object-contain"
-          style={{ filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.15))' }}
+          style={{ filter: 'drop-shadow(0 4px 20px rgba(0,0,0,0.5))' }}
         >
           <defs>
-            {/* Ocean radial gradient */}
-            <radialGradient id="oceanGrad" cx="50%" cy="50%" r="70%">
-              <stop offset="0%" stopColor="#38bdf8" />
-              <stop offset="65%" stopColor="#0ea5e9" />
-              <stop offset="100%" stopColor="#0284c7" />
+            {/* Deep Rich Ocean Gradient */}
+            <radialGradient id="oceanDeepGrad" cx="50%" cy="50%" r="68%">
+              <stop offset="0%" stopColor="#0284c7" />
+              <stop offset="45%" stopColor="#0369a1" />
+              <stop offset="80%" stopColor="#075985" />
+              <stop offset="100%" stopColor="#0c4a6e" />
             </radialGradient>
 
-            {/* Subtle glow filter */}
-            <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-              <feGaussianBlur stdDeviation="3" result="blur" />
-              <feComposite in="SourceGraphic" in2="blur" operator="over" />
+            {/* Continent 3D Elevation Drop Shadow Filter */}
+            <filter id="landShadow" x="-10%" y="-10%" width="125%" height="125%">
+              <feDropShadow dx="0" dy="3" stdDeviation="3" floodColor="#021424" floodOpacity="0.75" />
             </filter>
+
+            {/* Continent Specific Gradients */}
+            <linearGradient id="gradNA" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#fef08a" />
+              <stop offset="50%" stopColor="#fbbf24" />
+              <stop offset="100%" stopColor="#f59e0b" />
+            </linearGradient>
+            <linearGradient id="gradGreenland" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#ffffff" />
+              <stop offset="60%" stopColor="#fef08a" />
+              <stop offset="100%" stopColor="#fde047" />
+            </linearGradient>
+
+            <linearGradient id="gradSA" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#fda4af" />
+              <stop offset="50%" stopColor="#fb7185" />
+              <stop offset="100%" stopColor="#e11d48" />
+            </linearGradient>
+
+            <linearGradient id="gradEU" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#86efac" />
+              <stop offset="50%" stopColor="#4ade80" />
+              <stop offset="100%" stopColor="#16a34a" />
+            </linearGradient>
+
+            <linearGradient id="gradAF" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#c7d2fe" />
+              <stop offset="50%" stopColor="#a5b4fc" />
+              <stop offset="100%" stopColor="#6366f1" />
+            </linearGradient>
+
+            <linearGradient id="gradAS" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#fed7aa" />
+              <stop offset="50%" stopColor="#fdba74" />
+              <stop offset="100%" stopColor="#f97316" />
+            </linearGradient>
+
+            <linearGradient id="gradOC" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#fbcfe8" />
+              <stop offset="50%" stopColor="#f472b6" />
+              <stop offset="100%" stopColor="#db2777" />
+            </linearGradient>
+
+            <linearGradient id="gradAN" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#ffffff" />
+              <stop offset="40%" stopColor="#f0f9ff" />
+              <stop offset="80%" stopColor="#e0f2fe" />
+              <stop offset="100%" stopColor="#bae6fd" />
+            </linearGradient>
           </defs>
 
-          {/* Ocean Background Canvas (Oval Robinson projection shape) */}
+          {/* Outer Map Border Frame & Bezel */}
+          <rect x="0" y="0" width="1000" height="520" fill="#031322" />
+
+          {/* Ocean Background Canvas (Elliptical Global Projection) */}
           <ellipse 
             cx="500" 
             cy="260" 
-            rx="495" 
-            ry="255" 
-            fill="url(#oceanGrad)" 
-            stroke="#0369a1" 
-            strokeWidth="3"
+            rx="492" 
+            ry="252" 
+            fill="url(#oceanDeepGrad)" 
+            stroke="#0284c7" 
+            strokeWidth="2.5"
           />
 
-          {/* Graticule Grid Lines (Latitudes & Longitudes) */}
-          <g stroke="#ffffff" strokeWidth="0.8" opacity="0.35" fill="none">
-            {/* Parallels (Latitudes) */}
-            {/* 60° N */}
-            <path d="M 80,105 Q 500,70 920,105" />
-            {/* 45° N */}
-            <path d="M 30,150 Q 500,120 970,150" strokeDasharray="3 3" />
-            {/* 30° N */}
-            <path d="M 12,200 Q 500,180 988,200" />
-            {/* Equator (0°) */}
-            <path d="M 5,260 L 995,260" stroke="#fef08a" strokeWidth="1.8" opacity="0.75" />
-            {/* 30° S */}
-            <path d="M 12,320 Q 500,340 988,320" />
-            {/* 45° S */}
-            <path d="M 30,370 Q 500,400 970,370" strokeDasharray="3 3" />
-            {/* 60° S */}
-            <path d="M 80,415 Q 500,450 920,415" />
+          {/* Concentric subtle ocean depth rings */}
+          <ellipse cx="500" cy="260" rx="420" ry="215" fill="none" stroke="#38bdf8" strokeWidth="0.75" opacity="0.18" />
+          <ellipse cx="500" cy="260" rx="340" ry="175" fill="none" stroke="#38bdf8" strokeWidth="0.75" opacity="0.14" />
+          <ellipse cx="500" cy="260" rx="240" ry="120" fill="none" stroke="#38bdf8" strokeWidth="0.75" opacity="0.12" />
 
-            {/* Meridians (Longitudes) */}
-            {/* Prime Meridian (0°) */}
-            <path d="M 500,5 L 500,515" stroke="#fef08a" strokeWidth="1.5" opacity="0.65" />
-            {/* 90° W */}
-            <path d="M 500,5 Q 260,260 500,515" strokeDasharray="3 3" />
-            {/* 45° W */}
-            <path d="M 500,5 Q 380,260 500,515" />
-            {/* 45° E */}
-            <path d="M 500,5 Q 620,260 500,515" />
-            {/* 90° E */}
-            <path d="M 500,5 Q 740,260 500,515" strokeDasharray="3 3" />
+          {/* Graticule Grid Lines */}
+          <g stroke="#e0f2fe" strokeWidth="0.75" opacity="0.28" fill="none" pointerEvents="none">
+            <path d="M 100,90 Q 500,60 900,90" strokeDasharray="3 3" />
+            <path d="M 35,148 Q 500,118 965,148" />
+            <path d="M 15,198 Q 500,175 985,198" stroke="#fde047" strokeWidth="1" strokeDasharray="4 3" opacity="0.75" />
+            <path d="M 8,260 L 992,260" stroke="#fde047" strokeWidth="1.8" opacity="0.85" />
+            <path d="M 15,322 Q 500,345 985,322" stroke="#fde047" strokeWidth="1" strokeDasharray="4 3" opacity="0.75" />
+            <path d="M 35,372 Q 500,402 965,372" />
+            <path d="M 100,430 Q 500,460 900,430" strokeDasharray="3 3" />
+
+            <path d="M 500,8 L 500,512" stroke="#fde047" strokeWidth="1.4" opacity="0.7" />
+            <path d="M 500,8 Q 180,260 500,512" strokeDasharray="2 3" opacity="0.4" />
+            <path d="M 500,8 Q 340,260 500,512" />
+            <path d="M 500,8 Q 660,260 500,512" />
+            <path d="M 500,8 Q 820,260 500,512" strokeDasharray="2 3" opacity="0.4" />
           </g>
 
-          {/* Reference Geographic Labels on Ocean Grid */}
-          <g fontSize="10" fontFamily="sans-serif" fill="#ffffff" fontWeight="600" opacity="0.85" pointerEvents="none">
-            <text x="502" y="255" fill="#fef08a" fontSize="9">Equator (0°)</text>
-            <text x="503" y="20" fill="#fef08a" fontSize="9">0° Prime Meridian</text>
-            <text x="140" y="145" opacity="0.7">45° N</text>
-            <text x="860" y="145" opacity="0.7">45° N</text>
-            <text x="140" y="380" opacity="0.7">45° S</text>
-            <text x="860" y="380" opacity="0.7">45° S</text>
-            <text x="260" y="340" opacity="0.7">90° W</text>
-            <text x="740" y="340" opacity="0.7">90° E</text>
+          {/* Reference Geographic Labels */}
+          <g fontSize="9" fontFamily="sans-serif" fill="#f8fafc" fontWeight="500" opacity="0.75" pointerEvents="none">
+            <text x="504" y="254" fill="#fde047" fontSize="8.5" fontWeight="700">Equator (0°)</text>
+            <text x="504" y="22" fill="#fde047" fontSize="8.5" fontWeight="700">0° Prime Meridian</text>
+            <text x="130" y="142" opacity="0.6">45° N</text>
+            <text x="870" y="142" opacity="0.6">45° N</text>
+            <text x="130" y="380" opacity="0.6">45° S</text>
+            <text x="870" y="380" opacity="0.6">45° S</text>
+            <text x="28" y="208" fill="#fde047" opacity="0.65" fontSize="7.5">Tropic of Cancer</text>
+            <text x="28" y="332" fill="#fde047" opacity="0.65" fontSize="7.5">Tropic of Capricorn</text>
           </g>
 
-          {/* Oceans Labels (Bold and Clear like reference image) */}
-          <g fontFamily="sans-serif" fontWeight="800" textAnchor="middle" fill="#0c4a6e" opacity="0.9" pointerEvents="none">
-            {/* Arctic Ocean */}
-            <text x="500" y="42" fontSize="13" letterSpacing="1">Arctic Ocean</text>
+          {/* Bordering Oceans Labels */}
+          <g fontFamily="sans-serif" fontWeight="700" textAnchor="middle" fill="#082f49" opacity="0.95" pointerEvents="none">
+            <text x="500" y="44" fontSize="12" letterSpacing="2" fill="#0369a1" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.4)' }}>
+              ARCTIC OCEAN
+            </text>
             
-            {/* North Atlantic Ocean */}
-            <text x="400" y="180" fontSize="11" letterSpacing="0.5">North Atlantic</text>
-            <text x="400" y="195" fontSize="11" letterSpacing="0.5">Ocean</text>
+            <g transform="translate(390, 185) rotate(-15)">
+              <text x="0" y="0" fontSize="10.5" letterSpacing="1.5" fill="#0c4a6e" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.3)' }}>
+                NORTH ATLANTIC
+              </text>
+              <text x="0" y="12" fontSize="9" letterSpacing="1.2" fill="#0c4a6e">
+                OCEAN
+              </text>
+            </g>
 
-            {/* South Atlantic Ocean */}
-            <text x="440" y="355" fontSize="11" letterSpacing="0.5">South Atlantic</text>
-            <text x="440" y="370" fontSize="11" letterSpacing="0.5">Ocean</text>
+            <g transform="translate(435, 360) rotate(-10)">
+              <text x="0" y="0" fontSize="10.5" letterSpacing="1.5" fill="#0c4a6e" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.3)' }}>
+                SOUTH ATLANTIC
+              </text>
+              <text x="0" y="12" fontSize="9" letterSpacing="1.2" fill="#0c4a6e">
+                OCEAN
+              </text>
+            </g>
 
-            {/* Indian Ocean */}
-            <text x="705" y="335" fontSize="12" letterSpacing="0.5">Indian Ocean</text>
+            <text x="705" y="340" fontSize="11" letterSpacing="1.5" fill="#0c4a6e" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.3)' }}>
+              INDIAN OCEAN
+            </text>
 
-            {/* North Pacific Ocean */}
-            <text x="925" y="210" fontSize="10" letterSpacing="0.5">North Pacific</text>
-            <text x="925" y="224" fontSize="10" letterSpacing="0.5">Ocean</text>
-            <text x="90" y="210" fontSize="10" letterSpacing="0.5">North Pacific</text>
-            <text x="90" y="224" fontSize="10" letterSpacing="0.5">Ocean</text>
+            <text x="95" y="215" fontSize="9.5" letterSpacing="1" fill="#0c4a6e">NORTH PACIFIC</text>
+            <text x="95" y="227" fontSize="8.5" letterSpacing="0.8" fill="#0c4a6e">OCEAN</text>
 
-            {/* South Pacific Ocean */}
-            <text x="100" y="360" fontSize="10" letterSpacing="0.5">South Pacific</text>
-            <text x="100" y="375" fontSize="10" letterSpacing="0.5">Ocean</text>
-            <text x="940" y="360" fontSize="10" letterSpacing="0.5">South Pacific</text>
-            <text x="940" y="375" fontSize="10" letterSpacing="0.5">Ocean</text>
+            <text x="915" y="215" fontSize="9.5" letterSpacing="1" fill="#0c4a6e">NORTH PACIFIC</text>
+            <text x="915" y="227" fontSize="8.5" letterSpacing="0.8" fill="#0c4a6e">OCEAN</text>
 
-            {/* Southern Ocean (Above Antarctica) */}
-            <text x="440" y="468" fontSize="11" letterSpacing="0.8">Southern Ocean</text>
+            <text x="110" y="365" fontSize="9.5" letterSpacing="1" fill="#0c4a6e">SOUTH PACIFIC</text>
+            <text x="110" y="377" fontSize="8.5" letterSpacing="0.8" fill="#0c4a6e">OCEAN</text>
+
+            <text x="930" y="365" fontSize="9.5" letterSpacing="1" fill="#0c4a6e">SOUTH PACIFIC</text>
+            <text x="930" y="377" fontSize="8.5" letterSpacing="0.8" fill="#0c4a6e">OCEAN</text>
+
+            <text x="470" y="462" fontSize="10.5" letterSpacing="2" fill="#0369a1" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.4)' }}>
+              SOUTHERN OCEAN
+            </text>
           </g>
 
           {/* ============================================================== */}
-          {/* CONTINENTS PATHS                                               */}
+          {/* CONTINENTS SVG GROUPS                                          */}
           {/* ============================================================== */}
 
-          {/* 1. NORTH AMERICA (Yellow/Gold) */}
+          {/* 1. NORTH AMERICA */}
           <g 
-            className="cursor-pointer transition-all duration-200"
+            className="cursor-pointer transition-all duration-300"
             onClick={() => handleContinentClick(CONTINENTS_INFO.north_america)}
             onMouseEnter={() => setHoveredContinent('north_america')}
             onMouseLeave={() => setHoveredContinent(null)}
+            filter="url(#landShadow)"
           >
-            {/* Mainland NA & Alaska */}
             <path
-              d="M 115,80 
-                 L 145,55 L 220,55 L 260,70 L 315,60 L 360,65 L 340,110 L 310,125 
-                 L 300,165 L 285,185 L 265,190 L 255,225 L 240,250 L 220,255 
-                 L 210,230 L 195,215 L 180,180 L 140,140 L 125,115 Z"
-              fill={hoveredContinent === 'north_america' || selectedId === 'north_america' ? '#f59e0b' : '#fbbf24'}
+              d="M 110,85 
+                 C 120,70 145,55 175,55 
+                 C 195,55 210,65 230,60 
+                 C 255,50 280,55 315,62 
+                 C 340,68 365,65 375,85 
+                 C 365,105 345,115 335,130 
+                 C 320,150 310,175 295,190 
+                 C 280,205 270,225 255,245 
+                 C 240,265 225,270 215,255 
+                 C 205,240 210,215 190,195 
+                 C 175,180 155,165 140,140 
+                 C 125,120 115,100 110,85 Z"
+              fill={hoveredContinent === 'north_america' || selectedId === 'north_america' ? '#f59e0b' : 'url(#gradNA)'}
               stroke={selectedId === 'north_america' ? '#ffffff' : '#d97706'}
-              strokeWidth={selectedId === 'north_america' ? '3' : '1.8'}
-              filter={hoveredContinent === 'north_america' ? 'url(#glow)' : undefined}
+              strokeWidth={selectedId === 'north_america' ? '3.5' : '1.5'}
             />
-            {/* Greenland */}
             <path
-              d="M 370,45 L 435,35 L 460,65 L 430,105 L 390,95 L 375,65 Z"
-              fill={hoveredContinent === 'north_america' || selectedId === 'north_america' ? '#fde68a' : '#fef08a'}
+              d="M 110,85 C 95,95 80,105 65,115 C 80,110 95,100 115,95 Z"
+              fill={hoveredContinent === 'north_america' || selectedId === 'north_america' ? '#f59e0b' : 'url(#gradNA)'}
               stroke="#d97706"
               strokeWidth="1.2"
             />
-            {/* Central America connection strip */}
             <path
-              d="M 220,255 L 245,260 L 255,285 L 268,295 L 258,298 L 240,275 Z"
-              fill="#2563eb" // Deep blue contrast as in reference map
-              stroke="#1d4ed8"
+              d="M 240,40 C 265,35 285,45 280,55 C 260,55 245,50 240,40 Z"
+              fill="url(#gradNA)"
+              stroke="#d97706"
               strokeWidth="1"
             />
-            {/* Caribbean Islands */}
-            <circle cx="285" cy="245" r="4.5" fill="#ef4444" />
-            <circle cx="300" cy="248" r="4" fill="#ef4444" />
-            <circle cx="312" cy="254" r="3.5" fill="#ef4444" />
+            <circle cx="310" cy="45" r="5" fill="#fde68a" stroke="#d97706" strokeWidth="0.8" />
+            <circle cx="330" cy="42" r="4" fill="#fde68a" stroke="#d97706" strokeWidth="0.8" />
 
-            {/* Text Label */}
-            <text x="245" y="135" fontFamily="sans-serif" fontSize="18" fontWeight="900" fill="#78350f" textAnchor="middle">
-              North
-            </text>
-            <text x="245" y="155" fontFamily="sans-serif" fontSize="18" fontWeight="900" fill="#78350f" textAnchor="middle">
-              America
-            </text>
-            {/* Region tags */}
-            <text x="335" y="235" fontFamily="sans-serif" fontSize="10" fontWeight="800" fill="#1e293b">
-              Caribbean
-            </text>
-            <text x="180" y="275" fontFamily="sans-serif" fontSize="9" fontWeight="800" fill="#0f172a">
-              Central America
-            </text>
+            <path
+              d="M 370,45 
+                 C 390,30 435,25 455,45 
+                 C 465,65 450,95 430,105 
+                 C 405,110 385,95 375,70 Z"
+              fill={hoveredContinent === 'north_america' || selectedId === 'north_america' ? '#fde047' : 'url(#gradGreenland)'}
+              stroke={selectedId === 'north_america' ? '#ffffff' : '#d97706'}
+              strokeWidth={selectedId === 'north_america' ? '2.5' : '1.2'}
+            />
+
+            <path
+              d="M 225,260 C 240,270 255,285 268,295 C 260,298 245,285 220,265 Z"
+              fill="#d97706"
+              stroke="#b45309"
+              strokeWidth="1"
+            />
+
+            <circle cx="288" cy="242" r="4.5" fill="#ef4444" stroke="#ffffff" strokeWidth="0.5" />
+            <circle cx="304" cy="246" r="4" fill="#ef4444" stroke="#ffffff" strokeWidth="0.5" />
+            <circle cx="318" cy="252" r="3.5" fill="#ef4444" stroke="#ffffff" strokeWidth="0.5" />
+
+            <g transform="translate(240, 145)" pointerEvents="none">
+              <rect x="-65" y="-18" width="130" height="38" rx="8" fill="#1e293b" fillOpacity="0.85" stroke="#fbbf24" strokeWidth="1" />
+              <text x="0" y="-1" fontFamily="sans-serif" fontSize="13" fontWeight="800" fill="#fef08a" textAnchor="middle">
+                North America
+              </text>
+              <text x="0" y="13" fontFamily="sans-serif" fontSize="9" fontWeight="600" fill="#cbd5e1" textAnchor="middle">
+                23 Nations
+              </text>
+            </g>
           </g>
 
-          {/* 2. SOUTH AMERICA (Coral Red) */}
+          {/* 2. SOUTH AMERICA */}
           <g 
-            className="cursor-pointer transition-all duration-200"
+            className="cursor-pointer transition-all duration-300"
             onClick={() => handleContinentClick(CONTINENTS_INFO.south_america)}
             onMouseEnter={() => setHoveredContinent('south_america')}
             onMouseLeave={() => setHoveredContinent(null)}
+            filter="url(#landShadow)"
           >
             <path
               d="M 268,295 
-                 L 305,290 L 340,315 L 375,340 L 370,385 L 345,430 L 320,465 
-                 L 305,485 L 298,485 L 295,445 L 285,395 L 265,360 L 255,320 Z"
-              fill={hoveredContinent === 'south_america' || selectedId === 'south_america' ? '#ef4444' : '#f87171'}
-              stroke={selectedId === 'south_america' ? '#ffffff' : '#dc2626'}
-              strokeWidth={selectedId === 'south_america' ? '3' : '1.8'}
-              filter={hoveredContinent === 'south_america' ? 'url(#glow)' : undefined}
+                 C 290,285 325,290 350,310 
+                 C 380,335 385,365 375,395 
+                 C 365,425 345,455 325,480 
+                 C 310,495 295,485 295,465 
+                 C 290,430 280,395 265,360 
+                 C 255,335 255,310 268,295 Z"
+              fill={hoveredContinent === 'south_america' || selectedId === 'south_america' ? '#f43f5e' : 'url(#gradSA)'}
+              stroke={selectedId === 'south_america' ? '#ffffff' : '#be123c'}
+              strokeWidth={selectedId === 'south_america' ? '3.5' : '1.5'}
             />
-            {/* Text Label */}
-            <text x="315" y="375" fontFamily="sans-serif" fontSize="17" fontWeight="900" fill="#ffffff" textAnchor="middle" style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.5))' }}>
-              South
-            </text>
-            <text x="315" y="395" fontFamily="sans-serif" fontSize="17" fontWeight="900" fill="#ffffff" textAnchor="middle" style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.5))' }}>
-              America
-            </text>
+
+            <circle cx="308" cy="495" r="3.5" fill="#e11d48" stroke="#ffffff" strokeWidth="0.5" />
+            <circle cx="316" cy="492" r="3" fill="#e11d48" stroke="#ffffff" strokeWidth="0.5" />
+            <circle cx="230" cy="320" r="2.5" fill="#fb7185" />
+
+            <g transform="translate(320, 385)" pointerEvents="none">
+              <rect x="-65" y="-18" width="130" height="38" rx="8" fill="#1e293b" fillOpacity="0.85" stroke="#fb7185" strokeWidth="1" />
+              <text x="0" y="-1" fontFamily="sans-serif" fontSize="13" fontWeight="800" fill="#fda4af" textAnchor="middle">
+                South America
+              </text>
+              <text x="0" y="13" fontFamily="sans-serif" fontSize="9" fontWeight="600" fill="#cbd5e1" textAnchor="middle">
+                12 Nations
+              </text>
+            </g>
           </g>
 
-          {/* 3. EUROPE (Green) */}
+          {/* 3. EUROPE */}
           <g 
-            className="cursor-pointer transition-all duration-200"
+            className="cursor-pointer transition-all duration-300"
             onClick={() => handleContinentClick(CONTINENTS_INFO.europe)}
             onMouseEnter={() => setHoveredContinent('europe')}
             onMouseLeave={() => setHoveredContinent(null)}
+            filter="url(#landShadow)"
           >
-            {/* European mainland & Scandinavia */}
             <path
-              d="M 500,90 
-                 L 535,70 L 565,65 L 610,65 L 630,95 L 625,145 L 590,165 
-                 L 550,175 L 525,170 L 500,185 L 485,180 L 480,140 L 495,115 Z"
-              fill={hoveredContinent === 'europe' || selectedId === 'europe' ? '#16a34a' : '#22c55e'}
+              d="M 525,60 
+                 C 545,45 575,45 595,55 
+                 C 605,75 585,110 565,115 
+                 C 550,115 535,95 525,60 Z"
+              fill={hoveredContinent === 'europe' || selectedId === 'europe' ? '#22c55e' : 'url(#gradEU)'}
+              stroke="#15803d"
+              strokeWidth="1.2"
+            />
+            
+            <path
+              d="M 495,115 
+                 C 525,110 570,110 615,100 
+                 C 630,120 625,155 595,170 
+                 C 560,175 530,170 505,180 
+                 C 485,180 480,145 495,115 Z"
+              fill={hoveredContinent === 'europe' || selectedId === 'europe' ? '#22c55e' : 'url(#gradEU)'}
               stroke={selectedId === 'europe' ? '#ffffff' : '#15803d'}
-              strokeWidth={selectedId === 'europe' ? '3' : '1.8'}
-              filter={hoveredContinent === 'europe' ? 'url(#glow)' : undefined}
+              strokeWidth={selectedId === 'europe' ? '3.5' : '1.5'}
             />
-            {/* British Isles */}
+
             <path
-              d="M 465,115 L 480,105 L 478,135 L 460,130 Z"
-              fill={hoveredContinent === 'europe' || selectedId === 'europe' ? '#16a34a' : '#22c55e'}
+              d="M 465,160 C 495,160 495,190 475,195 C 460,190 455,175 465,160 Z"
+              fill="url(#gradEU)"
               stroke="#15803d"
               strokeWidth="1.2"
             />
-            {/* Iberian Peninsula */}
+
             <path
-              d="M 470,165 L 500,165 L 495,195 L 465,190 Z"
-              fill={hoveredContinent === 'europe' || selectedId === 'europe' ? '#16a34a' : '#22c55e'}
+              d="M 465,110 C 478,100 482,125 470,135 C 460,130 458,118 465,110 Z"
+              fill="url(#gradEU)"
               stroke="#15803d"
-              strokeWidth="1.2"
+              strokeWidth="1"
             />
-            {/* Text Label */}
-            <text x="560" y="125" fontFamily="sans-serif" fontSize="16" fontWeight="900" fill="#ffffff" textAnchor="middle" style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.5))' }}>
-              Europe
-            </text>
+            <circle cx="456" cy="122" r="4.5" fill="#4ade80" stroke="#15803d" strokeWidth="0.8" />
+
+            <path
+              d="M 525,165 C 535,175 540,195 535,200 C 528,198 522,185 525,165 Z"
+              fill="url(#gradEU)"
+              stroke="#15803d"
+              strokeWidth="1"
+            />
+            <circle cx="528" cy="204" r="3" fill="#4ade80" stroke="#15803d" strokeWidth="0.5" />
+            <circle cx="515" cy="180" r="2.5" fill="#4ade80" />
+
+            <g transform="translate(560, 138)" pointerEvents="none">
+              <rect x="-50" y="-16" width="100" height="34" rx="7" fill="#1e293b" fillOpacity="0.85" stroke="#4ade80" strokeWidth="1" />
+              <text x="0" y="-1" fontFamily="sans-serif" fontSize="12" fontWeight="800" fill="#86efac" textAnchor="middle">
+                Europe
+              </text>
+              <text x="0" y="11" fontFamily="sans-serif" fontSize="8.5" fontWeight="600" fill="#cbd5e1" textAnchor="middle">
+                45 Nations
+              </text>
+            </g>
           </g>
 
-          {/* 4. AFRICA (Purple/Violet) */}
+          {/* 4. AFRICA */}
           <g 
-            className="cursor-pointer transition-all duration-200"
+            className="cursor-pointer transition-all duration-300"
             onClick={() => handleContinentClick(CONTINENTS_INFO.africa)}
             onMouseEnter={() => setHoveredContinent('africa')}
             onMouseLeave={() => setHoveredContinent(null)}
+            filter="url(#landShadow)"
           >
-            {/* Africa Mainland */}
             <path
-              d="M 465,200 
-                 L 535,195 L 585,225 L 635,260 L 615,315 L 585,380 L 565,420 
-                 L 545,415 L 525,380 L 520,315 L 475,270 L 450,235 Z"
-              fill={hoveredContinent === 'africa' || selectedId === 'africa' ? '#6366f1' : '#818cf8'}
+              d="M 460,200 
+                 C 500,190 545,195 580,220 
+                 C 625,245 640,285 620,335 
+                 C 600,380 580,420 555,425 
+                 C 535,420 520,385 515,335 
+                 C 505,295 465,275 445,240 
+                 C 440,220 445,205 460,200 Z"
+              fill={hoveredContinent === 'africa' || selectedId === 'africa' ? '#818cf8' : 'url(#gradAF)'}
               stroke={selectedId === 'africa' ? '#ffffff' : '#4f46e5'}
-              strokeWidth={selectedId === 'africa' ? '3' : '1.8'}
-              filter={hoveredContinent === 'africa' ? 'url(#glow)' : undefined}
+              strokeWidth={selectedId === 'africa' ? '3.5' : '1.5'}
             />
-            {/* Madagascar */}
+
             <path
-              d="M 625,350 L 638,345 L 632,385 L 620,380 Z"
-              fill={hoveredContinent === 'africa' || selectedId === 'africa' ? '#6366f1' : '#818cf8'}
+              d="M 628,345 C 642,340 640,385 628,390 C 620,380 622,355 628,345 Z"
+              fill="url(#gradAF)"
               stroke="#4f46e5"
               strokeWidth="1.2"
             />
-            {/* Text Label */}
-            <text x="550" y="295" fontFamily="sans-serif" fontSize="19" fontWeight="900" fill="#ffffff" textAnchor="middle" style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.5))' }}>
-              Africa
-            </text>
+
+            <g transform="translate(545, 305)" pointerEvents="none">
+              <rect x="-55" y="-18" width="110" height="38" rx="8" fill="#1e293b" fillOpacity="0.85" stroke="#818cf8" strokeWidth="1" />
+              <text x="0" y="-1" fontFamily="sans-serif" fontSize="13" fontWeight="800" fill="#c7d2fe" textAnchor="middle">
+                Africa
+              </text>
+              <text x="0" y="13" fontFamily="sans-serif" fontSize="9" fontWeight="600" fill="#cbd5e1" textAnchor="middle">
+                54 Nations
+              </text>
+            </g>
           </g>
 
-          {/* 5. ASIA & MIDDLE EAST (Warm Peach / Orange) */}
+          {/* 5. ASIA & MIDDLE EAST */}
           <g 
-            className="cursor-pointer transition-all duration-200"
+            className="cursor-pointer transition-all duration-300"
             onClick={() => handleContinentClick(CONTINENTS_INFO.asia)}
             onMouseEnter={() => setHoveredContinent('asia')}
             onMouseLeave={() => setHoveredContinent(null)}
+            filter="url(#landShadow)"
           >
-            {/* Asia Great Landmass */}
+            {/* Asia Giant Landmass */}
             <path
-              d="M 610,65 
-                 L 660,50 L 740,45 L 830,65 L 860,110 L 840,165 L 795,195 
-                 L 775,245 L 730,270 L 695,255 L 685,215 L 650,205 L 630,95 Z"
-              fill={hoveredContinent === 'asia' || selectedId === 'asia' ? '#fdba74' : '#fed7aa'}
-              stroke={selectedId === 'asia' ? '#ffffff' : '#ea580c'}
-              strokeWidth={selectedId === 'asia' ? '3' : '1.8'}
-              filter={hoveredContinent === 'asia' ? 'url(#glow)' : undefined}
+              d="M 615,95 
+                 C 670,55 750,45 840,65 
+                 C 885,95 875,150 835,185 
+                 C 810,215 780,245 745,265 
+                 C 720,275 690,265 675,235 
+                 C 660,210 635,200 615,190 
+                 C 605,150 605,120 615,95 Z"
+              fill={hoveredContinent === 'asia' || selectedId === 'asia' ? '#fb923c' : 'url(#gradAS)'}
+              stroke={selectedId === 'asia' ? '#ffffff' : '#c2410c'}
+              strokeWidth={selectedId === 'asia' ? '3.5' : '1.5'}
             />
-            {/* Middle East peninsula highlight */}
+
+            {/* Arabian Peninsula & Middle East */}
             <path
-              d="M 585,200 L 650,195 L 680,240 L 650,265 L 610,240 Z"
-              fill="#fb923c"
-              stroke="#c2410c"
-              strokeWidth="1.5"
-            />
-            {/* India Subcontinent */}
-            <path
-              d="M 685,215 L 730,230 L 710,285 L 685,245 Z"
-              fill={hoveredContinent === 'asia' || selectedId === 'asia' ? '#fdba74' : '#fed7aa'}
+              d="M 580,200 C 625,195 645,215 635,255 C 610,265 590,245 580,200 Z"
+              fill={hoveredContinent === 'asia' || selectedId === 'asia' ? '#f97316' : '#fb923c'}
               stroke="#ea580c"
               strokeWidth="1.2"
             />
-            {/* Japan Arc */}
+
+            {/* Indian Subcontinent */}
             <path
-              d="M 850,140 Q 865,160 855,185"
+              d="M 680,215 C 725,225 730,250 710,285 C 690,265 680,240 680,215 Z"
+              fill={hoveredContinent === 'asia' || selectedId === 'asia' ? '#fb923c' : 'url(#gradAS)'}
               stroke="#ea580c"
-              strokeWidth="4"
+              strokeWidth="1.2"
+            />
+            <circle cx="715" cy="295" r="3.5" fill="#f97316" stroke="#c2410c" strokeWidth="0.6" />
+
+            {/* Indochina & Southeast Asia */}
+            <path
+              d="M 740,245 C 770,245 780,280 760,295 C 745,285 740,265 740,245 Z"
+              fill={hoveredContinent === 'asia' || selectedId === 'asia' ? '#fb923c' : 'url(#gradAS)'}
+              stroke="#ea580c"
+              strokeWidth="1"
+            />
+
+            {/* Japanese Archipelago */}
+            <path
+              d="M 865,135 C 878,155 870,185 858,195"
+              stroke={hoveredContinent === 'asia' || selectedId === 'asia' ? '#ffffff' : '#ea580c'}
+              strokeWidth="3.5"
               strokeLinecap="round"
               fill="none"
             />
-            {/* Southeast Asia Islands */}
-            <circle cx="770" cy="285" r="4.5" fill="#ea580c" />
-            <circle cx="790" cy="300" r="5" fill="#ea580c" />
-            <circle cx="815" cy="290" r="4.5" fill="#ea580c" />
+            {/* Korean Peninsula */}
+            <path
+              d="M 825,170 L 835,190"
+              stroke={hoveredContinent === 'asia' || selectedId === 'asia' ? '#ffffff' : '#ea580c'}
+              strokeWidth="3"
+              strokeLinecap="round"
+            />
 
-            {/* Text Labels */}
-            <text x="745" y="145" fontFamily="sans-serif" fontSize="22" fontWeight="900" fill="#7c2d12" textAnchor="middle">
-              Asia
-            </text>
-            <text x="635" y="218" fontFamily="sans-serif" fontSize="11" fontWeight="900" fill="#9a3412" textAnchor="middle">
-              Middle East
-            </text>
+            {/* Malay Archipelago & Indonesian Islands */}
+            <circle cx="770" cy="305" r="4" fill="#f97316" stroke="#ffffff" strokeWidth="0.5" />
+            <circle cx="795" cy="315" r="4.5" fill="#f97316" stroke="#ffffff" strokeWidth="0.5" />
+            <circle cx="820" cy="310" r="4" fill="#f97316" stroke="#ffffff" strokeWidth="0.5" />
+            <circle cx="805" cy="275" r="3.5" fill="#f97316" stroke="#ffffff" strokeWidth="0.5" />
+
+            {/* Cartographic Typography Pill */}
+            <g transform="translate(745, 145)" pointerEvents="none">
+              <rect x="-55" y="-18" width="110" height="38" rx="8" fill="#1e293b" fillOpacity="0.85" stroke="#fb923c" strokeWidth="1" />
+              <text x="0" y="-1" fontFamily="sans-serif" fontSize="14" fontWeight="800" fill="#ffedd5" textAnchor="middle">
+                Asia
+              </text>
+              <text x="0" y="13" fontFamily="sans-serif" fontSize="9" fontWeight="600" fill="#fed7aa" textAnchor="middle">
+                48 Nations
+              </text>
+            </g>
           </g>
 
-          {/* 6. AUSTRALIA & OCEANIA (Magenta/Pink) */}
+          {/* 6. AUSTRALIA & OCEANIA */}
           <g 
-            className="cursor-pointer transition-all duration-200"
+            className="cursor-pointer transition-all duration-300"
             onClick={() => handleContinentClick(CONTINENTS_INFO.oceania)}
             onMouseEnter={() => setHoveredContinent('oceania')}
             onMouseLeave={() => setHoveredContinent(null)}
+            filter="url(#landShadow)"
           >
-            {/* Australia Mainland */}
             <path
               d="M 795,340 
-                 L 870,330 L 900,365 L 890,415 L 850,430 L 800,415 L 790,365 Z"
-              fill={hoveredContinent === 'oceania' || selectedId === 'oceania' ? '#ec4899' : '#f472b6'}
-              stroke={selectedId === 'oceania' ? '#ffffff' : '#db2777'}
-              strokeWidth={selectedId === 'oceania' ? '3' : '1.8'}
-              filter={hoveredContinent === 'oceania' ? 'url(#glow)' : undefined}
+                 C 835,325 875,325 900,355 
+                 C 910,385 895,420 860,430 
+                 C 820,435 790,415 785,375 
+                 C 785,355 790,345 795,340 Z"
+              fill={hoveredContinent === 'oceania' || selectedId === 'oceania' ? '#ec4899' : 'url(#gradOC)'}
+              stroke={selectedId === 'oceania' ? '#ffffff' : '#be185d'}
+              strokeWidth={selectedId === 'oceania' ? '3.5' : '1.5'}
             />
-            {/* New Zealand Islands */}
+
+            <circle cx="865" cy="445" r="3.5" fill="#db2777" stroke="#ffffff" strokeWidth="0.5" />
+
             <path
-              d="M 915,415 L 935,445"
+              d="M 925,415 L 940,445"
               stroke="#db2777"
-              strokeWidth="4"
+              strokeWidth="3.5"
               strokeLinecap="round"
               fill="none"
             />
-            {/* Text Label */}
-            <text x="845" y="380" fontFamily="sans-serif" fontSize="14" fontWeight="900" fill="#ffffff" textAnchor="middle" style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.5))' }}>
-              Australia
-            </text>
-            <text x="845" y="398" fontFamily="sans-serif" fontSize="12" fontWeight="900" fill="#ffffff" textAnchor="middle" style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.5))' }}>
-              &amp; Oceania
-            </text>
+
+            <path
+              d="M 830,315 C 855,310 870,320 855,330 Z"
+              fill="url(#gradOC)"
+              stroke="#be185d"
+              strokeWidth="1"
+            />
+
+            <circle cx="915" cy="330" r="2.5" fill="#f472b6" />
+            <circle cx="945" cy="340" r="2" fill="#f472b6" />
+
+            <g transform="translate(845, 385)" pointerEvents="none">
+              <rect x="-60" y="-18" width="120" height="38" rx="8" fill="#1e293b" fillOpacity="0.85" stroke="#f472b6" strokeWidth="1" />
+              <text x="0" y="-1" fontFamily="sans-serif" fontSize="12" fontWeight="800" fill="#fbcfe8" textAnchor="middle">
+                Oceania
+              </text>
+              <text x="0" y="13" fontFamily="sans-serif" fontSize="8.5" fontWeight="600" fill="#cbd5e1" textAnchor="middle">
+                14 Nations
+              </text>
+            </g>
           </g>
 
-          {/* 7. ANTARCTICA (The 7th Continent! Ice White along entire southern border) */}
+          {/* 7. ANTARCTICA */}
           <g 
-            className="cursor-pointer transition-all duration-200"
+            className="cursor-pointer transition-all duration-300"
             onClick={() => handleContinentClick(CONTINENTS_INFO.antarctica)}
             onMouseEnter={() => setHoveredContinent('antarctica')}
             onMouseLeave={() => setHoveredContinent(null)}
+            filter="url(#landShadow)"
           >
-            {/* Antarctica Landmass */}
             <path
               d="M 120,490 
-                 Q 300,470 380,455 
-                 Q 420,445 440,460 
-                 Q 500,455 580,450 
-                 Q 700,460 880,485 
-                 L 850,515 L 150,515 Z"
-              fill={hoveredContinent === 'antarctica' || selectedId === 'antarctica' ? '#ffffff' : '#f1f5f9'}
-              stroke={selectedId === 'antarctica' ? '#38bdf8' : '#cbd5e1'}
-              strokeWidth={selectedId === 'antarctica' ? '3.5' : '2'}
-              filter={hoveredContinent === 'antarctica' ? 'url(#glow)' : undefined}
+                 C 220,465 320,455 380,450 
+                 C 420,440 460,455 520,448 
+                 C 620,440 750,455 880,485 
+                 L 860,515 L 140,515 Z"
+              fill={hoveredContinent === 'antarctica' || selectedId === 'antarctica' ? '#ffffff' : 'url(#gradAN)'}
+              stroke={selectedId === 'antarctica' ? '#38bdf8' : '#7dd3fc'}
+              strokeWidth={selectedId === 'antarctica' ? '3.5' : '1.5'}
             />
-            {/* Antarctic Peninsula reaching towards South America */}
             <path
-              d="M 370,460 Q 350,440 340,430 Q 350,440 375,455"
-              stroke="#e2e8f0"
-              strokeWidth="6"
-              strokeLinecap="round"
-              fill="none"
+              d="M 375,455 C 360,435 345,420 338,410 C 348,425 365,445 385,452 Z"
+              fill="#ffffff"
+              stroke="#7dd3fc"
+              strokeWidth="1.5"
             />
-            {/* Text Label */}
-            <text x="500" y="495" fontFamily="sans-serif" fontSize="16" fontWeight="900" fill="#0f172a" textAnchor="middle">
-              ❄️ Antarctica (7th Continent)
-            </text>
+
+            <path d="M 200,495 Q 400,480 600,490" stroke="#0284c7" strokeWidth="0.75" opacity="0.3" fill="none" />
+            <path d="M 620,490 Q 750,485 840,500" stroke="#0284c7" strokeWidth="0.75" opacity="0.3" fill="none" />
+
+            <g transform="translate(500, 492)" pointerEvents="none">
+              <rect x="-105" y="-14" width="210" height="28" rx="7" fill="#0f172a" fillOpacity="0.9" stroke="#38bdf8" strokeWidth="1" />
+              <text x="0" y="4" fontFamily="sans-serif" fontSize="11" fontWeight="700" fill="#e0f2fe" textAnchor="middle">
+                ❄️ Antarctica (7th Continent)
+              </text>
+            </g>
           </g>
 
-          {/* Compass Rose Accent */}
-          <g transform="translate(60, 60)" pointerEvents="none">
-            <circle cx="0" cy="0" r="22" fill="#0c4a6e" opacity="0.75" />
-            <polygon points="0,-18 5,-5 18,0 5,5 0,18 -5,5 -18,0 -5,-5" fill="#facc15" />
-            <polygon points="0,-18 5,-5 0,0 -5,-5" fill="#ef4444" />
-            <text x="0" y="-8" fontSize="8" fontWeight="bold" fill="#ffffff" textAnchor="middle">N</text>
+          {/* Compass Rose */}
+          <g transform="translate(75, 75)" pointerEvents="none">
+            <circle cx="0" cy="0" r="24" fill="#031d34" stroke="#38bdf8" strokeWidth="1" opacity="0.85" />
+            <circle cx="0" cy="0" r="19" fill="none" stroke="#fde047" strokeWidth="0.6" strokeDasharray="2 2" opacity="0.6" />
+            
+            <polygon points="0,-18 4,-5 18,0 4,5 0,18 -4,5 -18,0 -4,-5" fill="#fde047" stroke="#b45309" strokeWidth="0.5" />
+            <polygon points="0,-18 4,-5 0,0 -4,-5" fill="#ef4444" />
+            <polygon points="18,0 5,4 0,0 5,-4" fill="#ef4444" />
+            
+            <text x="0" y="-8" fontSize="7.5" fontWeight="800" fill="#ffffff" textAnchor="middle">N</text>
+            <text x="0" y="14" fontSize="6.5" fontWeight="700" fill="#cbd5e1" textAnchor="middle">S</text>
+            <text x="11" y="2.5" fontSize="6.5" fontWeight="700" fill="#cbd5e1" textAnchor="middle">E</text>
+            <text x="-11" y="2.5" fontSize="6.5" fontWeight="700" fill="#cbd5e1" textAnchor="middle">W</text>
           </g>
 
         </svg>
 
-        {/* Selected / Hovered Continent Floating Overlay Badge */}
-        {highlightedInfo && (
-          <motion.div
-            initial={{ opacity: 0, y: 8, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            className="absolute top-3 left-3 right-3 sm:left-auto sm:right-3 sm:max-w-xs bg-slate-950/95 backdrop-blur-md p-3.5 rounded-2xl border border-slate-700 shadow-2xl z-20"
-          >
-            <div className="flex items-center justify-between gap-2 mb-1.5">
-              <div className="flex items-center gap-2">
-                <span 
-                  className="w-3.5 h-3.5 rounded-full border border-white shrink-0" 
+        {/* ============================================================== */}
+        {/* CARTOON-STYLED EXPLORER POP-UP CARD                            */}
+        {/* ============================================================== */}
+        <AnimatePresence>
+          {highlightedInfo && (
+            <motion.div
+              key={highlightedInfo.id}
+              initial={{ opacity: 0, scale: 0.88, y: -8, rotate: -1.5 }}
+              animate={{ opacity: 1, scale: 1, y: 0, rotate: 0 }}
+              exit={{ opacity: 0, scale: 0.85, y: -6, transition: { duration: 0.15 } }}
+              transition={{ type: "spring", stiffness: 360, damping: 24 }}
+              className={`absolute ${getPopupPositionClass(highlightedInfo.id)} w-[calc(100%-1.5rem)] sm:w-auto sm:max-w-xs md:max-w-sm z-30 pointer-events-none select-none`}
+            >
+              {/* Comic-style Outer Container with 3D Pop Shadow */}
+              <div 
+                className="bg-slate-900/98 backdrop-blur-xl p-3.5 sm:p-4 rounded-3xl border-3 shadow-[0_12px_32px_rgba(0,0,0,0.7),0_0_0_1px_rgba(255,255,255,0.15)] relative overflow-hidden pointer-events-none"
+                style={{ borderColor: highlightedInfo.color }}
+              >
+                {/* Decorative Top Cartoon Accent Ribbon */}
+                <div 
+                  className="absolute -top-6 -right-6 w-20 h-20 rounded-full opacity-20 blur-xl pointer-events-none"
                   style={{ backgroundColor: highlightedInfo.color }}
                 />
-                <h3 className="text-sm font-black text-white">{highlightedInfo.name}</h3>
-              </div>
-              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-800 text-slate-300">
-                {highlightedInfo.countriesCount > 0 ? `${highlightedInfo.countriesCount} Nations` : 'Scientific Preserve'}
-              </span>
-            </div>
-            
-            <p className="text-[11px] text-slate-300 leading-relaxed line-clamp-2 mb-2">
-              {highlightedInfo.keyFact}
-            </p>
 
-            <div className="grid grid-cols-2 gap-1.5 text-[10px] text-slate-400 border-t border-slate-800/80 pt-2 mb-2.5">
-              <div>
-                <span className="text-slate-500 block">Land Area:</span>
-                <span className="text-slate-200 font-semibold">{highlightedInfo.area}</span>
-              </div>
-              <div>
-                <span className="text-slate-500 block">Population:</span>
-                <span className="text-slate-200 font-semibold">{highlightedInfo.population}</span>
-              </div>
-            </div>
+                {/* Cartoon Header: Mascot + Title + Size Rank Badge */}
+                <div className="flex items-start gap-3 mb-2.5">
+                  {/* Cartoon Mascot Avatar Bubble */}
+                  <div 
+                    className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl flex items-center justify-center text-2xl sm:text-3xl shrink-0 shadow-md border-2 border-white/30 transform -rotate-3 hover:rotate-3 transition-transform"
+                    style={{ 
+                      background: `linear-gradient(135deg, ${highlightedInfo.gradientFrom}, ${highlightedInfo.gradientTo})` 
+                    }}
+                  >
+                    <span>{highlightedInfo.emoji}</span>
+                  </div>
 
-            <button
-              type="button"
-              onClick={() => handleContinentClick(highlightedInfo)}
-              className="w-full py-1.5 px-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
-            >
-              <span>
-                {activeContinentFilter === highlightedInfo.filterName 
-                  ? 'Showing Countries Below' 
-                  : `Explore ${highlightedInfo.name}`}
-              </span>
-              <ArrowRight size={13} />
-            </button>
-          </motion.div>
-        )}
+                  {/* Title & Size Rank Badge */}
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center justify-between gap-1.5 flex-wrap">
+                      <h3 className="text-base sm:text-lg font-black text-white tracking-tight flex items-center gap-1.5">
+                        <span>{highlightedInfo.name}</span>
+                        <Sparkles size={14} className="text-amber-300 shrink-0 animate-pulse" />
+                      </h3>
+                      <span 
+                        className="text-[10px] font-black px-2 py-0.5 rounded-full text-slate-950 uppercase tracking-wider shadow-xs"
+                        style={{ backgroundColor: highlightedInfo.color }}
+                      >
+                        {highlightedInfo.sizeRank}
+                      </span>
+                    </div>
+
+                    <p className="text-[11px] font-bold text-amber-300/90 truncate mt-0.5">
+                      {highlightedInfo.cartoonTitle}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Comic Speech Bubble / "Did You Know?" Fun Fact */}
+                <div className="relative bg-slate-950/80 rounded-2xl p-2.5 border border-slate-800 mb-2.5 shadow-inner">
+                  <div className="flex items-start gap-1.5 text-[11px] text-slate-200 leading-relaxed font-normal">
+                    <span className="text-amber-400 font-bold shrink-0">💡 Fact:</span>
+                    <span>{highlightedInfo.funFact}</span>
+                  </div>
+                </div>
+
+                {/* Cartoon Stats Grid (Chunky colorful stickers) */}
+                <div className="grid grid-cols-2 gap-1.5 mb-2.5 text-[11px]">
+                  <div className="bg-slate-800/80 rounded-xl p-2 border border-slate-700/60 flex items-center gap-2">
+                    <span className="text-base">👥</span>
+                    <div className="min-w-0">
+                      <span className="text-[9px] uppercase tracking-wider text-slate-400 block font-bold">Population</span>
+                      <span className="text-slate-100 font-extrabold truncate block">{highlightedInfo.population}</span>
+                    </div>
+                  </div>
+
+                  <div className="bg-slate-800/80 rounded-xl p-2 border border-slate-700/60 flex items-center gap-2">
+                    <span className="text-base">📐</span>
+                    <div className="min-w-0">
+                      <span className="text-[9px] uppercase tracking-wider text-slate-400 block font-bold">Land Area</span>
+                      <span className="text-slate-100 font-extrabold truncate block">{highlightedInfo.area}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Oceans & Sovereign Nations Bar */}
+                <div className="flex items-center justify-between gap-1 text-[10px] text-sky-300 font-medium bg-sky-950/60 border border-sky-800/50 px-2.5 py-1.5 rounded-xl mb-2.5">
+                  <span className="truncate flex items-center gap-1">
+                    <span>🌊</span>
+                    <span><strong>Oceans:</strong> {highlightedInfo.oceans}</span>
+                  </span>
+                  <span className="shrink-0 text-slate-300 font-bold">
+                    {highlightedInfo.countriesCount > 0 ? `${highlightedInfo.countriesCount} Nations` : 'Preserve'}
+                  </span>
+                </div>
+
+                {/* Click Guidance Status Banner (No jump button) */}
+                <div 
+                  className="w-full py-2 px-3 rounded-2xl font-bold text-xs flex items-center justify-center gap-2 text-center transition-all border"
+                  style={{
+                    backgroundColor: `${highlightedInfo.color}20`,
+                    borderColor: `${highlightedInfo.color}60`,
+                    color: highlightedInfo.color
+                  }}
+                >
+                  <MapPin size={13} className="shrink-0 animate-bounce" />
+                  <span>
+                    {activeContinentFilter === highlightedInfo.filterName 
+                      ? `Active: Filtering ${highlightedInfo.name}` 
+                      : `Click continent on map to filter`}
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       {/* 7 Continents Color Key & Quick Filter Buttons */}
-      <div className="mt-4 pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between gap-2">
+      <div className="mt-4 pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2 flex-wrap">
-          <span className="text-xs font-bold text-slate-400 mr-1">Continent Keys:</span>
+          <span className="text-xs font-normal text-slate-400 mr-1">Continent Keys:</span>
           {Object.values(CONTINENTS_INFO).map((info) => {
             const isSelected = activeContinentFilter === info.filterName;
             return (
@@ -648,16 +969,13 @@ export function WorldContinentsMap({
                 key={info.id}
                 type="button"
                 onClick={() => handleContinentClick(info)}
-                className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer border ${
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-normal transition-all cursor-pointer border ${
                   isSelected
                     ? 'bg-slate-800 border-amber-400 text-white ring-2 ring-amber-400/30 shadow-sm'
                     : 'bg-slate-900 border-slate-800 text-slate-300 hover:bg-slate-850 hover:text-white'
                 }`}
               >
-                <span 
-                  className="w-2.5 h-2.5 rounded-full shrink-0 border border-slate-700" 
-                  style={{ backgroundColor: info.color }}
-                />
+                <span className="text-xs">{info.emoji}</span>
                 <span>{info.name}</span>
                 {isSelected && <Check size={12} className="text-amber-400 ml-0.5" />}
               </button>
@@ -665,9 +983,9 @@ export function WorldContinentsMap({
           })}
         </div>
 
-        {/* Antarctica Informational Explainer Modal / Button */}
+        {/* Antarctica Informational Explainer */}
         <div className="flex items-center gap-2">
-          <div className="flex items-center gap-1.5 text-[11px] text-slate-400 bg-slate-900 px-3 py-1.5 rounded-xl border border-slate-800">
+          <div className="flex items-center gap-1.5 text-[11px] text-slate-400 bg-slate-900/90 px-3 py-1.5 rounded-xl border border-slate-800 font-normal">
             <Info size={13} className="text-cyan-400 shrink-0" />
             <span>
               <strong>Antarctica (7th continent)</strong> has no sovereign country under the 1959 Antarctic Treaty.
