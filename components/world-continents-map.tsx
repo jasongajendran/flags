@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Globe, Compass, Info, Check, ArrowRight, Sparkles, Navigation, Layers, Star, Zap, MapPin } from 'lucide-react';
+import { Globe, Compass, Info, Check, ArrowRight, Sparkles, Navigation, Layers, Star, Zap, MapPin, ChevronDown, ChevronUp, Map } from 'lucide-react';
 
 export interface WorldContinentsMapProps {
   activeContinentFilter: string;
@@ -195,6 +195,8 @@ export function WorldContinentsMap({
   onSelectContinent,
   onOpenAntarctica
 }: WorldContinentsMapProps) {
+  // Default to collapsed after initial page load or refresh to avoid distraction
+  const [isCollapsed, setIsCollapsed] = useState<boolean>(true);
   const [hoveredContinent, setHoveredContinent] = useState<string | null>(null);
 
   const getActiveContinentId = () => {
@@ -222,6 +224,8 @@ export function WorldContinentsMap({
       onSelectContinent('All');
     } else {
       onSelectContinent(info.filterName);
+      // Auto-collapse map when a continent is selected so user can see country list
+      setIsCollapsed(true);
     }
   };
 
@@ -242,41 +246,60 @@ export function WorldContinentsMap({
   };
 
   return (
-    <div className="bg-slate-950 border border-slate-800 rounded-3xl p-4 sm:p-6 shadow-2xl overflow-hidden">
-      {/* Header Bar */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-800/80">
+    <div className="bg-slate-950 border border-slate-800 rounded-3xl p-4 sm:p-5 shadow-2xl overflow-hidden transition-all duration-300">
+      {/* Header Bar with Collapse/Expand Toggle */}
+      <div className={`flex flex-col sm:flex-row sm:items-center justify-between gap-3 ${!isCollapsed ? 'mb-4 pb-3 border-b border-slate-800/80' : ''}`}>
         <div>
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2.5 flex-wrap">
             <span className="p-1.5 bg-indigo-500/15 text-indigo-400 rounded-lg border border-indigo-500/25">
               <Globe size={18} />
             </span>
-            <h2 className="text-base sm:text-lg font-normal text-slate-100">
+            <h2 className="text-base sm:text-lg font-bold text-slate-100">
               World Continents Reference Map
             </h2>
-            <span className="text-[11px] font-normal px-2.5 py-0.5 rounded-full bg-slate-900 text-slate-300 border border-slate-700/70">
-              All 7 Continents
+            <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-slate-900 text-sky-300 border border-slate-700/70">
+              {activeContinentFilter !== 'All' ? `Filtered: ${activeContinentFilter}` : 'All 7 Continents'}
             </span>
           </div>
-          <p className="text-xs text-slate-400 mt-1.5 font-normal leading-relaxed">
-            Tap or hover any continent to gauge where it sits on Earth, view bordering oceans, and filter sovereign nations.
+          <p className="text-xs text-slate-400 mt-1 font-normal leading-relaxed">
+            {isCollapsed 
+              ? 'Map collapsed for streamlined browsing. Expand anytime to inspect Earth’s 7 continents interactively.' 
+              : 'Tap or hover any continent to gauge where it sits on Earth, view size rankings & bordering oceans.'}
           </p>
         </div>
 
         {/* Action Controls */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 shrink-0">
           {activeContinentFilter !== 'All' && (
             <button
               type="button"
               onClick={() => onSelectContinent('All')}
               className="text-xs px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-400 font-medium border border-slate-700 transition-all cursor-pointer flex items-center gap-1.5"
             >
-              <span>Show All Continents</span>
+              <span>Show All Nations</span>
             </button>
           )}
+
+          <button
+            type="button"
+            onClick={() => setIsCollapsed(!isCollapsed)}
+            className="text-xs px-3.5 py-2 rounded-xl bg-indigo-950/80 hover:bg-indigo-900 text-indigo-200 font-bold border border-indigo-700/60 shadow-sm transition-all cursor-pointer flex items-center gap-2 hover:scale-[1.02] active:scale-95"
+          >
+            <Map size={14} className="text-indigo-400" />
+            <span>{isCollapsed ? 'Expand World Map' : 'Collapse Map'}</span>
+            {isCollapsed ? <ChevronDown size={14} /> : <ChevronUp size={14} />}
+          </button>
         </div>
       </div>
 
-      {/* SVG Map Canvas Container */}
+      {!isCollapsed && (
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: 'auto' }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.25 }}
+        >
+          {/* SVG Map Canvas Container */}
       <div className="relative w-full aspect-[16/9] max-h-[520px] bg-gradient-to-b from-sky-950 via-slate-950 to-slate-950 rounded-2xl overflow-hidden border border-sky-900/60 shadow-inner select-none">
         
         {/* SVG Graphic */}
@@ -993,6 +1016,8 @@ export function WorldContinentsMap({
           </div>
         </div>
       </div>
+        </motion.div>
+      )}
     </div>
   );
 }
